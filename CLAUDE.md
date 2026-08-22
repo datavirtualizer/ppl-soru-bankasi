@@ -19,6 +19,7 @@ data/*.json          soru kaynağı (elle çevrilmiş, tek doğruluk kaynağı)
 data/_tekrarlar.json elle doğrulanmış tekrar grupları
 scripts/init_db.py   data/ → atpl.db  (idempotent, ON CONFLICT ile günceller)
 scripts/find_duplicates.py  benzer soru tarayıcı
+scripts/topic_gap.py   ders notunda olup soruda olmayan konuları listeler
 atpl.db              üretilmiş soru bankası — elle düzenleme, JSON'u düzelt
 server/              FastAPI çalışma sitesi (misafir öncelikli, giriş isteğe bağlı)
 server/app.db        kullanıcı verisi — .gitignore'da, YEDEKLENMESİ GEREKEN TEK DOSYA
@@ -53,6 +54,20 @@ gömer. Değişiklikten sonra `python3 scripts/build_web.py` çalıştır.
 
 Yedekleme metin kopyala/yapıştır üzerinden yapılır — artifact kum havuzunda dosya
 indirme engelli. Dosya düğmeleri yalnızca `window.self === window.top` iken gösterilir.
+
+## Soru üretimi
+
+Kullanıcı ders notu verdiğinde iş akışı:
+
+1. Notu `notes/` altına koy, `python3 scripts/build_web.py` ile uygulamaya göm
+2. `python3 scripts/topic_gap.py notes/<dosya>.md <ders>` ile boşlukları çıkar
+3. Gerçekten soru gereken konulara karar ver (betik yalnızca aday listeler)
+4. Soruları `data/<ders>_uretilmis_sorular.json` içine yaz — **`"origin": "uretilmis"`
+   alanı zorunlu**, ID'ler mevcutlarla çakışmasın, doğru cevap ilk şık olsun
+5. `python3 scripts/init_db.py && python3 scripts/build_web.py`
+
+Üretilmiş sorular uygulamada "üretilmiş" etiketiyle görünür ve kapsam anahtarından
+kapatılabilir; gerçek sınav sorularıyla asla karıştırılmaz.
 
 ## Sunucu (isteğe bağlı)
 

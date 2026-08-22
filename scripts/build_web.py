@@ -17,6 +17,31 @@ ROOT = Path(__file__).resolve().parent.parent
 DB = ROOT / "atpl.db"
 TPL = ROOT / "web" / "template.html"
 OUT = ROOT / "web" / "atpl-soru-bankasi.html"
+PAGES = ROOT / "docs" / "index.html"        # GitHub Pages /docs kökünden yayımlar
+NOTES_DIR = ROOT / "notes"
+
+# Ders notu dosyasındaki kod, soru bankasındaki ders koduna eşlenir
+NOTE_SUBJECT = {"073": "070"}
+NOTE_SKIP = {"annex-kart-promptlari.md"}    # üretim promptları, çalışma notu değil
+
+
+def export_notes() -> list:
+    """notes/*.md dosyalarını başlık + ders koduyla birlikte toplar."""
+    out = []
+    if not NOTES_DIR.exists():
+        return out
+    for f in sorted(NOTES_DIR.glob("*.md")):
+        if f.name in NOTE_SKIP:
+            continue
+        text = f.read_text(encoding="utf-8")
+        title = text.lstrip().split("\n", 1)[0].lstrip("# ").strip() or f.stem
+        code = f.name[:3]
+        if f.name.startswith("annex"):
+            subject = "010"                  # ICAO Annex'leri Air Law dersine ait
+        else:
+            subject = NOTE_SUBJECT.get(code, code if code.isdigit() else "")
+        out.append({"f": f.name, "t": title, "s": subject, "md": text})
+    return out
 
 
 def export() -> dict:
@@ -47,7 +72,7 @@ def export() -> dict:
                    sec_idx.get((r["subject_code"], r["sec"]), 0),
                    r["text"], opts, r["flagged"] or 0, r["dup"], r["gen"], r["fig"] or 0])
     conn.close()
-    return {"s": subjects, "q": qs}
+    return {"s": subjects, "q": qs, "n": export_notes()}
 
 
 def main() -> None:
@@ -63,9 +88,14 @@ def main() -> None:
     if "__DATA__" not in tpl:
         sys.exit("hata: şablonda __DATA__ yer tutucusu yok")
 
-    OUT.write_text(tpl.replace("__DATA__", blob), encoding="utf-8")
+    html = tpl.replace("__DATA__", blob)
+    OUT.write_text(html, encoding="utf-8")
+    PAGES.parent.mkdir(parents=True, exist_ok=True)
+    PAGES.write_text(html, encoding="utf-8")
     kb = OUT.stat().st_size / 1024
-    print(f"{OUT}  ({len(data['q'])} soru, {len(data['s'])} ders, {kb:.1f} KB)")
+    print(f"{OUT}  ({len(data['q'])} soru, {len(data['s'])} ders, "
+          f"{len(data['n'])} not, {kb:.1f} KB)")
+    print(f"{PAGES}  (GitHub Pages için aynı dosya)")
 
 
 if __name__ == "__main__":

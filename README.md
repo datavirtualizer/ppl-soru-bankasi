@@ -201,49 +201,80 @@ görünen sırayı bilir.
 ## Çalışma uygulaması (tek dosya)
 
 `web/atpl-soru-bankasi.html` — 2.514 sorunun tamamını içeren tek dosyalık uygulama.
-Dış bağımlılığı yok (yalnızca Google Fonts), sunucu istemez. Artifact olarak yayımlandı:
-https://claude.ai/code/artifact/5b35bb1b-5314-4199-a8a9-8f07589837ed
+Sunucu istemez, dış bağımlılığı yok (yalnızca Google Fonts).
 
-Dosyayı herhangi bir statik sunucuya koyarak da paylaşabilirsin — GitHub Pages, Netlify,
-kendi sunucun; hatta çift tıklayıp dosyadan da açılır.
+Artifact: https://claude.ai/code/artifact/5b35bb1b-5314-4199-a8a9-8f07589837ed
+
+### Konu seçici
+
+Ana ekrandaki **Konular** akordeonu varsayılan kapalıdır. İçinde her ders bir satır;
+sağdaki `›` ile bölümleri açılır. Ders kutusu tüm dersi seçer, tek tek bölüm seçince
+kutu yarım dolu (`◧`) görünür. Birden çok ders ve her dersten farklı bölümler aynı anda
+seçilebilir. Rozette "2 ders · 8 bölüm" gibi özet ve kapsam sayısı anında güncellenir.
 
 ### Aralıklı tekrar
-
-Her soru bir kutuda tutulur. Doğru bildikçe ileriye atılır, yanlışta başa döner:
 
 | Kutu | 0 | 1 | 2 | 3 | 4 | 5 |
 |---|---|---|---|---|---|---|
 | Tekrar | 10 dk | 1 gün | 3 gün | 7 gün | 16 gün | 35 gün |
 
-Bir soruyu **4 kez ya da daha çok** yanlış yaparsan "takıldıkların" listesine düşer ve
-ayrı çalışılabilir.
+Doğru bildikçe soru ileri kutuya, yanlışta 0'a döner. 4+ yanlış yapılan sorular
+"takıldıkların" listesine düşer.
 
-### Desteler
+### Tur akışı
 
-Ana ekranda canlı sayılarla dört deste: **tekrar zamanı gelenler**, **yanlışlarım**
-(henüz üst üste 2 doğru yapılmamışlar), **hiç görmediklerim**, **yıldızladıklarım**.
+Doğru cevapta soru kendiliğinden geçer (kısa bir "Doğru" onayıyla), yanlışta doğru cevap
+gösterilir ve "Anladım, devam" beklenir. **Tur bitince yanlış yaptıkların yeniden sorulur**;
+hepsini bilene kadar tur döner. Özet ekranı ilk denemedeki başarıyı gösterir.
 
-### Filtreler
+Sorular da şıklar da her gösterimde karıştırılır.
 
-Ders (çoklu seçim), bölüm (tek ders seçiliyken), metin/ID araması, soru sayısı, mod
-(çalışma / sınav), sıra (akıllı / rastgele) ve dört kapsam anahtarı: tekrarları gizle,
-şekil gerekenleri gizle, üretilmişleri kat, tartışmalıları gizle. Sayılar seçime göre
-anında güncellenir.
+### Profiller
 
-### Yedek
+Sunucu olmadığı için giriş yok; bunun yerine **Durum** panelindeki açılır listeden profil
+seçilir. Aynı cihazda birden çok kişi ayrı ilerleme tutabilir. Kayıt
+`localStorage`'da `atpl.v2:<profil>` anahtarında durur.
 
-İlerleme `localStorage`'da durur. Durum panelindeki kutudan metni kopyalayıp başka
-cihazda aynı kutuya yapıştırarak taşırsın; birleştirme yapılır, iki cihazın emeği de
-korunur. Statik sunucudan açtığında ayrıca dosya indirme/seçme düğmeleri de çıkar
-(artifact kum havuzunda indirme engelli olduğu için orada gizlenir).
+### Ders notları
 
-**Sorular ve şıklar her turda karıştırılır** — veritabanında doğru cevap hep A şıkkıdır.
+Üst şeritteki **Konu** düğmesi `notes/` klasöründeki .md dosyalarını uygulama içinde
+açar (tablolar, başlıklar, kalınlar dahil). Yeni not eklemek için dosyayı `notes/`
+altına koyup `python3 scripts/build_web.py` çalıştırmak yeterli — dosya adının ilk üç
+hanesi ders kodu sayılır (`073-` → 070, `annex-` → 010).
 
-Veri değişince yeniden üret:
+### Yedek ve taşıma
+
+Durum panelindeki kutudan metni kopyala, öbür cihazda aynı kutuya yapıştırıp **Yükle**.
+Birleştirme yapılır, iki cihazın emeği korunur. Statik sunucudan açtığında ayrıca dosya
+indir/seç düğmeleri çıkar.
+
+## Yayımlama
+
+`scripts/build_web.py` iki dosya üretir:
+
+- `web/atpl-soru-bankasi.html` — Artifact'e yayımlanan sürüm
+- `docs/index.html` — **GitHub Pages** için aynı dosya
+
+GitHub Pages açmak için: depoyu GitHub'a gönder → Settings → Pages → Source: *Deploy from
+a branch* → Branch: `main`, klasör: `/docs`. Birkaç dakika içinde
+`https://<kullanıcı>.github.io/<depo>/` adresinde yayında olur. Netlify, Vercel ya da
+herhangi bir statik sunucu da olur; tek dosya yeterlidir.
+
+## Soru üretimi (hazırlık)
+
+Ders notlarında geçip soru bankasında karşılığı olmayan konuları bulmak için:
 
 ```bash
-python3 scripts/build_web.py
+python3 scripts/topic_gap.py notes/501-ders-notlari.md 501
 ```
+
+Nottaki başlıklar, kalın terimler ve tablo satır etiketleri konu adayı sayılır; her aday
+o dersin sorularında aranır. Hiç geçmeyenler ve yalnızca 1-2 soruda geçenler listelenir.
+Betik soru üretmez, yalnızca boşluğu gösterir.
+
+Üretilen sorular `data/<ders>_uretilmis_sorular.json` içine `"origin": "uretilmis"` ile
+eklenir; uygulamada **üretilmiş** etiketiyle görünür ve istenirse kapsam anahtarından
+kapatılabilir. Gerçek sınav sorularıyla karışmaz.
 
 ## Tekrar eden sorular
 
