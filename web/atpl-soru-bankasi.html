@@ -85,6 +85,24 @@ h1{margin:0 0 4px; font-size:23px; font-weight:700; letter-spacing:-.022em; text
 .sub{margin:0 0 18px; color:var(--ink-2); font-size:14px}
 
 /* ── Desteler ── */
+.topstat{display:block; width:100%; text-align:left; background:var(--surface);
+  border:1px solid var(--rule); border-radius:var(--r); padding:11px 13px;
+  margin-bottom:16px; transition:border-color .12s}
+.topstat:hover{border-color:var(--rule-2)}
+.topstat .tsline{display:flex; align-items:baseline; gap:10px; margin-bottom:8px}
+.topstat .who{font-size:13.5px; font-weight:600; letter-spacing:-.01em; min-width:0;
+  overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.topstat .tsline .lbl{margin-left:auto; flex:none}
+.topstat .tsbar{height:4px; background:var(--surface-3); border-radius:99px;
+  overflow:hidden; margin-bottom:8px}
+.topstat .tsbar i{display:block; height:100%; background:var(--cyan); border-radius:99px;
+  transition:width .3s ease}
+.topstat .tsnums{display:flex; flex-wrap:wrap; gap:2px 15px; align-items:baseline;
+  font-size:12px; color:var(--ink-3); line-height:1.6}
+.topstat .tsnums b{font-weight:500; color:var(--ink-2)}
+.topstat .tsnums b.ok{color:var(--ok)} .topstat .tsnums b.bad{color:var(--bad)}
+.topstat .tsnums b.due{color:var(--due)}
+.topstat .dot{color:var(--rule-2)}
 .modcard{background:var(--surface); border:1px solid var(--rule); border-left:3px solid var(--accent);
   border-radius:var(--r); padding:14px 15px; margin-bottom:12px; box-shadow:var(--shadow)}
 .modcard.done{border-left-color:var(--ok)}
@@ -527,6 +545,33 @@ function inDeck(q, deck){
 const scoped = () => QS.filter(inScope);
 const deckCount = d => scoped().filter(q => inDeck(q, d)).length;
 
+/** Profilin tümüne ait durum — modül seçiminden bağımsız. */
+function globalStat(){
+  const all = QS.filter(inToggles);
+  let seen = 0, ans = 0, ok = 0;
+  all.forEach(q => {
+    const k = S.c[q[0]];
+    if (k){ seen++; ans += k[2]; ok += k[2] - k[3]; }
+  });
+  const now = Date.now();
+  let due = 0, wrong = 0;
+  all.forEach(q => {
+    const k = S.c[q[0]];
+    if (!k) return;
+    if (k[1] <= now) due++;
+    if (k[3] > 0 && k[4] < MASTER) wrong++;
+  });
+  // gün serisi
+  let streak = 0;
+  for (let i = 0; i < 400; i++){
+    const d = new Date(now - i*DAY).toISOString().slice(0,10);
+    if ((S.day[d] || [0,0])[0]) streak++;
+    else if (i > 0) break;
+  }
+  return { total: all.length, seen, ans, ok, due, wrong, streak,
+           pct: ans ? Math.round(ok / ans * 100) : null };
+}
+
 /** Bir modülün (dersin) durumu: toplam, görülen, kalan. */
 function moduleStat(code){
   const si = SUBJ.findIndex(x => x.c === code);
@@ -658,7 +703,25 @@ function home(){
       '</div>';
   }
 
+  const G = globalStat();
+  const cov = G.total ? Math.round(G.seen / G.total * 100) : 0;
+  const strip =
+    '<button class="topstat" id="topStat" type="button" title="Ayrıntılı durum">' +
+      '<div class="tsline"><span class="who">' + esc(ME) + '</span>' +
+        '<span class="lbl">tüm PPL bankası</span></div>' +
+      '<div class="tsbar"><i style="width:' + cov + '%"></i></div>' +
+      '<div class="tsnums">' +
+        '<span><b class="num">' + nf(G.seen) + '</b> / ' + nf(G.total) + ' soru görüldü</span>' +
+        '<span><b class="num' + (G.pct === null ? '' : G.pct >= 75 ? ' ok' : G.pct < 50 ? ' bad' : '') +
+          '">' + (G.pct === null ? '—' : '%' + G.pct) + '</b> başarı</span>' +
+        (G.due ? '<span><b class="num due">' + G.due + '</b> tekrar zamanı</span>' : '') +
+        (G.wrong ? '<span><b class="num bad">' + G.wrong + '</b> yanlış defteri</span>' : '') +
+        (G.streak ? '<span><b class="num">' + G.streak + '</b> gün seri</span>' : '') +
+      '</div>' +
+    '</button>';
+
   el('view').innerHTML =
+    strip +
     '<h1>Ne çalışalım?</h1>' +
     '<p class="sub">Modül modül ilerle. Bir modülü bitirince yenisine geçersin.</p>' +
     modCard +
@@ -742,6 +805,7 @@ function home(){
   });
   el('go').onclick = start;
   el('goAll').onclick = () => { F.deck = 'all'; savePref(); home(); };
+  el('topStat').onclick = openStats;
   el('mSwap').onclick = () => {
     openBox('topicBox');
     el('topicBox').scrollIntoView({ behavior:'smooth', block:'start' });

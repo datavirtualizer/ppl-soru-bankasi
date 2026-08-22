@@ -207,6 +207,19 @@ Sunucu istemez, dış bağımlılığı yok (yalnızca Google Fonts).
 
 Artifact: https://claude.ai/code/artifact/5b35bb1b-5314-4199-a8a9-8f07589837ed
 
+### Profil özeti
+
+Ana ekranın en tepesinde, seçili modülden bağımsız olarak **profilin geneli** durur:
+
+```
+Mavi Yaklaşma                                    TÜM PPL BANKASI
+▓▓▓░░░░░░░░░░░░░░░░░
+186 / 2.265 soru görüldü   %99 başarı   2 tekrar zamanı   2 yanlış defteri   1 gün seri
+```
+
+Çubuk bankanın ne kadarını gördüğünü gösterir. Şeride tıklayınca ayrıntılı **Durum**
+paneli açılır (ders bazında başarı, en zayıf bölümler, 45 günlük ısı haritası, yedek).
+
 ### Modül modül ilerleme
 
 Ana ekran tek bir **modülün** (dersin) üstüne kuruludur — bütün bankayı tek seferde
