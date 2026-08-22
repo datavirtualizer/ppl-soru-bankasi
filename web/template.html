@@ -1,7 +1,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="light dark">
-<title>ATPL Çalışma</title>
+<title>PPL Çalışma</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
@@ -74,6 +74,10 @@ button{cursor:pointer; background:none; border:none}
   text-transform:uppercase; color:var(--ink-2); white-space:nowrap}
 .tbtn:hover{border-color:var(--rule-2); color:var(--ink)}
 .tbtn.on{background:var(--accent-soft); border-color:var(--accent); color:var(--accent-ink)}
+#bWho{font-family:var(--f-ui); font-size:12px; font-weight:600; letter-spacing:0;
+  text-transform:none; color:var(--ink-2); max-width:9rem; overflow:hidden;
+  text-overflow:ellipsis; white-space:nowrap}
+@media (max-width:560px){ #bWho{display:none} }
 
 .page{max-width:760px; margin:0 auto; padding:18px 14px 80px}
 @media (min-width:720px){ .page{padding:26px 20px 90px} }
@@ -266,6 +270,11 @@ input:focus, select:focus, textarea:focus{border-color:var(--accent); outline:no
 .sheet h2{margin:0 0 13px; font-size:17px; font-weight:700; letter-spacing:-.02em;
   display:flex; align-items:center; gap:10px}
 .sheet h2 .sp{flex:1}
+.whobox{background:var(--surface); border:1px solid var(--rule); border-radius:var(--r);
+  padding:12px 13px; margin-bottom:14px}
+.whorow{display:flex; gap:7px; align-items:center; margin-top:6px}
+.whorow input, .whorow select{flex:1; min-width:0; padding:8px 10px; font-size:14px}
+.whorow .tbtn{flex:none; padding:9px 11px}
 .stat4{display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:14px}
 .stat4 .s{background:var(--surface); border:1px solid var(--rule); border-radius:var(--r);
   padding:11px 12px}
@@ -331,9 +340,10 @@ kbd{font-family:var(--f-num); font-size:10px; background:var(--surface-2);
   <span class="logo">
     <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
       <path d="M2 14.5 22 6l-3.5 8.5L22 23 2 14.5Z" fill="var(--accent)"/>
-    </svg>ATPL<span class="long"> Çalışma</span>
+    </svg>PPL<span class="long"> Çalışma</span>
   </span>
   <span class="sp"></span>
+  <button class="tbtn" id="bWho" type="button"></button>
   <button class="tbtn" id="bNotes" type="button">Konu</button>
   <button class="tbtn" id="bStats" type="button">Durum</button>
   <button class="tbtn" id="bTheme" type="button">Tema</button>
@@ -368,10 +378,29 @@ const ls = { get(k){ try{ return localStorage.getItem(k); }catch(e){ return null
              set(k,v){ try{ localStorage.setItem(k,v); }catch(e){} },
              del(k){ try{ localStorage.removeItem(k); }catch(e){} } };
 
-// ── Profiller: sunucu yok, aynı cihazda birden çok kişi ayrı ilerleme tutabilsin ──
+// ── Profiller: giriş yok. İlk ziyarette rastgele bir ad verilir, sonra değiştirilebilir ──
+const AD1 = ['Sakin','Hızlı','Gümüş','Kuzey','Berrak','Serin','Altın','Mavi','Keskin',
+             'Sessiz','Yüksek','Uzak','Parlak','Çevik'];
+const AD2 = ['Kanat','Rüzgâr','Pervane','Rota','Ufuk','Bulut','Yıldız','Pist','Şahin',
+             'Turna','Kartal','İrtifa','Kule','Yaklaşma'];
+function randomName(taken){
+  for (let i = 0; i < 60; i++){
+    const n = AD1[Math.floor(Math.random()*AD1.length)] + ' ' +
+              AD2[Math.floor(Math.random()*AD2.length)];
+    if (!taken.includes(n)) return n;
+  }
+  return 'Pilot ' + Math.floor(Math.random()*9000 + 1000);
+}
+
 let PROFILES = [];
-try{ PROFILES = JSON.parse(ls.get('atpl.profiles') || '["Ben"]'); }catch(e){ PROFILES = ['Ben']; }
-if (!PROFILES.length) PROFILES = ['Ben'];
+try{ PROFILES = JSON.parse(ls.get('atpl.profiles') || '[]'); }catch(e){ PROFILES = []; }
+if (!Array.isArray(PROFILES)) PROFILES = [];
+if (ls.get('atpl.v2') && !PROFILES.length) PROFILES = ['Ben'];   // eski tek profilli kayıt
+if (!PROFILES.length){                    // siteye ilk kez giriliyor
+  PROFILES = [randomName([])];
+  ls.set('atpl.profiles', JSON.stringify(PROFILES));
+  ls.set('atpl.profile', PROFILES[0]);
+}
 let ME = ls.get('atpl.profile') || PROFILES[0];
 if (!PROFILES.includes(ME)) ME = PROFILES[0];
 const keyOf = p => 'atpl.v2:' + p;
@@ -391,16 +420,28 @@ function save(){
   clearTimeout(saveT);
   saveT = setTimeout(() => ls.set(keyOf(ME), JSON.stringify(S)), 250);
 }
+function renameProfile(oldN, newN){
+  const data = ls.get(keyOf(oldN));
+  ls.set(keyOf(newN), data || JSON.stringify(S));
+  ls.del(keyOf(oldN));
+  PROFILES = PROFILES.map(x => x === oldN ? newN : x);
+  ls.set('atpl.profiles', JSON.stringify(PROFILES));
+  ME = newN; ls.set('atpl.profile', ME);
+  paintWho();
+}
+
 function switchProfile(name){
   ls.set(keyOf(ME), JSON.stringify(S));
   ME = name; ls.set('atpl.profile', ME);
   if (!PROFILES.includes(name)){ PROFILES.push(name); ls.set('atpl.profiles', JSON.stringify(PROFILES)); }
-  loadProfile(); R = null; closeSheet(); home();
+  loadProfile(); paintWho(); R = null; closeSheet(); home();
 }
 
 // ── Filtreler ──
-const DEFAULTS = { deck:'all', pick:{}, q:'', hideDup:true, gen:true, hideFig:true,
-                   hideFlag:false, count:20, mode:'study', order:'smart' };
+// count:0 = sınır yok, kapsamdaki tüm sorular
+// deck:'new' = varsayılan olarak henüz çözülmemişlerden başla, tüm konular
+const DEFAULTS = { deck:'new', pick:{}, q:'', hideDup:true, gen:true, hideFig:true,
+                   hideFlag:false, count:0, mode:'study', order:'smart' };
 const F = Object.assign({}, DEFAULTS);
 function savePref(){ S.pref = F; save(); }
 
@@ -474,7 +515,7 @@ function buildQueue(){
       return { q, key: k ? -(Date.now() - k[1]) : 1e15 + Math.random() };
     }).sort((a,b) => a.key - b.key).map(x => x.q);
   } else shuffle(pool);
-  return pool.slice(0, F.count);
+  return F.count ? pool.slice(0, F.count) : pool;
 }
 function shuffle(a){
   for (let i = a.length - 1; i > 0; i--){
@@ -550,7 +591,8 @@ function home(){
 
     '<div class="gobar">' +
       '<button class="go" id="go" type="button"' + (ready ? '' : ' disabled') + '>' +
-        (ready ? 'Başla · ' + Math.min(ready, F.count) + ' soru' : 'Bu kapsamda soru yok') + '</button>' +
+        (ready ? 'Başla' + (F.count ? ' · ' + Math.min(ready, F.count) + ' soru'
+                                    : ' · ' + nf(ready) + ' soru') : 'Bu kapsamda soru yok') + '</button>' +
       '<button class="go2" id="goAll" type="button"' + (F.deck === 'all' ? ' disabled' : '') + '>Tümü</button>' +
     '</div>' +
 
@@ -563,15 +605,18 @@ function home(){
         '</div><div class="tree" id="tree"></div></div></details>' +
 
     '<details class="box" id="optBox">' +
-      '<summary>Ayarlar<span class="pill off">' + F.count + ' soru · ' +
-        (F.mode === 'study' ? 'çalışma' : 'sınav') + '</span><span class="chev">›</span></summary>' +
+      '<summary>Ayarlar<span class="pill off">' + (F.count ? F.count + ' soru' : 'tüm tur') +
+        ' · ' + (F.mode === 'study' ? 'çalışma' : 'sınav') + '</span><span class="chev">›</span></summary>' +
       '<div class="in">' +
         '<div class="grp"><span class="lbl">Ara</span>' +
           '<input type="search" id="q" placeholder="kelime ya da soru ID" value="' + esc(F.q) + '"></div>' +
         '<div class="grp"><span class="lbl">Kapsam</span><div id="sw"></div></div>' +
-        '<div class="grp"><span class="lbl">Soru sayısı</span><div class="seg" id="cnt">' +
-          [10,20,30,50,100].map(n => '<button type="button" data-n="' + n + '" class="' +
-            (F.count === n ? 'on' : '') + '">' + n + '</button>').join('') + '</div></div>' +
+        '<div class="grp"><span class="lbl">Tur uzunluğu</span><div class="seg" id="cnt">' +
+          [[0,'Tümü'],[20,'20'],[50,'50'],[100,'100']].map(([v,t]) =>
+            '<button type="button" data-n="' + v + '" class="' + (F.count === v ? 'on' : '') +
+            '">' + t + '</button>').join('') + '</div>' +
+          '<div class="note">Tümü: kapsamdaki bütün sorular tek turda. ' +
+          'İstediğin an <b>Çık</b> ile bırakabilirsin, ilerlemen kayıtlı kalır.</div></div>' +
         '<div class="grp"><span class="lbl">Mod</span><div class="seg" id="mode">' +
           '<button type="button" data-m="study" class="' + (F.mode === 'study' ? 'on' : '') + '">Çalışma</button>' +
           '<button type="button" data-m="exam" class="' + (F.mode === 'exam' ? 'on' : '') + '">Sınav</button>' +
@@ -809,6 +854,9 @@ function done(){
 }
 
 // ── Durum paneli ──
+const msg = m => { const b = el('bakMsg'); if (!b) return; b.textContent = m;
+  setTimeout(() => { const x = el('bakMsg'); if (x) x.textContent = ''; }, 3500); };
+
 function openStats(){
   let seen = 0, wrong = 0, tot = 0;
   Object.keys(S.c).forEach(id => { const k = S.c[id]; tot += k[2]; wrong += k[3]; seen++; });
@@ -842,10 +890,20 @@ function openStats(){
   for (let i = days.length - 1; i >= 0; i--){ if (days[i][1]) streak++; else if (i !== days.length-1) break; }
 
   el('sheetBody').innerHTML =
-    '<h2>Durum<span class="sp"></span>' +
-      '<select id="prof" style="width:auto; padding:6px 9px; font-size:12.5px">' +
-        PROFILES.map(p => '<option' + (p === ME ? ' selected' : '') + '>' + esc(p) + '</option>').join('') +
-        '<option value="+">+ Yeni profil…</option></select></h2>' +
+    '<h2>Durum</h2>' +
+    '<div class="whobox"><span class="lbl">Adın</span>' +
+      '<div class="whorow"><input id="pname" maxlength="28" value="' + esc(ME) + '">' +
+        '<button class="tbtn" id="pSave" type="button">Kaydet</button></div>' +
+      '<div class="note">Sistem rastgele verdi — istediğin gibi değiştir. ' +
+        'İlerlemen bu ada bağlı saklanır.</div>' +
+      (PROFILES.length > 1
+        ? '<div class="whorow" style="margin-top:8px">' +
+          '<select id="prof">' + PROFILES.map(x => '<option' + (x === ME ? ' selected' : '') +
+            '>' + esc(x) + '</option>').join('') + '</select>' +
+          '<button class="tbtn" id="pNew" type="button">+ Yeni</button></div>'
+        : '<div class="whorow" style="margin-top:8px">' +
+          '<button class="tbtn" id="pNew" type="button">+ Yeni profil</button></div>') +
+    '</div>' +
     '<div class="stat4">' +
       '<div class="s"><span class="lbl">Başarı</span><div class="v">' + (pct === null ? '—' : '%'+pct) + '</div></div>' +
       '<div class="s"><span class="lbl">Tekrar zamanı</span><div class="v due">' + dueN + '</div></div>' +
@@ -890,19 +948,20 @@ function openStats(){
     '<input type="file" id="impFile" accept="application/json" class="hidden">';
 
   el('sheet').classList.add('on');
-  el('prof').onchange = e => {
-    if (e.target.value === '+'){
-      const n = (prompt('Yeni profil adı:') || '').trim();
-      e.target.value = ME;
-      if (n && n !== ME) switchProfile(n);
-    } else switchProfile(e.target.value);
+  el('pSave').onclick = () => {
+    const nv = el('pname').value.trim().slice(0, 28);
+    if (!nv || nv === ME) return;
+    if (PROFILES.includes(nv)){ msg('Bu ad zaten kullanılıyor.'); return; }
+    renameProfile(ME, nv);
+    openStats();
   };
+  el('pname').onkeydown = e => { if (e.key === 'Enter') el('pSave').click(); };
+  el('pNew').onclick = () => switchProfile(randomName(PROFILES));
+  const ps = el('prof'); if (ps) ps.onchange = e => switchProfile(e.target.value);
   const gl = el('goLeech');
   if (gl) gl.onclick = () => { closeSheet(); F.deck = 'leech'; savePref(); start(); };
 
   const bak = el('bak'); bak.value = JSON.stringify(S);
-  const msg = m => { const b = el('bakMsg'); if (!b) return; b.textContent = m;
-    setTimeout(() => { const x = el('bakMsg'); if (x) x.textContent = ''; }, 3500); };
   el('copy').onclick = async () => {
     bak.select(); bak.setSelectionRange(0, 999999);
     let done = false;
@@ -1054,7 +1113,9 @@ el('bTheme').onclick = () => {
   document.documentElement.setAttribute('data-theme', nx);
   ls.set('atpl.theme', nx);
 };
+el('bWho').onclick = openStats;
 el('bStats').onclick = openStats;
+function paintWho(){ el('bWho').textContent = ME; }
 el('bNotes').onclick = () => openNotes();
 el('veil').onclick = closeSheet;
 
@@ -1073,6 +1134,7 @@ document.addEventListener('keydown', e => {
 });
 
 loadProfile();
+paintWho();
 home();
 })();
 </script>

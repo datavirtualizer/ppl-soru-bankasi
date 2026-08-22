@@ -1,6 +1,8 @@
-# ATPL Soru Bankası
+# PPL Soru Bankası
 
-SQLite tabanlı ATPL soru bankası. **2.514 soru, 10 ders** (226 tekrar işaretli → 2.288 benzersiz; 71'i ders notundan üretilmiş).
+SQLite tabanlı **PPL** soru bankası (ATPL TV'deki *PPL Turkey (English)* sınav
+raporlarından çevrildi). Bankanın tamamı şu an PPL seviyesindedir; ATPL soruları
+ileride eklenecek — `subjects.level` sütunu bunun için hazır (`ppl` / `atpl`). **2.514 soru, 10 ders** (226 tekrar işaretli → 2.288 benzersiz; 71'i ders notundan üretilmiş).
 
 | Ders | Soru | Benzersiz | Bölüm |
 |---|---|---|---|
@@ -204,6 +206,20 @@ görünen sırayı bilir.
 Sunucu istemez, dış bağımlılığı yok (yalnızca Google Fonts).
 
 Artifact: https://claude.ai/code/artifact/5b35bb1b-5314-4199-a8a9-8f07589837ed
+
+### Varsayılanlar
+
+Uygulama açıldığında hazır ayar: **henüz çözülmemiş sorular**, **tüm konular**,
+**sınırsız tur**. Yani "Başla" doğrudan bankanın görülmemiş kısmını baştan sona açar;
+istediğin an *Çık* ile bırakırsın, ilerleme kayıtlıdır. Tur uzunluğunu Ayarlar'dan
+20/50/100 ile sınırlayabilirsin.
+
+### Kullanıcı adı ve profiller
+
+Siteye ilk girişte **rastgele bir ad** verilir (*Serin Pist*, *Parlak Kartal* gibi) ve
+profil kendiliğinden açılır — giriş, şifre, e-posta yok. Ad üst şeritte görünür; tıklayıp
+**Durum** panelinden istediğin gibi değiştirirsin. Aynı cihazda birden çok profil
+tutulabilir, her birinin ilerlemesi ayrıdır (`localStorage`'da `atpl.v2:<ad>`).
 
 ### Konu seçici
 

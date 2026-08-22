@@ -21,8 +21,9 @@ SCHEMA = """
 PRAGMA foreign_keys = ON;
 
 CREATE TABLE IF NOT EXISTS subjects (
-    code TEXT PRIMARY KEY,              -- ör. '501'
-    name TEXT NOT NULL                  -- ör. 'Havacılığa Giriş'
+    code  TEXT PRIMARY KEY,             -- ör. '501'
+    name  TEXT NOT NULL,                -- ör. 'Havacılığa Giriş'
+    level TEXT NOT NULL DEFAULT 'ppl'   -- 'ppl' | 'atpl'  (banka şu an tümüyle PPL)
 );
 
 CREATE TABLE IF NOT EXISTS sections (
@@ -109,6 +110,10 @@ def connect() -> sqlite3.Connection:
 
 def migrate(conn: sqlite3.Connection) -> None:
     """Var olan veritabanına sonradan eklenen sütunlar."""
+    scols = {r[1] for r in conn.execute("PRAGMA table_info(subjects)")}
+    if "level" not in scols:
+        conn.execute("ALTER TABLE subjects ADD COLUMN level TEXT NOT NULL DEFAULT 'ppl'")
+
     cols = {r[1] for r in conn.execute("PRAGMA table_info(questions)")}
     if "origin" not in cols:
         # 'banka' = gerçek sınav sorusu, 'uretilmis' = ders notundan üretilmiş
@@ -151,9 +156,9 @@ def import_file(conn: sqlite3.Connection, path: Path) -> int:
 
     subject_code = data["subject_code"]
     conn.execute(
-        "INSERT INTO subjects(code, name) VALUES (?, ?) "
-        "ON CONFLICT(code) DO UPDATE SET name = excluded.name",
-        (subject_code, data["subject_name"]),
+        "INSERT INTO subjects(code, name, level) VALUES (?, ?, ?) "
+        "ON CONFLICT(code) DO UPDATE SET name = excluded.name, level = excluded.level",
+        (subject_code, data["subject_name"], data.get("level", "ppl")),
     )
 
     # Bölümler: ya tek bölüm (section_code/section_name) ya da {kod: ad} sözlüğü.

@@ -1,7 +1,12 @@
-# ATPL Soru Bankası — çalışma kuralları
+# PPL Soru Bankası — çalışma kuralları
 
-Mustafa'nın PPL/ATPL teori sınavlarına hazırlandığı soru bankası ve çalışma sitesi.
-Sorular ATPL TV platformundaki sınav raporlarından elle çevrildi.
+Mustafa'nın PPL teori sınavlarına hazırlandığı soru bankası ve çalışma sitesi.
+Sorular ATPL TV platformundaki *PPL Turkey (English)* sınav raporlarından elle çevrildi.
+
+**Bankanın tamamı şu an PPL.** ATPL soruları ileride eklenecek. Hazırlık yapıldı:
+`subjects.level` sütunu ve dışa aktarımdaki `lv` alanı var, varsayılan `ppl`. ATPL
+eklenirken veri JSON'una `"level": "atpl"` yaz; uygulamada seviye süzgeci o zaman
+eklenir. Depo dizini tarihsel olarak `atpl/` adında, karışmasın.
 
 ## Bozulmaması gereken kural
 
@@ -47,7 +52,14 @@ Yeni ders eklerken hem metin benzerliğini hem de "cevabı aynı ama metni farkl
 
 ## Çalışma uygulaması (`web/`)
 
-Asıl kullanılan sürüm bu: tek dosya, sunucusuz, `localStorage` tabanlı. Aralıklı tekrar
+Asıl kullanılan sürüm bu: tek dosya, sunucusuz, `localStorage` tabanlı.
+
+Varsayılanlar `DEFAULTS` sabitinde: `deck:'new'` (çözülmemişler), `pick:{}` (tüm konular),
+`count:0` (sınırsız tur). Bunları değiştirirken kullanıcının açık isteğini hatırla —
+"20 soru" gibi bir sınır varsayılan olmamalı.
+
+İlk ziyarette `randomName()` rastgele bir profil adı üretir ve profil kendiliğinden açılır;
+giriş yoktur. Ad Durum panelinden değiştirilir (`renameProfile` localStorage anahtarını taşır). Aralıklı tekrar
 kutuları `BOX_MS`, takılma eşiği `LEECH`, yanlış defterinden çıkış `MASTER` sabitleriyle
 ayarlanır. Kaynak `web/template.html`; `__DATA__` yer tutucusuna `build_web.py` veriyi
 gömer. Değişiklikten sonra `python3 scripts/build_web.py` çalıştır.

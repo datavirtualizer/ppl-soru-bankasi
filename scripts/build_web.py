@@ -49,9 +49,10 @@ def export() -> dict:
     conn.row_factory = sqlite3.Row
 
     subjects, subj_idx, sec_idx = [], {}, {}
-    for r in conn.execute("SELECT code, name FROM subjects ORDER BY code"):
+    for r in conn.execute("SELECT code, name, level FROM subjects ORDER BY code"):
         subj_idx[r["code"]] = len(subjects)
-        subjects.append({"c": r["code"], "n": r["name"], "sec": []})
+        subjects.append({"c": r["code"], "n": r["name"],
+                         "lv": r["level"] or "ppl", "sec": []})
 
     for r in conn.execute("SELECT subject_code, code, name FROM sections ORDER BY subject_code, code"):
         s = subjects[subj_idx[r["subject_code"]]]
