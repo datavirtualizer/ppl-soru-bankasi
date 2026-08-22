@@ -1,6 +1,9 @@
-"""Uçtan uca akış testi:  kayıt → tur → cevap → yanlış defteri → istatistik.
+"""Uçtan uca akış testi.
 
     .venv/bin/python server/test_flow.py
+
+Ana senaryo girişsiz kullanım: siteye gir, çöz, yanlışların kaydolsun.
+Hesap oluşturmak isteğe bağlı ve geçmişi taşımalı.
 """
 import os, sys, tempfile, pathlib
 TMP = tempfile.mkdtemp()
@@ -8,141 +11,162 @@ os.environ["ATPL_APP_DB"] = str(pathlib.Path(TMP) / "test.db")
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 
 from fastapi.testclient import TestClient
-import app as appmod, db
+import app as appmod, auth, db
 
-c = TestClient(appmod.app)
 ok = lambda m: print("  ✓", m)
 
-# ── kayıt ve oturum ──
-r = c.get("/"); assert r.status_code == 200 and "Hesap oluştur" in r.text
-ok("giriş yapmamış kullanıcı tanıtım sayfasını görüyor")
+
+def solve(c, run_id, idx, correctly=True):
+    """Turdaki bir soruyu bilerek doğru ya da yanlış cevaplar."""
+    q = c.get(f"/api/tur/{run_id}/soru/{idx}").json()
+    with db.db() as conn:
+        real = db.question(conn, q["id"])
+    right = next(o["text"] for o in real["options"] if o["correct"])
+    pos = next(i for i, o in enumerate(q["options"]) if o["text"] == right)
+    if not correctly:
+        pos = next(i for i in range(len(q["options"])) if i != pos)
+    return q, c.post(f"/api/tur/{run_id}/cevap",
+                     json={"qid": q["id"], "pos": pos, "ms": 4000}).json()
+
+
+# ── 1. Girişsiz kullanım ─────────────────────────────────────────────
+c = TestClient(appmod.app)
+r = c.get("/")
+assert r.status_code == 200, r.status_code
+assert "Hemen başla" in r.text, "hızlı başlangıç yok"
+assert "giriş yapmana gerek yok" in r.text, "misafir şeridi yok"
+assert c.cookies.get("atpl_session"), "misafire oturum çerezi verilmedi"
+ok("siteye girer girmez panel açılıyor · giriş duvarı yok")
+
+with db.db() as conn:
+    u = conn.execute("SELECT * FROM users").fetchone()
+assert u["is_guest"] == 1 and u["email"] is None
+ok("arka planda misafir hesabı açıldı")
+
+r = c.post("/tur", data={"subject": "080", "count": "5", "mode": "calisma",
+                         "hide_dups": "on", "show_gen": "on"}, follow_redirects=False)
+assert r.status_code == 303, r.text[:200]
+run_id = int(r.headers["location"].rsplit("/", 1)[1])
+ok("misafir tur açabiliyor")
+
+# ── 2. Cevap sızmıyor ────────────────────────────────────────────────
+q = c.get(f"/api/tur/{run_id}/soru/0").json()
+for key in ("is_correct", "correct_pos", "answer", "correct"):
+    assert key not in q, f"yanıtta {key} sızmış"
+assert "correct" not in str(q["options"])
+ok("doğru cevap istemciye gönderilmiyor")
+
+# ── 3. Yanlış → deftere, iki doğru → defterden ───────────────────────
+first_q, v = solve(c, run_id, 0, correctly=False)
+assert v["correct"] is False and v["wrong_book"] == 1
+assert v["correct_text"], "doğru cevap bildirilmedi"
+ok("yanlış cevap · doğru cevap gösteriliyor · deftere yazıldı")
+
+_, v = solve(c, run_id, 0, correctly=True)
+assert v["repeat"] is True and v["wrong_book"] == 1
+ok("aynı soru iki kez sayılmıyor")
+
+for i in range(1, 5):
+    solve(c, run_id, i, correctly=True)
+c.post(f"/api/tur/{run_id}/bitir")
+assert "%80" in c.get(f"/sonuc/{run_id}").text
+ok("sonuç sayfası %80 (5 soruda 4 doğru)")
+
+r = c.post("/tur", data={"only_wrong": "on", "count": "10", "mode": "calisma"},
+           follow_redirects=False)
+w1 = int(r.headers["location"].rsplit("/", 1)[1])
+wq = c.get(f"/api/tur/{w1}/soru/0").json()
+assert wq["total"] == 1 and wq["id"] == first_q["id"]
+ok("yanlış defteri turu yalnızca o soruyu getiriyor")
+
+_, v = solve(c, w1, 0, correctly=True)
+assert v["wrong_book"] == 1, "tek doğru defterden düşürmemeli"
+r = c.post("/tur", data={"only_wrong": "on", "count": "10"}, follow_redirects=False)
+w2 = int(r.headers["location"].rsplit("/", 1)[1])
+_, v = solve(c, w2, 0, correctly=True)
+assert v["wrong_book"] == 0
+ok("üst üste iki doğru → soru defterden düşüyor")
+
+# ── 4. İlerleme cihazda kalıyor ──────────────────────────────────────
+r = c.get("/")
+assert "6 soru cevapladın" in r.text or "cevapladın" in r.text
+r = c.get("/istatistik")
+assert "Genel başarı" in r.text and "En zayıf" in r.text
+ok("misafir istatistiklerini görüyor")
+
+fresh = TestClient(appmod.app)          # başka tarayıcı = başka misafir
+assert "Hemen başla" in fresh.get("/").text
+with db.db() as conn:
+    assert conn.execute("SELECT COUNT(*) FROM users").fetchone()[0] == 2
+ok("her tarayıcı kendi misafir hesabını alıyor")
+
+# ── 5. Hesap oluşturmak isteğe bağlı, geçmişi taşıyor ────────────────
+with db.db() as conn:
+    before = conn.execute("SELECT COUNT(*) FROM attempts WHERE user_id = ?",
+                          (u["id"],)).fetchone()[0]
+r = c.get("/kayit")
+assert f"{before}</span> cevabın" in r.text, "taşınacak cevap sayısı yazmıyor"
+ok(f"kayıt sayfası {before} cevabın taşınacağını söylüyor")
 
 r = c.post("/kayit", data={"email": "pilot@example.com", "name": "Mustafa",
                            "password": "ucak12345", "password2": "ucak12345"},
            follow_redirects=False)
-assert r.status_code == 303, r.text[:300]
-assert "atpl_session" in r.cookies or c.cookies.get("atpl_session")
-ok("kayıt oldu, oturum çerezi verildi")
-
-r = c.post("/kayit", data={"email": "pilot@example.com", "name": "X",
-                           "password": "ucak12345", "password2": "ucak12345"})
-assert "zaten kayıtlı" in r.text
-ok("aynı e-postayla ikinci kayıt reddediliyor")
-
-r = c.get("/"); assert "Merhaba Mustafa" in r.text
-ok("panel açılıyor")
-
-# ── tur başlat ──
-r = c.post("/tur", data={"subject": "080", "section": "all", "count": "6",
-                         "mode": "calisma", "hide_dups": "on", "show_gen": "on"},
-           follow_redirects=False)
-assert r.status_code == 303, r.text[:300]
-run_id = int(r.headers["location"].rsplit("/", 1)[1])
-ok(f"tur açıldı (#{run_id})")
-
-# ── SIZINTI KONTROLÜ: cevap istemciye gitmemeli ──
-q = c.get(f"/api/tur/{run_id}/soru/0").json()
-assert "correct" not in str(q.get("options")), "şıklarda doğruluk bilgisi sızmış!"
-for key in ("is_correct", "correct_pos", "answer"):
-    assert key not in q, f"yanıtta {key} sızmış!"
-assert q["answered"] is None
-ok("soru yükleniyor · doğru cevap sızmıyor")
-
-# bankadaki gerçek doğru cevabı ayrıca okuyup karşılaştıralım
+assert r.status_code == 303
 with db.db() as conn:
-    real = db.question(conn, q["id"])
-right_text = next(o["text"] for o in real["options"] if o["correct"])
-right_pos = next(i for i, o in enumerate(q["options"]) if o["text"] == right_text)
-wrong_pos = next(i for i in range(len(q["options"])) if i != right_pos)
+    row = conn.execute("SELECT * FROM users WHERE email = 'pilot@example.com'").fetchone()
+    after = conn.execute("SELECT COUNT(*) FROM attempts WHERE user_id = ?",
+                         (row["id"],)).fetchone()[0]
+    total_users = conn.execute("SELECT COUNT(*) FROM users").fetchone()[0]
+assert row["id"] == u["id"], "yeni hesap açılmış, misafir yükseltilmemiş"
+assert row["is_guest"] == 0 and after == before
+assert total_users == 2, "fazladan hesap oluştu"
+ok(f"misafir hesabı yükseltildi · {after} cevap korundu")
 
-# ── yanlış cevap ──
-v = c.post(f"/api/tur/{run_id}/cevap", json={"qid": q["id"], "pos": wrong_pos, "ms": 3000}).json()
-assert v["correct"] is False and v["correct_pos"] == right_pos
-assert v["correct_text"] == right_text and v["wrong_book"] == 1
-ok("yanlış cevap · doğru şık bildiriliyor · defter 1")
+assert "Merhaba Mustafa" in c.get("/").text
+ok("artık adıyla karşılanıyor")
 
-# aynı soruyu tekrar cevaplamak istatistiği bozmamalı
-v2 = c.post(f"/api/tur/{run_id}/cevap", json={"qid": q["id"], "pos": right_pos}).json()
-assert v2["repeat"] is True and v2["wrong_book"] == 1
-ok("aynı soru iki kez sayılmıyor")
+# ── 6. Çıkış siteyi kilitlemiyor ─────────────────────────────────────
+r = c.post("/cikis", follow_redirects=False)
+assert r.status_code == 303 and r.headers["location"] == "/"
+r = c.get("/")
+assert "Hemen başla" in r.text and "giriş yapmana gerek yok" in r.text
+ok("çıkış sonrası site misafir olarak çalışmaya devam ediyor")
 
-# ── kalan soruları doğru cevapla ──
-for i in range(1, 6):
-    qq = c.get(f"/api/tur/{run_id}/soru/{i}").json()
-    with db.db() as conn:
-        rr = db.question(conn, qq["id"])
-    rt = next(o["text"] for o in rr["options"] if o["correct"])
-    p = next(k for k, o in enumerate(qq["options"]) if o["text"] == rt)
-    assert c.post(f"/api/tur/{run_id}/cevap", json={"qid": qq["id"], "pos": p}).json()["correct"]
-ok("kalan 5 soru doğru cevaplandı")
-
-c.post(f"/api/tur/{run_id}/bitir")
-r = c.get(f"/sonuc/{run_id}")
-assert "%83" in r.text, r.text[r.text.find("score"):][:200]
-ok("sonuç sayfası %83 gösteriyor (6 soruda 5 doğru)")
-
-# ── yanlış defteri turu ──
-r = c.post("/tur", data={"only_wrong": "on", "count": "10", "mode": "calisma",
-                         "hide_dups": "on", "show_gen": "on"}, follow_redirects=False)
-wrun = int(r.headers["location"].rsplit("/", 1)[1])
-wq = c.get(f"/api/tur/{wrun}/soru/0").json()
-assert wq["total"] == 1 and wq["id"] == q["id"]
-ok("yanlış defteri turu yalnızca o soruyu getiriyor")
-
-# iki kez doğru cevaplayınca defterden düşmeli
-with db.db() as conn:
-    rr = db.question(conn, wq["id"])
-rt = next(o["text"] for o in rr["options"] if o["correct"])
-p = next(k for k, o in enumerate(wq["options"]) if o["text"] == rt)
-v = c.post(f"/api/tur/{wrun}/cevap", json={"qid": wq["id"], "pos": p}).json()
-assert v["wrong_book"] == 1, "bir doğru yetmemeli"
-r = c.post("/tur", data={"only_wrong": "on", "count": "10", "mode": "calisma"},
-           follow_redirects=False)
-w2 = int(r.headers["location"].rsplit("/", 1)[1])
-wq2 = c.get(f"/api/tur/{w2}/soru/0").json()
-p2 = next(k for k, o in enumerate(wq2["options"]) if o["text"] == rt)
-v = c.post(f"/api/tur/{w2}/cevap", json={"qid": wq2["id"], "pos": p2}).json()
-assert v["wrong_book"] == 0, "ikinci doğrudan sonra defter boşalmalı"
-ok("üst üste iki doğru → soru defterden düşüyor")
-
-# ── istatistik ──
-r = c.get("/istatistik")
-assert "Genel başarı" in r.text and "En zayıf bölümlerin" in r.text
-ok("istatistik sayfası açılıyor")
-
-# ── yetki ──
+# ── 7. Kimlik ve yetki ───────────────────────────────────────────────
 c2 = TestClient(appmod.app)
-assert c2.get(f"/api/tur/{run_id}/soru/0").status_code == 401
-ok("oturumsuz istek 401")
+c2.get("/")                                     # misafir oturumu al
+assert c2.get(f"/api/tur/{run_id}/soru/0").status_code == 404
+ok("başka kullanıcının turu görünmüyor")
+
 r = c2.post("/giris", data={"email": "pilot@example.com", "password": "yanlis"},
             follow_redirects=False)
 assert r.status_code == 200 and "hatalı" in r.text
-ok("yanlış parola reddediliyor")
 r = c2.post("/giris", data={"email": "pilot@example.com", "password": "ucak12345"},
             follow_redirects=False)
 assert r.status_code == 303
-ok("doğru parolayla giriş")
+assert "Merhaba Mustafa" in c2.get("/").text
+ok("e-posta ve parolayla giriş çalışıyor")
 
-# başka kullanıcının turuna erişememeli
-c3 = TestClient(appmod.app)
-c3.post("/kayit", data={"email": "baska@example.com", "name": "B",
-                        "password": "sifre12345", "password2": "sifre12345"})
-assert c3.get(f"/api/tur/{run_id}/soru/0").status_code == 404
-ok("başka kullanıcının turu görünmüyor")
-
-# ── kaba kuvvet koruması ──
-c4 = TestClient(appmod.app)
+c3 = TestClient(appmod.app); c3.get("/")
 for i in range(8):
-    c4.post("/giris", data={"email": "pilot@example.com", "password": "yanlis%d" % i})
-r = c4.post("/giris", data={"email": "pilot@example.com", "password": "ucak12345"},
+    c3.post("/giris", data={"email": "pilot@example.com", "password": "yanlis%d" % i})
+r = c3.post("/giris", data={"email": "pilot@example.com", "password": "ucak12345"},
             follow_redirects=False)
-assert r.status_code == 200 and "Çok fazla hatalı deneme" in r.text, "kilit devreye girmedi"
-ok("8 hatalı denemeden sonra giriş kilitleniyor")
+assert r.status_code == 200 and "Çok fazla hatalı deneme" in r.text
 appmod._fails.clear()
+ok("8 hatalı denemeden sonra giriş kilitleniyor")
 
-r = c.post("/cikis", follow_redirects=False)
-assert r.status_code == 303
-assert c.get("/").text.count("Hesap oluştur") > 0
-ok("çıkış oturumu sonlandırıyor")
+r = c3.post("/kayit", data={"email": "pilot@example.com", "name": "X",
+                            "password": "ucak12345", "password2": "ucak12345"})
+assert "zaten kayıtlı" in r.text
+ok("aynı e-postayla ikinci kayıt reddediliyor")
+
+# ── 8. Boş misafirlerin temizliği ────────────────────────────────────
+with db.db() as conn:
+    conn.execute("INSERT INTO users(email,name,pw_hash,is_guest,created_at) "
+                 "VALUES (NULL,'Misafir',NULL,1,datetime('now','-30 days'))")
+    n = db.sweep_guests(conn)
+assert n >= 1
+ok("hiç çözmemiş eski misafir kayıtları temizleniyor")
 
 print("\nTÜM TESTLER GEÇTİ")

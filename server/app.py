@@ -37,15 +37,40 @@ app = FastAPI(title="ATPL Soru Bankası", docs_url=None, redoc_url=None)
 app.mount("/static", StaticFiles(directory=HERE / "static"), name="static")
 tpl = Jinja2Templates(directory=str(HERE / "templates"))
 
+with db.db() as _c:
+    db.sweep_guests(_c)          # boş kalmış eski misafir kayıtlarını temizle
+
+
+@app.middleware("http")
+async def ensure_user(request: Request, call_next):
+    """Girişsiz gelen herkese sessizce bir misafir hesabı açar.
+
+    Böylece siteye girer girmez soru çözülebilir; ilerleme çerezdeki oturuma
+    bağlı olarak bu cihazda saklanır. Kullanıcı isterse sonradan e-posta ve
+    parola ekleyip aynı hesabı kalıcı hale getirir — geçmiş kaybolmaz.
+    """
+    if request.url.path.startswith("/static"):
+        return await call_next(request)
+
+    fresh = None
+    with db.db() as conn:
+        if not auth.session_user(conn, request.cookies.get(auth.COOKIE)):
+            fresh = auth.start_session(conn, auth.create_guest(conn))
+    if fresh:
+        request.state.token = fresh
+
+    response = await call_next(request)
+    if fresh:
+        response.set_cookie(auth.COOKIE, fresh, max_age=auth.SESSION_DAYS * 86400,
+                            httponly=True, samesite="lax", secure=SECURE_COOKIE, path="/")
+    return response
+
 
 # ── yardımcılar ───────────────────────────────────────────────────────
 
 def current_user(conn, request: Request):
-    return auth.session_user(conn, request.cookies.get(auth.COOKIE))
-
-
-def need_login(request: Request):
-    return RedirectResponse("/giris?next=" + request.url.path, status_code=303)
+    token = getattr(request.state, "token", None) or request.cookies.get(auth.COOKIE)
+    return auth.session_user(conn, token)
 
 
 def page(request: Request, name: str, **ctx):
@@ -107,9 +132,12 @@ def display_order(seed: int, qid: int, n: int) -> list[int]:
 @app.get("/kayit", response_class=HTMLResponse)
 def register_form(request: Request):
     with db.db() as conn:
-        if current_user(conn, request):
+        user = current_user(conn, request)
+        if user and not user["is_guest"]:
             return RedirectResponse("/", status_code=303)
-    return page(request, "register.html", err=None, values={})
+        n = conn.execute("SELECT COUNT(*) FROM attempts WHERE user_id = ?",
+                         (user["id"],)).fetchone()[0] if user else 0
+    return page(request, "register.html", err=None, values={}, carry=n)
 
 
 @app.post("/kayit")
@@ -120,11 +148,18 @@ def register(request: Request, email: str = Form(""), name: str = Form(""),
     if not err and password != password2:
         err = "Parolalar birbirini tutmuyor."
     with db.db() as conn:
+        user = current_user(conn, request)
         if not err and auth.find_user(conn, email):
             err = "Bu e-posta zaten kayıtlı. Giriş yapmayı dene."
         if err:
-            return page(request, "register.html", err=err, values=values)
-        uid = auth.create_user(conn, email, name, password)
+            carry = conn.execute("SELECT COUNT(*) FROM attempts WHERE user_id = ?",
+                                 (user["id"],)).fetchone()[0] if user else 0
+            return page(request, "register.html", err=err, values=values, carry=carry)
+        if user and user["is_guest"]:
+            auth.upgrade_guest(conn, user["id"], email, name, password)
+            uid = user["id"]          # geçmiş olduğu gibi kalır
+        else:
+            uid = auth.create_user(conn, email, name, password)
         token = auth.start_session(conn, uid)
     r = RedirectResponse("/", status_code=303)
     r.set_cookie(auth.COOKIE, token, max_age=auth.SESSION_DAYS * 86400,
@@ -135,7 +170,8 @@ def register(request: Request, email: str = Form(""), name: str = Form(""),
 @app.get("/giris", response_class=HTMLResponse)
 def login_form(request: Request, next: str = "/"):
     with db.db() as conn:
-        if current_user(conn, request):
+        user = current_user(conn, request)
+        if user and not user["is_guest"]:
             return RedirectResponse("/", status_code=303)
     return page(request, "login.html", err=None, next=next, values={})
 
@@ -168,7 +204,7 @@ def login(request: Request, email: str = Form(""), password: str = Form(""),
 def logout(request: Request):
     with db.db() as conn:
         auth.end_session(conn, request.cookies.get(auth.COOKIE) or "")
-    r = RedirectResponse("/giris", status_code=303)
+    r = RedirectResponse("/", status_code=303)
     r.delete_cookie(auth.COOKIE, path="/")
     return r
 
@@ -179,8 +215,6 @@ def logout(request: Request):
 def home(request: Request):
     with db.db() as conn:
         user = current_user(conn, request)
-        if not user:
-            return page(request, "landing.html")
         return page(request, "home.html", user=user,
                     subjects=db.subjects(conn),
                     summary=stats_mod.summary(conn, user["id"]),
@@ -209,7 +243,7 @@ def start_run(request: Request, subject: str = Form("all"), section: str = Form(
     with db.db() as conn:
         user = current_user(conn, request)
         if not user:
-            return need_login(request)
+            return RedirectResponse("/", status_code=303)
         qids = db.pick_questions(
             conn, user["id"], subject=subject, section=section,
             hide_dups=hide_dups == "on", show_gen=show_gen == "on",
@@ -242,7 +276,7 @@ def run_page(request: Request, run_id: int):
     with db.db() as conn:
         user = current_user(conn, request)
         if not user:
-            return need_login(request)
+            return RedirectResponse("/", status_code=303)
         run = _load_run(conn, user["id"], run_id)
         if not run:
             return RedirectResponse("/", status_code=303)
@@ -351,7 +385,7 @@ def result(request: Request, run_id: int):
     with db.db() as conn:
         user = current_user(conn, request)
         if not user:
-            return need_login(request)
+            return RedirectResponse("/", status_code=303)
         run = _load_run(conn, user["id"], run_id)
         if not run:
             return RedirectResponse("/", status_code=303)
@@ -370,7 +404,7 @@ def stats_page(request: Request):
     with db.db() as conn:
         user = current_user(conn, request)
         if not user:
-            return need_login(request)
+            return RedirectResponse("/", status_code=303)
         return page(request, "stats.html", user=user,
                     summary=stats_mod.summary(conn, user["id"]),
                     per_subject=stats_mod.per_subject(conn, user["id"]),

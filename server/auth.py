@@ -20,7 +20,7 @@ import db
 
 ITERATIONS = 600_000          # OWASP 2023 önerisi
 COOKIE = "atpl_session"
-SESSION_DAYS = 30
+SESSION_DAYS = 365     # misafir ilerlemesi kolayca kaybolmasın
 EMAIL_RE = re.compile(r"^[^@\s]+@[^@\s]+\.[^@\s]{2,}$")
 
 
@@ -68,7 +68,24 @@ def create_user(conn: sqlite3.Connection, email: str, name: str, pw: str) -> int
     return cur.lastrowid
 
 
+def create_guest(conn: sqlite3.Connection) -> int:
+    """Girişsiz ziyaretçi için hesap açar. İlerleme buraya yazılır."""
+    cur = conn.execute(
+        "INSERT INTO users(email, name, pw_hash, is_guest, created_at) VALUES (NULL,?,NULL,1,?)",
+        ("Misafir", db.now()))
+    return cur.lastrowid
+
+
+def upgrade_guest(conn: sqlite3.Connection, uid: int, email: str, name: str, pw: str) -> None:
+    """Misafir hesabını kalıcı hesaba çevirir — geçmiş olduğu gibi kalır."""
+    conn.execute(
+        "UPDATE users SET email = ?, name = ?, pw_hash = ?, is_guest = 0 WHERE id = ?",
+        (email.strip(), name.strip() or email.split("@")[0], hash_password(pw), uid))
+
+
 def find_user(conn: sqlite3.Connection, email: str) -> sqlite3.Row | None:
+    if not (email or "").strip():
+        return None
     return conn.execute("SELECT * FROM users WHERE email = ?", (email.strip(),)).fetchone()
 
 

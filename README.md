@@ -176,8 +176,10 @@ ffmpeg -ss 5.5 -i videos/annex-15.mp4 -frames:v 1 -y /tmp/son-kare.png
 
 ## Web sunucusu (kullanıcı girişli)
 
-`server/` — çok kullanıcılı çalışma uygulaması. Kayıt/giriş, kalıcı yanlış defteri,
-ders ve bölüm bazında istatistik, mobil uyumlu arayüz.
+`server/` — çalışma sitesi. **Giriş zorunlu değil:** siteye girer girmez soru çözmeye
+başlanır, ilerleme tarayıcıdaki oturuma bağlı olarak saklanır. Hesap oluşturmak isteğe
+bağlıdır ve misafir geçmişini olduğu gibi taşır (başka cihazdan devam etmek için).
+Kalıcı yanlış defteri, ders ve bölüm bazında istatistik, mobil uyumlu arayüz.
 
 ```bash
 ./run.sh          # http://127.0.0.1:8778

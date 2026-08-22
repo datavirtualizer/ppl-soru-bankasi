@@ -23,11 +23,14 @@ SCHEMA = """
 PRAGMA journal_mode = WAL;
 PRAGMA foreign_keys = ON;
 
+-- Misafir hesabında email ve pw_hash boştur; kullanıcı sonradan hesap
+-- oluşturursa aynı satır güncellenir ve tüm geçmiş korunur.
 CREATE TABLE IF NOT EXISTS users (
     id         INTEGER PRIMARY KEY AUTOINCREMENT,
-    email      TEXT NOT NULL UNIQUE COLLATE NOCASE,
+    email      TEXT UNIQUE COLLATE NOCASE,
     name       TEXT NOT NULL,
-    pw_hash    TEXT NOT NULL,          -- pbkdf2$<iter>$<salt_b64>$<hash_b64>
+    pw_hash    TEXT,                   -- pbkdf2$<iter>$<salt_b64>$<hash_b64>
+    is_guest   INTEGER NOT NULL DEFAULT 0,
     created_at TEXT NOT NULL,
     last_seen  TEXT
 );
@@ -107,6 +110,47 @@ def db():
         conn.close()
 
 
+def migrate(conn: sqlite3.Connection) -> None:
+    """Eski şemadan misafir destekli şemaya geçiş.
+
+    SQLite NOT NULL kısıtını doğrudan kaldıramaz; tablo yeniden kurulur.
+    Veri kaybı olmaz.
+    """
+    cols = {r[1]: r for r in conn.execute("PRAGMA table_info(users)")}
+    if not cols:
+        return
+    email_notnull = bool(cols.get("email", (0, "", "", 0))[3])
+    if "is_guest" not in cols:
+        conn.execute("ALTER TABLE users ADD COLUMN is_guest INTEGER NOT NULL DEFAULT 0")
+    if email_notnull:
+        conn.executescript("""
+            PRAGMA foreign_keys = OFF;
+            CREATE TABLE users_new (
+                id         INTEGER PRIMARY KEY AUTOINCREMENT,
+                email      TEXT UNIQUE COLLATE NOCASE,
+                name       TEXT NOT NULL,
+                pw_hash    TEXT,
+                is_guest   INTEGER NOT NULL DEFAULT 0,
+                created_at TEXT NOT NULL,
+                last_seen  TEXT
+            );
+            INSERT INTO users_new(id, email, name, pw_hash, is_guest, created_at, last_seen)
+                SELECT id, email, name, pw_hash, 0, created_at, last_seen FROM users;
+            DROP TABLE users;
+            ALTER TABLE users_new RENAME TO users;
+            PRAGMA foreign_keys = ON;
+        """)
+    conn.commit()
+
+
+def sweep_guests(conn: sqlite3.Connection, days: int = 14) -> int:
+    """Hiç soru çözmemiş eski misafir hesaplarını siler (bot/kazara ziyaretler)."""
+    cur = conn.execute(
+        "DELETE FROM users WHERE is_guest = 1 AND created_at < datetime('now', ?) "
+        "AND id NOT IN (SELECT DISTINCT user_id FROM attempts)", (f"-{days} days",))
+    return cur.rowcount
+
+
 def init() -> None:
     APP_DB.parent.mkdir(parents=True, exist_ok=True)
     if not BANK_DB.exists():
@@ -117,6 +161,7 @@ def init() -> None:
     conn = sqlite3.connect(APP_DB)
     conn.executescript(SCHEMA)
     conn.commit()
+    migrate(conn)
     conn.close()
 
 

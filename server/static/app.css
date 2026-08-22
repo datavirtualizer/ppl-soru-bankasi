@@ -121,6 +121,21 @@ p.sub{margin:0 0 18px; color:var(--ink-2); font-size:14px}
 .tile .v.ok{color:var(--ok)} .tile .v.bad{color:var(--bad)} .tile .v.acc{color:var(--accent)}
 .tile .foot{font-size:11.5px; color:var(--ink-3)}
 
+.quick{display:flex; flex-direction:column; gap:9px; margin-bottom:14px}
+.quick form{display:flex}
+.quick .btn{width:100%; padding:15px 20px; font-size:16px}
+@media (min-width:600px){
+  .quick{flex-direction:row}
+  .quick form{flex:1}
+}
+.guestbar{
+  display:flex; gap:9px; align-items:flex-start; margin-bottom:16px;
+  padding:11px 13px; font-size:12.5px; line-height:1.5; color:var(--ink-2);
+  background:var(--surface-2); border:1px solid var(--rule);
+  border-left:2px solid var(--cyan); border-radius:var(--r);
+}
+.guestbar a{color:var(--accent-ink); font-weight:600}
+
 /* ── Form ── */
 .field{display:flex; flex-direction:column; gap:6px; margin-bottom:14px}
 label.lbl{margin:0}

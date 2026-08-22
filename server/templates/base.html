@@ -32,12 +32,14 @@
   </div>
   {% endif %}
   <div class="sp"></div>
-  {% if user %}<span class="who">{{ user['name'] }}</span>{% endif %}
+  {% if user and not user['is_guest'] %}<span class="who">{{ user['name'] }}</span>{% endif %}
   <button class="iconbtn" id="themeBtn" type="button">Tema</button>
-  {% if user %}
-  <form method="post" action="/cikis" style="display:inline">
-    <button class="iconbtn" type="submit">Çıkış</button>
-  </form>
+  {% if user and user['is_guest'] %}
+    <a class="iconbtn" href="/kayit">Kaydet</a>
+  {% elif user %}
+    <form method="post" action="/cikis" style="display:inline">
+      <button class="iconbtn" type="submit">Çıkış</button>
+    </form>
   {% endif %}
 </nav>
 

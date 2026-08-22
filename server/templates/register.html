@@ -3,7 +3,11 @@
 {% block body %}
 <div class="authwrap">
   <h1 class="page">Hesap oluştur</h1>
-  <p class="sub">İlerlemen bu hesaba kaydedilir.</p>
+  <p class="sub">
+    {% if carry %}Şu ana kadarki <span class="num">{{ carry }}</span> cevabın ve yanlış
+      defterin bu hesaba taşınır.{% else %}İlerlemen bu hesaba kaydedilir ve her cihazdan
+      erişilebilir olur.{% endif %}
+  </p>
   <div class="card"><div class="bd">
     {% if err %}<div class="err">{{ err }}</div>{% endif %}
     <form method="post" action="/kayit">

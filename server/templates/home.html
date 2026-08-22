@@ -2,7 +2,7 @@
 {% block title %}Panel — ATPL Soru Bankası{% endblock %}
 {% block body %}
 <div class="wrap">
-  <h1 class="page">Merhaba {{ user['name'] }}.</h1>
+  <h1 class="page">{% if user['is_guest'] %}Hadi başlayalım.{% else %}Merhaba {{ user['name'] }}.{% endif %}</h1>
   <p class="sub">
     {% if summary.n %}
       Şimdiye kadar <span class="num">{{ summary.n }}</span> soru cevapladın —
@@ -35,14 +35,42 @@
     </div>
   </div>
 
+  <div class="quick">
+    <form method="post" action="/tur">
+      <input type="hidden" name="count" value="20">
+      <input type="hidden" name="mode" value="calisma">
+      <input type="hidden" name="hide_dups" value="on">
+      <input type="hidden" name="show_gen" value="on">
+      <button class="btn" type="submit">Hemen başla · 20 soru</button>
+    </form>
+    {% if wrong_n %}
+    <form method="post" action="/tur">
+      <input type="hidden" name="only_wrong" value="on">
+      <input type="hidden" name="count" value="{{ [wrong_n, 30] | min }}">
+      <input type="hidden" name="mode" value="calisma">
+      <input type="hidden" name="hide_dups" value="on">
+      <input type="hidden" name="show_gen" value="on">
+      <button class="btn ghost" type="submit">Yanlışlarımı çöz · {{ wrong_n }}</button>
+    </form>
+    {% endif %}
+  </div>
+
+  {% if user['is_guest'] %}
+  <div class="guestbar">
+    <span>İlerlemen bu tarayıcıda saklanıyor — giriş yapmana gerek yok.
+      Başka cihazdan da devam etmek istersen <a href="/kayit">hesap oluştur</a>,
+      şu ana kadarki geçmişin aynen taşınır.</span>
+  </div>
+  {% endif %}
+
   {% if request.query_params.get('bos') %}
     <div class="note">Bu kapsamda soru bulunamadı. Ders, bölüm veya kapsam
       seçeneklerini değiştirip tekrar dene.</div>
   {% endif %}
 
   <div class="card">
-    <div class="hd"><h2>Yeni tur</h2><div class="sp"></div>
-      <span class="lbl">soru seç, başla</span></div>
+    <div class="hd"><h2>Kendin ayarla</h2><div class="sp"></div>
+      <span class="lbl">ders, bölüm, adet</span></div>
     <div class="bd">
       <form method="post" action="/tur" id="runForm">
         <div class="row2">

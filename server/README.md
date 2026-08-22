@@ -1,6 +1,7 @@
 # ATPL Soru Bankası — web sunucusu
 
-Çok kullanıcılı çalışma uygulaması. Soru bankasını (`atpl.db`) salt okunur kullanır,
+Misafir öncelikli çalışma uygulaması: giriş yapmadan çözmeye başlanır, hesap açmak
+isteğe bağlıdır. Soru bankasını (`atpl.db`) salt okunur kullanır,
 kullanıcı verisini ayrı bir veritabanında (`server/app.db`) tutar — bankayı yeniden
 üretmek (`scripts/init_db.py`) kullanıcı geçmişini etkilemez.
 
@@ -128,6 +129,9 @@ Günlük yedek için crontab:
   `--workers 2` ile her worker kendi sayacını tutar. Sıkı bir sınır gerekiyorsa
   nginx `limit_req` ekle.
 - Kullanıcılar birbirinin turunu göremez (her sorgu `user_id` ile kısıtlı).
+- Giriş yapmayan her ziyaretçiye otomatik misafir hesabı açılır. Bot trafiği boş kayıt
+  biriktirmesin diye, hiç soru çözmemiş 14 günden eski misafirler açılışta silinir
+  (`db.sweep_guests`).
 
 ## Ölçek
 
