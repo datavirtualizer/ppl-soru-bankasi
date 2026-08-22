@@ -108,7 +108,7 @@ r = c.get("/kayit")
 assert f"{before}</span> cevabın" in r.text, "taşınacak cevap sayısı yazmıyor"
 ok(f"kayıt sayfası {before} cevabın taşınacağını söylüyor")
 
-r = c.post("/kayit", data={"email": "pilot@example.com", "name": "Mustafa",
+r = c.post("/kayit", data={"email": "pilot@example.com", "name": "Deneme",
                            "password": "ucak12345", "password2": "ucak12345"},
            follow_redirects=False)
 assert r.status_code == 303
@@ -122,7 +122,7 @@ assert row["is_guest"] == 0 and after == before
 assert total_users == 2, "fazladan hesap oluştu"
 ok(f"misafir hesabı yükseltildi · {after} cevap korundu")
 
-assert "Merhaba Mustafa" in c.get("/").text
+assert "Merhaba Deneme" in c.get("/").text
 ok("artık adıyla karşılanıyor")
 
 # ── 6. Çıkış siteyi kilitlemiyor ─────────────────────────────────────
@@ -144,7 +144,7 @@ assert r.status_code == 200 and "hatalı" in r.text
 r = c2.post("/giris", data={"email": "pilot@example.com", "password": "ucak12345"},
             follow_redirects=False)
 assert r.status_code == 303
-assert "Merhaba Mustafa" in c2.get("/").text
+assert "Merhaba Deneme" in c2.get("/").text
 ok("e-posta ve parolayla giriş çalışıyor")
 
 c3 = TestClient(appmod.app); c3.get("/")

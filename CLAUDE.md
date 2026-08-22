@@ -1,6 +1,6 @@
 # PPL Soru Bankası — çalışma kuralları
 
-Mustafa'nın PPL teori sınavlarına hazırlandığı soru bankası ve çalışma sitesi.
+PPL teori sınavlarına hazırlık için soru bankası ve çalışma sitesi.
 Sorular ATPL TV platformundaki *PPL Turkey (English)* sınav raporlarından elle çevrildi.
 
 **Bankanın tamamı şu an PPL.** ATPL soruları ileride eklenecek. Hazırlık yapıldı:
