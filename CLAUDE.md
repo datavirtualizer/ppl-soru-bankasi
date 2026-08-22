@@ -54,9 +54,13 @@ Yeni ders eklerken hem metin benzerliğini hem de "cevabı aynı ama metni farkl
 
 Asıl kullanılan sürüm bu: tek dosya, sunucusuz, `localStorage` tabanlı.
 
-Varsayılanlar `DEFAULTS` sabitinde: `deck:'new'` (çözülmemişler), `pick:{}` (tüm konular),
-`count:0` (sınırsız tur). Bunları değiştirirken kullanıcının açık isteğini hatırla —
-"20 soru" gibi bir sınır varsayılan olmamalı.
+Varsayılanlar `DEFAULTS` sabitinde: `deck:'new'` (çözülmemişler), `count:0` (sınırsız tur).
+`pick` ilk açılışta `autoPickModule()` ile **rastgele bir modüle** ayarlanır.
+
+**Ana ekran modül odaklıdır** — kullanıcı bütün bankayı tek düğmede açan bir akış
+istemedi. Kart hangi modülde olunduğunu, ilerlemeyi ve kalan soruyu yazar; "Başla" o
+modülü açar. Modül bitince "Sıradaki modüle geç" çıkar. Bunu bozup "Başla · 2265 soru"
+gibi bir düğmeye dönme.
 
 İlk ziyarette `randomName()` rastgele bir profil adı üretir ve profil kendiliğinden açılır;
 giriş yoktur. Ad Durum panelinden değiştirilir (`renameProfile` localStorage anahtarını taşır). Aralıklı tekrar

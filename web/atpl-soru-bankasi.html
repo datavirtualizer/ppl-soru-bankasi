@@ -85,6 +85,26 @@ h1{margin:0 0 4px; font-size:23px; font-weight:700; letter-spacing:-.022em; text
 .sub{margin:0 0 18px; color:var(--ink-2); font-size:14px}
 
 /* ── Desteler ── */
+.modcard{background:var(--surface); border:1px solid var(--rule); border-left:3px solid var(--accent);
+  border-radius:var(--r); padding:14px 15px; margin-bottom:12px; box-shadow:var(--shadow)}
+.modcard.done{border-left-color:var(--ok)}
+.modcard .mtop{display:flex; align-items:center; gap:10px; margin-bottom:7px}
+.modcard .mtop .lbl{flex:1}
+.modcard .mname{font-size:18px; font-weight:600; letter-spacing:-.015em; line-height:1.3;
+  text-wrap:balance}
+.modcard .mname b{font-family:var(--f-num); font-weight:500; color:var(--accent)}
+.modcard .mbar{height:5px; background:var(--surface-3); border-radius:99px; overflow:hidden;
+  margin:10px 0 7px}
+.modcard .mbar i{display:block; height:100%; background:var(--accent); border-radius:99px;
+  transition:width .3s ease}
+.modcard.done .mbar i{background:var(--ok)}
+.modcard .mfoot{font-size:12.5px; color:var(--ink-2)}
+.modcard .mfoot .num{color:var(--ink); font-weight:500}
+.nextmod{display:block; width:100%; text-align:left; background:var(--surface);
+  border:1px solid var(--rule); border-left:2px solid var(--cyan); border-radius:var(--r);
+  padding:11px 13px; font-size:12.5px; color:var(--ink-2); margin-bottom:10px}
+.nextmod:hover{border-color:var(--rule-2); color:var(--ink)}
+.nextmod b{font-family:var(--f-num); color:var(--cyan)}
 .decks{display:grid; grid-template-columns:1fr 1fr; gap:9px; margin-bottom:12px}
 @media (min-width:620px){ .decks{grid-template-columns:repeat(4,1fr)} }
 .deck{display:flex; flex-direction:column; gap:3px; text-align:left;
@@ -507,6 +527,32 @@ function inDeck(q, deck){
 const scoped = () => QS.filter(inScope);
 const deckCount = d => scoped().filter(q => inDeck(q, d)).length;
 
+/** Bir modülün (dersin) durumu: toplam, görülen, kalan. */
+function moduleStat(code){
+  const si = SUBJ.findIndex(x => x.c === code);
+  const all = QS.filter(q => q[1] === si && inToggles(q));
+  const seen = all.filter(q => card(q[0])).length;
+  return { code, name: SUBJ[si].n, total: all.length, seen, left: all.length - seen };
+}
+/** Seçim tek bir modülün tamamıysa o modülün kodunu, değilse null döner. */
+function soloModule(){
+  const ks = Object.keys(F.pick);
+  return (ks.length === 1 && F.pick[ks[0]].length === 0) ? ks[0] : null;
+}
+/** Henüz bitmemiş modüller — sırayla ya da rastgele seçmek için. */
+function openModules(){
+  return SUBJ.map(s => moduleStat(s.c)).filter(m => m.total && m.left > 0);
+}
+/** İlk ziyarette ya da modül bitince yeni bir modül seçer. */
+function autoPickModule(){
+  const open = openModules();
+  if (!open.length) return false;
+  const m = open[Math.floor(Math.random() * open.length)];
+  F.pick = {}; F.pick[m.code] = [];
+  savePref();
+  return true;
+}
+
 function buildQueue(){
   let pool = scoped().filter(q => inDeck(q, F.deck));
   if (F.order === 'smart'){
@@ -578,10 +624,44 @@ function home(){
   const scopeTxt = !nSubj ? 'Tüm dersler'
     : nSubj + ' ders' + (nSec ? ' · ' + nSec + ' bölüm' : '');
 
+  // Hangi modüldeyiz? Tek modül seçiliyse onu öne çıkar.
+  const solo = soloModule();
+  const m = solo ? moduleStat(solo) : null;
+  const others = QS.filter(q => inToggles(q) && !matchPick(q));
+  const otherDue = others.filter(q => inDeck(q, 'due')).length;
+  const otherWrong = others.filter(q => inDeck(q, 'wrong')).length;
+
+  let modCard;
+  if (m){
+    const doneAll = m.left === 0;
+    const pctSeen = m.total ? Math.round(m.seen / m.total * 100) : 0;
+    modCard =
+      '<div class="modcard' + (doneAll ? ' done' : '') + '">' +
+        '<div class="mtop"><span class="lbl">Şimdi çalıştığın modül</span>' +
+          '<button class="tbtn" id="mSwap" type="button">Başka modül</button></div>' +
+        '<div class="mname"><b>' + esc(m.code) + '</b> · ' + esc(m.name) + '</div>' +
+        '<div class="mbar"><i style="width:' + pctSeen + '%"></i></div>' +
+        '<div class="mfoot"><span class="num">' + m.seen + '</span> / ' +
+          '<span class="num">' + m.total + '</span> soru görüldü' +
+          (doneAll ? ' · <b style="color:var(--ok)">modülü bitirdin</b>'
+                   : ' · <span class="num">' + m.left + '</span> kaldı') + '</div>' +
+      '</div>';
+  } else {
+    const ks = Object.keys(F.pick);
+    modCard =
+      '<div class="modcard">' +
+        '<div class="mtop"><span class="lbl">Seçili kapsam</span>' +
+          '<button class="tbtn" id="mSwap" type="button">Modül seç</button></div>' +
+        '<div class="mname">' + (ks.length ? esc(ks.join(', ')) + ' — karma seçim'
+                                           : 'Tüm modüller') + '</div>' +
+        '<div class="mfoot"><span class="num">' + nf(total) + '</span> soru kapsamda</div>' +
+      '</div>';
+  }
+
   el('view').innerHTML =
     '<h1>Ne çalışalım?</h1>' +
-    '<p class="sub">Seçili kapsamda <b class="num">' + nf(total) + '</b> soru var. ' +
-      'Bir deste seç ya da konuları daralt.</p>' +
+    '<p class="sub">Modül modül ilerle. Bir modülü bitirince yenisine geçersin.</p>' +
+    modCard +
 
     '<div class="decks">' + DECKS.map(d =>
       '<button class="deck ' + d.cls + (F.deck === d.k ? ' on' : '') + '" data-deck="' + d.k + '"' +
@@ -591,10 +671,15 @@ function home(){
 
     '<div class="gobar">' +
       '<button class="go" id="go" type="button"' + (ready ? '' : ' disabled') + '>' +
-        (ready ? 'Başla' + (F.count ? ' · ' + Math.min(ready, F.count) + ' soru'
-                                    : ' · ' + nf(ready) + ' soru') : 'Bu kapsamda soru yok') + '</button>' +
+        (ready ? 'Başla · ' + (F.count ? Math.min(ready, F.count) : nf(ready)) + ' soru'
+               : (m && m.left === 0 ? 'Bu modül bitti' : 'Bu kapsamda soru yok')) + '</button>' +
       '<button class="go2" id="goAll" type="button"' + (F.deck === 'all' ? ' disabled' : '') + '>Tümü</button>' +
     '</div>' +
+    (m && m.left === 0 && openModules().length
+      ? '<button class="nextmod" id="mNext" type="button">Sıradaki modüle geç ›</button>' : '') +
+    ((otherDue + otherWrong)
+      ? '<button class="nextmod" id="mAll" type="button">Diğer modüllerde <b class="num">' +
+        (otherDue + otherWrong) + '</b> soru tekrar bekliyor — hepsini çöz ›</button>' : '') +
 
     '<details class="box" id="topicBox">' +
       '<summary>Konular<span class="pill' + (nSubj ? '' : ' off') + '">' + scopeTxt + '</span>' +
@@ -657,6 +742,16 @@ function home(){
   });
   el('go').onclick = start;
   el('goAll').onclick = () => { F.deck = 'all'; savePref(); home(); };
+  el('mSwap').onclick = () => {
+    openBox('topicBox');
+    el('topicBox').scrollIntoView({ behavior:'smooth', block:'start' });
+  };
+  const mn = el('mNext');
+  if (mn) mn.onclick = () => { autoPickModule(); F.deck = 'new'; home(); };
+  const ma = el('mAll');
+  if (ma) ma.onclick = () => { F.pick = {}; F.deck = 'due'; savePref();
+    if (!deckCount('due')) F.deck = 'wrong';
+    home(); };
   const lb = el('leechBtn'); if (lb) lb.onclick = () => { F.deck = 'leech'; savePref(); start(); };
   el('cnt').querySelectorAll('button').forEach(b =>
     b.onclick = () => { F.count = +b.dataset.n; savePref(); home(); openBox('optBox'); });
@@ -1134,6 +1229,8 @@ document.addEventListener('keydown', e => {
 });
 
 loadProfile();
+if (!Object.keys(F.pick).length && !S.pref) autoPickModule();
+if (!Object.keys(F.pick).length && !Object.keys(S.c).length) autoPickModule();
 paintWho();
 home();
 })();

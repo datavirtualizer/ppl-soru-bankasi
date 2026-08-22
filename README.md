@@ -207,12 +207,29 @@ Sunucu istemez, dış bağımlılığı yok (yalnızca Google Fonts).
 
 Artifact: https://claude.ai/code/artifact/5b35bb1b-5314-4199-a8a9-8f07589837ed
 
-### Varsayılanlar
+### Modül modül ilerleme
 
-Uygulama açıldığında hazır ayar: **henüz çözülmemiş sorular**, **tüm konular**,
-**sınırsız tur**. Yani "Başla" doğrudan bankanın görülmemiş kısmını baştan sona açar;
-istediğin an *Çık* ile bırakırsın, ilerleme kayıtlıdır. Tur uzunluğunu Ayarlar'dan
-20/50/100 ile sınırlayabilirsin.
+Ana ekran tek bir **modülün** (dersin) üstüne kuruludur — bütün bankayı tek seferde
+açmaz. İlk girişte rastgele bir modül seçilir; kart o modülün adını, ilerleme çubuğunu
+ve kalan soru sayısını gösterir:
+
+```
+ŞİMDİ ÇALIŞTIĞIN MODÜL              [Başka modül]
+070 · Operational Procedures
+▓▓▓▓▓░░░░░░░░░  12 / 183 soru görüldü · 171 kaldı
+                     [Başla · 171 soru]
+```
+
+Modül bitince kart yeşile döner ve **"Sıradaki modüle geç"** çıkar. Başka modüllerde
+tekrarı gelmiş soru varsa ayrı bir satır uyarır ("Diğer modüllerde 23 soru tekrar
+bekliyor"), tek tıkla hepsine geçilir.
+
+Deste sayıları (tekrar zamanı / yanlışlarım / hiç görmedim / yıldızlılar) seçili modüle
+göre hesaplanır. Konular akordeonundan birden çok modül ya da modül içinden tek tek
+bölüm de seçilebilir; o zaman kart "karma seçim" der.
+
+Tur uzunluğu varsayılan olarak sınırsızdır (modülün tamamı); Ayarlar'dan 20/50/100 ile
+kısaltılabilir. İstediğin an *Çık* dersin, ilerleme kayıtlı kalır.
 
 ### Kullanıcı adı ve profiller
 
