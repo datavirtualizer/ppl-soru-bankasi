@@ -108,8 +108,12 @@ Değişiklikten sonra testleri çalıştır. Kritik davranışlar:
 ## Yayın ve kimlik
 
 Depo `datavirtualizer/ppl-soru-bankasi` altında herkese açık; site
-https://datavirtualizer.github.io/ppl-soru-bankasi/ adresinde Pages ile yayında
-(`main` → `/docs`). Güncelleme: `./deploy.sh "mesaj"`.
+https://datavirtualizer.github.io/ppl-soru-bankasi/ adresinde yayında.
+
+**Yayın otomatik:** Pages kaynağı GitHub Actions (`.github/workflows/pages.yml`).
+`web/template.html`, `atpl.db`, `scripts/build_web.py` ya da `notes/` değişip main'e
+gidince site kendiliğinden derlenir. Veri değiştiyse `./deploy.sh "mesaj"` kullan
+(init_db + build_web + commit + push).
 
 **Commit kimliği bilerek nötrdür:** `PPL Soru Bankası
 <noreply@ppl-soru-bankasi.invalid>`. `.invalid` ayrılmış bir TLD olduğu için commit'ler

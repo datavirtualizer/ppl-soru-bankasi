@@ -304,13 +304,18 @@ dosyayı iki yere yazar:
 - `web/atpl-soru-bankasi.html` — yerel kullanım / Artifact
 - `docs/index.html` — Pages'in yayımladığı dosya
 
-Güncelleme tek komut:
+**Yayın otomatiktir.** `web/template.html`, `atpl.db`, `scripts/build_web.py` ya da
+`notes/` değişip `main`'e gidince GitHub Actions siteyi yeniden derleyip yayımlar
+(`.github/workflows/pages.yml`). `docs/index.html`'i commit'lemek zorunda değilsin.
+
+Veri değiştiysen bankayı da üretmek gerekir:
 
 ```bash
 ./deploy.sh "değişiklik açıklaması"
 ```
 
-Bankayı yeniden üretir, siteyi derler, commit'leyip gönderir. Pages ~1 dakikada tazelenir.
+Bu betik `init_db.py` + `build_web.py` çalıştırır, commit'ler, gönderir; gerisini Actions
+halleder (~1 dakika).
 
 Tek dosya olduğu için Netlify, Vercel ya da herhangi bir statik sunucu da çalışır.
 
