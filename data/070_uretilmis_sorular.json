@@ -1,0 +1,188 @@
+{
+  "subject_code": "070",
+  "subject_name": "Operational Procedures",
+  "source": "073 ders notlarından üretilmiş sorular (gerçek sınav sorusu değildir)",
+  "origin": "uretilmis",
+  "answer_convention": "Doğru cevap ilk şıktır (A).",
+  "id_convention": "90701+ bandı: ders notundan üretilmiş sorular.",
+  "sections": {
+    "070-07": "Ders Notundan Üretilmiş"
+  },
+  "questions": [
+    {
+      "id": 90701, "section": "070-07",
+      "text": "Operasyon El Kitabı kaç bölümden oluşur ve bunlar hangileridir?",
+      "options": ["Dört: Genel/Temel, Uçak İşletme, Rota ve Havaalanı, Eğitim", "Üç: Genel, Uçak İşletme, Eğitim", "Beş: Genel, Uçak, Rota, Eğitim, Emniyet", "İki: Genel ve Uçak İşletme", "Dört: Genel, Bakım, Kabin, Eğitim"]
+    },
+    {
+      "id": 90702, "section": "070-07",
+      "text": "Asgari Teçhizat Listesi (MEL) ve Konfigürasyondan Sapma Listesi (CDL), Operasyon El Kitabı'nın hangi bölümünde yer alır?",
+      "options": ["Bölüm B – Uçak İşletme Konuları", "Bölüm A – Genel ve Temel Bilgiler", "Bölüm C – Rota ve Havaalanı Talimatları", "Bölüm D – Eğitim", "Ayrı bir ek olarak, hiçbir bölümde"]
+    },
+    {
+      "id": 90703, "section": "070-07",
+      "text": "Havaalanı işletme minimumları ve bunların hesaplanmasına ilişkin talimatlar Operasyon El Kitabı'nın hangi bölümündedir?",
+      "options": ["Bölüm C – Rota ve Havaalanı Talimatları ve Bilgileri", "Bölüm A – Genel ve Temel Bilgiler", "Bölüm B – Uçak İşletme Konuları", "Bölüm D – Eğitim", "Uçak Uçuş El Kitabı'nda"]
+    },
+    {
+      "id": 90704, "section": "070-07",
+      "text": "Lokal anestezi gerektiren bir tıbbi işlem sonrası uçuş ekibi üyesi en az ne kadar süre geçmeden görev bildiriminde bulunmalıdır?",
+      "options": ["12 saat", "24 saat", "8 saat", "48 saat", "6 saat"]
+    },
+    {
+      "id": 90705, "section": "070-07",
+      "text": "Genel anestezi gerektiren bir tıbbi işlem sonrası uçuş ekibi üyesi için öngörülen süre nedir?",
+      "options": ["24 saat", "12 saat", "8 saat", "72 saat", "48 saat"]
+    },
+    {
+      "id": 90706, "section": "070-07",
+      "text": "Kan bağışından sonra bir uçuş ekibi üyesi en az ne kadar süre geçmeden göreve başlamamalıdır?",
+      "options": ["24 saat", "12 saat", "8 saat", "6 saat", "48 saat"]
+    },
+    {
+      "id": 90707, "section": "070-07",
+      "text": "Bir uçuş ekibi üyesi, göreve veya bekleme görevine başlamadan kaç saat öncesinden itibaren alkol tüketmemelidir?",
+      "options": ["8 saat", "12 saat", "24 saat", "4 saat", "6 saat"]
+    },
+    {
+      "id": 90708, "section": "070-07",
+      "text": "Uçuş ekibi üyesinin göreve başlayamayacağı kan alkol seviyesi sınırı nedir?",
+      "options": ["0,2 promil", "0,5 promil", "0,8 promil", "0,1 promil", "1,0 promil"]
+    },
+    {
+      "id": 90709, "section": "070-07",
+      "text": "Uçuş veri analizi programını emniyet yönetim sistemine entegre etmek, hangi uçakları işleten kuruluşlar için zorunludur?",
+      "options": ["Maksimum kalkış ağırlığı 27.000 kilogramı aşan uçaklar", "Maksimum kalkış ağırlığı 5.700 kilogramı aşan uçaklar", "Maksimum kalkış ağırlığı 136.000 kilogramı aşan uçaklar", "Tüm ticari hava taşımacılığı uçakları", "Yalnızca çok motorlu türbinli uçaklar"]
+    },
+    {
+      "id": 90710, "section": "070-07",
+      "text": "Operatör, otoritenin talebi üzerine tüm belge ve kayıtları en geç ne kadar sürede sunmak zorundadır?",
+      "options": ["10 gün içinde", "24 saat içinde", "30 gün içinde", "3 iş günü içinde", "60 gün içinde"]
+    },
+    {
+      "id": 90711, "section": "070-07",
+      "text": "Sertifikasyon gereği bir uçak, tam yolcu kapasitesiyle en fazla ne kadar sürede tahliye edilebilmelidir?",
+      "options": ["90 saniye", "60 saniye", "120 saniye", "45 saniye", "180 saniye"]
+    },
+    {
+      "id": 90712, "section": "070-07",
+      "text": "Uçuş kaydedicisi ile ilgili aşağıdakilerden hangisi doğrudur?",
+      "options": ["En son 25 saati kaydeder ve kayıtlar en az 60 gün saklanır", "En son 2 saati kaydeder ve kayıtlar en az 30 gün saklanır", "En son 25 saati kaydeder ve kayıtlar en az 6 ay saklanır", "En son 10 saati kaydeder ve kayıtlar en az 60 gün saklanır", "Kayıt süresi sınırsızdır, kayıtlar süresiz saklanır"]
+    },
+    {
+      "id": 90713, "section": "070-07",
+      "text": "Acil Durum Yer Belirleme Vericisi (ELT) hangi frekansta sinyal yayınlar?",
+      "options": ["406 MHz", "121,5 kHz", "243 MHz", "500 kHz", "118 MHz"]
+    },
+    {
+      "id": 90714, "section": "070-07",
+      "text": "\"MINIMUM FUEL\" bildirimi ne anlama gelir?",
+      "options": ["Mevcut yakıt, beklenmedik gecikmelere tolerans bırakmayacak seviyeye düşmüştür; acil durum değildir", "Uçak final reserve yakıtın altına düşmüştür ve acil iniş gerekir", "Yakıt sistemi arızalıdır", "ATC'den mutlak iniş önceliği talep edilmektedir", "Yakıt ikmali olmadan varış meydanına ulaşılamayacaktır"]
+    },
+    {
+      "id": 90715, "section": "070-07",
+      "text": "\"MAYDAY FUEL\" çağrısı hangi durumu ifade eder?",
+      "options": ["İnişin final reserve yakıtın altında gerçekleşeceği kesindir; acil durumdur", "Yakıt beklenmedik gecikmelere tolerans bırakmamaktadır", "Yedek meydana yönelme kararı alınmıştır", "Yakıt göstergesi arızalanmıştır", "Yakıt ikmali gecikmiştir"]
+    },
+    {
+      "id": 90716, "section": "070-07",
+      "text": "IFR uçuş için asgari ekipman gerekliliğinde kaç adet hassas basınç altimetresi bulunmalıdır?",
+      "options": ["İki", "Bir", "Üç", "Dört", "Altimetre zorunlu değildir"]
+    },
+    {
+      "id": 90717, "section": "070-07",
+      "text": "Gece uçuşu için IFR ekipmanına ilave olarak kaç adet iniş ışığı bulundurulması zorunludur?",
+      "options": ["İki", "Bir", "Üç", "Dört", "İniş ışığı zorunlu değildir"]
+    },
+    {
+      "id": 90718, "section": "070-07",
+      "text": "Pervaneli uçaklar için yedek meydan yakıtı nasıl hesaplanır?",
+      "options": ["En kritik yedek meydana uçuş ve sonrasında 45 dakika; veya seyir seviyelerinde planlanan uçuş süresinin %15'i ile ilave 45 dakika", "En kritik yedek meydana uçuş ve sonrasında 30 dakika", "Seyir süresinin %10'u ve ilave 30 dakika", "Yedek meydana uçuş ve 1.500 ft'te 30 dakika bekleme", "Varış meydanına uçuş süresinin yarısı kadar"]
+    },
+    {
+      "id": 90719, "section": "070-07",
+      "text": "Turbo-jet motorlu uçaklarda yedek meydan yakıtı hesabında, yedek meydan üzerinde hangi koşullarda bekleme öngörülür?",
+      "options": ["Standart sıcaklıkta, yedek meydan üzeri 1.500 ft AGL'de 30 dakika", "Standart sıcaklıkta, yedek meydan üzeri 1.000 ft AGL'de 45 dakika", "Deniz seviyesinde 30 dakika", "Yedek meydan üzeri 3.000 ft AGL'de 30 dakika", "Yedek meydan üzeri 1.500 ft AGL'de 45 dakika"]
+    },
+    {
+      "id": 90720, "section": "070-07",
+      "text": "Yolcular uçaktayken yakıt ikmali yapılabilmesi için aşağıdakilerden hangisi gerekli değildir?",
+      "options": ["Uçağın tüm kapılarının açık ve merdivenlerin bağlı olması", "Tahliyeyi başlatıp yönetebilecek nitelikli personelin hazır bulunması", "Yakıt sorumlusu ile yer ekibi arasında çift yönlü iletişim sağlanması", "Uygun yangın söndürme ekipmanının hazır bulundurulması", "En az bir uygun kapının tahliyeye hazır ve yollarının engelsiz olması"]
+    },
+    {
+      "id": 90721, "section": "070-07",
+      "text": "Ditching (suya iniş) sırasında dalga yüksekliğinin fazla olduğu durumlarda iniş nasıl yapılmalıdır?",
+      "options": ["Dalga doğrultusuna paralel ve dalganın arka yüzeyine", "Dalgaya dik ve dalganın tepesine", "Her koşulda rüzgâra karşı", "Dalga doğrultusuna paralel ve dalganın ön yüzeyine", "Mümkün olan en yüksek hızda, dalgaya dik"]
+    },
+    {
+      "id": 90722, "section": "070-07",
+      "text": "Ditching sırasında uçak hangi konfigürasyonda suya indirilmelidir?",
+      "options": ["İniş takımı yukarıda, kanatlar yatay, hafif burun yukarı ve minimum emniyetli hızda", "İniş takımı aşağıda, kanatlar yatay, burun aşağı", "İniş takımı yukarıda, uçak stall ettirilerek düşürülür", "İniş takımı aşağıda, maksimum hızda", "Kanatlar yatık, burun aşağı, iniş takımı yukarıda"]
+    },
+    {
+      "id": 90723, "section": "070-07",
+      "text": "Pist Durum Işıkları (RWSL) ile ilgili aşağıdakilerden hangisi doğrudur?",
+      "options": ["Yalnızca pistin durumunu gösterir; kalkış veya piste giriş izni anlamına gelmez", "Yeşil yandığında piste girilebileceğini gösterir", "Kule tarafından verilen kalkış müsaadesinin görsel karşılığıdır", "Yalnızca düşük görüş koşullarında çalışır", "Taksi rehberliği sağlamak için kullanılır"]
+    },
+    {
+      "id": 90724, "section": "070-07",
+      "text": "Geliştirilmiş taksiyolu merkez hattı işaretlemesi, pist bekleme pozisyonundan yaklaşık kaç metre geriye kadar uzanır?",
+      "options": ["45 metre", "15 metre", "60 metre", "90 metre", "30 metre"]
+    },
+    {
+      "id": 90725, "section": "070-07",
+      "text": "Motor çalıştırma sırasında karbüratörde yangın çıkar ve motor çalışmıyorsa ne yapılır?",
+      "options": ["Karışım Idle Cut-Off'a alınır, gaz kolu tamamen açılır ve marş çevrilmeye devam edilerek alev motora çekilir", "Karışım zenginleştirilir ve marş derhal durdurulur", "Motor yüksek devirde bir süre çalıştırılır", "Yakıt açık tutulup yangın söndürücü ile müdahale edilir", "Master açık bırakılarak kule bilgilendirilir"]
+    },
+    {
+      "id": 90726, "section": "070-07",
+      "text": "Kokpitte bulundurulması zorunlu olan yangın söndürücü tipi aşağıdakilerden hangisidir?",
+      "options": ["En az bir adet Halon 1211", "En az bir adet su tipi söndürücü", "En az iki adet köpüklü söndürücü", "Yalnızca metal yangını kuru tozu", "Söndürücü bulundurma zorunluluğu yoktur"]
+    },
+    {
+      "id": 90727, "section": "070-07",
+      "text": "Bir mikroburstun çapı genellikle ne kadardır?",
+      "options": ["2,5 NM'den küçük", "5 NM civarında", "10 NM'den büyük", "1 NM'den küçük", "20 NM civarında"]
+    },
+    {
+      "id": 90728, "section": "070-07",
+      "text": "Bir mikroburst yaklaşık ne kadar süre devam eder?",
+      "options": ["10 – 15 dakika", "1 – 2 dakika", "30 – 45 dakika", "2 – 3 saat", "5 saniye – 1 dakika"]
+    },
+    {
+      "id": 90729, "section": "070-07",
+      "text": "Büyük uçaklarda wake vortex çekirdeği içindeki hava hızı en fazla kaça çıkabilir?",
+      "options": ["Saniyede 100 metre", "Saniyede 10 metre", "Saniyede 300 metre", "Saatte 100 kilometre", "Saniyede 30 metre"]
+    },
+    {
+      "id": 90730, "section": "070-07",
+      "text": "Gürültü azaltma amacıyla, kalkış ve tırmanış sırasında pilotlar hangi irtifaya ulaşmadan dönüş yapmamalıdır?",
+      "options": ["500 feet", "1.000 feet", "300 feet", "1.500 feet", "700 feet"]
+    },
+    {
+      "id": 90731, "section": "070-07",
+      "text": "Gürültü tercihli rotalarda yapılan dönüşlerde yatış açısı en fazla kaç derece olmalıdır?",
+      "options": ["15 derece", "25 derece", "30 derece", "10 derece", "20 derece"]
+    },
+    {
+      "id": 90732, "section": "070-07",
+      "text": "Kalkış yedek meydanı seçiminde aşağıdakilerden hangisi doğrudur?",
+      "options": ["Motor sayısına bağlı 1 saat veya 2 saat gibi bir mesafe ya da süre şartı yoktur", "Tek motorlu uçaklar için en fazla 1 saat mesafede olmalıdır", "Çok motorlu uçaklar için en fazla 2 saat mesafede olmalıdır", "Kalkış meydanına en fazla 100 NM uzaklıkta olmalıdır", "Her zaman varış yedek meydanı ile aynı olmalıdır"]
+    },
+    {
+      "id": 90733, "section": "070-07",
+      "text": "\"Büyük uçak\" tanımı için maksimum kalkış ağırlığı sınırı nedir?",
+      "options": ["5.700 kilogramdan fazla", "2.000 kilogramdan fazla", "7.000 kilogramdan fazla", "27.000 kilogramdan fazla", "136.000 kilogramdan fazla"]
+    },
+    {
+      "id": 90734, "section": "070-07",
+      "text": "Taşınabilir elektronik cihazların (PED) emniyete alınması gereken kritik uçuş safhaları hangileridir?",
+      "options": ["Taksi, kalkış, iniş ve türbülans", "Yalnızca kalkış ve iniş", "Yalnızca türbülans", "Seyir uçuşunun tamamı", "Yalnızca gece uçuşları"]
+    },
+    {
+      "id": 90735, "section": "070-07",
+      "text": "ICAO Annex 6 (Hava Aracı İşletmesi) kaç bölümden oluşur?",
+      "options": ["Üç: Uluslararası Ticari Hava Taşımacılığı-Uçak, Uluslararası Genel Havacılık-Uçak, Uluslararası Operasyonlar-Helikopterler", "İki: Uçaklar ve Helikopterler", "Dört: Ticari, Genel, Helikopter ve İHA", "Bir bölümden oluşur", "Beş: Ticari, Genel, Helikopter, Balon ve Planör"]
+    }
+  ]
+}

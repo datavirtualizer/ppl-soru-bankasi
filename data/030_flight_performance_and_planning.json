@@ -1,0 +1,2302 @@
+{
+  "subject_code": "030",
+  "subject_name": "Flight Performance and Planning",
+  "source": "ATPL TV - PPL Turkey (English) Exam Report",
+  "sections": {
+    "030-01": "Mass and CG Limitations",
+    "030-02": "Terminology",
+    "030-03": "CG Calculations",
+    "030-04": "Performance – General",
+    "030-05": "Take-Off",
+    "030-06": "Climb",
+    "030-07": "Cruise",
+    "030-08": "Descent & Glide",
+    "030-09": "Landing",
+    "030-10": "Flight Planning"
+  },
+  "questions": [
+    {
+      "id": 14828,
+      "section": "030-01",
+      "text": "With the centre of gravity on the forward limit which of the following is to be expected?",
+      "options": [
+        "A decrease in range.",
+        "A tendency to yaw to the right on take-off.",
+        "A decrease in the landing speed.",
+        "A decrease of the stalling speed."
+      ]
+    },
+    {
+      "id": 14997,
+      "section": "030-09",
+      "text": "If the actual landing mass is higher than planned,",
+      "options": [
+        "the landing distance will be longer.",
+        "the landing distance will be unaffected.",
+        "the approach path will be steeper and threshold speed higher.",
+        "the approach path will be steeper."
+      ]
+    },
+    {
+      "id": 14861,
+      "section": "030-02",
+      "text": "What is the mass of a 50lt fuel having a specific gravity of 0.72?",
+      "options": ["36kg", "72kg", "63kg", "69.4kg"]
+    },
+    {
+      "id": 15018,
+      "section": "030-10",
+      "text": "An aircraft has 72 Gallons fuel capacity. What is the endurance of aircraft if the fuel consumption is 15 Gal/hour?",
+      "options": [
+        "4 hours 48 minutes",
+        "4 hours 54 minutes",
+        "4 hours 32 minutes",
+        "3 hours 58 minutes"
+      ]
+    },
+    {
+      "id": 14955,
+      "section": "030-06",
+      "text": "What is absolute ceiling?",
+      "options": [
+        "The maximum altitude at which no more climb is possible",
+        "The maximum altitude at which aircraft can maintain 500ft/min ROC.",
+        "The maximum altitude at which aircraft can maintain 100ft/min ROC.",
+        "The maximum altitude at which aircraft can fly with one engine inoparative."
+      ]
+    },
+    {
+      "id": 14892,
+      "section": "030-04",
+      "text": "Which of these speeds is obtained from Calibrated Air Speed (CAS) with air density and altitude corrections?",
+      "options": [
+        "TAS (True Air Speed)",
+        "EAS (Equivalent Air Speed)",
+        "GS (Ground Speed)",
+        "IAS (Indicated Air Speed)"
+      ]
+    },
+    {
+      "id": 15005,
+      "section": "030-09",
+      "text": "When landing, if an aircraft's true air speed is significantly less than the true ground speed then the aircraft is experiencing:",
+      "options": [
+        "A tailwind.",
+        "A cross wind.",
+        "A reduced atmospheric density.",
+        "A headwind."
+      ]
+    },
+    {
+      "id": 14836,
+      "section": "030-01",
+      "text": "In calculation before flight , if CG moves out of its limits during flight, it should be rearranged until balancing. How do you make it?",
+      "options": [
+        "All.",
+        "Removing mass.",
+        "Adding mass.",
+        "Load or luggage in aircraft is moved to other location."
+      ]
+    },
+    {
+      "id": 14837,
+      "section": "030-01",
+      "text": "If nose wheel of a light aircraft moves forward during gear retraction, how will this movement affect the location of the centre of gravity (cg) on the aeroplane?",
+      "options": [
+        "It will cause the cg to move forward.",
+        "The cg location will change, but the direction cannot be told the information given.",
+        "It will cause the cg to move aft.",
+        "It will not affect the cg location."
+      ]
+    },
+    {
+      "id": 14972,
+      "section": "030-07",
+      "text": "The maximum speed in horizontal flight occurs when:",
+      "options": [
+        "The maximum thrust is equal to the total drag.",
+        "The thrust does not increase further with increasing speed.",
+        "The thrust is equal to the maximum drag.",
+        "The thrust is equal to minimum drag."
+      ]
+    },
+    {
+      "id": 14843,
+      "section": "030-02",
+      "text": "Which weight definition includes crew and their baggage weight?",
+      "options": [
+        "Dry operating weight.",
+        "Empty weight.",
+        "Useful load.",
+        "Traffic load."
+      ]
+    },
+    {
+      "id": 14857,
+      "section": "030-02",
+      "text": "If the maximum structural landing mass is exceeded:",
+      "options": [
+        "The undercarriage could collapse on landing.",
+        "No damage will occur providing the aircraft is within the performance limited landing mass.",
+        "No damage will occur providing the aircraft is within the regulated landing mass.",
+        "The aircraft will be unable to get airborne."
+      ]
+    },
+    {
+      "id": 14851,
+      "section": "030-02",
+      "text": "The operating weight is:",
+      "options": [
+        "the sum of dry operating weight and fuel weight.",
+        "zero fuel weight.",
+        "the sum of dry operating weight, fuel weight and traffic load.",
+        "the sum of dry operating weight, fuel weight and useful load."
+      ]
+    },
+    {
+      "id": 14975,
+      "section": "030-07",
+      "text": "What speed, from the figure below, should be flown for maximum range?",
+      "options": ["C", "D", "B", "A"],
+      "needs_figure": true
+    },
+    {
+      "id": 15011,
+      "section": "030-10",
+      "text": "From which of the following would you expect to find information regarding known short unserviceability of the approach lights?",
+      "options": ["NOTAM", "ATCC broadcasts", "SIGMET", "AIP"]
+    },
+    {
+      "id": 14860,
+      "section": "030-02",
+      "text": "Which one below is not a unit of volume used during fuel loading?",
+      "options": ["Octane", "Liter", "US Gallon", "Imperial Gallon"]
+    },
+    {
+      "id": 14839,
+      "section": "030-01",
+      "text": "If a fuel tank is situated behind CG, as the fuel being burned:",
+      "options": [
+        "CG travels forward, which creates nose down moment",
+        "CG travels forward, which creates nose up moment",
+        "CG travels backward, which creates nose up moment",
+        "CG travels backward, which creates nose down moment"
+      ]
+    },
+    {
+      "id": 14873,
+      "section": "030-03",
+      "text": "If all the moments are positive when calculating mass (weight) and balance, the position of the datum would be at the:",
+      "options": [
+        "Nose, or forward of the aircraft.",
+        "Main wheels centreline.",
+        "Centre line of the nose or tail wheel depending on the aircraft type.",
+        "Trailing edge of the wing."
+      ]
+    },
+    {
+      "id": 14887,
+      "section": "030-04",
+      "text": "In which way can the density of the air affect aeroplane performance?",
+      "options": [
+        "If density decreases, air pressure also decreases which affects aircraft performance negatively.",
+        "Density does not have a special effect on performance.",
+        "If density increases it means that the aircraft is in a high pressure altitude which decreases the performance.",
+        "If there is a decrease in density, it means the air is hotter so the engines can get warmer in a short time which increases performance."
+      ]
+    },
+    {
+      "id": 14943,
+      "section": "030-06",
+      "text": "Changing the take-off flap setting from high flap like 20° to low flap like 10° will normally result in :",
+      "options": [
+        "a longer take-off distance and a better climb.",
+        "a shorter take-off distance and a better climb.",
+        "a better climb and an equal take-off distance.",
+        "a shorter take-off distance and an equal climb."
+      ]
+    },
+    {
+      "id": 14929,
+      "section": "030-05",
+      "text": "Which of the following listed below is correct, when an aircraft is extra loaded? 1-Performance of aircraft increase 2-TORA increase 3-Landing distance required increase 4-ROC increase 5-endurance increase 6-Vs increase 7-Vmd increase",
+      "options": ["3 - 6 - 7", "1 - 3 - 4", "1 - 6 - 7", "2 - 3 - 5"]
+    },
+    {
+      "id": 14969,
+      "section": "030-06",
+      "text": "While climbing, the climbing angle:",
+      "options": [
+        "the wind has no effect on climbing angle.",
+        "becomes steeper in tail wind, becomes steeper in head wind.",
+        "becomes lower in head wind, becomes steeper in tail wind.",
+        "becomes steeper in head wind, becomes lower in tail wind."
+      ]
+    },
+    {
+      "id": 14992,
+      "section": "030-09",
+      "text": "A runway is contaminated with 0.5 cm of wet snow. The flight manual of a light twin nevertheless authorises a landing in these conditions. The landing distance will be, in relation to that for a dry runway:",
+      "options": ["increased", "reduced", "substantially decreased", "unchanged"]
+    },
+    {
+      "id": 14894,
+      "section": "030-04",
+      "text": "Which one of these conditions increases the Vmd speed?",
+      "options": [
+        "Increasing mass and up flap configuration",
+        "Down flap configuration only",
+        "Decreasing mass only",
+        "Decreasing mass and down flap configuration"
+      ]
+    },
+    {
+      "id": 14896,
+      "section": "030-05",
+      "text": "An airport has a 2700 m long runway, and a 1400 m clearway at each end of that runway. What is the maximum value of the take off distance available?",
+      "options": ["4050 m", "4100 m", "5500 m", "2700 m"]
+    },
+    {
+      "id": 14812,
+      "section": "030-07",
+      "text": "An aircraft which has been grossly overloaded will: 1.require increased take-off and landing distances. 2. Have a higher stalling speed. 3. Have a reduced maximum level flight speed. 4. Have increased range and endurance. 5. Have a reduced rate of climb and operating ceiling. Which of the above are correct?",
+      "options": [
+        "1, 2, 3, & 5.",
+        "1, 2, 3 & 4",
+        "2, 4 & 5.",
+        "1, 2, 4 & 5."
+      ]
+    },
+    {
+      "id": 15017,
+      "section": "030-10",
+      "text": "265 US-GAL equals? (Specific gravity 0.80)",
+      "options": ["803 kg.", "940 kg.", "895 kg.", "862 kg."]
+    },
+    {
+      "id": 14987,
+      "section": "030-08",
+      "text": "Two identical aeroplanes at different masses are descending at idle thrust. Which of the following statements correctly describes their descent characteristics ?",
+      "options": [
+        "At a given angle of attack, both the vertical and the forward speed are greater for the heavier aeroplane.",
+        "At a given angle of attack the heavier aeroplane will always glide further than the lighter aeroplane.",
+        "There is no difference between the descent characteristics of the two aeroplanes.",
+        "At a given angle of attack the lighter aeroplane will always glide further than the heavier aeroplane."
+      ]
+    },
+    {
+      "id": 14886,
+      "section": "030-04",
+      "text": "If the outside air temperature is higher than ISA, the Density Altitude is:",
+      "options": [
+        "higher than the pressure altitude.",
+        "lower than the pressure altitude.",
+        "not related to pressure altitude.",
+        "equal to the pressure altitude."
+      ]
+    },
+    {
+      "id": 14813,
+      "section": "030-01",
+      "text": "A wing contaminated by a small amount of ice will produce:",
+      "options": [
+        "More drag, more weight and less lift.",
+        "An increase in weight and decrease in drag.",
+        "An increase in both lift and drag co-efficient.",
+        "More weight and more lift."
+      ]
+    },
+    {
+      "id": 15022,
+      "section": "030-10",
+      "text": "Still air distance is 189 Nm in 30 minutes. What ground distance has been flown in 30 kts headwind?",
+      "options": ["174 NM", "193 NM", "188 NM", "203 NM"]
+    },
+    {
+      "id": 14870,
+      "section": "030-03",
+      "text": "Moment (balance) arms are measured from a specific point to the body station at which the mass is located. That point is known as",
+      "options": [
+        "the datum.",
+        "the axis.",
+        "the focal point.",
+        "the centre of gravity of the aeroplane."
+      ]
+    },
+    {
+      "id": 14967,
+      "section": "030-06",
+      "text": "Which one of the following is not affected by a tail wind?",
+      "options": [
+        "The climb limited take-off mass.",
+        "The take-off run.",
+        "The field limited take-off mass.",
+        "The obstacle limited take-off mass."
+      ]
+    },
+    {
+      "id": 14956,
+      "section": "030-06",
+      "text": "What is the effect of a head wind component, compared to still air?",
+      "options": [
+        "Headwind increases the clearance of obstacles.",
+        "Headwind decreases climb angle.",
+        "Headwind increases ground speed.",
+        "Headwind decreases IAS."
+      ]
+    },
+    {
+      "id": 14865,
+      "section": "030-02",
+      "text": "A pilot writes 50 kg in the Mass and Balance sheet after loading 50 liters of AVGAS. Which statement is correct?",
+      "options": [
+        "The aircraft is lighter than expected.",
+        "It is not possible to answer this question since the density of AVGAS can be above or below 1 kg/lt.",
+        "The aircraft is at the same weight as noted in the Mass and Balance sheet.",
+        "The aircraft is heavier than expected."
+      ]
+    },
+    {
+      "id": 15026,
+      "section": "030-10",
+      "text": "In the ATS flight plan item 10 (equipment) should be filled up with which letter to indicate, that the aircraft has serviceable transponder C mode?",
+      "options": ["C", "X", "S", "B"]
+    },
+    {
+      "id": 15001,
+      "section": "030-09",
+      "text": "The stalling speed or the minimum steady flight speed at which the airplane is Controllable in landing configuration is abbreviated as",
+      "options": ["VS0", "VMC", "VS", "VS1"]
+    },
+    {
+      "id": 15029,
+      "section": "030-10",
+      "text": "The ICAO definition of ETA is the:",
+      "options": [
+        "Estimated time of arrival at destination.",
+        "Estimated time en route.",
+        "Estimated time of arrival at an en-route point or fix.",
+        "Actual time of arrival at a point or fix."
+      ]
+    },
+    {
+      "id": 15031,
+      "section": "030-10",
+      "text": "In the ATS flight plan Item 15 (Cruising speed), when not expressed as a Mach number, cruising speed is expressed as :",
+      "options": ["TAS.", "Groundspeed.", "CAS.", "IAS."]
+    },
+    {
+      "id": 14877,
+      "section": "030-03",
+      "text": "For the following see-saw to be in balance",
+      "options": [
+        "A = B x Fb / Fa",
+        "A = B x Fa / Fb",
+        "A = B ( Fa + Fb)",
+        "A = B + Fb / Fa"
+      ],
+      "needs_figure": true
+    },
+    {
+      "id": 14883,
+      "section": "030-03",
+      "text": "Given: Total mass: 7500 kg Centre of gravity (cg) location station: 80.5 Aft cg limit station: 79.5 How much cargo must be shifted from the aft cargo compartment at station 150 to the forward cargo compartment at station 30 in order to move the cg location to the aft limit?",
+      "options": ["62.5 kg.", "73.5 kg.", "68.9 kg.", "65.8 kg."]
+    },
+    {
+      "id": 14964,
+      "section": "030-06",
+      "text": "Which equation is related with the calculation of climb angle?",
+      "options": ["(T-D)/W", "(P-D)/W x TAS", "(T-D)/W x TAS", "(P-D)/L"]
+    },
+    {
+      "id": 14936,
+      "section": "030-06",
+      "text": "A headwind component increasing with altitude, as compared to zero wind condition, (assuming IAS is constant)",
+      "options": [
+        "has no effect on rate of climb.",
+        "decreases angle and rate of climb.",
+        "does not have any effect on the angle of flight path during climb.",
+        "improves angle and rate of climb."
+      ]
+    },
+    {
+      "id": 14849,
+      "section": "030-02",
+      "text": "What is the difference between DOM and ZFM?",
+      "options": ["Traffic load", "Traffic load and crew", "Fuel only", "Crew only"]
+    },
+    {
+      "id": 14844,
+      "section": "030-02",
+      "text": "Dry Operating Mass is the mass of the aeroplane less",
+      "options": [
+        "usable fuel and traffic load.",
+        "usable fuel, potable water and lavatory chemicals.",
+        "traffic load, potable water and lavatory chemicals.",
+        "usable fuel."
+      ]
+    },
+    {
+      "id": 14895,
+      "section": "030-05",
+      "text": "A rectangular area at the end of the runway that can be used during take-off is called ……….. It helps the aircraft to ………….. Pilot candidates often mix it with the ………….. that can be used in case of an abandoned take-off.",
+      "options": [
+        "Clearway / make the initial climb / stopway.",
+        "Isolated parking area / get checked following a bomb threat / stopway.",
+        "Runway End Safety Area / land safely / clearway .",
+        "Stopway / stop safely / clearway."
+      ]
+    },
+    {
+      "id": 15008,
+      "section": "030-09",
+      "text": "Why is trailing edge flap used for landing?",
+      "options": [
+        "The approach speed is reduced and a steeper approach path is flown which improves forward vision",
+        "The approach speed is increased and a steeper approach path is flown which improves forward vision",
+        "The approach speed is reduced and a flatter approach path is flown which improves forward vision",
+        "The approach speed is increased and a flatter approach path is flown which improves forward vision"
+      ]
+    },
+    {
+      "id": 14880,
+      "section": "030-03",
+      "text": "The position of the centre of gravity can always be determined by:",
+      "options": [
+        "Dividing the total moment by the total mass.",
+        "Subtracting the total moment from the total mass.",
+        "Subtracting the total mass from the total moment.",
+        "Dividing the total mass by the total moment."
+      ]
+    },
+    {
+      "id": 14840,
+      "section": "030-01",
+      "text": "The location of CG does not directly affect....",
+      "options": ["Lift generation", "Maneuverability", "Stability", "Controllability"]
+    },
+    {
+      "id": 14808,
+      "section": "030-01",
+      "text": "Which of the following situations may, under certain conditions, result in structural damage occurring?",
+      "options": [
+        "An aircraft being flown above its maximum all up mass.",
+        "An aircraft in the normal category being flown at its maximum permissible mass.",
+        "An aircraft being flown above its maximum landing mass.",
+        "An aircraft in the utility category being flown at its maximum permissible mass."
+      ]
+    },
+    {
+      "id": 14931,
+      "section": "030-05",
+      "text": "Which parameter does not affect V1 calculation?",
+      "options": ["V2", "Weight of aircraft", "VR", "Upslope of runway"]
+    },
+    {
+      "id": 14925,
+      "section": "030-05",
+      "text": "Which of the following combinations will give the most limiting weight if identical slope and wind component values exist?",
+      "options": [
+        "an up-sloping runway with a tailwind component",
+        "a down-sloping runway with a headwind component",
+        "an up sloping runway with a headwind component",
+        "a down-sloping runway with a tailwind component"
+      ]
+    },
+    {
+      "id": 15007,
+      "section": "030-09",
+      "text": "Which one is the correct statement about the landing performance?",
+      "options": [
+        "The ground roll distance is the horizontal distance from touchdown to stop",
+        "The landing distance is the horizontal distance from brake release to the screen height",
+        "The ground roll distance is the horizontal distance from brake release to the screen height",
+        "The landing distance is the horizontal distance from touchdown to stop"
+      ]
+    },
+    {
+      "id": 14900,
+      "section": "030-05",
+      "text": "Considering VR, which statement is correct?",
+      "options": [
+        "VR is the speed at which rotation should be initiated.",
+        "In case of engine failure below VR the take-off should be aborted.",
+        "VR is the lowest speed for directional control in case of engine failure.",
+        "VR is the lowest climb speed after engine failure."
+      ]
+    },
+    {
+      "id": 14829,
+      "section": "030-01",
+      "text": "In cruise flight, a centre of gravity moving aft will:",
+      "options": [
+        "decrease longitudinal static stability",
+        "have no effect on longitudinal static stability",
+        "increase longitudinal static stability",
+        "not change the manoeuvrability"
+      ]
+    },
+    {
+      "id": 14904,
+      "section": "030-04",
+      "text": "How does the thrust of a propeller vary during take-off run, assuming unstalled flow conditions at the propeller blades? The thrust:",
+      "options": [
+        "decreases while the aeroplane speed builds up",
+        "has no change during takeoff and climb",
+        "increases while the aeroplane speed builds up",
+        "varies with mass changes only"
+      ]
+    },
+    {
+      "id": 14884,
+      "section": "030-03",
+      "text": "Assume: Aeroplane gross mass: 4750 kg Centre of gravity at station: 115.8 What will be the new position of the centre of gravity if 100 kg is moved from the station 30 to station 120?",
+      "options": [
+        "Station 117.69",
+        "Station 122.23",
+        "Station 118.33",
+        "Station 118.25"
+      ]
+    },
+    {
+      "id": 14858,
+      "section": "030-02",
+      "text": "Maximum Zero Fuel Mass (MZFM) is best defined as.",
+      "options": [
+        "Maximum permissible mass of the aircraft with no useable fuel.",
+        "Maximum permissible mass of the aircraft without occupants and baggage.",
+        "Maximum permissible mass of the aircraft with no crew or fuel.",
+        "Maximum permissible mass of the aircraft with no passengers or fuel."
+      ]
+    },
+    {
+      "id": 14982,
+      "section": "030-08",
+      "text": "GS 120 knots. You have to descend enroute from 8000 feet to 1000 feet. You can descend 500 feet/min. What is the distance from A point to initiate descend, if you want level off at 1000 feet over A?",
+      "options": ["28 NM", "40 NM", "14 NM", "33 NM"]
+    },
+    {
+      "id": 14966,
+      "section": "030-06",
+      "text": "Which of the following sets of factors will increase the climb-limited TOM (every factor considered independently)?",
+      "options": [
+        "Low flap setting, low PA, low OAT.",
+        "High flap setting, low PA, low OAT.",
+        "Low flap setting, high PA, high OAT.",
+        "Low flap setting, high PA, low OAT."
+      ]
+    },
+    {
+      "id": 14259,
+      "section": "030-10",
+      "text": "During a Controlled Flight, your actual TAS is 150 kts however your flight planned TAS is 140 kts. Must you inform ATCU?",
+      "options": ["Yes", "Only if you are outside CAS", "No", "Only if requested by ATC"]
+    },
+    {
+      "id": 14914,
+      "section": "030-05",
+      "text": "The runway length which is used for take-off run, issued by the relevant authorities and has adequate conditions is named:",
+      "options": [
+        "Take-off Run Distance Available (TORA)",
+        "Landing Distance Available (LDA)",
+        "Take-off Distance Available (TODA)",
+        "Accelarate and Stop Distance Available (ASDA)"
+      ]
+    },
+    {
+      "id": 14905,
+      "section": "030-05",
+      "text": "If there is no clearway designated on a runway, after the initial climb, the aeroplane most reach 50 ft in the:",
+      "options": ["TORA section.", "TODA section.", "LDA section.", "ASDA section."]
+    },
+    {
+      "id": 14820,
+      "section": "030-01",
+      "text": "Loads must be adequately secured in order to:",
+      "options": [
+        "avoid unplanned centre of gravity (cg) movement and aircraft damage.",
+        "allow steep turns.",
+        "prevent excessive 'g'-loading during the landing flare.",
+        "avoid any damage to the freight."
+      ]
+    },
+    {
+      "id": 14911,
+      "section": "030-05",
+      "text": "The main reason for taking off into wind is to:",
+      "options": [
+        "Decrease the ground speed of the aircraft at lift-off.",
+        "Increase the take-off distance.",
+        "Increase the ground speed of the aircraft.",
+        "Decrease the take off distance available (TODA)."
+      ]
+    },
+    {
+      "id": 15019,
+      "section": "030-10",
+      "text": "Fuel flow per HR is 31 US-GAL, total fuel on board is 260 Liter. What is the endurance?",
+      "options": ["2 HR 13 MIN.", "8 HR 23 MIN.", "2 HR 22 MIN.", "8 HR 39 MIN."]
+    },
+    {
+      "id": 14821,
+      "section": "030-01",
+      "text": "Certification requirements stipulate that when loading a light aircraft:",
+      "options": [
+        "The C of G should remain within the defined limits and the Maximum Take-off Mass must not be exceeded.",
+        "That the Maximum Take-off Mass is not exceeded, and the CofG remains at least 5% inside the C of G limits.",
+        "With maximum traffic load and full fuel the aircraft will not exceed the authorized Maximum Takeoff Mass.",
+        "All seats, baggage compartments and fuel tanks are contained within the C of G limits so that it is impossible to load the aircraft beyond its limits."
+      ]
+    },
+    {
+      "id": 15009,
+      "section": "030-10",
+      "text": "From which of the following would you expect to find details of the Search and Rescue organisation and procedures?",
+      "options": ["AIP", "NOTAM", "SIGMET", "ATCC broadcasts"]
+    },
+    {
+      "id": 14868,
+      "section": "030-03",
+      "text": "The centre of gravity is the … on an aircraft through which the total … is considered to act vertically …",
+      "options": [
+        "point; mass; downwards",
+        "point; moment; upwards",
+        "datum; mass; upwards",
+        "datum; moment; downwards"
+      ]
+    },
+    {
+      "id": 14862,
+      "section": "030-02",
+      "text": "A light aircraft is loaded with 30 litres of AVGAS with a specific gravity of 0.72. How would you enter the fuel mass in the mass & balance sheet?",
+      "options": ["21.6 kg", "30 kg", "2.16 kg", "30 lt"]
+    },
+    {
+      "id": 14930,
+      "section": "030-05",
+      "text": "Which of the following parameters will decrease the take off ground run? 1- decreasing take off mass 2- increasing take off mass 3- increasing density 4- decreasing density 5- increasing flap setting 6- decreasing flap setting 7- increasing pressure altitude 8- decreasing pressure altitude",
+      "options": [
+        "1, 3, 5 and 8",
+        "1, 4, 6 and 8",
+        "2, 3, 6 and 7",
+        "2, 4, 5 and 7"
+      ]
+    },
+    {
+      "id": 14959,
+      "section": "030-06",
+      "text": "What is the proper use for the best-rate-of-climb speed (Vy)?",
+      "options": [
+        "When trying to get cruising altitude quickly.",
+        "When trying to avoid an excessive pitch attitude during a climb.",
+        "When approaching high mountains.",
+        "When clearing an obstacle."
+      ]
+    },
+    {
+      "id": 14978,
+      "section": "030-08",
+      "text": "A constant tailwind",
+      "options": [
+        "decrease the angle of the descent.",
+        "increases the rate of descent.",
+        "increases the angle of descent.",
+        "decrease the descent distance over ground."
+      ]
+    },
+    {
+      "id": 14866,
+      "section": "030-02",
+      "text": "A light aircraft is loaded with 80 litres of AVGAS with a density of 0.72 kg/lt. Calculate the landing mass from the given values: BEM: 540 kgs. Pilots : 130 kgs Trip fuel: 40 lt.",
+      "options": ["698.8 kgs", "727.6 kgs", "710 kgs", "670 kgs"]
+    },
+    {
+      "id": 15015,
+      "section": "030-10",
+      "text": "Fuel flow is 24 l/h, the usable fuel is 120 l. What is your endurance?",
+      "options": ["5 hours", "11 hours", "6 hours", "3 hours"]
+    },
+    {
+      "id": 14935,
+      "section": "030-06",
+      "text": "A decrease in atmospheric pressure has, among other things, the following Consequences on take-off performance:",
+      "options": [
+        "an increased take-off distance and degraded initial climb performance",
+        "a reduced take-off distance and degraded initial climb performance",
+        "an increased take-off distance and improved initial climb performance",
+        "a reduced take-off distance and improved initial climb performance"
+      ]
+    },
+    {
+      "id": 14265,
+      "section": "030-10",
+      "text": "If no ICAO identifier has been attributed to an alternate airport (box 16) of a flight plan form...",
+      "options": [
+        "write ZZZZ in box 16 and indicate in box 18 (additional information) ALTN/followed by the name of the airport.",
+        "write XXXX in box 16 and indicate in box 18 (additional information) DEGT/followed by the name of the airport",
+        "write XXXX in box 16 and indicate in box 18 (additional information) ALTN/followed by the name of the airport",
+        "write ZZZZ in box 16 and indicate in box 18 (additional information) DEGT/followed by the name of the airport."
+      ]
+    },
+    {
+      "id": 14263,
+      "section": "030-10",
+      "text": "If a flight plan has been filed and the Pilot in Command lands at an aerodrome other than the filed destination, she/he must notify the ATCU unit at the planned destination:",
+      "options": [
+        "Within 30 minutes of the ETA at the planned destination.",
+        "Within 30 minutes of the scheduled arrival time at the diversion airfield.",
+        "Within 45 minutes of the landing time at the diversion airfield.",
+        "Within 45 minutes of the ETA at the planned destination."
+      ]
+    },
+    {
+      "id": 15010,
+      "section": "030-10",
+      "text": "From which of the following would you expect to find facilitation information regarding customs and health formalities?",
+      "options": ["AIP", "ATCC", "NAV/RAD charts", "NOTAM"]
+    },
+    {
+      "id": 14854,
+      "section": "030-02",
+      "text": "The Maximum Take-off Mass of an aircraft may be limited by:",
+      "options": [
+        "Structural design load limits and or runway length, altitude and temperature.",
+        "All of the above.",
+        "The airworthiness condition of the aircraft.",
+        "The authorised performance category of the aircraft, i.e. Utility / normal / aerobatic."
+      ]
+    },
+    {
+      "id": 14806,
+      "section": "030-01",
+      "text": "Before each flight, we need to check the mass and balance of the aircraft in order: I. To ensure that the aircraft is not overloaded II. To ensure that the centre of gravity is in limits",
+      "options": ["I and II", "I", "II", "Neither I nor II"]
+    },
+    {
+      "id": 14810,
+      "section": "030-01",
+      "text": "If an extra load is loaded into an aircraft the stall speed is likely to:",
+      "options": [
+        "Increase",
+        "Change depending on whether the load was placed FWD or AFT of the C of G.",
+        "Stay the same.",
+        "Decrease."
+      ]
+    },
+    {
+      "id": 14996,
+      "section": "030-09",
+      "text": "During landing on an airport with high elevation the true air speed (TAS) of an aircraft is higher than normal. What indicated speed (IAS) should be kept in such cases?",
+      "options": [
+        "Normal speed.",
+        "Increased for 5 kts for each 1,000 ft of airport elevation.",
+        "Higher than normal.",
+        "Lower than normal."
+      ]
+    },
+    {
+      "id": 15035,
+      "section": "030-10",
+      "text": "When completing an ATS flight plan for a flight commencing under IFR but possibly changing to VFR, the letters entered in Item 8 (FLIGHT RULES) would be:",
+      "options": ["Y.", "G.", "N/S.", "X."]
+    },
+    {
+      "id": 14949,
+      "section": "030-06",
+      "text": "Increasing the mass (and, therefore, weight) of the aircraft will:",
+      "options": [
+        "Decrease the rate and angle of climb.",
+        "Decrease the rate of climb and increase the angle of climb.",
+        "Increase the rate of climb and decrease the angle of climb.",
+        "Increase the rate and angle of climb."
+      ]
+    },
+    {
+      "id": 15025,
+      "section": "030-10",
+      "text": "In the appropriate box of a icao flight plan form, corresponding to estimated time of departure, the time of which event to be filled in?",
+      "options": ["Go off blocks", "Start-up", "Take-off", "Reaching airspace boundary"]
+    },
+    {
+      "id": 14889,
+      "section": "030-04",
+      "text": "Regarding unaccelerated horizontal flight, Minimum Drag is:",
+      "options": [
+        "dependent on aircraft mass.",
+        "a function of the density altitude.",
+        "a function of the pressure altitude.",
+        "independent of the aircraft mass."
+      ]
+    },
+    {
+      "id": 14917,
+      "section": "030-05",
+      "text": "What is the relationship between take off speeds?",
+      "options": ["V1≤VR", "V2=VR", "V2≤V1", "V2≤VR"]
+    },
+    {
+      "id": 14830,
+      "section": "030-01",
+      "text": "During take-off you notice that, for a given elevator input, the aeroplane rotates much more rapidly than expected. This is an indication that :",
+      "options": [
+        "the centre of gravity may be towards the aft limit.",
+        "the centre of pressure is aft of the centre of gravity.",
+        "the centre of gravity is too far forward.",
+        "the aeroplane is overloaded."
+      ]
+    },
+    {
+      "id": 14946,
+      "section": "030-06",
+      "text": "How does the best angle of climb and best rate of climb vary with increasing altitude for an aeroplane with a normal aspirated piston engine?",
+      "options": [
+        "Both decrease.",
+        "Best angle of climb increases while best rate of climb decreases.",
+        "Best angle of climb decreases while best rate of climb increases.",
+        "Both increase."
+      ]
+    },
+    {
+      "id": 14933,
+      "section": "030-05",
+      "text": "Which of the performance variations is independent from the runway slope?",
+      "options": [
+        "VR Rotation speed",
+        "Landing distance",
+        "Take-off distance",
+        "V1 Decision speed"
+      ]
+    },
+    {
+      "id": 14848,
+      "section": "030-02",
+      "text": "Dry operating weight plus total traffic load is:",
+      "options": [
+        "zero fuel weight.",
+        "maximum take-off weight.",
+        "take-off weight.",
+        "operating weight."
+      ]
+    },
+    {
+      "id": 14986,
+      "section": "030-08",
+      "text": "The maximum glide range will be achieved by:",
+      "options": [
+        "Optimum angle of attack being maintained.",
+        "A high descent angle.",
+        "A negative angle of attack being maintained.",
+        "Critical angle of attack being maintained."
+      ]
+    },
+    {
+      "id": 14909,
+      "section": "030-05",
+      "text": "That part of a runway surface which is used for normal operations during take off, excluding any clearway or stopway, is referred to as:",
+      "options": [
+        "the Take-Off Run Available (TORA)",
+        "the Emergency Distance Available (EMDA)",
+        "the Take-Off Distance Available (TODA)",
+        "the Accelerate-Stop Distance Available (ASDA)"
+      ]
+    },
+    {
+      "id": 14882,
+      "section": "030-03",
+      "text": "A four-seater aeroplane reference plane is the plane of the spinner. Empty aircraft weight and oil filled into the aircraft equal 1521.2 pounds, associated torque is 134855 pound-inch. Fuel filled into the plane weighs 288 pounds, and its momentum is 95 inches. Planned load of the first row of seats is 330 pounds, and its arm is 80.5 inches. Planned load of the first row of seats is 150 pounds, and its arm is 118.1 inches. MTOW is 2300 pounds, maximum forward CoG position is 82 inches, maximum aft CoG position is 93 inches. Can you takeoff in these circumstances? How far will the CoG be from the reference plane?",
+      "options": [
+        "Yes. 90.2 inches.",
+        "No. 92.4 inches.",
+        "Yes. 87.9 inches.",
+        "No. 93.6 inches."
+      ]
+    },
+    {
+      "id": 14845,
+      "section": "030-02",
+      "text": "Dry Operating Mass (DOM) =",
+      "options": [
+        "Take-Off Mass(TOM) – Useful load",
+        "Useful load – Operating mass",
+        "Landing Mass(LM) + Trip fuel",
+        "TOM –OM (Operating mass)"
+      ]
+    },
+    {
+      "id": 14988,
+      "section": "030-08",
+      "text": "When a pilot wants to glide longer ground distance,",
+      "options": [
+        "Pilot needs tailwind.",
+        "Pilot needs headwind",
+        "Pilot needs to adjust minimum rate of descent.",
+        "Pilot should fly at Minimum power speed(Vmp)."
+      ]
+    },
+    {
+      "id": 14947,
+      "section": "030-06",
+      "text": "How does the best angle of climb and best rate of climb vary with increasing altitude?",
+      "options": [
+        "Both decrease.",
+        "Best angle of climb decreases while best rate of climb increases.",
+        "Best angle of climb increases while best rate of climb decreases.",
+        "Both increase."
+      ]
+    },
+    {
+      "id": 14897,
+      "section": "030-05",
+      "text": "An airport has a 4000 metres long runway, and a 2500 metres clearway at each end of that runway. For the calculation of the maximum allowed take-off mass, the take-off distance available cannot be greater than:",
+      "options": ["6000 metres.", "6500 metres.", "5250 metres.", "5500 metres."]
+    },
+    {
+      "id": 14958,
+      "section": "030-06",
+      "text": "What is the influence of the wind on an aeroplane's rate of climb?",
+      "options": [
+        "No effect.",
+        "A tailwind will increase the rate of climb.",
+        "A tailwind will decrease the rate of climb.",
+        "A headwind will increase the rate of climb."
+      ]
+    },
+    {
+      "id": 14939,
+      "section": "030-06",
+      "text": "An aircraft can climb 5500 feet in 12 minutes. What is the average rate of climb?",
+      "options": ["460 fpm", "660 fpm", "480 fpm", "580 fpm"]
+    },
+    {
+      "id": 14841,
+      "section": "030-02",
+      "text": "Which is true about the aircraft basic empty mass?",
+      "options": [
+        "It is a component of dry operating mass.",
+        "It is the actual take-off mass, less traffic load.",
+        "It is dry operating mass minus fuel load.",
+        "It is dry operating mass minus traffic load."
+      ]
+    },
+    {
+      "id": 14957,
+      "section": "030-06",
+      "text": "What is the effect of tail wind on the time to climb to a given altitude?",
+      "options": [
+        "The time to climb does not change.",
+        "The time to climb increases.",
+        "The effect on time to climb will depend on the aeroplane type.",
+        "The time to climb decreases."
+      ]
+    },
+    {
+      "id": 14994,
+      "section": "030-09",
+      "text": "Compared to landing on a level runway, what would be the effect of landing on a downward sloping runway?",
+      "options": [
+        "The landing distance will be increased.",
+        "The landing distance will be unaffected.",
+        "The landing distance will be decreased.",
+        "The landing performance will improve."
+      ]
+    },
+    {
+      "id": 14291,
+      "section": "030-10",
+      "text": "Which aircraft speed should be entered into the \"Cruising Speed\" block of an ICAO Flight Plan?",
+      "options": [
+        "True Air Speed.",
+        "Ground Speed",
+        "Indicated Air Speed.",
+        "Calibrated Air Speed."
+      ]
+    },
+    {
+      "id": 15006,
+      "section": "030-09",
+      "text": "Which of the followings does not affect landing distance?",
+      "options": [
+        "RPM effect",
+        "Wind effect",
+        "Landing mass and landing speed effect",
+        "The slope of the runway and hydroplaning effect"
+      ]
+    },
+    {
+      "id": 14814,
+      "section": "030-01",
+      "text": "Before a training flight, the take-off mass seems 810 kg in the Mass and Balance Sheet. Which statement is correct if the maximum take-off mass of the aircraft is written as 800 kg in the Aircraft Flight Manual?",
+      "options": [
+        "We should not take-off before removing load until reaching MTOM.",
+        "The mass of the aircraft must be lowered at least 10% below MTOM.",
+        "It is possible to take-off after writing the instructor's mass 10 kg lower in the Mass and Balance Sheet.",
+        "It is possible to take-off in high pressure and cold weather conditions."
+      ]
+    },
+    {
+      "id": 14855,
+      "section": "030-02",
+      "text": "If the Maximum Take-Off Mass is exceeded before flight, a pilot should:",
+      "options": [
+        "Decrease the load",
+        "Pull the control stick harder",
+        "Plan load shifting between cargo compartments",
+        "Take off carefully"
+      ]
+    },
+    {
+      "id": 14908,
+      "section": "030-05",
+      "text": "Takeoff run is the distance between:",
+      "options": [
+        "Brake release to unstick",
+        "Brake release to reaching",
+        "Brake release to reaching 50 feet",
+        "Brake release to rotation"
+      ]
+    },
+    {
+      "id": 14902,
+      "section": "030-05",
+      "text": "How does runway length affect the take-off performance?",
+      "options": [
+        "Increase in runway length increases the field length limited TOM.",
+        "The length of runway does not affect the takeoff performance.",
+        "Decrease in runway length reduces the airplane’s crosswind limit.",
+        "Increase in runway length decreases the airplane’s headwind limit."
+      ]
+    },
+    {
+      "id": 14984,
+      "section": "030-08",
+      "text": "In headwind the glide angle ………. and flyable distance ………",
+      "options": [
+        "increases - decreases",
+        "remains unchanged - decrease",
+        "decreases - increases",
+        "remains unchanged - increases"
+      ]
+    },
+    {
+      "id": 14827,
+      "section": "030-01",
+      "text": "Comparing a forward CG position with an aft one, the forward cg position will cause a",
+      "options": [
+        "decrease in range.",
+        "tendency to yaw to the right on take-off.",
+        "decrease in the landing speed.",
+        "decrease of the stalling speed."
+      ]
+    },
+    {
+      "id": 15014,
+      "section": "030-10",
+      "text": "Which of the following is not a part of the reserve fuel?",
+      "options": ["Trip fuel", "Alternate fuel", "Final reserve fuel", "Contingency fuel"]
+    },
+    {
+      "id": 14864,
+      "section": "030-02",
+      "text": "What is the mass of a 2250 lt. fuel having a specific gravity of 0.82?",
+      "options": ["1845 kg.", "1020 kg.", "18450 kg.", "2743 kg."]
+    },
+    {
+      "id": 14993,
+      "section": "030-09",
+      "text": "An increase in atmospheric pressure has, among other things, the following consequences on landing performance:",
+      "options": [
+        "a reduced landing distance and improved go-around performance",
+        "an increased landing distance and improved go-around performance",
+        "an increased landing distance and degraded go-around performance",
+        "a reduced landing distance and degraded go around performance"
+      ]
+    },
+    {
+      "id": 14869,
+      "section": "030-03",
+      "text": "The centre of gravity of an aeroplane:",
+      "options": [
+        "can be allowed to move between defined limits.",
+        "must be maintained in a fixed position by careful distribution of the load.",
+        "may only be moved if permitted by the regulating authority and endorsed in the aeroplane's certificate of airworthiness.",
+        "is in a fixed position and is unaffected by aeroplane loading."
+      ]
+    },
+    {
+      "id": 14990,
+      "section": "030-08",
+      "text": "Which of the followings does not affect gliding perfomance?",
+      "options": ["Number of engines", "Wind", "Glide rate", "Glide angle"]
+    },
+    {
+      "id": 14980,
+      "section": "030-08",
+      "text": "During gliding, extension of flap results in……",
+      "options": [
+        "Reduce glide distance",
+        "Reduce glide angle",
+        "Does not affect glide distance",
+        "Increase glide distance"
+      ]
+    },
+    {
+      "id": 14859,
+      "section": "030-02",
+      "text": "Considering only structural limitations, on long distance flights (at the aeroplane's maximum range), the traffic load is normally limited by:",
+      "options": [
+        "The maximum take-off mass.",
+        "The maximum zero fuel mass plus the take-off mass.",
+        "The maximum landing mass.",
+        "The maximum zero fuel mass."
+      ]
+    },
+    {
+      "id": 14811,
+      "section": "030-01",
+      "text": "When considering the effects of increased mass on an aeroplane, which of the following is true?",
+      "options": [
+        "Stalling speeds will be higher.",
+        "Stalling speeds will be lower.",
+        "Gradient of climb for a given power setting will be higher.",
+        "Flight endurance will be increased."
+      ]
+    },
+    {
+      "id": 14846,
+      "section": "030-02",
+      "text": "The take-off mass of an aeroplane is 117 000 kg, comprising a traffic load of 18 000 kg and fuel of 46 000 kg. What is the dry operating mass?",
+      "options": ["53 000 kg", "71 000 kg", "64 000 kg", "99 000 kg"]
+    },
+    {
+      "id": 14890,
+      "section": "030-04",
+      "text": "The Density Altitude",
+      "options": [
+        "is used to determine the aeroplane performance.",
+        "is used to calculate the FL above the Transition Altitude.",
+        "is equal to the pressure altitude.",
+        "is used to establish minimum clearance of 2.000 feet over mountains."
+      ]
+    },
+    {
+      "id": 14838,
+      "section": "030-01",
+      "text": "Which of the following parameter may cause a change in CG location within limits?",
+      "options": ["Fuel consumption", "Yaw", "Roll", "Pitch"]
+    },
+    {
+      "id": 14989,
+      "section": "030-08",
+      "text": "Which factor/factors should be considered by pilots relating with gliding performance:",
+      "options": [
+        "All",
+        "What will be the sink rate? Is it possible to make a successful landing with stopped engine with this type of aircraft?",
+        "What is the endurance of the aircraft?",
+        "How far can the aircraft glide?"
+      ]
+    },
+    {
+      "id": 14822,
+      "section": "030-01",
+      "text": "When the centre of gravity is at the forward limit, an aeroplane will be:",
+      "options": [
+        "extremely stable and will require excessive elevator control to change pitch.",
+        "extremely unstable and require excessive elevator control to change pitch.",
+        "extremely stable and require small elevator control to change pitch.",
+        "extremely unstable and require small elevator control to change pitch."
+      ]
+    },
+    {
+      "id": 14910,
+      "section": "030-05",
+      "text": "The length of a clearway may be included in:",
+      "options": [
+        "the take-off distance available.",
+        "the distance to reach lift-off speed.",
+        "the take-off run available.",
+        "the accelerate-stop distance available."
+      ]
+    },
+    {
+      "id": 14809,
+      "section": "030-01",
+      "text": "Which of the following cases will result in a reduced performance and possibly exceed the structural limitations of the aircraft?",
+      "options": [
+        "An aircraft that is operated above its maximum all up weight.",
+        "An aircraft with a higher take-off mass than a landing mass.",
+        "An aeroplane that is operated above its maximum all up landing weight",
+        "An aircraft that is stalled at its maximum all up weight."
+      ]
+    },
+    {
+      "id": 14878,
+      "section": "030-03",
+      "text": "For the following see-saw to be in balance",
+      "options": ["Fc = Fa / 3", "Fc = 3Fa", "Fc = Fa / 3A", "Fc = 3 / Fa"],
+      "needs_figure": true
+    },
+    {
+      "id": 14999,
+      "section": "030-09",
+      "text": "In the landing configuration, if the speed of the aeroplane at threshold is greater than Vref;",
+      "options": [
+        "the aeroplane needs longer distance to stop.",
+        "the aeroplane stops at same distance.",
+        "the aeroplane can not stop.",
+        "the aeroplane needs shorter distance to stop."
+      ]
+    },
+    {
+      "id": 14818,
+      "section": "030-01",
+      "text": "Select the correct statement for the CG safe range:",
+      "options": [
+        "The safe range falls between the front and rear CG limits and includes both limits.",
+        "The safe range falls between the front and rear CG limits but only includes the fwd limit.",
+        "The safe range falls between the front and rear CG limits but only includes the aft limit.",
+        "The safe range falls between the front and rear CG limits but does not include them."
+      ]
+    },
+    {
+      "id": 14919,
+      "section": "030-05",
+      "text": "What will be the influence on the aeroplane performance if aerodrome pressure altitude is increased?",
+      "options": [
+        "It will increase the take-off distance.",
+        "It will decrease the take-off distance.",
+        "It will decrease the take-off run.",
+        "It will increase the take-off distance available."
+      ]
+    },
+    {
+      "id": 15032,
+      "section": "030-10",
+      "text": "In the ATS flight plan Item 15, a cruising speed of 100 knots will be entered as:",
+      "options": ["N0100.", "KN100.", "0100K.", "N100."]
+    },
+    {
+      "id": 14906,
+      "section": "030-05",
+      "text": "In which of the following distances can the length of a stopway be included?",
+      "options": [
+        "In the accelerate stop distance available.",
+        "In the one-engine failure case, take-off distance.",
+        "In the all-engine take-off distance.",
+        "In the take-off run available."
+      ]
+    },
+    {
+      "id": 14942,
+      "section": "030-06",
+      "text": "By increasing aircraft weight:",
+      "options": [
+        "both Vx and Vy increase.",
+        "Vx increases and Vy decreases.",
+        "Vx decreases and Vy increases.",
+        "Vx increases and Vy does not change."
+      ]
+    },
+    {
+      "id": 14948,
+      "section": "030-06",
+      "text": "In order to provide highest obstacle clearance, the best climb configuration from the followings is...",
+      "options": [
+        "Low flap setting at Vx",
+        "High flap setting at VY",
+        "High flap setting at Vx",
+        "Low flap setting at VY"
+      ]
+    },
+    {
+      "id": 14817,
+      "section": "030-01",
+      "text": "What is given name that determined by the manufacturer of the aircraft, specified in Aircraft Flight Manual (AFM) and allowed to fly an aircraft and the forward and aft positions of center of gravity ?",
+      "options": ["CG limits", "Moment arm", "Moment limits", "Datum"]
+    },
+    {
+      "id": 14901,
+      "section": "030-05",
+      "text": "Flap selection for the take-off is very important, because.....",
+      "options": [
+        "Flap settings other than optimum takeoff flap increase the takeoff distance required.",
+        "Higher flap settings always allow more traffic load.",
+        "Higher flap settings provide better climb performance.",
+        "Higher flap settings such as landing flap decrease the takeoff distance required."
+      ]
+    },
+    {
+      "id": 15030,
+      "section": "030-10",
+      "text": "If your destination airport has no ICAO indicator, in the appropriate box of your flight plan, you write:",
+      "options": ["ZZZZ.", "XXXX.", "AAAA.", "////."]
+    },
+    {
+      "id": 14879,
+      "section": "030-03",
+      "text": "The position of the centre of gravity is equal to:",
+      "options": [
+        "The total moment / the total mass.",
+        "The total moment - the total mass.",
+        "The total mass - the total moment.",
+        "The total mass / the total moment."
+      ]
+    },
+    {
+      "id": 14871,
+      "section": "030-03",
+      "text": "What is used as the aircraft reference for the C of G limit, and upon which axis is that limit found? Axis Reference",
+      "options": [
+        "Longitudinal Datum",
+        "Vertical Wheels",
+        "Lateral Tail",
+        "Normal Spinner"
+      ]
+    },
+    {
+      "id": 14998,
+      "section": "030-09",
+      "text": "If the stalling speed in the landing configuration is 50 knots, VREF would be:",
+      "options": ["65 knots", "69 knots", "71 knots", "75 knots"]
+    },
+    {
+      "id": 14927,
+      "section": "030-05",
+      "text": "Which of the following is in the correct order?",
+      "options": [
+        "V1 < VR < VLOF < V2",
+        "V1 < VR < V2 < VLOF",
+        "V1 < VLOF < VR < V2",
+        "VR < V1 < V2 < VLOF"
+      ]
+    },
+    {
+      "id": 14872,
+      "section": "030-03",
+      "text": "The datum for determining the CG has to be along the longitudinal axis:",
+      "options": [
+        "But does not have to be between the nose and the tail.",
+        "Between the leading and trailing edge of the MAC.",
+        "Between the nose and the tail.",
+        "At the fire wall."
+      ]
+    },
+    {
+      "id": 14852,
+      "section": "030-02",
+      "text": "If trip fuel is subtracted from take-off mass, the result should not exceed:",
+      "options": [
+        "Maximum landing mass",
+        "Zero fuel mass",
+        "Traffic load",
+        "Maximum take-off mass"
+      ]
+    },
+    {
+      "id": 14977,
+      "section": "030-06",
+      "text": "Which term is used to describe the altitude where the rate of climb reduces to a specified value higher than zero?",
+      "options": [
+        "Service ceiling",
+        "Absolute ceiling",
+        "Aerodynamic ceiling",
+        "Pressurisation ceiling"
+      ]
+    },
+    {
+      "id": 15002,
+      "section": "030-09",
+      "text": "What effect would a 1% down-slope have on the landing distance required?",
+      "options": [
+        "Increase it by 5%",
+        "Decrease it by 10%",
+        "Increase it by 10%",
+        "Decrease it by 5%"
+      ]
+    },
+    {
+      "id": 15021,
+      "section": "030-10",
+      "text": "As planned, CAS will be 150 knots, TAS will be 180 knots and GS will be 210 knots. What value should be entered into flight plan?",
+      "options": ["180 knots", "an average value of them", "210 knots", "150 knots"]
+    },
+    {
+      "id": 14913,
+      "section": "030-05",
+      "text": "The runway extension which is used for stopping during take-off is:",
+      "options": ["Stopway", "TORA", "TODA", "Clearway"]
+    },
+    {
+      "id": 14932,
+      "section": "030-05",
+      "text": "Which speed limits V1?",
+      "options": ["VR", "VS", "VLOF", "V2"]
+    },
+    {
+      "id": 14824,
+      "section": "030-01",
+      "text": "The stalling speed of an aeroplane will be highest when it is loaded with a:",
+      "options": [
+        "high gross mass and forward centre of gravity.",
+        "low gross mass and aft centre of gravity.",
+        "low gross mass and forward centre of gravity.",
+        "high gross mass and aft centre of gravity."
+      ]
+    },
+    {
+      "id": 14885,
+      "section": "030-07",
+      "text": "How does increasing drag affect aircraft performance?",
+      "options": [
+        "Increase fuel consumption",
+        "Increase range",
+        "Increase endurance flap settings provide better climb performance.",
+        "Increase climb angle"
+      ]
+    },
+    {
+      "id": 15020,
+      "section": "030-10",
+      "text": "For a VFR flight by a single engine aeroplane, if empty mass = 1764 lbs, equipment = 35 lbs, pilot + front seat passenger = 300 lbs, cargo = 350 lbs, block fuel = 360 lbs, trip fuel = 210 lbs and taxy fuel 10 lbs, what is the take-off mass?",
+      "options": ["2799 lbs", "2764 lbs", "2659 lbs", "2809 lbs"]
+    },
+    {
+      "id": 14971,
+      "section": "030-07",
+      "text": "Considering TAS for maximum range and TAS for maximum endurance, other factors remaining constant,",
+      "options": [
+        "both will increase with increasing altitude.",
+        "TAS for maximum range will increase with increased altitude while TAS for maximum endurance will decrease with increased altitude.",
+        "both will stay constant regardless of altitude.",
+        "both will decrease with increasing altitude."
+      ]
+    },
+    {
+      "id": 14850,
+      "section": "030-02",
+      "text": "Which statement is false?",
+      "options": [
+        "Zero fuel weight is the sum of dry operating weight and useful load.",
+        "Zero fuel weight is the weight of the aeroplane minus usable fuel.",
+        "Zero fuel weight incorporates crew and their luggage weight.",
+        "Zero fuel weight may incorporate a certain amount of fuel."
+      ]
+    },
+    {
+      "id": 14951,
+      "section": "030-06",
+      "text": "The angle of climb with flaps extended, compared to that with flaps retracted, wil normally be:",
+      "options": [
+        "Smaller.",
+        "Not change.",
+        "Larger.",
+        "Increase at moderate flap setting, decrease at large flap setting."
+      ]
+    },
+    {
+      "id": 14961,
+      "section": "030-06",
+      "text": "What speed would you maintain if you wish to reach a given altitude in the shortest possible time?",
+      "options": ["Vy speed.", "Vopt speed.", "Veco speed.", "Vx speed."]
+    },
+    {
+      "id": 14950,
+      "section": "030-06",
+      "text": "Other factors remaining constant, how does increasing altitude affect Vx and Vy in terms of TAS?",
+      "options": [
+        "Both will increase.",
+        "Both will decrease.",
+        "Both will remain the same.",
+        "Vx will decrease and Vy will increase."
+      ]
+    },
+    {
+      "id": 14945,
+      "section": "030-06",
+      "text": "For a piston engine with a constant mass, the best angle of climb speed (Vx) is the speed at which:",
+      "options": [
+        "the excess thrust is maximum.",
+        "the weight is minimum.",
+        "the drag is maximum.",
+        "the excess power is maximum."
+      ]
+    },
+    {
+      "id": 14831,
+      "section": "030-01",
+      "text": "An aircraft is loaded such that its C of G is on the aft limit: I The stalling speed decreases, which is a negative factor. II Range and endurance decrease, which are negative factors. III The stall risk increases, which is a negative factor. IV Stick forces increase, which is a negative factor.",
+      "options": [
+        "Only II and III are correct.",
+        "Only II and IV are correct.",
+        "Only I and IV are correct.",
+        "All of the above are correct."
+      ],
+      "flagged": true
+    },
+    {
+      "id": 14970,
+      "section": "030-06",
+      "text": "Why are flaps retracted during climb when the aircraft reach the safety altitude and speed?",
+      "options": [
+        "Extended flaps increase the parasite drag and increase in drag results lower climb angle and ROC(Rate of climb).",
+        "Flaps retraction does not affect the climb performance.",
+        "It is the most appropriate time for the pilot because of low workload.",
+        "Extended flaps reduce power available which engine can produce."
+      ]
+    },
+    {
+      "id": 14297,
+      "section": "030-10",
+      "text": "You have flight planned to arrive over a Reporting Point at 1500Z. However, due to an unexpected tailwind, you realize that you will arrive at 1505Z. Do you have to inform the relevant ATCU?",
+      "options": [
+        "Yes",
+        "Only if you are conducting the flight under VFR",
+        "Only if you are outside Controlled Air Space",
+        "No"
+      ]
+    },
+    {
+      "id": 15004,
+      "section": "030-09",
+      "text": "What is the effect of an increase in mass on the stalling speed and landing distance required?",
+      "options": [
+        "Increased stalling speed and Increased landing distance",
+        "decreased stalling speed and Increased landing distance",
+        "decreased stalling speed and decreased landing distance",
+        "Increased stalling speed and decreased landing distance"
+      ]
+    },
+    {
+      "id": 15033,
+      "section": "030-10",
+      "text": "In the ATS flight plan, for a non-scheduled flight which of the following letters should be entered in Item 8 (Type of Flight) :",
+      "options": ["N.", "X.", "G.", "N/S."]
+    },
+    {
+      "id": 14995,
+      "section": "030-09",
+      "text": "Compared to operating from a runway at sea level, an aeroplane operating from a runway at a high pressure altitude in the same wind conditions will require:",
+      "options": [
+        "a longer take off run and longer landing distance.",
+        "a shorter take off run but a longer landing distance.",
+        "a longer take off run but a shorter landing distance.",
+        "a shorter take off run and shorter landing distance."
+      ]
+    },
+    {
+      "id": 14921,
+      "section": "030-05",
+      "text": "When engine failure or any other emergency situation occurs during the takeoff run, the speed that pilot decides whether to continue or not, is:",
+      "options": ["V1", "VS", "VLOF", "V2"]
+    },
+    {
+      "id": 14907,
+      "section": "030-05",
+      "text": "Increasing temperature,",
+      "options": [
+        "increases TODR.",
+        "does not affect TODR.",
+        "does not affect climb angle.",
+        "increases climb angle."
+      ]
+    },
+    {
+      "id": 14807,
+      "section": "030-01",
+      "text": "Which force compensates the weight in unaccelerated straight and level flight?",
+      "options": ["Lift", "Drag", "Resultant from lift and drag", "Thrust"]
+    },
+    {
+      "id": 14826,
+      "section": "030-01",
+      "text": "If Center of Gravity (CG) is close to forward limit, what will be its effect?",
+      "options": [
+        "Reduction at climb rate",
+        "Reduction in induction drag",
+        "Reduction in specific fuel consumption",
+        "Better climb rate"
+      ]
+    },
+    {
+      "id": 14991,
+      "section": "030-08",
+      "text": "With glide ratio of 12, how long we can glide from 4500 feet without engine?",
+      "options": ["16.5 km", "37.5 km", "15.7 km", "14.4 km"]
+    },
+    {
+      "id": 15041,
+      "section": "030-10",
+      "text": "What is the minimum visibility for VFR departure from an airport?",
+      "options": ["5 kilometres", "5000 feet", "8 kilometres", "1500 metres"]
+    },
+    {
+      "id": 14815,
+      "section": "030-01",
+      "text": "Who establishes the limits C of G?",
+      "options": ["The manufacturer", "The JAA", "The State of Authority", "The insurers"]
+    },
+    {
+      "id": 15000,
+      "section": "030-09",
+      "text": "Stalling speed in landing configuration are certified with:",
+      "options": [
+        "flap in landing configuration and gear down",
+        "flap in clean configuration and gear up",
+        "flap in take of position and gear down",
+        "flap in clean configuration and gear down"
+      ]
+    },
+    {
+      "id": 14979,
+      "section": "030-08",
+      "text": "An aeroplane is in a power off glide at speed for minimum glide angle. If the pilot increases pitch attitude the glide distance:",
+      "options": [
+        "decreases.",
+        "may increase or decrease depending on the type of aeroplane.",
+        "remains the same.",
+        "increases."
+      ]
+    },
+    {
+      "id": 14976,
+      "section": "030-07",
+      "text": "Which of the followings does not affect maximum flight range?",
+      "options": ["Heading", "Temperature", "Altitude", "Aircraft mass"]
+    },
+    {
+      "id": 14876,
+      "section": "030-03",
+      "text": "For the following see-saw to be in balance",
+      "options": [
+        "Fb = A x Fa / B",
+        "Fb = A + Fa / B",
+        "Fb = B x Fa / A",
+        "Fb = A x B / Fa"
+      ],
+      "needs_figure": true
+    },
+    {
+      "id": 14934,
+      "section": "030-05",
+      "text": "With tailwind at take-off run:",
+      "options": [
+        "GS is higher than IAS, so the aircraft needs longer run than in wind calm conditions",
+        "GS is lower than IAS, so the aircraft needs shorter run than in wind calm conditions",
+        "GS is higher than IAS, so the aircraft needs shorter run than in wind calm conditions",
+        "GS is lower than IAS, so the aircraft needs longer run than in wind calm conditions"
+      ]
+    },
+    {
+      "id": 14937,
+      "section": "030-06",
+      "text": "A headwind component,",
+      "options": [
+        "has no effect on climb angle and increases glide angle.",
+        "has no effect on glide angle and increases climb angle.",
+        "increases climb and glide angles.",
+        "has no effect on climb and glide angles."
+      ]
+    },
+    {
+      "id": 14819,
+      "section": "030-01",
+      "text": "What is the main reason for determining a forward and an aft CG limit?",
+      "options": [
+        "To ensure that the aircraft is both stable and controllable",
+        "To increase aileron effectiveness",
+        "To decrease stability and increase controllability",
+        "To ensure that the aircraft is not overloaded"
+      ]
+    },
+    {
+      "id": 14899,
+      "section": "030-05",
+      "text": "Considering the take-off decision speed V1, which of the following is correct?",
+      "options": [
+        "If an engine failure is recognized before reaching V1, the take-off must be aborted.",
+        "If an engine failure is recognized after reaching V1, the take-off must be aborted.",
+        "V1 is sometimes greater than the rotation speed VR.",
+        "V1 may not be less than V2min, the minimum take-off safety speed."
+      ]
+    },
+    {
+      "id": 14928,
+      "section": "030-05",
+      "text": "Which of the following is not correct?",
+      "options": [
+        "Increase in length of stopway results longer LDA",
+        "Clearway does not take into account LDA",
+        "The length of runway directly affects allowable take-off weight",
+        "Clearway is only used for take-off"
+      ]
+    },
+    {
+      "id": 15036,
+      "section": "030-10",
+      "text": "When completing an ATS flight plan, clock times are to be expressed in :",
+      "options": [
+        "UTC.",
+        "Local standard time.",
+        "Local mean time.",
+        "Central European Time."
+      ]
+    },
+    {
+      "id": 14833,
+      "section": "030-01",
+      "text": "What may a pilot experience if the CG is far in front of the forward limit?",
+      "options": [
+        "a higher stick force during rotation",
+        "easy flare during landing",
+        "tail strike during take-off",
+        "a lower stick force during rotation"
+      ]
+    },
+    {
+      "id": 14834,
+      "section": "030-01",
+      "text": "What may a pilot experience if the CG is far behind the aft limit?",
+      "options": [
+        "tail strike during rotation",
+        "No difference.",
+        "difficulty in flaring",
+        "a higher pull force during rotation"
+      ]
+    },
+    {
+      "id": 14922,
+      "section": "030-05",
+      "text": "When making take-off calculations:",
+      "options": [
+        "Runway slope, surface type and condition must be considered.",
+        "Wind is not an important factor for these calculations.",
+        "Runway length of the aerodrome does not affect take-off calculations.",
+        "Standard air temperature and sea level standards must be taken into consideration"
+      ]
+    },
+    {
+      "id": 14938,
+      "section": "030-06",
+      "text": "Absolute ceiling is…",
+      "options": [
+        "The altitude at which the rate of climb is theoretically zero.",
+        "The highest altitude at which engine can restart during flight",
+        "The altitude at which the rate of climb reduces to a specified value which is 500 fpm for jet aeroplanes.",
+        "The altitude at which the rate of climb reduces to a specified value which is 100 fpm for propeller aeroplanes."
+      ]
+    },
+    {
+      "id": 15003,
+      "section": "030-09",
+      "text": "What effect would a 2% downslope have on the landing distance required?",
+      "options": [
+        "Increase it by 10%.",
+        "Decrease it by 10%.",
+        "Decrease it by 5%.",
+        "Increase it by 5%."
+      ]
+    },
+    {
+      "id": 14816,
+      "section": "030-01",
+      "text": "C of G limits are set by the manufacturer and:",
+      "options": [
+        "Are mandatory.",
+        "Have only an aft limit",
+        "Are a guide only.",
+        "Have only a forward limit."
+      ]
+    },
+    {
+      "id": 14926,
+      "section": "030-05",
+      "text": "Which of the following distances will increase if you increase V1, but VR remains unchanged?",
+      "options": [
+        "Accelerate Stop Distance",
+        "Take-off run",
+        "Take-off distance",
+        "All Engine Take-off distance"
+      ]
+    },
+    {
+      "id": 14853,
+      "section": "030-02",
+      "text": "Maximum Take Off Mass (MTOM) is defined best as:",
+      "options": [
+        "Maximum permissible total mass at the start of the take off run.",
+        "Maximum permissible total mass at the point of rotation.",
+        "Maximum permissible total mass prior to take off.",
+        "Maximum permissible total mass prior to taxiing."
+      ]
+    },
+    {
+      "id": 14973,
+      "section": "030-07",
+      "text": "The maximum speed in horizontal flight occurs when:",
+      "options": [
+        "the maximum thrust is equal to the total drag.",
+        "the drag is minmum.",
+        "the thrust does not increase further with increasing speed.",
+        "the thrust is equal to minimum drag."
+      ]
+    },
+    {
+      "id": 15023,
+      "section": "030-10",
+      "text": "Given; AD = Air distance GD = Ground distance TAS = True AirspeeD GS = Groundspeed. Which of the following is the correct formula to calculate ground distance ( GD ) gone ?",
+      "options": [
+        "GD = ( AD x GS ) / TAS",
+        "GD = ( AD – TAS ) / TAS",
+        "GD = AD x ( GS – TAS ) / GS",
+        "GD = TAS / ( GS x AD )"
+      ]
+    },
+    {
+      "id": 14856,
+      "section": "030-02",
+      "text": "Maximum Landing Mass (MLM) is best defined as.",
+      "options": [
+        "Maximum permissible total mass on landing under normal operating conditions.",
+        "Maximum permissible total mass on taxiing to park.",
+        "Maximum permissible total mass on the approach to land.",
+        "Maximum permissible total mass on landing."
+      ]
+    },
+    {
+      "id": 14847,
+      "section": "030-02",
+      "text": "Traffic load includes:",
+      "options": [
+        "none of them.",
+        "crew weight and their baggage weight, weight of catering devices and portable hygiene equipment",
+        "weight of catering devices and portable hygiene equipment and accessories.",
+        "crew weight and their baggage weight."
+      ]
+    },
+    {
+      "id": 14924,
+      "section": "030-05",
+      "text": "When using appropriate flaps setting for take-off (compared with clean wing take-off), take-off roll ..., and .... ground distance is required to finish the initial climb to 50 ft. Take-off distance required in general ...",
+      "options": [
+        "decreases - longer - decreases.",
+        "increases - shorter - will not change.",
+        "decreases - shorter - decreases.",
+        "increases - longer - increases."
+      ]
+    },
+    {
+      "id": 14960,
+      "section": "030-06",
+      "text": "What speed would you maintain if you wish reach the fastest rate of climb while covering the shortest distance on the ground?",
+      "options": ["Vx speed.", "Vopt speed.", "Veco speed.", "Vy speed."]
+    },
+    {
+      "id": 14863,
+      "section": "030-02",
+      "text": "You are required to fill 151 liters of AVGAS with the specific gravity of 0,72. How many kilograms is this?",
+      "options": ["109 kg", "151 kg", "289 kg", "131 kg"]
+    },
+    {
+      "id": 15027,
+      "section": "030-10",
+      "text": "In the ICAO flight plan the cruising speed should be filed in:",
+      "options": ["TAS", "GS", "CAS", "IAS"]
+    },
+    {
+      "id": 14891,
+      "section": "030-04",
+      "text": "Which of the following is not one of the factors that affects lift force?",
+      "options": [
+        "Width of vertical stabilizer",
+        "Angle of attack",
+        "Relative air flow",
+        "Width, length and shape of the wing profile"
+      ]
+    },
+    {
+      "id": 14953,
+      "section": "030-06",
+      "text": "The lift produced by the wing of an aeroplane that is climbing and maintaining a constant airspeed will be:",
+      "options": [
+        "Less than weight.",
+        "Independent of weight.",
+        "Equal to weight.",
+        "Greater than weight."
+      ]
+    },
+    {
+      "id": 15024,
+      "section": "030-10",
+      "text": "An aircraft is flying between A and B. The distance is 600 NM between these two points. Fuel consumption is 10 US-gal/hr. Groundspeed is 200 knots and total fuel is 90 US-gal. What is the remaining amount of fuel on board?",
+      "options": ["60 US-gal.", "70 US-gal.", "50 US-gal.", "40 US-gal."]
+    },
+    {
+      "id": 14842,
+      "section": "030-02",
+      "text": "Which is true of the aeroplane empty mass?",
+      "options": [
+        "It is a component of dry operating mass.",
+        "It is the actual take-off mass, less traffic load.",
+        "It is dry operating mass minus traffic load.",
+        "It is dry operating mass minus fuel load."
+      ]
+    },
+    {
+      "id": 14888,
+      "section": "030-04",
+      "text": "Increasing humidity ……… air density, and therefore it ………. the aircraft performance.",
+      "options": [
+        "decreases/decreases",
+        "increases/decreases",
+        "increases/increases",
+        "decreases/increases"
+      ]
+    },
+    {
+      "id": 14944,
+      "section": "030-06",
+      "text": "For a piston engine the service ceiling:",
+      "options": [
+        "is the altitude at which the aeroplane reaches a maximum rate of climb of 100 ft/min.",
+        "depends upon thrust setting and increase with increasing thrust.",
+        "is the altitude at which the speeds for low speed buffet and for high speed buffet are the same.",
+        "is the altitude at which the best rate of climb theoretically is zero."
+      ]
+    },
+    {
+      "id": 14974,
+      "section": "030-07",
+      "text": "What speed must be flown to attain the maximum cruise endurance?",
+      "options": ["VMP", "VMD", "Maximum speed.", "VY."]
+    },
+    {
+      "id": 15013,
+      "section": "030-10",
+      "text": "Where can we find information about Sunset/Sunrise times?",
+      "options": ["AIP", "VOLMET", "METAR", "NOTAM"]
+    },
+    {
+      "id": 14965,
+      "section": "030-06",
+      "text": "Which is not a factor affecting the angle of the climb?",
+      "options": ["Wind", "Altitude", "Excess thrust", "Weight"]
+    },
+    {
+      "id": 14941,
+      "section": "030-08",
+      "text": "At takeoff from a short airfield with an airplane or a powered hang glider, which airspeed should you fly until cleared of obstacles?",
+      "options": [
+        "Best angle-of-climb speed (Vx).",
+        "Maneuvering speed (VA).",
+        "Minimum speed (VS).",
+        "Best climb speed (VY)."
+      ]
+    },
+    {
+      "id": 14916,
+      "section": "030-05",
+      "text": "What effect will a higher aircraft mass have on the rotate speed and take off safety speed?",
+      "options": [
+        "It will increase both speeds",
+        "It will decrease rotate speed and increase take off safety speed",
+        "It will increase rotate speed and decrease take off safety speed",
+        "It will decrease both speeds"
+      ]
+    },
+    {
+      "id": 14893,
+      "section": "030-04",
+      "text": "Which of these speeds is read on the indicator that is uncorrected against factors such as altitude, air temperature and position errors?",
+      "options": [
+        "IAS (Indicated Air Speed)",
+        "TAS (True Air Speed)",
+        "EAS (Equivalent Air Speed)",
+        "CAS (Calibrated Air Speed)"
+      ]
+    },
+    {
+      "id": 14962,
+      "section": "030-06",
+      "text": "What will be the effect of larger flap setting on the climb performance?",
+      "options": [
+        "It decreases the climb angle because of drag.",
+        "It increases the climb angle because of lift.",
+        "It decreases the climb angle because of lift.",
+        "It increases the climb angle because of drag."
+      ]
+    },
+    {
+      "id": 14825,
+      "section": "030-01",
+      "text": "For a given configuration, the stall speed of an aeroplane will be highest when loaded:",
+      "options": [
+        "to the maximum allowable mass with the most forward CG.",
+        "to a low total mass with the most forward CG.",
+        "to a low total mass with the most aft CG.",
+        "to the maximum allowable mass with the most aft CG."
+      ]
+    },
+    {
+      "id": 14920,
+      "section": "030-05",
+      "text": "What would happen if you forget to extend flaps on take off?",
+      "options": [
+        "Take off distance required increases.",
+        "Aircraft lifts off ground at a slower speed.",
+        "Take off distance required stays constant.",
+        "Take off distance required decreases."
+      ]
+    },
+    {
+      "id": 14954,
+      "section": "030-06",
+      "text": "Vx and Vy with take-off flaps will be:",
+      "options": [
+        "lower than that for clean configuration..",
+        "same as that for clean configuration.",
+        "changed so that Vx increases and Vy decreases compared to clean configuration.",
+        "higher than that for clean configuration."
+      ]
+    },
+    {
+      "id": 14875,
+      "section": "030-03",
+      "text": "Which one of the following is correct?",
+      "options": [
+        "Arm = Moment / Force",
+        "Arm = Force X Moment",
+        "Moment = Force / Arm",
+        "Arm = Force / Moment"
+      ]
+    },
+    {
+      "id": 14903,
+      "section": "030-05",
+      "text": "How does runway slope affect allowable take-off mass, assuming other factors remain constant and not limiting?",
+      "options": [
+        "A downhill slope increases allowable take-off mass.",
+        "Allowable take-off mass is not affected by runway slope.",
+        "An uphill slope increases the allowable take-off mass.",
+        "A downhill slope decreases allowable take-off mass."
+      ]
+    },
+    {
+      "id": 14832,
+      "section": "030-01",
+      "text": "If the Centre of Gravity is in front of the forward limit, a pilot should",
+      "options": [
+        "Plan load shifting to bring the CG in the limits",
+        "Push the stick more",
+        "Pull the control stick harder",
+        "Take off carefully"
+      ]
+    },
+    {
+      "id": 14952,
+      "section": "030-06",
+      "text": "The flight path angle",
+      "options": [
+        "increases with a headwind .",
+        "is defined as the angle between chord and relative airflow.",
+        "is defined as the angle between longitudinal axis and relative airflow.",
+        "is not affected by headwind."
+      ]
+    },
+    {
+      "id": 14918,
+      "section": "030-05",
+      "text": "What will be the effect on an aeroplane's performance if aerodrome pressure altitude is decreased?",
+      "options": [
+        "It will decrease the take-off distance required.",
+        "It will increase the accelerate stop distance.",
+        "It will increase the take-off distance required.",
+        "It will increase the take-off ground run."
+      ]
+    },
+    {
+      "id": 15028,
+      "section": "030-10",
+      "text": "In the ICAO flight plan the cruising speed of 90 knots should be entered as:",
+      "options": ["N0090", "N90", "KN0090", "090KN"]
+    },
+    {
+      "id": 14963,
+      "section": "030-06",
+      "text": "Which atmospheric conditions provide best climb performance?",
+      "options": [
+        "High pressure, low temperature, high density and low humidity",
+        "Low pressure, high temperature, high density and low humidity",
+        "High pressure, high temperature, high density and high humidity",
+        "Low pressure, low temperature, low density and low humidity"
+      ]
+    },
+    {
+      "id": 14915,
+      "section": "030-05",
+      "text": "What effect will a higher aircraft mass have on rotate speed (VR) and take-off safety speed(V2)?",
+      "options": [
+        "It will increase both speeds.",
+        "It will decrease rotate speed and increase take off safety speed.",
+        "It will increase rotate speed and decrease take off safety speed.",
+        "It will decrease both speeds."
+      ]
+    },
+    {
+      "id": 14985,
+      "section": "030-08",
+      "text": "In order to maximise the glide range, the aircraft should be flown:",
+      "options": [
+        "At low angles of attack at VMD.",
+        "At a negative angle of attack at VMD.",
+        "At low angles of attack at VMP.",
+        "At high angles of attack at VMD."
+      ]
+    },
+    {
+      "id": 14867,
+      "section": "030-03",
+      "text": "The centre of gravity of an aeroplane is that point through which the total mass of the aeroplane is said to act. The weight acts in a direction",
+      "options": [
+        "parallel to the gravity vector.",
+        "governed by the distribution of the mass within the aeroplane.",
+        "always at right angles to the flight path.",
+        "always parallel to the aeroplane's vertical axis."
+      ]
+    },
+    {
+      "id": 14898,
+      "section": "030-05",
+      "text": "Clearway can be used for:",
+      "options": ["None", "Waiting on an abrupt situation", "Taxiing", "Landing"]
+    },
+    {
+      "id": 14912,
+      "section": "030-05",
+      "text": "The primary reason for making a take-off into wind is to:",
+      "options": [
+        "reduce the take-off distance.",
+        "reduce the emergency distance available in the event of an aborted take-off.",
+        "reduce the TAS at which the aeroplane will take off.",
+        "reduce the stalling speed during take-off."
+      ]
+    },
+    {
+      "id": 14881,
+      "section": "030-03",
+      "text": "Weight measured at the nose wheel is 90 pounds, the measurement point is 40 inches from the datum. Main gears are 95 inches away from the datum, and weight measures at main gears is 700 pound on each side. How far will the CoG be from the datum?",
+      "options": ["91.6 inches.", "93.2 inches.", "88.7 inches.", "90 inches."]
+    },
+    {
+      "id": 15034,
+      "section": "030-10",
+      "text": "When a pilot fills in a flight plan, he must indicate the wake turbulence category. This category is a function of which mass?",
+      "options": [
+        "Maximum certified take-off mass.",
+        "Maximum certified landing mass.",
+        "Estimated take-off mass.",
+        "Actual take-off mass."
+      ]
+    },
+    {
+      "id": 14968,
+      "section": "030-06",
+      "text": "Which speed provides an aeroplane to reach max height in a short time?",
+      "options": ["VY", "VMAX", "V1", "Vx"]
+    },
+    {
+      "id": 15016,
+      "section": "030-10",
+      "text": "Total estimated flight time of a leg is 1 hour 27 minutes. We have 45 minutes navigational reserve. The aeroplane's fuel consumption is 5 US gallon / hour. What is the total amount of fuel required for this flight?",
+      "options": [
+        "11 US gallon",
+        "12.6 US gallon",
+        "10.6 US gallon",
+        "3.5 US gallon"
+      ]
+    },
+    {
+      "id": 14940,
+      "section": "030-06",
+      "text": "Assuming that the required lift exists, which forces determine an aeroplane's angle of climb?",
+      "options": [
+        "Weight, drag and thrust.",
+        "Weight and drag only.",
+        "Weight and thrust only.",
+        "Thrust and drag only."
+      ]
+    },
+    {
+      "id": 14923,
+      "section": "030-05",
+      "text": "When the density of the atmosphere is relatively low, the resulting reduction in:",
+      "options": [
+        "Both lift and engine power will require a longer take-off distance.",
+        "Drag offsets the loss of engine power giving improved acceleration.",
+        "Drag will permit the use of greater flap angles.",
+        "Thrust and drag has no apparent effect on the take-off distance required."
+      ]
+    },
+    {
+      "id": 15012,
+      "section": "030-10",
+      "text": "From which of the following would you expect to find the dates and times when temporary danger areas are active?",
+      "options": ["NOTAM", "SIGMET", "RAD/NAV charts", "Only AIP"]
+    },
+    {
+      "id": 14981,
+      "section": "030-08",
+      "text": "Gliding for maximum range requires:",
+      "options": [
+        "a relatively low angle of attack.",
+        "a neutral angle of attack.",
+        "a negative angle of attack.",
+        "a high angle of attack."
+      ]
+    },
+    {
+      "id": 14983,
+      "section": "030-08",
+      "text": "How can the forces acting on an aeroplane be balanced during a glide?",
+      "options": [
+        "Drag is equal to a component of weight.",
+        "Weight is equal to lift.",
+        "Lift is equal to drag.",
+        "If there is no thrust, there is no drag."
+      ]
+    },
+    {
+      "id": 14874,
+      "section": "030-03",
+      "text": "The distance from the datum to the Centre of Gravity of a mass is known as",
+      "options": [
+        "the moment arm or balance arm.",
+        "the index.",
+        "the moment.",
+        "the force."
+      ]
+    },
+    {
+      "id": 14823,
+      "section": "030-01",
+      "text": "If the centre of gravity of an aeroplane moves forward during flight the elevator control will :",
+      "options": [
+        "become heavier making the aeroplane more difficult to manouevre in pitch",
+        "become lighter making the aeroplane more difficult to manouevre in pitch.",
+        "become lighter making the aeroplane more easy to manouevre in pitch.",
+        "become heavier making the aeroplane more easy to manouevre in pitch."
+      ]
+    },
+    {
+      "id": 14835,
+      "section": "030-01",
+      "text": "If the Centre of Gravity is in behind of the aft limit, which one of the following is not one of its effects?",
+      "options": [
+        "It is easier to maintain the glide angle due to aircraft pitching upward trend.",
+        "Reduce range and endurance due to the extra drag.",
+        "Spin recovery becomes more difficult.",
+        "Decrease longitudinal static stability"
+      ],
+      "flagged": true
+    }
+  ]
+}

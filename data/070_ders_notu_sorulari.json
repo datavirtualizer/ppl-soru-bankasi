@@ -1,0 +1,133 @@
+{
+  "subject_code": "070",
+  "subject_name": "Operational Procedures",
+  "source": "073 Uçak Operasyonel Prosedürler ders notları - ünite sonu quiz soruları (20 soru)",
+  "answer_convention": "Şıklar doğru cevap başa (A) gelecek şekilde sıralandı; kaynakta yalnızca 57315'in doğru cevabı ikinci sıradaydı, başa alındı.",
+  "id_convention": "Kaynakta soru ID'si yok; 57301'den başlayan yapay ID'ler verildi (573 = 073 ders notu).",
+  "sections": {
+    "070-06": "Ders Notu Soruları (073)"
+  },
+  "questions": [
+    {
+      "id": 57301,
+      "section": "070-06",
+      "text": "Operatör, pilot tarafından onaylanan uçuş hazırlık formlarını, en az ne kadar süre saklamak zorundadır?",
+      "options": ["3 ay", "24 ay", "1 yıl", "İlgili pilotun bir sonraki uçuşuna kadar", "Uçuş bitene kadar"]
+    },
+    {
+      "id": 57302,
+      "section": "070-06",
+      "text": "Eğer uçuş esnasında uçaktan bir parça koparsa, yerde hiç kimseyi yaralamadıysa ve bu durum uçuşun devamını negatif bir şekilde etkilemiyorsa, ICAO bu durumu nasıl tanımlar?",
+      "options": ["Uçak olayı (incident)", "Beklenmedik hadise", "Uçak kazası (accident)", "Rapor edilmesi gereken bir hadise", "Uçak arızası"]
+    },
+    {
+      "id": 57303,
+      "section": "070-06",
+      "text": "ICAO üyesi devlete kayıtlı bir uçakta aşağıdaki belgelerin hangisinin taşınması gerekli değildir?",
+      "options": ["Yolcu Manifestosu", "Uçuş Mürettebat Lisansları", "Uçuşa Elverişlilik Belgesi (C of A)", "Kayıt belgesi (C of R)", "Uçak telsiz lisansı"]
+    },
+    {
+      "id": 57304,
+      "section": "070-06",
+      "text": "Pilot el kitabı ve hava taşıtı uçuş el kitabı (POH-AFM), ...",
+      "options": ["Her uçak için özel olarak üretilir.", "Uçağın pilotuna göre üretilir.", "Uçuş eğitim organizasyonlarına özel olarak üretilir.", "Operatörlere özel olarak üretilir.", "Ülkeye özel olarak üretilir."]
+    },
+    {
+      "id": 57305,
+      "section": "070-06",
+      "text": "Hava meydanında, uçaklar, aktif bir şekilde hareket halinde oldukları alan içerisinde motorlarının çalışır halde olduğunu diğer uçaklara bildirmek amacıyla ışık kullanır. Aşağıdakilerden hangisi bu amaç için kullanılan ışıktır?",
+      "options": ["Kırmızı çarpışma önleyici ışık", "Seyrüsefer ışıkları", "Kuyruk ışıkları", "Mor çarpışma önleyici ışık", "İniş ışığı"]
+    },
+    {
+      "id": 57306,
+      "section": "070-06",
+      "text": "ICAO uçuş planı aşağıdakilerin hangisi tarafından onaylanıp imzalanmaktadır?",
+      "options": ["Sorumlu pilot", "Hava trafik kontrolörü", "Uçuş Harekat Uzmanı", "Tedarikçi", "Operatör"]
+    },
+    {
+      "id": 57307,
+      "section": "070-06",
+      "text": "Havaalanı içinde, yakıt ikmali yapmak için aşağıdakilerden hangisi doğrudur?",
+      "options": ["Pilot veya operatörün yetkilendirdiği sorumlu kişi gözetiminde, yetkilendirilmiş yakıt sağlayıcı birim tarafından yapılır.", "Bilhassa pilot tarafından yapılır.", "Özel bir durum olmamakla birlikte, yetkili petrol firması tarafından yapılabilir.", "Pilot gözetiminde herhangi bir yakıt sağlayıcı tarafından yapılabilir.", "Yalnızca yetkili bir tedarikçi tarafından yapılabilir."]
+    },
+    {
+      "id": 57308,
+      "section": "070-06",
+      "text": "VHF bantlı telsiz için verilenlerden hangisi doğrudur?",
+      "options": ["Bütün uçaklarda bulunması gereklidir.", "Yalnızca çok motorlu yolcu uçaklarının bulundurması gerekir.", "Yalnızca dizel motorlu uçakların bulundurması gerekir.", "Yalnızca çok motorlu uçakların bulundurması gerekir.", "Yalnızca tek motorlu uçakların bulundurması gerekir."]
+    },
+    {
+      "id": 57309,
+      "section": "070-06",
+      "text": "PIC'in aşağıdaki yetki ve sorumluluklarından hangisi doğrudur?",
+      "options": ["Uçağın emniyetini tehlikeye atabilecek kişiyi indirme yetkisi", "Uçağın ağırlık merkezini tehlikeye atabilecek kişiyi sabitleme yetkisi", "Uçuş ekibi üyelerine yıllık izin planlaması yapma", "Yolculara özel ikram servisi düzenleme", "Hava trafik kontrolü ile müzakere ederek uçuş rotasını değiştirme"]
+    },
+    {
+      "id": 57310,
+      "section": "070-06",
+      "text": "7500 transponder kodu aşağıdakilerden hangisini ifade etmektedir?",
+      "options": ["Yasadışı müdahale", "Transponder arızası", "Seyrüsefer arızası", "Telsiz arızası", "Acil durum"]
+    },
+    {
+      "id": 57311,
+      "section": "070-06",
+      "text": "Transponder arızası durumunda aşağıdakilerden hangisi yapılır?",
+      "options": ["Hava trafik birimine bilgi verilir.", "Yerine 121.00 bağlanır.", "7777 kodu bağlanır.", "7600 kodu bağlanır.", "7400 kodu bağlanır."]
+    },
+    {
+      "id": 57312,
+      "section": "070-06",
+      "text": "Kirlenmiş pistlerde hangi tür kirletici maddeler, pistin kirlenmiş kabul edilmesine neden olur?",
+      "options": ["Su, sulu kar, gevşek kar, katı bir kütle halinde sıkıştırılmış kar ve buz", "Yalnızca kar", "Yalnızca sulu kar", "Yalnızca su", "Yalnızca buz"]
+    },
+    {
+      "id": 57313,
+      "section": "070-06",
+      "text": "Aquaplaning (Hydroplaning) oluşumu hangi koşullarda dikkate alınmalıdır?",
+      "options": ["Hem kalkış hem de iniş operasyonlarında", "Yalnızca kalkış sırasında", "Yalnızca uçak kalkarken", "Yalnızca uçak yerdeyken", "Yalnızca iniş sırasında"]
+    },
+    {
+      "id": 57314,
+      "section": "070-06",
+      "text": "Dinamik su yastığına (hydroplaning) sebep olan ana faktör nedir?",
+      "options": ["Pist üzerindeki su birikintisinin derinliği", "Güçlü bir ön rüzgar", "Hava taşıtının ağırlığı", "Güçlü bir yan rüzgar", "Pist üzerindeki ışıkların duruşu"]
+    },
+    {
+      "id": 57315,
+      "section": "070-06",
+      "note": "Kaynakta doğru cevap ikinci şıktı; kurala uygun olarak başa alındı.",
+      "text": "Gürültü azaltma prosedürleri, hangi operasyonlar için düzenlemeler tarafından zorunlu tutulur?",
+      "options": ["IFR operasyonları", "Hem IFR hem VFR operasyonları", "VFR operasyonları", "Hiçbir operasyon", "Yalnızca Light IFR operasyonları"]
+    },
+    {
+      "id": 57316,
+      "section": "070-06",
+      "text": "Aşağıdaki durumlardan hangisi, gürültü azaltma prosedürlerinin uygulanmamasını gerektirir?",
+      "options": ["Pist yüzeyi koşullarının su, kar, sulu kar veya buz vb.den olumsuz etkilenmesi durumunda", "Yan rüzgar bileşeni, hamle dahil, 15 knot'ı geçmediği durumlarda", "Yan rüzgar bileşeni, hamle dahil, 15 km'yi geçmediği durumlarda", "Arka rüzgar bileşeni, hamle dahil, 5 knot'ı geçmediği durumlarda", "Bulut alt tavanın, havaalanı irtifasına göre 500 ft'ten daha yüksek olduğu durumlarda"]
+    },
+    {
+      "id": 57317,
+      "section": "070-06",
+      "text": "Wake türbülansından en fazla hangi tür uçaklar etkilenir?",
+      "options": ["Hafif ağırlıktaki uçaklar", "Tüm uçaklar etkilenmez", "Tüm uçaklar eşit derecede etkilenir", "Ağır ağırlıktaki uçaklar", "Orta ağırlıktaki uçaklar"]
+    },
+    {
+      "id": 57318,
+      "section": "070-06",
+      "text": "Wake türbülansı ne kadar süre devam edebilir?",
+      "options": ["3 dakika veya daha fazla", "Bir görünür sonra kaybolur", "Anında kaybolur", "2 dakika", "1 dakika"]
+    },
+    {
+      "id": 57319,
+      "section": "070-06",
+      "text": "Kanat ucu türbülansı sınıflandırmasında ağır (HEAVY) kategorisinde olan hava taşıtlarının maksimum sertifikalı kalkış kütlesi nedir?",
+      "options": ["136.000 kg veya daha fazla", "136.000 litre veya daha fazla", "146.000 kg veya daha fazla", "186.000 kg veya daha fazla", "136.000 kg ile 186.000 kg arasında"]
+    },
+    {
+      "id": 57320,
+      "section": "070-06",
+      "text": "Kanat ucu türbülansı;",
+      "options": ["Ön dikme havalandığında başlar, iniş takımları piste dokunduğunda biter.", "Sürtünme yaratan yüzeyler devreye sokulduğunda başlar, toplandığında biter.", "Uçak yerden 300 metreye ulaştığında başlar, iniş esnasında bu irtifayı geçerken biter.", "Uçak yerden 300 feet'e ulaştığında başlar, iniş esnasında bu irtifayı geçerken biter.", "Uçak koşturmaya başladığında hemen başlar, iniş gerçekleşir gerçekleşmez biter."]
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+{
+  "subject_code": "501",
+  "subject_name": "Havacılığa Giriş",
+  "source": "Ders notlarından üretilmiş sorular (gerçek sınav sorusu değildir)",
+  "origin": "uretilmis",
+  "answer_convention": "Doğru cevap ilk şıktır (A).",
+  "id_convention": "90501+ bandı: ders notundan üretilmiş sorular.",
+  "sections": {
+    "01-03": "Ders Notundan Üretilmiş"
+  },
+  "questions": [
+    {
+      "id": 90501, "section": "01-03",
+      "text": "Bir balon hangi üç temel elemandan oluşur?",
+      "options": ["Zarf, sepet ve yakıcı", "Zarf, rotor ve sepet", "Kubbe, pervane ve yakıcı", "Sepet, kanatçık ve zarf", "Zarf, iskelet ve motor"]
+    },
+    {
+      "id": 90502, "section": "01-03",
+      "text": "Serbest balon ile bağlı balon arasındaki temel fark nedir?",
+      "options": ["Bağlı balon, yalnızca kendisini zemine bağlayan halatın uzunluğu kadar yükselebilir", "Bağlı balonda yakıcı bulunmaz", "Serbest balon yalnızca gece uçurulabilir", "Bağlı balon havadan ağır bir hava aracıdır", "Serbest balonun sepeti yoktur"]
+    },
+    {
+      "id": 90503, "section": "01-03",
+      "text": "Hava gemileri (zeplinler) kaça ayrılır ve bunlar hangileridir?",
+      "options": ["Üçe: esnek, yarı rijit ve rijit hava gemisi", "İkiye: serbest ve bağlı hava gemisi", "İkiye: motorlu ve motorsuz hava gemisi", "Üçe: hafif, orta ve ağır hava gemisi", "Dörde: esnek, yarı rijit, rijit ve amfibik"]
+    },
+    {
+      "id": 90504, "section": "01-03",
+      "text": "Rijit hava gemisini diğerlerinden ayıran özellik nedir?",
+      "options": ["Zarfın tamamının iskeleti vardır ve gemi sabit bir şekle sahiptir", "Zarfın şekli içindeki gaz miktarına göre değişir", "Yalnızca zarfın alt kısmında iskelet bulunur", "Motoru yoktur, rüzgârla hareket eder", "Sepet yerine kapalı kabin kullanılır"]
+    },
+    {
+      "id": 90505, "section": "01-03",
+      "text": "Dar gövdeli (tek koridorlu) bir yolcu uçağında koridorun bir yanında en fazla kaç koltuk bulunabilir?",
+      "options": ["3", "2", "4", "5", "6"]
+    },
+    {
+      "id": 90506, "section": "01-03",
+      "text": "Geniş gövdeli bir yolcu uçağında bir oturma sırasında en fazla kaç koltuk bulunabilir?",
+      "options": ["10", "6", "8", "12", "14"]
+    },
+    {
+      "id": 90507, "section": "01-03",
+      "text": "180 koltuk kapasiteli bir uçak, 2.000 kilometrelik bir uçuş yaptığında arz edilen koltuk-kilometre kaçtır?",
+      "options": ["360.000", "180.000", "36.000", "2.180", "720.000"]
+    },
+    {
+      "id": 90508, "section": "01-03",
+      "text": "180 koltuklu bir uçakla yapılan 2.000 km'lik uçuşta 150 ücretli yolcu taşınmıştır. Yolcu doluluk oranı nedir?",
+      "options": ["%83,3", "%75,0", "%90,0", "%66,7", "%120,0"]
+    },
+    {
+      "id": 90509, "section": "01-03",
+      "text": "Uçak kabinindeki koltuk aralığı, servis sınıfına ve hava yolunun iş modeline bağlı olarak hangi aralıkta değişir?",
+      "options": ["71 – 240 santimetre", "50 – 120 santimetre", "100 – 180 santimetre", "40 – 90 santimetre", "150 – 300 santimetre"]
+    },
+    {
+      "id": 90510, "section": "01-03",
+      "text": "\"Uçak kullanımı\" terimi neyi ifade eder?",
+      "options": ["Bir uçağın uçuşa verildiği bir gündeki toplam blok saati", "Bir uçağın ömrü boyunca yaptığı toplam iniş sayısı", "Bir uçağın yıllık bakım süresi", "Bir uçağın taşıdığı toplam yolcu sayısı", "Bir uçağın havada geçirdiği net süre"]
+    },
+    {
+      "id": 90511, "section": "01-03",
+      "text": "Bir pistin tanıtma numarası neyi gösterir?",
+      "options": ["Pistin manyetik doğrultusunun en yakın onda birine yuvarlanmış hali", "Pistin metre cinsinden uzunluğunun yüzde biri", "Pistin gerçek kuzeye göre doğrultusu", "Havaalanındaki pist sırasını", "Pistin taşıma kapasitesi sınıfını"]
+    },
+    {
+      "id": 90512, "section": "01-03",
+      "text": "Bir havaalanında üç paralel pist bulunuyorsa bunlar nasıl adlandırılır?",
+      "options": ["36L, 36C ve 36R", "36A, 36B ve 36C", "36-1, 36-2 ve 36-3", "36L, 36M ve 36R", "36N, 36C ve 36S"]
+    },
+    {
+      "id": 90513, "section": "01-03",
+      "text": "Hesaplanan pist doğrultusu tek haneli bir sayı ile sonuçlanırsa tanıtma işareti nasıl yazılır?",
+      "options": ["Başına \"0\" eklenir", "Sonuna \"0\" eklenir", "Olduğu gibi tek hane yazılır", "Bir üst onluğa yuvarlanır", "Harfle ifade edilir"]
+    },
+    {
+      "id": 90514, "section": "01-03",
+      "text": "CAT II hassas yaklaşma kategorisinde karar yüksekliği ve pist görüş mesafesi hangi sınırlardadır?",
+      "options": ["Karar yüksekliği 100–199 ft, RVR en az 300 m", "Karar yüksekliği 200 ft ve üzeri, RVR en az 550 m", "Karar yüksekliği 50 ft'in altı, RVR en az 75 m", "Karar yüksekliği yoktur, RVR sınırı yoktur", "Karar yüksekliği 100 ft'in altı, RVR en az 175 m"]
+    },
+    {
+      "id": 90515, "section": "01-03",
+      "text": "SHT-OPS'e göre düşük görüş kalkışı (LVTO), pist görüş mesafesinin hangi aralıkta olduğu kalkışları ifade eder?",
+      "options": ["400 metreden düşük ancak 75 metreden az olmayan", "550 metreden düşük ancak 300 metreden az olmayan", "300 metreden düşük ancak 50 metreden az olmayan", "800 metreden düşük ancak 400 metreden az olmayan", "200 metreden düşük ancak 100 metreden az olmayan"]
+    },
+    {
+      "id": 90516, "section": "01-03",
+      "text": "Dört harfli ICAO havaalanı kodunda ilk harf neyi temsil eder?",
+      "options": ["Dünya üzerindeki haberleşme bölgesini", "Havaalanının bağlı olduğu şehri", "Havaalanının büyüklük sınıfını", "Pist sayısını", "İşletmeci kuruluşu"]
+    },
+    {
+      "id": 90517, "section": "01-03",
+      "text": "Havaalanı yer hizmet işletmelerinin uygulaması tavsiye edilen kural ve standartlar hangi dokümanda tanımlanır?",
+      "options": ["AHM – Airport Handling Manual", "SGHA – Standart Yer Hizmetleri Anlaşması", "AIP – Havacılık Bilgi Yayını", "MEL – Asgari Teçhizat Listesi", "AMM – Bakım El Kitabı"]
+    },
+    {
+      "id": 90518, "section": "01-03",
+      "text": "Hava yolu işletmeleri ile havaalanı yer hizmet işletmeleri arasındaki anlaşmalar hangi standarda göre yapılır?",
+      "options": ["SGHA – Standard Ground Handling Agreement", "AHM – Airport Handling Manual", "IGOM – IATA Ground Operations Manual", "ISAGO – Yer Hizmetleri Emniyet Denetimi", "SARPs – Standartlar ve Tavsiye Edilen Uygulamalar"]
+    },
+    {
+      "id": 90519, "section": "01-03",
+      "text": "Bütünleşik olarak verilen bir dijital derste kursiyerin nihai puanı nasıl hesaplanır?",
+      "options": ["Ön sınavın %10'u ve son sınavın %90'ı", "Ön sınavın %50'si ve son sınavın %50'si", "Yalnızca son sınav puanı", "Ön sınavın %90'ı ve son sınavın %10'u", "Ön sınav ve son sınavın aritmetik ortalaması"]
+    },
+    {
+      "id": 90520, "section": "01-03",
+      "text": "CORSIA'nın pilot aşaması hangi yılları kapsar?",
+      "options": ["2021 – 2023", "2024 – 2026", "2027 – 2035", "2016 – 2020", "2019 – 2021"]
+    },
+    {
+      "id": 90521, "section": "01-03",
+      "text": "Aşağıdakilerden hangisi CORSIA kapsamı dışında tutulan hava araçlarından biri değildir?",
+      "options": ["Yıllık 50.000 ton karbondioksit salan tarifeli yolcu uçağı", "Azami kalkış ağırlığı 5.700 kilogramdan az olan hava aracı", "Yıllık 10.000 metrik tondan az karbondioksit salan hava aracı", "İnsani yardım amaçlı kullanılan hava aracı", "Yangın söndürme amaçlı kullanılan hava aracı"]
+    },
+    {
+      "id": 90522, "section": "01-03",
+      "text": "Çevre Yönetim Sistemi ile ilgili uluslararası standart aşağıdakilerden hangisidir?",
+      "options": ["ISO 14001", "ISO 9001", "ISO 27001", "ISO 45001", "ISO 31000"]
+    },
+    {
+      "id": 90523, "section": "01-03",
+      "text": "Ekolojik ayak izi hesaplamasında \"arz\" tarafını temsil eden kavram nedir?",
+      "options": ["Biyolojik kapasite", "Karbon denkleştirme", "Emisyon ticareti", "Sürdürülebilir kalkınma", "Çevresel etki değerlendirmesi"]
+    },
+    {
+      "id": 90524, "section": "01-03",
+      "text": "Birleşmiş Milletler 2030 Sürdürülebilir Kalkınma Gündemi kaç amaçtan oluşur?",
+      "options": ["17", "10", "12", "20", "25"]
+    },
+    {
+      "id": 90525, "section": "01-03",
+      "text": "ICAO Ek 16 – Çevrenin Korunması'nın birinci cildi hangi konuyu düzenler?",
+      "options": ["Uçak gürültüsü", "Uçak CO2 emisyonları", "CORSIA", "Uçak gövde-motor emisyonları", "Havaalanı gürültüsü"]
+    },
+    {
+      "id": 90526, "section": "01-03",
+      "text": "Montreal Sözleşmesi hangi sözleşmenin yerini almıştır?",
+      "options": ["Varşova Sözleşmesi", "Şikago Sözleşmesi", "Paris Sözleşmesi", "Havana Sözleşmesi", "Madrid Sözleşmesi"]
+    },
+    {
+      "id": 90527, "section": "01-03",
+      "text": "Paris Sözleşmesi uyarınca kurulan ve sözleşmenin eklerini hazırlamakla görevlendirilen kurum hangisidir?",
+      "options": ["ICAN – Hava Seyrüseferi için Uluslararası Komisyon", "ICAO – Uluslararası Sivil Havacılık Teşkilatı", "IATA – Uluslararası Hava Taşımacılığı Birliği", "ECAC – Avrupa Sivil Havacılık Konferansı", "EASA – Avrupa Havacılık Emniyeti Ajansı"]
+    },
+    {
+      "id": 90528, "section": "01-03",
+      "text": "Havacılıkta \"freyzyoloji\" terimi neyi ifade eder?",
+      "options": ["İletişimin hatasız, kısa ve tek anlamlı yürütülmesini sağlayan standartlaştırılmış ifadeler", "Uçuş öncesi meteoroloji brifingi", "Hava aracı bakım kayıtlarının tutulma usulü", "Pilot adaylarının dil yeterlilik sınavı", "Kokpitte kullanılan alfabetik kodlama sistemi"]
+    },
+    {
+      "id": 90529, "section": "01-03",
+      "text": "Ramjet motorunun temel özelliği nedir?",
+      "options": ["Kompresör veya türbin bulunmaz; hava, aracın ileri hareketiyle sıkıştırılır", "Türbin bir pervaneyi döndürerek itki üretir", "Egzoz gazı yerine şaft gücü üretir", "Fan ve çekirdek türbin birlikte çalışır", "Silindir içindeki pistonlarla güç üretir"]
+    },
+    {
+      "id": 90530, "section": "01-03",
+      "text": "Pistonlu uçak motorlarında silindirlerin yatay ve karşılıklı yerleştirildiği, günümüzde birçok hafif uçakta kullanılan tip hangisidir?",
+      "options": ["Boxer tipi", "Yıldız tipi", "V tipi", "Sıra (satır) tipi", "Radyal tipi"]
+    },
+    {
+      "id": 90531, "section": "01-03",
+      "text": "Helikopterlerde swash plate mekanizmasının görevi nedir?",
+      "options": ["Rotor palelerinin açısını pilotun kumandaları doğrultusunda sürekli ayarlamak", "Ana rotorun dönme hızını sabit tutmak", "Kuyruk rotoruna güç aktarmak", "Motor yakıt karışımını düzenlemek", "İniş takımlarını içeri almak"]
+    },
+    {
+      "id": 90532, "section": "01-03",
+      "text": "Planör havalandıktan sonra yükselmesini hangi sayede sürdürür?",
+      "options": ["Termik adı verilen hava akımı sayesinde", "Yardımcı elektrik motoru sayesinde", "Kuyruk rotoru sayesinde", "Çekici uçağın itkisi sayesinde", "Kanat ucu girdapları sayesinde"]
+    },
+    {
+      "id": 90533, "section": "01-03",
+      "text": "Hava trafik kontrolör lisans sınavına katılabilmek için adayın yaşı ne olmalıdır?",
+      "options": ["21 yaşını doldurmuş ve 30 yaşından gün almamış olmalı", "18 yaşını doldurmuş olmalı", "25 yaşını doldurmuş ve 35 yaşından gün almamış olmalı", "20 yaşını doldurmuş ve 40 yaşından gün almamış olmalı", "Yaş sınırlaması yoktur"]
+    },
+    {
+      "id": 90534, "section": "01-03",
+      "text": "Hava trafik kontrolör lisansı için aranan asgari İngilizce dil yeterliliği nedir?",
+      "options": ["ICAO Seviye 4", "ICAO Seviye 2", "ICAO Seviye 3", "ICAO Seviye 5", "ICAO Seviye 6"]
+    },
+    {
+      "id": 90535, "section": "01-03",
+      "text": "Uçuş planları merkezî akış yönetim birimine en geç ne zaman gönderilmelidir?",
+      "options": ["Motor çalıştırma zamanından en geç 3 saat önce", "Motor çalıştırma zamanından en geç 30 dakika önce", "Kalkıştan en geç 1 saat önce", "Uçuş gününden 1 gün önce", "Motor çalıştırma anında"]
+    },
+    {
+      "id": 90536, "section": "01-03",
+      "text": "NOTAM'ın üç yayım tipi aşağıdakilerden hangisinde doğru verilmiştir?",
+      "options": ["NOTAMN (yeni), NOTAMR (değiştiren), NOTAMC (iptal eden)", "NOTAMA (acil), NOTAMB (bilgi), NOTAMC (iptal)", "NOTAMN (yeni), NOTAMS (özel), NOTAMX (kapalı)", "NOTAMR (rutin), NOTAMU (acil), NOTAMC (iptal)", "NOTAMI (bilgi), NOTAMD (değişiklik), NOTAMK (kapanış)"]
+    }
+  ]
+}

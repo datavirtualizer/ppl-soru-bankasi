@@ -1,0 +1,915 @@
+{
+  "subject_code": "501",
+  "subject_name": "Havacılığa Giriş",
+  "section_code": "01-01",
+  "section_name": "01 | Havacılığa Giriş - Sorular",
+  "source": "ATPL TV - Exam Report (181 soru)",
+  "answer_convention": "Şıklar kaynaktaki sırayla kaydedildi; ilk şık (ord=1) doğru cevaptır.",
+  "questions": [
+    {
+      "id": 26966,
+      "text": "Dünyadaki havacılık faaliyetleri temelde hangi iki ana gruba ayrılır?",
+      "options": ["Sivil havacılık – devlet havacılığı", "Ticari havacılık – askerî havacılık", "Ulusal havacılık – uluslararası havacılık", "Kamu havacılığı – özel havacılık", "Yolcu havacılığı – kargo havacılığı"]
+    },
+    {
+      "id": 26967,
+      "text": "Uluslararası Sivil Havacılık Sözleşmesine göre aşağıdakilerden hangisi devlet hava araçlarından değildir?",
+      "options": ["Ticari yolcu taşımacılığı yapan hava aracı", "Devlet adına uçuş yapan askerî hava aracı", "Polis hizmetlerinde kullanılan hava aracı", "Gümrük hizmetlerinde kullanılan hava aracı", "Askerî hizmetlerde kullanılan hava aracı"]
+    },
+    {
+      "id": 26968,
+      "text": "Aşağıdakilerden hangisi sivil hava aracı olarak tanımlanır?",
+      "options": ["Devlet hava aracı hizmetinde faaliyet göstermeyen hava aracı", "Devlet adına resmî görev yapan hava aracı", "Askerî amaçla kullanılan hava aracı", "Gümrük denetiminde görev yapan hava aracı", "Polis hizmetlerinde kullanılan hava aracı"]
+    },
+    {
+      "id": 26969,
+      "text": "Sivil havacılık faaliyetlerinin temel amacı aşağıdakilerden hangisidir?",
+      "options": ["İnsanların emniyetli, ekonomik, hızlı ve çevreye duyarlı şekilde ulaşımını sağlamak ve hava taşımacılığı yoluyla yapılabilecek işlerin yerine getirilmesi", "Havacılık teknolojilerinin geliştirilmesini sağlamak", "Uluslararası hava sahasını kontrol etmek", "Sadece ticari kazanç elde etmek", "Yalnızca askerî ve devlet görevlerini yerine getirmek"]
+    },
+    {
+      "id": 26970,
+      "text": "Aşağıdakilerden hangisi ICAO İstatistik Programı Başvuru El Kitabına göre sivil havacılık faaliyetleri arasında yer almaz?",
+      "options": ["Askerî hava operasyonları", "Havacılık eğitimi", "Hava seyrüsefer hizmetleri", "Genel havacılık", "Ticari hava taşımacılığı hizmetleri"]
+    },
+    {
+      "id": 26971,
+      "text": "Aşağıdakilerden hangisi ICAO İstatistik Programı Başvuru El Kitabına göre sivil havacılık faaliyetleri arasında yer almaz?",
+      "options": ["Polis hava hizmetleri", "Düzenleme fonksiyonları", "Sivil havacılık üretimi", "Havaalanı hizmetleri", "Bakım ve onarım"]
+    },
+    {
+      "id": 26972,
+      "text": "Havacılık alfabesinin kullanılmasının temel amacı aşağıdakilerden hangisidir?",
+      "options": ["Sözel iletimde oluşabilecek yanlış anlamaları önlemek", "Ulusal diller arasında çeviri sağlamak", "Askerî haberleşmeyi gizli hâle getirmek", "Kısaltmaların yazılı kullanımını artırmak", "Haberleşme süresini kısaltmak"]
+    },
+    {
+      "id": 26973,
+      "text": "Havacılık alfabesinin doğru şekilde kullanılmaması hangi duruma yol açabilir?",
+      "options": ["Uçuş emniyetini olumsuz etkileyecek yanlış anlaşılmalara", "Hava trafik yoğunluğunun azalmasına", "Eğitim süresinin uzamasına", "Haberleşme maliyetlerinin artmasına", "Uçuş planlarının iptal edilmesine"]
+    },
+    {
+      "id": 26974,
+      "text": "Uluslararası Sivil Havacılık Sözleşmesi’nin 1. Bölümünün 3. kısmı aşağıdakilerden hangisini zorunlu kılmaktadır?",
+      "options": ["Hava araçlarının tescil edilmesini ve ruhsatlarının bulunmasını", "Hava araçlarının renk ve boyama standartlarını", "Hava araçlarının uluslararası uçuş yapmasını", "Hava araçlarının sigortalanmasını", "Hava araçlarının bakım periyotlarını"]
+    },
+    {
+      "id": 26975,
+      "text": "Uluslararası Sivil Havacılık Sözleşmesi’nin 20. maddesine göre aşağıdakilerden hangisi zorunludur?",
+      "options": ["Hava aracının milliyet ve tescil işaretlerinin üzerinde yer alması", "Hava aracının sigorta belgesinin görünür olması", "Hava aracının uçuş planının üzerinde taşınması", "Hava aracının üretici firmasının belirtilmesi", "Hava aracının bakım kayıtlarının uçakta bulunması"]
+    },
+    {
+      "id": 26976,
+      "text": "Hava aracı milliyet ve tescil işaretleri, metinde hangi unsura benzetilmiştir?",
+      "options": ["Kara nakil vasıtalarındaki plakaya", "Uçuş lisansına", "Pasaporta", "Ruhsat belgesine", "Kimlik kartına"]
+    },
+    {
+      "id": 26977,
+      "text": "Milliyet işareti ve tescil işaretinin genel yapısı aşağıdakilerden hangisinde doğru verilmiştir?",
+      "options": ["Milliyet işareti harflerden, tescil işareti harflerden, rakamlardan veya her ikisinden oluşur", "Milliyet ve tescil işaretleri aynı yapıdadır", "Milliyet işareti sembollerden oluşur", "Milliyet işareti yalnızca rakamlardan oluşur", "Milliyet işareti rakamlardan, tescil işareti yalnızca harflerden oluşur"]
+    },
+    {
+      "id": 26978,
+      "text": "Türkiye için kabul edilmiş hava aracı milliyet işareti aşağıdakilerden hangisidir?",
+      "options": ["TC", "TY", "TK", "TU", "TR"]
+    },
+    {
+      "id": 26979,
+      "text": "“TC-ABC” formatındaki bir hava aracı tescilinde, tire işaretinden önce yer alan ilk iki harf neyi ifade eder?",
+      "options": ["Milliyet işaretini", "İşletmeci kodunu", "Hava aracının yaşını", "Uçak tipini", "Tescil numarasını"]
+    },
+    {
+      "id": 26980,
+      "text": "“TC-ABC” formatındaki bir hava aracı tescilinde, tire işaretinden sonra gelen üç harf neyi ifade eder?",
+      "options": ["Tescil işaretini", "ICAO kodunu", "Üretici ülkeyi", "Uçuş bölgesini", "Milliyet işaretini"]
+    },
+    {
+      "id": 26981,
+      "text": "Havacılıkta mesafe, yükseklik ve hız gibi fiziksel niceliklerin ölçümünde ağırlıklı olarak hangi ülkenin ölçü birimleri kullanılmaktadır?",
+      "options": ["Amerika Birleşik Devletleri", "Rusya", "Japonya", "Fransa", "Almanya"]
+    },
+    {
+      "id": 26982,
+      "text": "Havacılıkta İngiliz (İmparatorluk) ölçü birimlerinin tercih edilmesinin temel nedeni aşağıdakilerden hangisidir?",
+      "options": ["Amerika Birleşik Devletleri’nin havacılık alanındaki teknolojik ve işletmecilik katkılarının fazla olması", "Avrupa ülkelerinin bu sistemi zorunlu kılması", "Uluslararası Birim Sistemi’nin yasaklanmış olması", "Denizcilikte kullanılan ölçü birimleriyle aynı olması", "Metrik sistemin karmaşık olması"]
+    },
+    {
+      "id": 26983,
+      "text": "Havacılıkta, özellikle hava seyrüseferi ve uçuş planlamasında mesafe ölçü birimi olarak hangisi kullanılır?",
+      "options": ["Deniz mili", "Yard", "Mil", "Metre", "Kilometre"]
+    },
+    {
+      "id": 26984,
+      "text": "Uluslararası Sivil Havacılık Teşkilatı tarafından deniz milinin kısaltması olarak hangisi belirlenmiştir?",
+      "options": ["NM", "MI", "KM", "SM", "NAUM"]
+    },
+    {
+      "id": 26985,
+      "text": "Deniz milinin doğru yazımı ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+      "options": ["Büyük harflerle yazılması doğrudur", "Sadece denizcilikte büyük harf kullanılır", "Rakamla birlikte yazılmalıdır", "Büyük veya küçük harf fark etmez", "Küçük harflerle yazılmalıdır"]
+    },
+    {
+      "id": 26986,
+      "text": "Havacılıkta kullanılan birçok kavram ve seyahat usulü hangi sektörden havacılığa geçmiştir?",
+      "options": ["Denizcilik sektörü", "Otomotiv sektörü", "Uzay sanayii", "Demiryolu taşımacılığı", "Kara taşımacılığı"]
+    },
+    {
+      "id": 26987,
+      "text": "Bir deniz mili (NM) SI sisteminde kaç metreye eşittir?",
+      "options": ["1.852 metre", "2.000 metre", "1.900 metre", "1.850 metre", "1.800 metre"]
+    },
+    {
+      "id": 26988,
+      "text": "Bir deniz mili (NM) kaç kilometreye karşılık gelir?",
+      "options": ["1,852 km", "2 km", "1,8 km", "1,7 km", "1,5 km"]
+    },
+    {
+      "id": 26989,
+      "text": "100 deniz mili (NM) mesafe kaç kilometreye eşittir?",
+      "options": ["185,2 km", "200 km", "180 km", "150,2 km", "100 km"]
+    },
+    {
+      "id": 26990,
+      "text": "100 deniz mili (NM) mesafe kaç metreye karşılık gelir?",
+      "options": ["185.200 metre", "180.000 metre", "150.200 metre", "100.000 metre", "18.520 metre"]
+    },
+    {
+      "id": 26991,
+      "text": "Deniz milinin fiziksel anlamı aşağıdakilerden hangisidir?",
+      "options": ["Bir meridyenin bir dakikalık yay parçasına eşdeğer uzunluk", "Dünya’nın çevresinin binde biri", "Bir meridyenin bir derecelik yay uzunluğu", "Bir paralelin bir dakikalık yay uzunluğu", "Dünya’nın ekvator uzunluğunun yüz binde biri"]
+    },
+    {
+      "id": 26992,
+      "text": "Bir derece kaç dakikaya eşittir?",
+      "options": ["60 dakika", "90 dakika", "50 dakika", "45 dakika", "30 dakika"]
+    },
+    {
+      "id": 26993,
+      "text": "Havacılıkta “en büyük daire mesafesi” kavramı aşağıdakilerden hangisini ifade eder?",
+      "options": ["Küre yüzeyi üzerindeki iki farklı konum arasındaki en kısa mesafeyi", "Bir paralelin çevresel uzunluğunu", "Bir meridyenin tamamının uzunluğunu", "Düzlem üzerindeki iki nokta arasındaki doğrusal mesafeyi", "Küre yüzeyi üzerindeki iki nokta arasındaki en uzun mesafeyi"]
+    },
+    {
+      "id": 26994,
+      "text": "En büyük daire mesafesi, küre yüzeyindeki iki konumu birleştiren yaylar arasında hangisine karşılık gelir?",
+      "options": ["Kısa olan yay uzunluğuna", "Kürenin çapına", "İki nokta arasındaki düz çizgiye", "Noktaların tam zıt konumda olduğu duruma", "Uzun olan yay uzunluğuna"]
+    },
+    {
+      "id": 26995,
+      "text": "“En büyük daire mesafesi” kavramının İngilizce karşılığı aşağıdakilerden hangisidir?",
+      "options": ["Great circle distance", "Sphere route", "Global distance", "Shortest route distance", "Long circle distance"]
+    },
+    {
+      "id": 26996,
+      "text": "Hava araçları, iki nokta arasındaki uçuşlarını mümkün olduğunca hangi mesafe üzerinden gerçekleştirmeye çalışırlar?",
+      "options": ["En büyük daire mesafesini veren yay", "Meridyen uzunluğu", "Paralel üzerindeki mesafe", "En uzun yay mesafesi", "Düzlem üzerindeki doğrusal mesafe"]
+    },
+    {
+      "id": 26997,
+      "text": "Havacılıkta hava araçlarının uçuş yükseklikleri genellikle hangi ölçü birimi ile ifade edilir?",
+      "options": ["Foot (feet)", "Yard", "Deniz mili", "Kilometre", "Metre"]
+    },
+    {
+      "id": 26998,
+      "text": "Uluslararası kabul edilen anlaşmaya göre 1 foot kaç metreye eşittir?",
+      "options": ["0,3048 metre", "1,524 metre", "1 metre", "0,3333 metre", "0,3000 metre"]
+    },
+    {
+      "id": 26999,
+      "text": "Yükseklik ölçümünde kullanılan “feet” biriminin kısaltması aşağıdakilerden hangisidir?",
+      "options": ["ft", "m", "F", "feet", "f"]
+    },
+    {
+      "id": 27000,
+      "text": "5 ft’lik bir yükseklik aşağıdakilerden hangisine eşittir?",
+      "options": ["1,524 metre", "5 metre", "3,048 metre", "1,500 metre", "1,200 metre"]
+    },
+    {
+      "id": 27001,
+      "text": "30.000 ft’lik bir uçuş yüksekliği yaklaşık olarak kaç metreye karşılık gelir?",
+      "options": ["9.144 metre", "30.000 metre", "10.000 metre", "9.000 metre", "8.500 metre"]
+    },
+    {
+      "id": 27002,
+      "text": "Hava araçlarının uçuş hızlarının ölçümünde hangi birim kullanılır?",
+      "options": ["Knot", "Deniz mili", "Mil/saat", "Metre/saniye", "Kilometre/saat"]
+    },
+    {
+      "id": 27003,
+      "text": "Bir knot aşağıdakilerden hangisini ifade eder?",
+      "options": ["Bir saatte kat edilen bir deniz mili", "Bir saniyede kat edilen bir deniz mili", "Bir dakikada kat edilen bir deniz mili", "Bir saatte kat edilen bir kara mili", "Bir saatte kat edilen bir kilometre"]
+    },
+    {
+      "id": 27004,
+      "text": "1 knot yaklaşık olarak kaç kilometre/saat hıza eşittir?",
+      "options": ["1,852 km/saat", "3,600 km/saat", "2,000 km/saat", "1,500 km/saat", "1,000 km/saat"]
+    },
+    {
+      "id": 27005,
+      "text": "100 kt’lik bir hız yaklaşık olarak kaç kilometre/saate karşılık gelir?",
+      "options": ["185,2 km/saat", "200 km/saat", "180 km/saat", "170 km/saat", "150 km/saat"]
+    },
+    {
+      "id": 27006,
+      "text": "Baş rüzgârı aşağıdakilerden hangisi olarak tanımlanır?",
+      "options": ["Uçağın önünden, uçuş yönüne ters yönde esen rüzgâr", "Uçağın hızını etkilemeyen rüzgâr", "Yerden bağımsız sabit rüzgâr", "Uçağın arkasından esen rüzgâr", "Uçağın yan tarafından esen rüzgâr"]
+    },
+    {
+      "id": 27007,
+      "text": "Kuyruk rüzgârı (kafa rüzgârının tersi) aşağıdakilerden hangisini ifade eder?",
+      "options": ["Uçağın uçuş yönüyle aynı yönde esen rüzgâr", "Uçağın yere göre hızını azaltan rüzgâr", "Yalnızca kalkışta etkili olan rüzgâr", "Uçağın yan tarafından esen rüzgâr", "Uçağın önünden esen rüzgâr"]
+    },
+    {
+      "id": 27008,
+      "text": "Bir uçak, içinde bulunduğu havaya göre 500 kt hızla uçmaktadır. Uçak 100 kt baş rüzgârı alıyorsa yere göre hızı kaç kt olur?",
+      "options": ["400 kt", "300 kt", "450 kt", "500 kt", "600 kt"]
+    },
+    {
+      "id": 27009,
+      "text": "Bir uçak, içinde bulunduğu havaya göre 500 kt hızla uçmaktadır. Uçak 100 kt kuyruk rüzgârı alıyorsa yere göre hızı kaç kt olur?",
+      "options": ["600 kt", "580 kt", "550 kt", "500 kt", "400 kt"]
+    },
+    {
+      "id": 27010,
+      "text": "Mach sayısı aşağıdakilerden hangisi olarak tanımlanır?",
+      "options": ["Hava aracının hızının, içinde uçulan ortamda ses hızına oranı", "Hava aracının deniz seviyesindeki hızı", "Hava aracının kilometre/saat cinsinden hızı", "Hava aracının hızının ses hızına farkı", "Hava aracının yere göre hızı"]
+    },
+    {
+      "id": 27011,
+      "text": "Bir hava aracı, ses hızının 589 kt olduğu bir ortamda 500 kt hızla uçmaktadır. Buna göre hava aracının Mach sayısı yaklaşık kaçtır?",
+      "options": ["0,85", "1,00", "0,90", "0,80", "0,75"]
+    },
+    {
+      "id": 27012,
+      "text": "Havacılık faaliyetlerinde görev yapan yetkilendirilmiş personel için asgari sağlık koşulları, dil yeterlilikleri, yetki sınırları, bilgi düzeyi, beceriler, tecrübe şartları ve yaş sınırlamaları, Uluslararası Sivil Havacılık Sözleşmesi’nin hangi ekinde (Annex) uluslararası standartlara bağlanmıştır?",
+      "options": ["Ek 1 – Personel Lisanslandırma", "Ek 19 – Emniyet Yönetimi", "Ek 11 – Hava Trafik Hizmetleri", "Ek 6 – Hava Araçlarının İşletilmesi", "Ek 2 – Hava Kuralları"]
+    },
+    {
+      "id": 27013,
+      "text": "Pilotaj kavramı aşağıdakilerden hangisi olarak tanımlanır?",
+      "options": ["Hava aracının uçuş sırasında sevk ve idare edilme işlemi", "Yolcu ve kargo yükleme faaliyetleri", "Hava sahasının kontrol edilmesi", "Uçuş planının hazırlanması süreci", "Hava aracının bakım ve onarım işlemleri"]
+    },
+    {
+      "id": 27014,
+      "text": "Pilot aşağıdakilerden hangisi olarak tanımlanır?",
+      "options": ["Hava aracını sevk ve idare etme yetkisine sahip, lisanslı kişi", "Havaalanı işletme personeli", "Yalnızca askerî uçuş gerçekleştiren personel", "Hava aracının bakımından sorumlu teknik personel", "Hava trafiğini yöneten görevli"]
+    },
+    {
+      "id": 27015,
+      "text": "Aşağıdakilerden hangisi sivil havacılıkta pilot lisansı türlerinden biri değildir?",
+      "options": ["Hava Trafik Kontrol Lisansı", "Hafif Hava Aracı Pilot Lisansı (LAPL)", "Havayolu Nakliye Pilotu Lisansı (ATPL)", "Ticari Pilot Lisansı (CPL)", "Hususi Pilot Lisansı (PPL)"]
+    },
+    {
+      "id": 27016,
+      "text": "Aşağıdakilerden hangisi sivil havacılıkta pilot lisansı türlerinden biri değildir?",
+      "options": ["Uçak Bakım Lisansı", "Ticari Pilot Lisansı (CPL)", "Hususi Pilot Lisansı (PPL)", "İnsansız Hava Aracı Pilotu Lisansı (UAV/Remote Pilot Licence)", "Balon Pilotu Lisansı (BPL)"]
+    },
+    {
+      "id": 27017,
+      "text": "Hafif Hava Aracı Pilot Lisansı’nın kısaltması aşağıdakilerden hangisidir?",
+      "options": ["LAPL", "BPL", "ATPL", "CPL", "PPL"]
+    },
+    {
+      "id": 27018,
+      "text": "Hususi Pilot Lisansı’nın kısaltması aşağıdakilerden hangisidir?",
+      "options": ["PPL", "BPL", "ATPL", "CPL", "LAPL"]
+    },
+    {
+      "id": 27019,
+      "text": "Ticari Pilot Lisansı’nın kısaltması aşağıdakilerden hangisidir?",
+      "options": ["CPL", "BPL", "PPL", "LAPL", "ATPL"]
+    },
+    {
+      "id": 27020,
+      "text": "Havayolu Nakliye Pilotu Lisansı’nın kısaltması aşağıdakilerden hangisidir?",
+      "options": ["ATPL", "BPL", "LAPL", "PPL", "CPL"]
+    },
+    {
+      "id": 27021,
+      "text": "Balon Pilotu Lisansı’nın kısaltması aşağıdakilerden hangisidir?",
+      "options": ["BPL", "LAPL", "PPL", "ATPL", "CPL"]
+    },
+    {
+      "id": 27022,
+      "text": "İnsansız hava araçları için verilen pilot lisansı aşağıdakilerden hangisi olarak adlandırılır?",
+      "options": ["UAV / Remote Pilot Licence", "BPL", "PPL", "CPL", "ATPL"]
+    },
+    {
+      "id": 27023,
+      "text": "Maksimum kalkış kütlesi 2000 kilogramı aşmayan, pistonlu tek motor uçak veya motorlu gezi planörü ile en fazla 3 yolcu taşıyarak sorumlu pilot olarak uçabilen pilot türü aşağıdakilerden hangisidir?",
+      "options": ["Hafif Hava Aracı Pilotu", "Balon Pilotu", "Havayolu Nakliye Pilotu", "Ticari Pilot", "Hususi Pilot"]
+    },
+    {
+      "id": 27024,
+      "text": "Ticari amaç taşımamak koşuluyla uçak kullanma yetkisine sahip olan pilot aşağıdakilerden hangisidir?",
+      "options": ["Hususi Pilot", "Balon Pilotu", "İHA Pilotu", "Havayolu Nakliye Pilotu", "Ticari Pilot"]
+    },
+    {
+      "id": 27025,
+      "text": "Ticari maksatlı uçak kullanma yetkisine sahip pilot aşağıdakilerden hangisidir?",
+      "options": ["Ticari Pilot", "İHA Pilotu", "Balon Pilotu", "Hafif Hava Aracı Pilotu", "Hususi Pilot"]
+    },
+    {
+      "id": 27026,
+      "text": "Ticari uçuş operasyonlarında hava aracını kullanan ve uçuştan sorumlu olan pilot türü aşağıdakilerden hangisidir?",
+      "options": ["Havayolu Nakliye Pilotu", "Balon Pilotu", "Hafif Hava Aracı Pilotu", "Hususi Pilot", "Ticari Pilot"]
+    },
+    {
+      "id": 27027,
+      "text": "Uzaktan kumanda edilen veya önceden programlanmış bir uçuş planına göre otomatik olarak uçan insansız hava araçlarını kullanmak için lisans ve yetki almış pilot aşağıdakilerden hangisidir?",
+      "options": ["İHA Pilotu", "Balon Pilotu", "Havayolu Nakliye Pilotu", "Ticari Pilot", "Hususi Pilot"]
+    },
+    {
+      "id": 27028,
+      "text": "Isıtılmış hava veya havadan hafif bir gazla doldurulan, genellikle sepetli hava taşıtını kullanmak için lisans ve yetki almış pilot aşağıdakilerden hangisidir?",
+      "options": ["Balon Pilotu", "İHA Pilotu", "Ticari Pilot", "Hususi Pilot", "Hafif Hava Aracı Pilotu"]
+    },
+    {
+      "id": 27029,
+      "text": "Belirli ağırlık ve yolcu kapasitesi sınırlamaları olan hafif hava araçlarını kullanmaya izin veren ve ticari amaçla kullanılamayan pilot lisansı aşağıdakilerden hangisidir?",
+      "options": ["Hafif Hava Aracı Pilot Lisansı", "Balon Pilotu Lisansı", "Havayolu Nakliye Pilotu Lisansı", "Ticari Pilot Lisansı", "Hususi Pilot Lisansı"]
+    },
+    {
+      "id": 27030,
+      "text": "Ticari kazanç olmaksızın hava aracı uçurma yetkisi veren, ancak ücret karşılığında yolcu veya yük taşımasına izin vermeyen pilot lisansı aşağıdakilerden hangisidir?",
+      "options": ["Hususi Pilot Lisansı", "Hafif Hava Aracı Pilot Lisansı", "İnsansız Hava Aracı Pilotu Lisansı", "Havayolu Nakliye Pilotu Lisansı", "Ticari Pilot Lisansı"]
+    },
+    {
+      "id": 27031,
+      "text": "Ücret karşılığında belirli ticari operasyonlarda, tek pilotlu görevlerde kaptan veya çok pilotlu uçuşlarda yardımcı pilot olarak uçmaya imkân tanıyan pilot lisansı aşağıdakilerden hangisidir?",
+      "options": ["Ticari Pilot Lisansı", "Balon Pilotu Lisansı", "Hafif Hava Aracı Pilot Lisansı", "Havayolu Nakliye Pilotu Lisansı", "Hususi Pilot Lisansı"]
+    },
+    {
+      "id": 27032,
+      "text": "Tarifeli veya tarifesiz yolcu ve kargo taşımacılığı yapan hava yolu işletmelerinde, çok pilotlu hava araçlarında kaptan pilot olarak görev alabilmek için zorunlu olan lisans aşağıdakilerden hangisidir?",
+      "options": ["Havayolu Nakliye Pilotu Lisansı", "Hafif Hava Aracı Pilot Lisansı", "Balon Pilotu Lisansı", "Hususi Pilot Lisansı", "Ticari Pilot Lisansı"]
+    },
+    {
+      "id": 27033,
+      "text": "Belirli sınıf ve ağırlıktaki insansız hava araçlarını, ticari veya profesyonel amaçlarla kullanmak için verilen ve ICAO ile yerel düzenlemelere göre sınıflandırılan lisans aşağıdakilerden hangisidir?",
+      "options": ["İnsansız Hava Aracı Pilotu Lisansı", "Balon Pilotu Lisansı", "Havayolu Nakliye Pilotu Lisansı", "Ticari Pilot Lisansı", "Hususi Pilot Lisansı"]
+    },
+    {
+      "id": 27034,
+      "text": "Sıcak hava balonlarını uçurmak üzere verilen ve eğitim, uçuş süresi ile yetkileri balonun tipine göre belirlenen pilot lisansı aşağıdakilerden hangisidir?",
+      "options": ["Balon Pilotu Lisansı", "İnsansız Hava Aracı Pilotu Lisansı", "Ticari Pilot Lisansı", "Hususi Pilot Lisansı", "Hafif Hava Aracı Pilot Lisansı"]
+    },
+    {
+      "id": 27035,
+      "text": "SPL kısaltması aşağıdaki pilot lisanslarından hangisini ifade eder?",
+      "options": ["Planör Pilot Lisansı", "Çoklu Ekip Pilot Lisansı", "Çok Hafif Hava Aracı Pilot Lisansı", "Hususi Pilot Lisansı", "Balon Pilot Lisansı"]
+    },
+    {
+      "id": 27036,
+      "text": "UPL kısaltması aşağıdaki pilot lisanslarından hangisini ifade eder?",
+      "options": ["Çok Hafif Hava Aracı Pilot Lisansı", "Havayolu Nakliye Pilotu Lisansı", "Ticari Pilot Lisansı", "Çoklu Ekip Pilot Lisansı", "Planör Pilot Lisansı"]
+    },
+    {
+      "id": 27037,
+      "text": "MPL kısaltması aşağıdaki pilot lisanslarından hangisini ifade eder?",
+      "options": ["Çoklu Ekip Pilot Lisansı", "Çok Hafif Hava Aracı Pilot Lisansı", "Balon Pilot Lisansı", "Planör Pilot Lisansı", "Hususi Pilot Lisansı"]
+    },
+    {
+      "id": 27038,
+      "text": "Sivil havacılık kurallarınca belirlenmiş bilgi, tecrübe, beceri ve eğitim koşullarını sağlayarak hava araçlarının bakımlarını yapmak üzere yetkilendirilmiş personel aşağıdakilerden hangisidir?",
+      "options": ["Hava aracı bakım personeli", "Yer hizmetleri personeli", "Kabin memuru", "Pilot", "Hava trafik kontrolörü"]
+    },
+    {
+      "id": 27039,
+      "text": "Hava aracı bakım personeli ile ilgili düzenlemelerde esas alınan kural ve standartlar aşağıdaki kuruluşlardan hangisi tarafından belirlenmektedir?",
+      "options": ["EASA", "IATA", "EUROCONTROL", "CIA", "ICAO"]
+    },
+    {
+      "id": 27040,
+      "text": "Hava aracı bakım personeli aşağıdaki hangi kategorilere ayrılmaktadır?",
+      "options": ["A, B1, B2, B2L, B3, L, C", "LAPL, SPL, MPL", "PPL, CPL, ATPL", "A1, A2, B1, B2", "A, B, C, D, E"]
+    },
+    {
+      "id": 27041,
+      "text": "Sivil havacılık kurallarınca belirlenmiş sağlık, bilgi, tecrübe, beceri ve eğitim koşullarını sağlayarak, hava trafik kontrol hizmetlerini yerine getirmek üzere lisans verilerek yetkilendirilmiş personel aşağıdakilerden hangisidir?",
+      "options": ["Hava trafik kontrolörü", "Yer hizmetleri personeli", "Hava aracı bakım personeli", "Kabin memuru", "Pilot"]
+    },
+    {
+      "id": 27042,
+      "text": "Aşağıdakilerden hangisi hava trafik kontrolörünün görevleri arasında yer almaz?",
+      "options": ["Hava araçlarının bakım ve onarım faaliyetlerini gerçekleştirmek", "Diğer hava araçlarının hareketleri hakkında pilotları bilgilendirmek", "Hava araçları arasındaki emniyetli mesafelerin korunmasını sağlamak", "Hava araçlarını çevredeki hava durumu hakkında bilgilendirmek", "Hava araçlarının hava sahası ve havaalanlarındaki hareketlerini yönlendirmek"]
+    },
+    {
+      "id": 27043,
+      "text": "Sivil havacılık kurallarında belirtilmiş bilgi, beceri ve tecrübe koşullarını sağlayarak ilgili sivil havacılık otoritesince lisans verilmiş ve uçuş harekât hizmetlerini yerine getiren personel aşağıdakilerden hangisidir?",
+      "options": ["Uçuş harekât uzmanı", "Kabin memuru", "Hava aracı bakım personeli", "Pilot", "Hava trafik kontrolörü"]
+    },
+    {
+      "id": 27044,
+      "text": "Uçuş harekât uzmanına aşağıdakilerden hangisi de denmektedir?",
+      "options": ["Dispeçer", "Koordinatör", "Planlamacı", "Operatör", "Kontrolör"]
+    },
+    {
+      "id": 27045,
+      "text": "Aşağıdakilerden hangisi uçuş harekât uzmanının görevleri arasında yer almaz?",
+      "options": ["Hava aracının kumanda edilmesini ve pilotaj işlemlerini gerçekleştirmek", "Uçağın zamanında kalkması için ilgili birimlerle koordinasyon sağlamak", "Acil durum niteliğindeki sorunları yetkili makamlara iletmek", "Uçuş sırasında sorumlu pilot ile sürekli irtibat halinde olmak", "Uçuş planlaması yapmak ve uçuş süresince uçuşu izlemek"]
+    },
+    {
+      "id": 27046,
+      "text": "ATSEP kısaltması aşağıdakilerden hangisini ifade etmektedir?",
+      "options": ["Hava Trafik Emniyeti Elektronik Personeli", "Hava Aracı Bakım Personeli", "Uçuş Harekât Uzmanı", "Hava Seyrüsefer Hizmetleri Personeli", "Hava Trafik Kontrol Personeli"]
+    },
+    {
+      "id": 27047,
+      "text": "Havacılıkta CNS kısaltması aşağıdaki sistemlerden hangilerini ifade etmek için kullanılır?",
+      "options": ["Haberleşme, Seyrüsefer, Gözetim", "Kontrol, Seyrüsefer, Destek", "Haberleşme, Ağ, Güvenlik", "Kontrol, Ağ, Emniyet", "Kontrol, Seyrüsefer, Sistem"]
+    },
+    {
+      "id": 27048,
+      "text": "Aşağıdakilerden hangisi Hava Trafik Emniyeti Elektronik Personelinin (ATSEP) görevleri arasında yer alır?",
+      "options": ["Haberleşme, seyrüsefer ve gözetim sistemlerinin kurulumunu, işletimini ve bakımını yapmak", "Hava araçlarının pilotajını gerçekleştirmek", "Uçuş planlarını hazırlamak", "Pilotlara uçuş eğitimi vermek", "Hava araçlarını hava sahasında yönlendirmek"]
+    },
+    {
+      "id": 27049,
+      "text": "Kabin memurlarının hava aracı içindeki asli görevi aşağıdakilerden hangisidir?",
+      "options": ["Yolcu kabini içerisinde yolcuların emniyetini sağlamak", "Hava trafik kontrolü sağlamak", "Hava aracının bakımını yapmak", "Uçuş planını hazırlamak", "Yolculara ikram hizmeti sunmak"]
+    },
+    {
+      "id": 27050,
+      "text": "Aşağıdakilerden hangisi kabin memurlarının görevleri arasında yer almaz?",
+      "options": ["Hava aracının uçuş kumandasını gerçekleştirmek", "Yolcu kabini içinde düzeni sağlamak", "Yolcu konforuna yönelik ikram hizmetlerinde bulunmak", "Yolcu kabininde emniyeti sağlamak", "Acil durumlarda yolcuların hava aracını emniyetli şekilde terk etmelerini sağlamak"]
+    },
+    {
+      "id": 27051,
+      "text": "Kabin memurlarının alması gereken zorunlu eğitimlere aşağıdakilerden hangisinde yer verilmektedir?",
+      "options": ["Uluslararası Sivil Havacılık Sözleşmesi Ek 6 – Hava Araçlarının İşletilmesi, Uluslararası Ticari Hava Taşımacılığı-Uçaklar, Bölüm 1", "Uluslararası Sivil Havacılık Sözleşmesi Ek 19 – Emniyet Yönetimi", "Uluslararası Sivil Havacılık Sözleşmesi Ek 14 – Havaalanları", "Uluslararası Sivil Havacılık Sözleşmesi Ek 11 – Hava Trafik Hizmetleri", "Uluslararası Sivil Havacılık Sözleşmesi Ek 1 – Personel Lisanslandırma"]
+    },
+    {
+      "id": 27052,
+      "text": "Kabin memurlarının tehlikeli maddeler konusunda almaları gereken eğitimlere aşağıdakilerden hangisinde yer verilmektedir?",
+      "options": ["Uluslararası Sivil Havacılık Sözleşmesi Ek 18 – Tehlikeli Maddelerin Havadan Emniyetle Taşınması", "Uluslararası Sivil Havacılık Sözleşmesi Ek 2 – Hava Kuralları", "Uluslararası Sivil Havacılık Sözleşmesi Ek 11 – Hava Trafik Hizmetleri", "Uluslararası Sivil Havacılık Sözleşmesi Ek 9 – Kolaylaştırma", "Uluslararası Sivil Havacılık Sözleşmesi Ek 6 – Hava Araçlarının İşletilmesi"]
+    },
+    {
+      "id": 27053,
+      "text": "Döner kanatlı hava araçları hangileridir?",
+      "options": ["Gyroplane, Helikopter", "Planör, Balon", "İHA, Roket", "Uçak, Zeplin", "Uçak, Planör"]
+    },
+    {
+      "id": 27054,
+      "text": "Hangisi IATA'nın temel görevlerinden biridir?",
+      "options": ["Havayolu endüstrisine liderlik etmek ve temsil etmek", "Pilot lisansını iptal etmek", "Pilot lisansı vermek", "Hava sahasını kontrol etmek", "Uçak üretmek"]
+    },
+    {
+      "id": 27055,
+      "text": "En büyük daire (Great Circle) nedir?",
+      "options": ["İki nokta arasındaki en kısa mesafe", "Meridyen", "Ekvator", "Paralel", "En uzun yol"]
+    },
+    {
+      "id": 27056,
+      "text": "Stratejik Akış Yönetimi uçuştan kaç gün önce başlar?",
+      "options": ["7 gün ve daha önce", "50 gün ve daha önce", "3 gün önce", "1 gün önce", "Uçuş günü"]
+    },
+    {
+      "id": 27057,
+      "text": "Kapasite farklılıklarına göre 'Ana Hat' uçaklarının yolcu kapasitesi nasıldır?",
+      "options": ["100'ün üzerinde", "En az 3", "En fazla 19", "100'ün altında", "En fazla 50"]
+    },
+    {
+      "id": 27058,
+      "text": "ICAO kodlarına göre havalimanları ülkemizde hangi harf ile başlamaktadır?",
+      "options": ["L", "E", "A", "B", "T"]
+    },
+    {
+      "id": 27059,
+      "text": "İber-Amerika Konferansı'nın diğer adı nedir?",
+      "options": ["Madrid Antlaşması", "Hawai Sözleşmesi", "Havana Sözleşmesi", "Paris Antlaşması", "Şikago Sözleşmesi"]
+    },
+    {
+      "id": 27060,
+      "text": "Uçuş harekat uzmanlarının (dispeçer) görevi nedir?",
+      "options": ["Uçuşu planlamak ve süresince izlemek", "Bakım planlarını oluşturmak", "Uçağı tamir etmek", "Kulede çalışmak", "Bagaj yüklemek"]
+    },
+    {
+      "id": 27061,
+      "text": "Bir uçağın hareket etmeye başladığı (kalkış) iniş yerine varıp park edinceye kadar geçen süreye ne denir?",
+      "options": ["Blok saat", "Hasat saati", "Uçuş saati", "Mesai saati", "Taksi süresi"]
+    },
+    {
+      "id": 27062,
+      "text": "Kabin memurlarının asıl görevi aşağıdakilerden hangisidir?",
+      "options": ["Yolcu emniyetini sağlamak", "Anons yapmak", "Kokpite girmek", "Yolcuları güler yüzle karşılamak", "İkram yapmak"]
+    },
+    {
+      "id": 27063,
+      "text": "Hangisi hava yolu iş modellerinden biri değildir?",
+      "options": ["Servis", "Karma Taşıyıcılar", "Bölgesel taşıyıcılar", "Tam hizmet ağı taşıyıcıları", "Düşük maliyetli taşıyıcılar"]
+    },
+    {
+      "id": 27064,
+      "text": "Üretildikten sonra bir uçağın parçalarının uygunluğu kimin sorumluluğundadır?",
+      "options": ["Üretildiği ülkenin", "Operatörün", "Tescil ülkesinin", "İşletmenin", "Pilotun"]
+    },
+    {
+      "id": 27065,
+      "text": "Aşağıdakilerden hangisi CORSIA'nın uygulama öğelerinden biri değildir?",
+      "options": ["Corsia Bilet Satış Sistemi", "Corsia Uygun Yakıtlar", "Corsia Bölüm 3 Devlet Çiftleri", "Corsia Merkezi Kayıt Sistemi"]
+    },
+    {
+      "id": 27066,
+      "text": "Yolcunun uçağa binişine kadar verilen hizmet nedir?",
+      "options": ["Check-in", "Ramp", "Transfer", "Handling", "Boarding"]
+    },
+    {
+      "id": 27067,
+      "text": "Havacılık eğitimi veren yerler hangileridir?",
+      "options": ["Meslek edindirme kursları, Okul eğitimi, Hizmet içi eğitim", "Sadece meslek liseleri", "Yurtdışı kursları", "Sadece hava yolları", "Sadece üniversiteler"]
+    },
+    {
+      "id": 27068,
+      "text": "Hangisi bir havacılık sözleşmesi değildir?",
+      "options": ["Pekin", "Varşova", "Madrid", "Şikago", "Paris"]
+    },
+    {
+      "id": 27069,
+      "text": "Yapılış amacına göre bakım türleri nelerdir?",
+      "options": ["Önleyici ve düzeltici", "Hat ve ağır", "Hat ve üs", "Planlı ve plansız", "Ağır ve hafif"]
+    },
+    {
+      "id": 27070,
+      "text": "Hava taksi işletmeciliği için maksimum koltuk sayısı kaçtır?",
+      "options": ["19", "24", "30", "9", "50"]
+    },
+    {
+      "id": 27071,
+      "text": "Ülkemiz için ICAO kodu olarak hangi harf kullanılmaktadır?",
+      "options": ["T", "R", "E", "A", "L"]
+    },
+    {
+      "id": 27072,
+      "text": "Paris Antlaşması'nın tam adı nedir?",
+      "options": ["Hava Seyrüseferinin Düzenlenmesine Dair Anlaşma", "Fransa Sivil Havacılık Anlaşması", "Uluslararası Sivil Havacılık Anlaşması", "Avrupa Havacılık Anlaşması", "Hava Kuralları Anlaşması"]
+    },
+    {
+      "id": 27073,
+      "text": "Döner kanatlı hava araçlarında kullanılan motor tipi aşağıdakilerden hangisidir?",
+      "options": ["Turboşaft", "Turboprop", "Turbofan", "Piston", "Turbojet"]
+    },
+    {
+      "id": 27074,
+      "text": "Hangisi havadan hafif hava aracıdır?",
+      "options": ["Balon ve Zeplin", "Helikopter", "Uçak", "Planör", "İHA"]
+    },
+    {
+      "id": 27075,
+      "text": "Uyarı (ikaz) hizmetleri hangi uçaklara verilir?",
+      "options": ["Hava trafik kontrol hizmeti sağlanan tüm uçaklara", "Sadece yangın uçaklarına", "Sadece yerdeki uçaklara", "Sadece yolcu uçaklarına", "Sadece askeri uçaklara"]
+    },
+    {
+      "id": 27076,
+      "text": "Aşağıdakilerden hangisi hava yolu işletmeciliği tescil belgesinde yer almaz?",
+      "options": ["Uçak sigorta bedeli", "İşleticinin bağlı olduğu ülke", "Kullanılacak uçak tipleri", "İşletme şartları", "İşleticinin adı"]
+    },
+    {
+      "id": 27077,
+      "text": "Hizmet tipine göre havaalanlarından hangisi yanlıştır?",
+      "options": ["Gayri resmi havaalanı", "Ticari hizmet havaalanı", "Kargo hizmet havaalanı", "Genel havacılık havaalanı"]
+    },
+    {
+      "id": 27078,
+      "text": "Aşağıdakilerden hangisi ATS (Hava Trafik Hizmetleri) kapsamında değildir?",
+      "options": ["Meteoroloji Hizmeti (MET)", "İkaz Hizmeti (Alerting)", "Hava Trafik Kontrol (ATC)", "Uçuş Bilgi Hizmeti (FIS)"]
+    },
+    {
+      "id": 27079,
+      "text": "ATSEP'in görevi nedir?",
+      "options": ["CNS (Haberleşme, Seyrüsefer, Gözetim) sistemlerinin bakım ve işletilmesi", "Uçağı tamir etmek", "Bilet kesmek", "Uçağı uçurmak", "Yolcu güvenliğini sağlamak"]
+    },
+    {
+      "id": 27080,
+      "text": "Hava trafik kontrolörleri uçakların nelerini değiştirebilir?",
+      "options": ["Uçuş başı, uçuş hızı ve uçuş irtifası", "Yakıt miktarı", "Yolcu sayısı ve bagaj ağırlığı", "Motor gücü ve kanat açısı", "Uçak tipi ve yakıt miktarı"]
+    },
+    {
+      "id": 27081,
+      "text": "Hangisi EASA'nın görevlerinden biri değildir?",
+      "options": ["Üye devletlerin lehine karar vermek", "Havacılık emniyetini geliştirmek", "Üye devletlere danışmanlık yapmak", "Sertifikasyon yapmak"]
+    },
+    {
+      "id": 27082,
+      "text": "Aşağıdakilerden hangisi ICAO istatistik el kitabındaki 9 ana başlıktan biri değildir?",
+      "options": ["Uzay madenciliği", "Havacılık eğitimi", "Ticari hava taşımacılığı hizmetleri", "Havaalanı hizmetleri", "Genel havacılık"]
+    },
+    {
+      "id": 27083,
+      "text": "Aşağıdakilerden hangisi hava taşımacılık işletmesi değildir?",
+      "options": ["Genel havacılık işletmesi", "Hava taksi işletmesi", "Havayolu işletmesi", "Kargo havayolu"]
+    },
+    {
+      "id": 27084,
+      "text": "Hava trafik kontrol hizmetleri nelerdir?",
+      "options": ["Meydan, yaklaşma, saha", "Bakım, onarım, revizyon", "Güvenlik, gümrük, pasaport", "Yolcu, kargo, ramp"]
+    },
+    {
+      "id": 27085,
+      "text": "Aşağıdakilerden hangisi ICAO'nun amaçlarından biri değildir?",
+      "options": ["Sadece askeri havacılığı geliştirmek", "Haksız rekabetin yol açabileceği israfı önlemek", "Uluslararası sivil havacılığın güvenli gelişimini sağlamak", "Uçuş emniyetini geliştirmek"]
+    },
+    {
+      "id": 27086,
+      "text": "Bakımın yapıldığı yere göre bakım türleri nelerdir?",
+      "options": ["Hat bakımı ve üs bakımı", "Önleyici ve düzeltici", "Planlı ve plansız", "Ağır ve hafif"]
+    },
+    {
+      "id": 27087,
+      "text": "Aşağıdakilerden hangisi Yetkinlik Bazlı Eğitim Yaklaşımı (CBTA) özelliklerinden biridir?",
+      "options": ["Performansa dayalı değerlendirme yapılır.", "Ezbere dayalıdır.", "Sadece sınav odaklıdır.", "Sadece teoriktir."]
+    },
+    {
+      "id": 27088,
+      "text": "Uçağın tip yetkisini (sertifikasını) veren aşağıdakilerden hangisidir?",
+      "options": ["Üretildiği ülke", "İşleten havayolu", "Tescil eden ülke", "Uçağın iniş yaptığı ülke"]
+    },
+    {
+      "id": 27089,
+      "text": "Aşağıdakilerden hangisi programlı bakım için gerekli dokümanlardan biri değildir?",
+      "options": ["Pilotun günlüğü", "AMM (Bakım El Kitabı)", "IPC (Parça Kataloğu)", "MEL (Asgari Teçhizat Listesi)"]
+    },
+    {
+      "id": 27090,
+      "text": "Havacılıkta kullanılan telsiz frekans aralığı nedir?",
+      "options": ["118.000 - 137.000 MHz", "138.000 - 157.000 MHz", "400-500 MHz", "88-108 MHz", "2.4 GHz"]
+    },
+    {
+      "id": 27091,
+      "text": "Uçuş operasyonu sırasında yapılan bakım türü aşağıdakilerden hangisidir?",
+      "options": ["Hat bakımı", "Hafif Bakım", "Ağır bakım", "Düzeltici bakım", "Üs bakımı"]
+    },
+    {
+      "id": 27092,
+      "text": "Uçağın kararlılığını (stabilitesini) sağlayan eleman aşağıdakilerden hangisidir?",
+      "options": ["Kuyruk", "Gövde", "Motor", "İniş takımı", "Kanat"]
+    },
+    {
+      "id": 27093,
+      "text": "Bir uçak, içinde bulunduğu havaya göre 600 kt hızla uçmaktadır. Uçak 80 kt baş rüzgârı alıyorsa yere göre hızı kaç kt olur?",
+      "options": ["520 kt", "610 kt", "700 kt", "680 kt", "600 kt"]
+    },
+    {
+      "id": 27094,
+      "text": "Aşağıdakilerden hangisi havacılık dışı bir hizmettir?",
+      "options": ["Eğlence ve reklam hizmetleri", "Ramp hizmetleri", "Yer hizmetleri", "Yakıt ikmali", "Kargo hizmetleri"]
+    },
+    {
+      "id": 27095,
+      "text": "Sürekli uçuşa elverişlilik sertikasını veren kurum aşağıdakilerden hangisidir?",
+      "options": ["Uçağı tescil eden ülke", "ICAO", "EASA", "Uçağın üretildiği ülke", "Bakım kuruluşu"]
+    },
+    {
+      "id": 27096,
+      "text": "Aşağıdakilerden hangisi hava trafik kontrolünün çalışma pozisyonlarından biri değildir?",
+      "options": ["Pilot çalışma pozisyonu", "Müsaade dağıtım pozisyonu", "Yer çalışma pozisyonu", "Kule çalışma pozisyonu"]
+    },
+    {
+      "id": 27097,
+      "text": "Aşağıdakilerden hangisi uluslararası sivil havacılık kuruluşlarından biri değildir?",
+      "options": ["ENAC", "FAA", "EASA", "IATA", "EUROCONTROL"]
+    },
+    {
+      "id": 27098,
+      "text": "Personel Lisanslandırması ile ilgili standartları içeren ICAO Annex hangisidir?",
+      "options": ["Annex 1", "Annex 3", "Annex 7", "Annex 11", "Annex 19"]
+    },
+    {
+      "id": 27099,
+      "text": "Hava Kuralları ile ilgili düzenlemeleri içeren ICAO Annex hangisidir?",
+      "options": ["Annex 2", "Annex 18", "Annex 5", "Annex 14", "Annex 10"]
+    },
+    {
+      "id": 27100,
+      "text": "Uluslararası Hava Seyrüseferi için Meteorolojik Hizmetler hangi ICAO Annex’te yer alır?",
+      "options": ["Annex 3", "Annex 9", "Annex 16", "Annex 12", "Annex 1"]
+    },
+    {
+      "id": 27101,
+      "text": "Havacılık Haritaları ile ilgili standartları içeren ICAO Annex hangisidir?",
+      "options": ["Annex 4", "Annex 8", "Annex 6", "Annex 11", "Annex 15"]
+    },
+    {
+      "id": 27102,
+      "text": "Hava ve Yer Operasyonlarında Kullanılan Ölçü Birimleri hangi ICAO Annex’te tanımlanmıştır?",
+      "options": ["Annex 5", "Annex 19", "Annex 10", "Annex 7", "Annex 2"]
+    },
+    {
+      "id": 27103,
+      "text": "Uçakların İşletilmesi ile ilgili hükümler hangi ICAO Annex’te yer alır?",
+      "options": ["Annex 6", "Annex 18", "Annex 11", "Annex 14", "Annex 8"]
+    },
+    {
+      "id": 27104,
+      "text": "Hava Aracı Milliyeti ve Tescil İşaretleri hangi ICAO Annex kapsamında düzenlenmiştir?",
+      "options": ["Annex 7", "Annex 16", "Annex 12", "Annex 5", "Annex 3"]
+    },
+    {
+      "id": 27105,
+      "text": "Uçakların Uçuşa Elverişliliği ile ilgili standartları içeren ICAO Annex hangisidir?",
+      "options": ["Annex 8", "Annex 18", "Annex 14", "Annex 10", "Annex 6"]
+    },
+    {
+      "id": 27106,
+      "text": "Kolaylıklar ile ilgili düzenlemeler hangi ICAO Annex’te yer alır?",
+      "options": ["Annex 9", "Annex 19", "Annex 15", "Annex 13", "Annex 11"]
+    },
+    {
+      "id": 27107,
+      "text": "Havacılık Haberleşmesi ile ilgili alet, ekipman ve prosedürleri kapsayan ICAO Annex hangisidir?",
+      "options": ["Annex 10", "Annex 16", "Annex 12", "Annex 7", "Annex 4"]
+    },
+    {
+      "id": 27108,
+      "text": "Hava Trafik Hizmetleri ile ilgili standartları içeren ICAO Annex hangisidir?",
+      "options": ["Annex 11", "Annex 18", "Annex 14", "Annex 6", "Annex 2"]
+    },
+    {
+      "id": 27109,
+      "text": "Arama ve Kurtarma faaliyetleri hangi ICAO Annex kapsamında düzenlenmiştir?",
+      "options": ["Annex 12", "Annex 19", "Annex 15", "Annex 9", "Annex 1"]
+    },
+    {
+      "id": 27110,
+      "text": "Uçak Kazaları ve Hava Hadiseleri Araştırmaları hangi ICAO Annex’te ele alınır?",
+      "options": ["Annex 13", "Annex 18", "Annex 16", "Annex 12", "Annex 11"]
+    },
+    {
+      "id": 27111,
+      "text": "Havaalanları ile ilgili tasarım ve işletme standartlarını içeren ICAO Annex hangisidir?",
+      "options": ["Annex 14", "Annex 17", "Annex 10", "Annex 8", "Annex 6"]
+    },
+    {
+      "id": 27112,
+      "text": "Havacılık Bilgi Hizmetleri hangi ICAO Annex kapsamında düzenlenmiştir?",
+      "options": ["Annex 15", "Annex 19", "Annex 18", "Annex 9", "Annex 4"]
+    },
+    {
+      "id": 27113,
+      "text": "Çevresel Koruma ile ilgili hükümler hangi ICAO Annex’te yer alır?",
+      "options": ["Annex 16", "Annex 18", "Annex 17", "Annex 14", "Annex 13"]
+    },
+    {
+      "id": 27114,
+      "text": "Havacılık Güvenliği ile ilgili standartları içeren ICAO Annex hangisidir?",
+      "options": ["Annex 17", "Annex 19", "Annex 16", "Annex 14", "Annex 10"]
+    },
+    {
+      "id": 27115,
+      "text": "Tehlikeli Maddelerin Hava Yoluyla Taşınması hangi ICAO Annex’te düzenlenmiştir?",
+      "options": ["Annex 18", "Annex 19", "Annex 15", "Annex 11", "Annex 8"]
+    },
+    {
+      "id": 27116,
+      "text": "Emniyet Yönetimi hangi ICAO Annex kapsamında ele alınmaktadır?",
+      "options": ["Annex 19", "Annex 17", "Annex 13", "Annex 6", "Annex 1"]
+    },
+    {
+      "id": 27117,
+      "text": "Uçağın kontrol edilmesini sağlayan eleman grubuna ne ad verilir?",
+      "options": ["Kumanda yüzeyleri", "Dikey kuyruk", "Yatay kuyruk", "Spoiler", "Flap"]
+    },
+    {
+      "id": 27118,
+      "text": "Kanatlarda bulunan ve uçağın sağa ve sola yatmasını sağlayan yüzeylere ne ad verilir?",
+      "options": ["Kanatçık", "Flap", "Spoiler", "İstikamet dümeni", "İrtifa dümeni"]
+    },
+    {
+      "id": 27119,
+      "text": "Dikey kuyruk üzerinde bulunan ve uçağın burnunun sağa ve sola dönmesini sağlayan yüzeye ne ad verilir?",
+      "options": ["İstikamet dümeni", "Flap", "Spoiler", "İrtifa dümeni", "Kanatçık"]
+    },
+    {
+      "id": 27120,
+      "text": "Yatay kuyruk üzerinde bulunan ve uçağın burnunu kaldıran ya da indiren yüzeye ne ad verilir?",
+      "options": ["İrtifa dümeni", "Flap", "Spoiler", "İstikamet dümeni", "Kanatçık"]
+    },
+    {
+      "id": 27121,
+      "text": "Uçağın arka bölümünde bulunan ve dengesini sağlayan eleman grubuna ne ad verilir?",
+      "options": ["Kuyruk", "Flap", "Spoiler", "Kanatçık", "Kumanda yüzeyleri"]
+    },
+    {
+      "id": 27122,
+      "text": "Hem karadan kalkış ve karaya iniş yapabilen hem de suda hareket edebilen uçaklara ne ad verilir?",
+      "options": ["Amfibik uçaklar", "Eğitim uçakları", "Sivil uçaklar", "Ticari taşımacılık uçakları", "Genel havacılık uçakları"]
+    },
+    {
+      "id": 27123,
+      "text": "Kullanım amaçlarına göre uçaklar kaça ayrılır?",
+      "options": ["İkiye", "Altıya", "Beşe", "Dörde", "Üçe"]
+    },
+    {
+      "id": 27124,
+      "text": "Aşağıdaki şıklardan hangisi uçakları kullanım amaçlarına göre doğru şekilde ayırmaktadır?",
+      "options": ["Genel havacılık uçakları ve ticari taşımacılık uçakları", "Genel havacılık uçakları ve iş uçakları", "Havayolu uçakları ve amfibik uçaklar", "Ticari taşımacılık uçakları ve amfibik uçaklar", "Genel havacılık uçakları ve amfibik uçaklar"]
+    },
+    {
+      "id": 27125,
+      "text": "Havada kalabilmek için gereken taşımayı bir veya birden fazla rotorla sağlayan ve havadan ağır olan hava araçlarına ne denir?",
+      "options": ["Döner kanatlı hava aracı", "Türbin motorlu uçak", "Piston motorlu uçak", "İnsansız hava aracı", "Planör"]
+    },
+    {
+      "id": 27126,
+      "text": "Serbest uçuş yapabilen ve havadan ağır olan motorsuz hava araçlarına ____ denir.",
+      "options": ["Planör", "Türbin motorlu uçak", "Amfibik uçak", "İnsansız hava aracı", "Döner kanatlı hava aracı"]
+    },
+    {
+      "id": 27127,
+      "text": "Egzozdan çıkan bir itme kuvvetine ihtiyaç duyulmayan hallerde, özellikle de döner kanatlı hava araçlarında kullanılan motor tipine _____ denir.",
+      "options": ["Turboşaft", "Piston", "Turbojet", "Turboprop", "Turbofan"]
+    },
+    {
+      "id": 27128,
+      "text": "Uçağın ana dengeleyici elemanına ______ denir.",
+      "options": ["Kuyruk", "Motor", "Spoiler", "Flap", "Kanat"]
+    },
+    {
+      "id": 27129,
+      "text": "______ havadan hafif bir hava aracıdır.",
+      "options": ["Zeplin", "Döner kanatlı hava aracı", "İnsansız hava aracı", "Amfibik uçak", "Planör"]
+    },
+    {
+      "id": 27130,
+      "text": "Aşağıdakilerden hangisi zeplini doğru bir şekilde tanımlar?",
+      "options": ["Hava aracı", "Döner kanatlı hava aracı", "İnsansız hava aracı", "Planör", "Amfibik uçak"]
+    },
+    {
+      "id": 27131,
+      "text": "Döner kanatlı hava araçlarında taşıma kuvvetini sağlayan elemana ne ad verilir?",
+      "options": ["Rotor", "Spoiler", "Kanat", "Piston", "Turbojet"]
+    },
+    {
+      "id": 27132,
+      "text": "Piston motorlu uçaklarda itki üreten eleman aşağıdakilerden hangisidir?",
+      "options": ["Pervane", "Kuyruk", "Flap", "Kanat", "Rotor"]
+    },
+    {
+      "id": 27133,
+      "text": "Askeri, gümrük ve polis hizmetlerinde kullanılan hava araçlarına ne ad verilir?",
+      "options": ["Devlet hava araçları", "Amfibik uçaklar", "Havadan ağır araçlar", "Havadan hafif araçlar", "Sivil hava araçları"]
+    },
+    {
+      "id": 27134,
+      "text": "Hava seyrüsefer hizmetleri aşağıdakilerden hangisidir?",
+      "options": ["haberleşme, seyrüsefer izleme, meteoroloji hizmetleri, hava trafik yönetimi ve diğer yardımcı havacılık hizmetleri", "haberleşme, seyrüsefer izleme, meteoroloji hizmetleri, yakıt yükleme ve diğer yardımcı havacılık hizmetleri", "haberleşme, seyrüsefer izleme, check-in hizmetleri, hava trafik yönetimi ve diğer yardımcı havacılık hizmetleri", "meteoroloji hizmetleri, seyrüsefer izleme, ramp hizmetleri, hava trafik yönetimi ve diğer yardımcı havacılık hizmetleri", "haberleşme, seyrüsefer izleme, ramp hizmetleri, hava trafik yönetimi ve diğer yardımcı havacılık hizmetleri"]
+    },
+    {
+      "id": 27135,
+      "text": "Aşağıdakilerden hangisi havacılığın ekonomiye sağladığı başlıca faydalardan değildir?",
+      "options": ["Bilet fiyatlarının artması", "Turizme teşvik", "Lojistik ve ticaretin gelişimi", "Doğrudan ekonomik katkılar", "İstihdam olanakları"]
+    },
+    {
+      "id": 27136,
+      "text": "B3 kategorisindeki bir hava aracı bakım personeli için aşağıdakilerden hangisi doğrudur?",
+      "options": ["Sadece piston motorlu, kabin basınçlandırması olmayan ve maksimum kalkış kütlesi 2000 kilogramı geçmeyen uçaklar üzerinde çalışabilir.", "Sadece türbin motorlu, kabin basınçlandırması olmayan ve maksimum kalkış kütlesi 2000 kilogramı geçmeyen uçaklar üzerinde çalışabilir.", "Sadece piston motorlu, kabin basınçlandırması olan ve maksimum kalkış kütlesi 7000 kilogramı geçmeyen uçaklar üzerinde çalışabilir.", "Sadece piston motorlu, kabin basınçlandırması olmayan ve maksimum kalkış kütlesi 7000 kilogramı geçmeyen uçaklar üzerinde çalışabilir.", "Sadece türbin motorlu, kabin basınçlandırması olan ve maksimum kalkış kütlesi 136000 kilogramı aşmayan uçaklar üzerinde çalışabilir."]
+    },
+    {
+      "id": 27137,
+      "text": "Havacılığın ortak dili aşağıdakilerden hangisidir?",
+      "options": ["İngilizce", "Çince", "Rusça", "Fransızca", "Türkçe"]
+    },
+    {
+      "id": 27138,
+      "text": "Havacılığın ortak dili neden İngilizcedir?",
+      "options": ["Amerika Birleşik Devletleri ve Anglosakson ülkelerin havacılığın gelişimindeki büyük etkisi nedeniyle", "Denizcilik sektöründen miras kaldığı için", "Sadece pilotların tercih ettiği bir dil olduğu için", "Uluslararası hukuk tarafından zorunlu tutulduğu için", "Tüm ülkelerde resmi dil olduğu için"]
+    },
+    {
+      "id": 27139,
+      "text": "Bir uçağın gidiş kapısında hareket etmeye başlamasından varış kapısına gelinceye kadar geçen süreye ne denir?",
+      "options": ["Blok saat", "Hasat saati", "Uçuş saati", "Mesai saati", "Taksi süresi"]
+    },
+    {
+      "id": 27140,
+      "text": "1990’ların ortalarında Avrupa pazarında düşük maliyetli taşıyıcıların pazar payının hızla artmasının temel nedeni aşağıdakilerden hangisidir?",
+      "options": ["Yolcu çekme başarısı ve ek trafik oluşturma yetenekleri", "Havalimanı sayısının azalması", "Yalnızca kısa mesafeli uçuşlara izin verilmesi", "Uluslararası uçuş yasaklarının kaldırılması", "Devlet destekli sübvansiyonların artması"]
+    },
+    {
+      "id": 27141,
+      "text": "Aşağıdakilerden hangisi haberleşme, seyrüsefer ve gözetim sistemlerinin çalıştırılması ve bakımından sorumludur?",
+      "options": ["Hava trafik emniyeti elektronik personeli", "Kabin memuru", "Pilot", "B1 kategorisi bakım personeli", "Dispeçer"]
+    },
+    {
+      "id": 27142,
+      "text": "500 km = ____ NM",
+      "options": ["270", "1000", "250", "370", "170"]
+    },
+    {
+      "id": 27143,
+      "text": "RİZE kelimesinin havacılık alfabesiyle doğru kodlanmış hali aşağıdakilerden hangisidir?",
+      "options": ["Romeo, India, Zulu, Echo", "Romeo, India, Zulu, Elephant", "Romeo, India, Zeplin, Echo", "Romeo, Ireland, Zulu, Echo", "Roger, India, Zulu, Echo"]
+    },
+    {
+      "id": 27144,
+      "text": "VİZE kelimesinin havacılık alfabesiyle doğru kodlanmış hali aşağıdakilerden hangisidir?",
+      "options": ["Victor, India, Zulu, Echo", "Victor, India, Zulu, Elephant", "Victor, India, Zeplin, Echo", "Victor, Ireland, Zulu, Echo", "Viskey, India, Zulu, Echo"]
+    },
+    {
+      "id": 27145,
+      "text": "Uçuşa elverişlilik kimin sorumluluğundadır?",
+      "options": ["Tip sertifikasyonunu yayımlayan ülkenin", "Hava yolu şirketinin", "Pilotun", "İşleticinin", "Hava aracını tescil eden ülkenin"]
+    },
+    {
+      "id": 27146,
+      "text": "Sürekli uçuşa elverişlilik kimin sorumluluğundadır?",
+      "options": ["Hava aracını tescil eden ülkenin", "Hava yolu şirketinin", "Pilotun", "İşleticinin", "Tip sertifikasyonunu yayımlayan ülkenin"]
+    }
+  ]
+}

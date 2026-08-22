@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}Kayıt — ATPL Soru Bankası{% endblock %}
+{% block body %}
+<div class="authwrap">
+  <h1 class="page">Hesap oluştur</h1>
+  <p class="sub">İlerlemen bu hesaba kaydedilir.</p>
+  <div class="card"><div class="bd">
+    {% if err %}<div class="err">{{ err }}</div>{% endif %}
+    <form method="post" action="/kayit">
+      <div class="field">
+        <label class="lbl" for="name">Adın</label>
+        <input id="name" name="name" type="text" autocomplete="name"
+               value="{{ values.get('name','') }}" placeholder="Mustafa">
+      </div>
+      <div class="field">
+        <label class="lbl" for="email">E-posta</label>
+        <input id="email" name="email" type="email" autocomplete="email" required
+               value="{{ values.get('email','') }}">
+      </div>
+      <div class="row2">
+        <div class="field">
+          <label class="lbl" for="password">Parola</label>
+          <input id="password" name="password" type="password" autocomplete="new-password"
+                 required minlength="8">
+        </div>
+        <div class="field">
+          <label class="lbl" for="password2">Parola (tekrar)</label>
+          <input id="password2" name="password2" type="password" autocomplete="new-password" required>
+        </div>
+      </div>
+      <button class="btn" type="submit">Hesabı oluştur</button>
+    </form>
+  </div></div>
+  <div class="authfoot">Hesabın var mı? <a href="/giris">Giriş yap</a></div>
+</div>
+{% endblock %}

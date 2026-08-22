@@ -1,0 +1,222 @@
+{
+  "subject_code": "501",
+  "subject_name": "Havacılığa Giriş",
+  "source": "501 ders notları - ünite sonu quiz soruları (35 soru)",
+  "answer_convention": "Kaynakta doğru cevap dağınıktı; şıklar doğru cevap başa (A) gelecek şekilde yeniden sıralandı.",
+  "id_convention": "Kaynakta soru ID'si yok; 50101'den başlayan yapay ID'ler verildi.",
+  "sections": {
+    "01-02": "Ders Notu Soruları"
+  },
+  "questions": [
+    {
+      "id": 50107,
+      "section": "01-02",
+      "text": "Aşağıdaki havaalanı elemanlarından hangisi havaalanı kara tarafı içerisinde yer alır?",
+      "options": ["Yolcu-kabul (check-in) salonları", "Taksiyolları", "Apronlar", "Hava trafik kontrol kulesi", "Pistler"]
+    },
+    {
+      "id": 50108,
+      "section": "01-02",
+      "text": "Bir havaalanı tanımlaması için, aşağıdakilerin hangisinde IATA (International Air Transportation Association) havaalanı kodu kullanılmıştır?",
+      "options": ["IST", "LTBA", "LTFM", "YCBG", "LTAI"]
+    },
+    {
+      "id": 50109,
+      "section": "01-02",
+      "text": "Kanada merkezli faaliyet gösteren Air Toronto havayolu işletmesinin İstanbul uçuşlarında Türkiye'de yerel makamlara karşı hukuki sorumluluk ve İstanbul operasyonlarını takip etmesi ve denetlemesi için havaalanı yer hizmet türlerinden hangisini almak zorundadır?",
+      "options": ["Temsil, yönetim ve gözetim hizmeti", "Ramp hizmetleri", "Yolcu hizmetleri", "Uçuş operasyon hizmeti", "Kargo ve posta hizmeti"]
+    },
+    {
+      "id": 50101,
+      "section": "01-02",
+      "text": "Aşağıdakilerden hangisi yer hizmetleri işletmelerinin sunduğu sınırlı bakım hizmet türlerinden biri değildir?",
+      "options": ["İkram hizmetleri", "Hangar alanı hizmetleri", "Malzemelere yönelik hizmetler", "Park etme hizmetleri", "Rutin hizmetler"]
+    },
+    {
+      "id": 50102,
+      "section": "01-02",
+      "text": "Aşağıdakilerden hangisi RAMP hizmetleri arasında yer almaz?",
+      "options": ["Yolcu kontrolü", "Yük yönetimi", "Uçak temizliği", "Bagaj etiketleme ve yönlendirme", "Yakıt ikmal"]
+    },
+    {
+      "id": 50103,
+      "section": "01-02",
+      "text": "Tarifeli Hava Servisi nedir?",
+      "options": ["Belli ve düzenli aralıklarla sistematik olarak gerçekleştirilen ve herkesin faydalanabileceği uçuşlar.", "İnternet üzerinden koltuk numarası belirleme ve biniş kartı işlemleri yapılabilen hizmet.", "Yolcuların ücret ödemeden seyahat edebildiği hizmet.", "Yolcuların bavullarını teslim ettiği hizmet.", "Ücret karşılığında taşınan yolcu sayısını ifade eden performans göstergesi."]
+    },
+    {
+      "id": 50104,
+      "section": "01-02",
+      "text": "Havayollarının iş modelleri hangi temel unsurlara göre sınıflandırılmaktadır?",
+      "options": ["Sunulan ürün ve hizmetlerin özelliklerine göre", "Kullanılan uçak tipine göre", "Çalışan sayısına göre", "Uçuş mesafesine göre", "Yolcu sayısına göre"]
+    },
+    {
+      "id": 50105,
+      "section": "01-02",
+      "text": "Dünya genelinde ticari hava taşıma işletmeciliği yapacak olanlar, bulundukları ülkenin ticaret siciline kayıtlı olmaları durumunda o ülkenin sivil havacılık otoritesinden işletme ruhsatı almak zorundadır. Bu kapsamda, işletme ruhsatında aşağıdaki bilgilerden hangisi yer almaz?",
+      "options": ["Hava aracının değeri", "İşletme şartları", "İzin verilen özel operasyonlar", "İşleticinin bağlı olduğu ülke", "İşleticinin adı"]
+    },
+    {
+      "id": 50106,
+      "section": "01-02",
+      "text": "Check-in işlemi sırasında yolcular ne yapar?",
+      "options": ["Uçaktaki oturacakları yerin numarasını, uçağın yolcu almaya başlayacağı saati ve biniş kapısı numarasını alırlar.", "Pilot ile tanışırlar.", "Uçak bileti satın alırlar.", "Uçakta yemek seçerler.", "Havaalanındaki dükkanlarda alışveriş yaparlar."]
+    },
+    {
+      "id": 50110,
+      "section": "01-02",
+      "text": "Yolcunun uçağın bagajında taşınmasını istediği veya boyutları nedeniyle bagajda taşınması zorunlu olan valiz veya eşyalarını havayolunun yer hizmet görevlisine teslim ettiği yolculuk aşaması aşağıdakilerden hangisinde doğru olarak verilmiştir?",
+      "options": ["Check-in", "Biletleme", "Bagaj Kontrolü", "Blok Saat", "Güvenlik Kontrolü"]
+    },
+    {
+      "id": 50111,
+      "section": "01-02",
+      "text": "Aşağıdakilerden hangisi ICAO üye devletlerin iklim değişikliğiyle mücadelesine katkı sunmak amacıyla başlatılmış olan Devlet Eylem Planı (SAP) bileşenlerinden değildir?",
+      "options": ["Yurtdışı Paydaşlar ile Birliktelik Sağlamak", "Odak Noktası Bilgileri", "Beklenen Sonuçlar", "Etki Azaltma Önlemleri", "Referans Senaryo"]
+    },
+    {
+      "id": 50112,
+      "section": "01-02",
+      "text": "Aşağıdakilerden hangisi ICAO Ek 16 - Çevrenin Korunması - Cilt III'tür?",
+      "options": ["Uçak CO2 Emisyonları", "Uluslararası Havacılığa Yönelik Karbon Denkleştirme ve Azaltma Şeması", "Hava alanı Gürültüsü", "Uçak Gövde-Motor Emisyonları", "Uçak Gürültüsü"]
+    },
+    {
+      "id": 50113,
+      "section": "01-02",
+      "text": "Bir kuruluşun faaliyetlerinin olumsuz çevresel etkilerini tanımlamayı, değerlendirmeyi, izlemeyi ve azaltmayı amaçlayan bir dizi yönetim ilkesine ne denir?",
+      "options": ["Çevre Yönetim Sistemi", "Kalkınma Yönetimi", "Denge Yönetim", "Sürdürülebilirlik Yönetimi", "Uyum Yönetimi"]
+    },
+    {
+      "id": 50114,
+      "section": "01-02",
+      "text": "CORSIA nedir?",
+      "options": ["Uluslararası Havacılığa Yönelik Karbon Denkleştirme ve Azaltma Şeması", "Etkin Hava Sahası Kullanım Şeması", "Uçak Emisyon Değerlendirme Şeması", "Çevresel Etki İnceleme Şeması", "Sürdürülebilirlik Denetleme Şeması"]
+    },
+    {
+      "id": 50115,
+      "section": "01-02",
+      "text": "Ekonomik büyüme, çevresel bakım ve sosyal refah arasında bir denge sağlarken, gelecek nesillerin ihtiyaçlarından ödün vermeden mevcut nesillerin ihtiyaçlarını karşılama anlayışı nedir?",
+      "options": ["Sürdürülebilirlik", "Döngüsel Yaklaşım", "Sıfır Atık", "Sosyallik", "Ekonomik Kalkınma"]
+    },
+    {
+      "id": 50116,
+      "section": "01-02",
+      "text": "ECAC'ın misyonu ile ilgili doğru ifade aşağıdakilerden hangisidir?",
+      "options": ["Güvenli, verimli ve sürdürülebilir bir Avrupa hava taşımacılığı sisteminin sürekli gelişimini teşvik etmektir.", "Sivil havacılık otoriteleri ile ilgili düzenlemeler yapmak", "Hava Seyrüsefer Hizmet Sağlayıcıları ile ilgili yasal düzenlemeleri gerçekleştirmek", "Kardeş bölgesel örgütler ile antlaşmalar yapmak", "Teknolojik gelişmelere bağlı olarak havacılık kurallarında düzenlemeler gerçekleştirmek"]
+    },
+    {
+      "id": 50117,
+      "section": "01-02",
+      "text": "Aşağıdakilerden hangi konu başlıkları Şikago sözleşmesi eklerinden değildir?",
+      "options": ["Havacılık Eğitimleri", "Arama ve Kurtarma", "Havacılık Haritaları", "Uçak milliyeti ve tescil işaretleri", "Havacılık Kuralları"]
+    },
+    {
+      "id": 50118,
+      "section": "01-02",
+      "text": "Aşağıdakilerden hangisi ICAO'nun amaç ve hedeflerinden biri sayılmaz?",
+      "options": ["Avrupa Komisyonuna teknik danışmanlık vermek", "Güvenli, düzenli ve ekonomik hava taşımacılığının küresel gereksinimini karşılamak", "Haksız rekabetin yol açabileceği israfı önlemek", "Taraf ülkelerin haklarını tam olarak korumak ve ülkelere uluslararası havayolu işletmeciliği konusunda fırsat eşitliği sağlamak", "Uluslararası sivil havacılığı ilgilendiren tüm konuların gelişimi ve yenilenmesi için çaba göstermek"]
+    },
+    {
+      "id": 50119,
+      "section": "01-02",
+      "text": "Aşağıdakilerden hangisinde \"Varşova Sözleşmesi\"nin tam adı doğru olarak verilmiştir?",
+      "options": ["Uluslararası Hava Taşımalarına İlişkin Bazı Kuralların Birleştirilmesi Hakkında Anlaşma", "Uluslararası Hava Taşımacılığının Düzenlenmesine Dair Anlaşma", "Uluslararası Hava Taşımacılık Kurallarının Belirlenmesine Dair Anlaşma", "Uluslararası Yolcu ve Yük Taşıma Anlaşması", "Uluslararası Hava Taşıma Anlaşması"]
+    },
+    {
+      "id": 50120,
+      "section": "01-02",
+      "text": "Aşağıdakilerden hangisinde Avrupa Birliğinin havacılık emniyet otoritesinin kısaltması doğru olarak verilmiştir?",
+      "options": ["EASA", "ENAC", "ECAC", "EUROCONTROL", "IATA"]
+    },
+    {
+      "id": 50121,
+      "section": "01-02",
+      "text": "Uyarı Hizmetleri'nin amacı nedir?",
+      "options": ["Arama kurtarma hizmetine ihtiyaç duyan hava araçlarıyla ilgili gerekli kuruluşları uyarmak ve yardımcı olmak.", "Uçak bilet fiyatlarını düzenlemek.", "Hava araçlarının hızını kontrol etmek.", "Havaalanı içi hizmetleri koordine etmek.", "Uçuş güzergâhlarındaki değişiklikleri bildirmek."]
+    },
+    {
+      "id": 50122,
+      "section": "01-02",
+      "text": "Hava Trafik Akış Yönetimi kaç aşamada verilmektedir?",
+      "options": ["4", "6", "2", "5", "3"]
+    },
+    {
+      "id": 50123,
+      "section": "01-02",
+      "text": "Aşağıdakilerden hangisi ya da hangileri Uçuş Bilgi Bölgesi (FIR – Flight Information Region) içerisinde sağlanan Uçuş Bilgi Hizmetlerinin sunulması ile alakalı yanlış ifadedir?",
+      "options": ["Bu hizmet kapsamında hava sahası ile alakalı tüm bilgiler, tüm hava araçlarına ayrım gözetmeden aktarılır.", "Hava trafik kontrol hizmeti verilen uçaklara sağlanır.", "Uçuş bilgi hizmeti bu bilgilerden faydalanacak hava araçlarına sağlanır.", "Bu hizmet kapsamında uçuş emniyetini etkileyebilecek geçici veya kalıcı tüm bilgiler hava araçlarına aktarılmaktadır.", "Kontrol hizmeti verilmeyen ancak ilgili hava trafik hizmet ünitelerince bilinen hava araçlarına sağlanır."]
+    },
+    {
+      "id": 50124,
+      "section": "01-02",
+      "text": "Uluslararası Sivil Havacılık Anlaşmasının eklerinden hangisi hava trafik hizmetleri ile ilgili standart ve usulleri tanımlar?",
+      "options": ["Ek-11", "Ek-10", "Ek-13", "Ek-9", "Ek-12"]
+    },
+    {
+      "id": 50125,
+      "section": "01-02",
+      "text": "Bir uçağın çoğunlukla yatay uçuş koşullarında gerçekleştirdiği seyahat uçuşu esnasında almış olduğu hava trafik kontrol hizmeti aşağıdakilerden hangisidir?",
+      "options": ["Saha kontrol hizmeti", "Yaklaşma kontrol hizmeti", "Yer kontrol hizmeti", "Uçuş bilgi hizmeti", "Meydan kontrol hizmeti"]
+    },
+    {
+      "id": 50126,
+      "section": "01-02",
+      "text": "Aşağıdakilerden hangisi tip sertifikasının özelliklerinden değildir?",
+      "options": ["Sadece uçağın gövde sınıflandırmasına verilir.", "Tip tasarımına teknik özelliklere ait bilgiler içerir.", "Üretimi gerçekleştiren ülke otoritesi tarafından verilir.", "İşletme limitlerini içeren bir belgedir.", "Hava aracı motor veya pervane için tasarım kriterlerine ve uçuşa elverişlilik kurallarına uygunluğu belirler."]
+    },
+    {
+      "id": 50127,
+      "section": "01-02",
+      "text": "Düzeltici bakımla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+      "options": ["Arıza giderme işlemleri.", "Yapılacak işlemler, gerekli malzeme büyük ölçüde bellidir.", "Hava aracının uçuş planını aksatmaz.", "Programlı bir bakım türüdür.", "Motor hava filtresi değişimi ve yağlama işlemleri örnek olarak verilebilir."]
+    },
+    {
+      "id": 50128,
+      "section": "01-02",
+      "text": "Aşağıdakilerden hangisi ana (üs) bakım faaliyetlerinden biri değildir?",
+      "options": ["Uçuş Öncesi Bakım", "Bakım kontrol faaliyetleri", "Eğitim faaliyetleri", "Atölye bakımı", "Hangar bakımı"]
+    },
+    {
+      "id": 50129,
+      "section": "01-02",
+      "text": "Tarifeli yürütülen uçuş operasyonları kapsamında yapılan bakım işlemi aşağıdakilerden hangisidir?",
+      "options": ["Hat bakım", "Minör bakım", "Üs bakım", "Majör bakım", "Atölye bakım"]
+    },
+    {
+      "id": 50130,
+      "section": "01-02",
+      "text": "Hat bakım ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+      "options": ["Hangarda yapılan bir bakım türüdür.", "Programsız bakımlar, hat bakım faaliyetlerinin büyük kısmını oluşturur.", "Transit bakım olarak da adlandırılırlar.", "Küçük seviyedeki programlı bakımlar da hat bakım kapsamında yapılabilir.", "Hava aracı tarifesi kapsamındaki uçuşlarını gerçekleştirirken yapılan bakım işlemleridir."]
+    },
+    {
+      "id": 50131,
+      "section": "01-02",
+      "text": "Haberleşme, seyrüsefer ve gözetim sistemlerinin çalıştırılması ve bakımından sorumlu havacılık personeli aşağıdakilerden hangisidir?",
+      "options": ["Hava trafik emniyeti elektronik personeli", "B2 kategorisi bakım personeli", "Uçuş harekât uzmanı", "C kategorisi bakım personeli", "A kategorisi bakım personeli"]
+    },
+    {
+      "id": 50132,
+      "section": "01-02",
+      "text": "Döner kanatlı hava aracını havada tutmak için gerekli taşıma kuvvetini üreten sistemin adı nedir?",
+      "options": ["Rotor", "İstikamet dümeni", "Turboprop", "Kanat", "Turbofan"]
+    },
+    {
+      "id": 50133,
+      "section": "01-02",
+      "text": "Aşağıdakilerden hangisi havadan hafif bir hava aracıdır?",
+      "options": ["Zeplin", "Deniz Uçağı", "İnsansız hava aracı", "Helikopter", "Cayrokopter"]
+    },
+    {
+      "id": 50134,
+      "section": "01-02",
+      "text": "Aşağıdakilerden hangisi uçağın ana dengeleyici unsurudur?",
+      "options": ["Kuyruk", "İniş takımı", "Kanat", "Motor", "Gövde"]
+    },
+    {
+      "id": 50135,
+      "section": "01-02",
+      "text": "Pistonlu motorlarda, itki kuvveti oluşturmak için ne kullanılır?",
+      "options": ["Pervane", "Jet yakıtı", "Kompresör", "Rüzgar", "Kanatlar"]
+    }
+  ]
+}

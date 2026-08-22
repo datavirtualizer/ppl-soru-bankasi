@@ -1,0 +1,158 @@
+{% extends "base.html" %}
+{% block title %}Panel — ATPL Soru Bankası{% endblock %}
+{% block body %}
+<div class="wrap">
+  <h1 class="page">Merhaba {{ user['name'] }}.</h1>
+  <p class="sub">
+    {% if summary.n %}
+      Şimdiye kadar <span class="num">{{ summary.n }}</span> soru cevapladın —
+      bankanın <span class="num">%{{ summary.coverage }}</span> kadarını gördün.
+    {% else %}
+      Henüz hiç soru çözmedin. Aşağıdan bir tur başlat.
+    {% endif %}
+  </p>
+
+  <div class="tiles">
+    <div class="tile">
+      <span class="lbl">Başarı</span>
+      <span class="v acc">{% if summary.pct is not none %}%{{ summary.pct }}{% else %}—{% endif %}</span>
+      <span class="foot">{{ summary.ok }} doğru / {{ summary.wrong }} yanlış</span>
+    </div>
+    <div class="tile">
+      <span class="lbl">Yanlış defteri</span>
+      <span class="v {% if wrong_n %}bad{% endif %}">{{ wrong_n }}</span>
+      <span class="foot">soru tekrar bekliyor</span>
+    </div>
+    <div class="tile">
+      <span class="lbl">Kapsam</span>
+      <span class="v">{{ summary.uniq }}</span>
+      <span class="foot">/ {{ summary.bank }} soru görüldü</span>
+    </div>
+    <div class="tile">
+      <span class="lbl">Seri</span>
+      <span class="v">{{ summary.streak }}</span>
+      <span class="foot">gün üst üste</span>
+    </div>
+  </div>
+
+  {% if request.query_params.get('bos') %}
+    <div class="note">Bu kapsamda soru bulunamadı. Ders, bölüm veya kapsam
+      seçeneklerini değiştirip tekrar dene.</div>
+  {% endif %}
+
+  <div class="card">
+    <div class="hd"><h2>Yeni tur</h2><div class="sp"></div>
+      <span class="lbl">soru seç, başla</span></div>
+    <div class="bd">
+      <form method="post" action="/tur" id="runForm">
+        <div class="row2">
+          <div class="field">
+            <label class="lbl" for="subject">Ders</label>
+            <select id="subject" name="subject">
+              <option value="all">Tüm dersler ({{ summary.bank }})</option>
+              {% for s in subjects %}
+                <option value="{{ s['code'] }}">{{ s['code'] }} · {{ s['name'] }} ({{ s['n'] }})</option>
+              {% endfor %}
+            </select>
+          </div>
+          <div class="field">
+            <label class="lbl" for="section">Bölüm</label>
+            <select id="section" name="section"><option value="all">Tüm bölümler</option></select>
+          </div>
+        </div>
+        <div class="row2">
+          <div class="field">
+            <label class="lbl" for="count">Soru sayısı</label>
+            <select id="count" name="count">
+              <option>10</option><option selected>20</option><option>30</option>
+              <option>50</option><option>75</option><option>100</option>
+            </select>
+          </div>
+          <div class="field">
+            <label class="lbl" for="mode">Mod</label>
+            <select id="mode" name="mode">
+              <option value="calisma">Çalışma — doğruda geç, yanlışta cevabı göster</option>
+              <option value="sinav">Sınav — geri bildirim yok, sonuç sonda</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field">
+          <span class="lbl">Kapsam</span>
+          <label class="check">
+            <input type="checkbox" name="only_wrong" {% if not wrong_n %}disabled{% endif %}>
+            <span><span class="t">Sadece yanlış defterim</span>
+              <span class="d">{{ wrong_n }} soru — ders ve bölüm seçimini yok sayar</span></span>
+          </label>
+          <label class="check">
+            <input type="checkbox" name="hide_dups" checked>
+            <span><span class="t">Tekrar eden soruları gizle</span>
+              <span class="d">Aynı bilgiyi soran kopyalar bir kez sorulur</span></span>
+          </label>
+          <label class="check">
+            <input type="checkbox" name="show_gen" checked>
+            <span><span class="t">Ders notundan üretilmiş soruları da sor</span>
+              <span class="d">Gerçek sınav sorusu değil, konu pekiştirme amaçlı</span></span>
+          </label>
+        </div>
+
+        <button class="btn" type="submit">Turu başlat</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="hd"><h2>Son turlar</h2></div>
+    {% if runs %}
+    <div class="scroll"><table class="tbl">
+      <thead><tr><th>Kapsam</th><th>Mod</th><th class="n">Soru</th><th class="n">Başarı</th><th></th></tr></thead>
+      <tbody>
+      {% for r in runs %}
+        <tr>
+          <td>{{ r['scope'] }}<div class="lbl" style="margin-top:2px">{{ r['started_at'][:16].replace('T',' ') }}</div></td>
+          <td><span class="badge {% if r['mode'] == 'sinav' %}flag{% else %}fig{% endif %}">{{ r['mode'] }}</span></td>
+          <td class="n">{{ r['n'] }} / {{ r['total'] }}</td>
+          <td class="n">{% if r['pct'] is not none %}%{{ r['pct'] }}{% else %}—{% endif %}</td>
+          <td class="n">
+            {% if r['ended_at'] %}<a href="/sonuc/{{ r['id'] }}">sonuç</a>
+            {% else %}<a href="/tur/{{ r['id'] }}">devam et</a>{% endif %}
+          </td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table></div>
+    {% else %}
+      <div class="bd"><div class="empty">Henüz tur yok.</div></div>
+    {% endif %}
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+const subj = document.getElementById('subject'), sec = document.getElementById('section');
+const onlyWrong = document.querySelector('input[name=only_wrong]');
+async function loadSections(){
+  sec.innerHTML = '<option value="all">Tüm bölümler</option>';
+  if (subj.value === 'all') { sec.disabled = true; return; }
+  sec.disabled = false;
+  try{
+    const r = await fetch('/api/bolumler/' + encodeURIComponent(subj.value));
+    const d = await r.json();
+    for (const s of d.sections){
+      const o = document.createElement('option');
+      o.value = s.code; o.textContent = s.code + ' — ' + s.name + ' (' + s.n + ')';
+      sec.appendChild(o);
+    }
+  }catch(e){ /* bölüm listesi alınamadıysa "tüm bölümler" ile devam */ }
+}
+subj.onchange = loadSections;
+loadSections();
+if (onlyWrong){
+  onlyWrong.onchange = () => {
+    const off = onlyWrong.checked;
+    subj.disabled = off; sec.disabled = off || subj.value === 'all';
+  };
+}
+</script>
+{% endblock %}

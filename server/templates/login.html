@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Giriş — ATPL Soru Bankası{% endblock %}
+{% block body %}
+<div class="authwrap">
+  <h1 class="page">Giriş yap</h1>
+  <p class="sub">Kaldığın yerden devam et.</p>
+  <div class="card"><div class="bd">
+    {% if err %}<div class="err">{{ err }}</div>{% endif %}
+    <form method="post" action="/giris">
+      <input type="hidden" name="next" value="{{ next }}">
+      <div class="field">
+        <label class="lbl" for="email">E-posta</label>
+        <input id="email" name="email" type="email" autocomplete="email" required
+               value="{{ values.get('email','') }}">
+      </div>
+      <div class="field">
+        <label class="lbl" for="password">Parola</label>
+        <input id="password" name="password" type="password" autocomplete="current-password" required>
+      </div>
+      <button class="btn" type="submit">Giriş yap</button>
+    </form>
+  </div></div>
+  <div class="authfoot">Hesabın yok mu? <a href="/kayit">Hesap oluştur</a></div>
+</div>
+{% endblock %}

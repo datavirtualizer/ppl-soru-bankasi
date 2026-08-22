@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+server/app.db
+server/app.db-wal
+server/app.db-shm
+.DS_Store
+cards/
+videos/

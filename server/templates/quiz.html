@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Tur — ATPL Soru Bankası{% endblock %}
+{% block body %}
+<div class="wrap narrow"
+     data-run="{{ run['id'] }}" data-total="{{ total }}"
+     data-start="{{ answered }}" data-mode="{{ run['mode'] }}" id="quizRoot">
+  <div class="ptrack"><div class="pfill" id="pfill"></div></div>
+  <div class="pmeta">
+    <span class="lbl">Soru <span class="num" id="qi">–</span> / <span class="num">{{ total }}</span></span>
+    <span class="lbl">{{ run['scope'] }}</span>
+  </div>
+  <div id="stage"><div class="empty">Yükleniyor…</div></div>
+</div>
+{% endblock %}
+{% block scripts %}<script src="/static/quiz.js"></script>{% endblock %}

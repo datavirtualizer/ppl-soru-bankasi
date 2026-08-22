@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title %}Sonuç — ATPL Soru Bankası{% endblock %}
+{% block body %}
+{% set pct = (ok * 100 // total) if total else 0 %}
+<div class="wrap narrow">
+  <div class="card">
+    <div class="bd" style="text-align:center; padding:26px 16px">
+      <div class="lbl">Tur sonucu · {{ run['scope'] }}</div>
+      <div class="score" style="color:{% if pct >= 75 %}var(--ok){% elif pct >= 50 %}var(--ink){% else %}var(--bad){% endif %}">%{{ pct }}</div>
+      <div class="lbl" style="margin-top:6px">
+        <span class="num">{{ ok }}</span> / <span class="num">{{ total }}</span> doğru
+      </div>
+    </div>
+    {% for r in rows %}
+      <div class="ritem">
+        <span class="rdot {% if r['correct'] %}ok{% else %}bad{% endif %}"></span>
+        <div style="min-width:0">
+          <div class="q">{{ r['text'] }}</div>
+          <div class="a">
+            {% if r['correct'] %}<b>{{ r['right_text'] }}</b>
+            {% else %}<i>Senin: {{ r['chosen_text'] }}</i> · <b>Doğru: {{ r['right_text'] }}</b>{% endif %}
+          </div>
+          <div class="lbl" style="margin-top:3px">{{ r['subject_code'] }}{% if r['sec_code'] %} · {{ r['sec_code'] }}{% endif %} · ID {{ r['question_id'] }}</div>
+        </div>
+      </div>
+    {% else %}
+      <div class="bd"><div class="empty">Bu turda hiç soru cevaplanmamış.</div></div>
+    {% endfor %}
+  </div>
+
+  <div class="actions">
+    {% if wrong_n %}
+    <form method="post" action="/tur" style="flex:1">
+      <input type="hidden" name="only_wrong" value="on">
+      <input type="hidden" name="hide_dups" value="on">
+      <input type="hidden" name="show_gen" value="on">
+      <input type="hidden" name="count" value="{{ [wrong_n, 50] | min }}">
+      <button class="btn" type="submit">Yanlış defterini çöz ({{ wrong_n }})</button>
+    </form>
+    {% endif %}
+    <a class="btn ghost" href="/" style="flex:1; text-decoration:none">Panele dön</a>
+  </div>
+</div>
+{% endblock %}

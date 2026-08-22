@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>{% block title %}ATPL Soru Bankası{% endblock %}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<link rel="stylesheet" href="/static/app.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#9992;</text></svg>">
+<script>
+  // Temayı boyamadan önce uygula ki sayfa yanıp sönmesin
+  try{ var t = localStorage.getItem('atpl.theme');
+       if (t) document.documentElement.setAttribute('data-theme', t); }catch(e){}
+</script>
+</head>
+<body>
+
+<nav class="nav">
+  <a class="brand" href="/">
+    <svg class="mark" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M2 14.5 22 6l-3.5 8.5L22 23 2 14.5Z" fill="var(--accent)"/>
+    </svg>
+    <span>ATPL<span class="long"> Soru Bankası</span></span>
+  </a>
+  {% if user %}
+  <div class="links">
+    <a href="/" {% if request.url.path == '/' %}aria-current="page"{% endif %}>Panel</a>
+    <a href="/istatistik" {% if request.url.path == '/istatistik' %}aria-current="page"{% endif %}>İstatistik</a>
+  </div>
+  {% endif %}
+  <div class="sp"></div>
+  {% if user %}<span class="who">{{ user['name'] }}</span>{% endif %}
+  <button class="iconbtn" id="themeBtn" type="button">Tema</button>
+  {% if user %}
+  <form method="post" action="/cikis" style="display:inline">
+    <button class="iconbtn" type="submit">Çıkış</button>
+  </form>
+  {% endif %}
+</nav>
+
+{% block body %}{% endblock %}
+
+<script>
+document.getElementById('themeBtn').onclick = function(){
+  var cur = document.documentElement.getAttribute('data-theme');
+  var dark = cur ? cur === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+  var next = dark ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', next);
+  try{ localStorage.setItem('atpl.theme', next); }catch(e){}
+};
+</script>
+{% block scripts %}{% endblock %}
+</body>
+</html>

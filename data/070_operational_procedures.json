@@ -1,0 +1,846 @@
+{
+  "subject_code": "070",
+  "subject_name": "Operational Procedures",
+  "source": "ATPL TV - PPL Turkey (English) Exam Report (138 soru)",
+  "answer_convention": "Şıklar kaynaktaki sırayla kaydedildi; ilk şık (ord=1) doğru cevaptır.",
+  "sections": {
+    "070-01": "ICAO Annex 6, Part II – Operation of Aircraft",
+    "070-02": "ICAO Annex 12 – Search and Rescue",
+    "070-03": "ICAO Annex 13 – Aircraft Accident Investigation",
+    "070-04": "Noise Abatement",
+    "070-05": "Special Operational Procedures and Hazards"
+  },
+  "questions": [
+    {
+      "id": 14255,
+      "section": "070-01",
+      "text": "Alternate aerodrome is:",
+      "options": ["An aerodrome to which a flight may proceed if it becomes impracticable or inadvisable to land at the planned destination.", "An aerodrome to which a flight may proceed if it becomes impracticable or inadvisable to land at the first diversion.", "Any aerodrome that may be used for a landing in an emergency.", "A planned en-route aerodrome where an aircraft may land if necessary to uplift fuel but where passengers may not be embarked or disembarked."]
+    },
+    {
+      "id": 14271,
+      "section": "070-01",
+      "text": "In which document would you normally find the oil pressure limitations for",
+      "options": ["The Flight Manual or Pilot's Operating Handbook", "Certificate of registration", "Aircraft Placard", "Operation Manual"]
+    },
+    {
+      "id": 14319,
+      "section": "070-01",
+      "text": "Where is the number and composition of the flight crew specified?",
+      "options": ["In JAR-OPS 1", "In JAR-FCL", "On the C of A", "In ICAO Annex 6 part 2"]
+    },
+    {
+      "id": 14364,
+      "section": "070-05",
+      "text": "If ATC reports the active runway conditions as “wet wet wet”, it is understood that the runway:",
+      "options": ["The runway is wet but there is no standing water.", "The runway is covered by patches of standing water at least 2mm in depth.", "The runway is covered by at least 2mm of standing water.", "Has visible areas contaminated by standing water."]
+    },
+    {
+      "id": 14400,
+      "section": "070-05",
+      "text": "When extensive water patches are visible on a runway surface the conditions are reported as:",
+      "options": ["Flooded.", "Braking action reduced.", "Wet, wet, wet.", "Damp, damp, damp."]
+    },
+    {
+      "id": 14409,
+      "section": "070-02",
+      "text": "Safety and survival equipment must be:",
+      "options": ["Easily identifiable", "Only kept near aircraft emergency exits", "lnspected every week", "Kept under the passenger seats"]
+    },
+    {
+      "id": 14554,
+      "section": "070-05",
+      "flagged": true,
+      "text": "Fires are classified in accordance with the material that we have to extinguish. Fires involving electricity are …….",
+      "options": ["Class C fires", "Class D fires", "Class B fires", "Class A fires"]
+    },
+    {
+      "id": 15925,
+      "section": "070-01",
+      "text": "Annexes to the Chicago Convention contain:",
+      "options": ["Standards and Recommended Practices.", "Standards and Regulatory Procedures.", "Recommendations and Means of Compliance.", "Search and Rescue Procedures."]
+    },
+    {
+      "id": 15926,
+      "section": "070-01",
+      "text": "The Chicago Convention Annex which is applicable to the operation of aeroplanes in commercial air transport is:",
+      "options": ["Annex 6", "Annex 1", "Annex 9", "Annex 2"]
+    },
+    {
+      "id": 15927,
+      "section": "070-01",
+      "text": "What is the ICAO annex 6 definition of \"flight time\" for an aeroplane?",
+      "options": ["The total time from the moment an aeroplane first moves for the purpose of taking off until the moment it finally comes to rest at the end of the flight", "The total time from brakes release until the aircraft comes to rest on the runway after landing", "The total time from the moment the engine starts until it is shut down", "The total time from take off until the engine is stopped"]
+    },
+    {
+      "id": 15928,
+      "section": "070-01",
+      "text": "Which Annex contains the information related with the inclusion of medical sets must be carried in the aircraft?",
+      "options": ["Annex 6", "Annex 12", "Annex 2", "Annex 11"]
+    },
+    {
+      "id": 15929,
+      "section": "070-01",
+      "text": "ICAO (International Civil Aviation Organization) Annex 18 is a document dealing with :",
+      "options": ["the safety of the air transport of hazardous materials", "the air transport of live animals", "the technical operational use of aircraft", "the noise pollution of aircraft"]
+    },
+    {
+      "id": 15930,
+      "section": "070-01",
+      "text": "Which one of the following documents contains the procedures, instructions and guidance for use by operational personnel in the execution of their duties?",
+      "options": ["Operational Manual", "Journey Log", "flight manual.", "Technical Log"]
+    },
+    {
+      "id": 15931,
+      "section": "070-01",
+      "text": "Information concerning evacuation procedures can be found in the :",
+      "options": ["operation manual.", "operational flight plan.", "flight manual.", "journey logbook."]
+    },
+    {
+      "id": 15932,
+      "section": "070-01",
+      "text": "The minimum equipment list of an airplane is to be found in the :",
+      "options": ["operation manual.", "JAR OPS.", "flight manual.", "flight record."]
+    },
+    {
+      "id": 15933,
+      "section": "070-01",
+      "text": "Information concerning emergency evacuation procedures shall be found in the:",
+      "options": ["operations manual.", "operational flight plan.", "flight manual.", "journey logbook."]
+    },
+    {
+      "id": 15934,
+      "section": "070-01",
+      "text": "Information about evacuation procedures from an aeroplane can be found in the:",
+      "options": ["Operations Manual.", "Operational Flight Plan.", "Flight Manual.", "Journey Logbook."]
+    },
+    {
+      "id": 15936,
+      "section": "070-01",
+      "text": "Official data regarding operating limitations and allowed mass of your aircraft could be found in:",
+      "options": ["Aircraft's Flight Manual.", "Official Gazette of Civil Aviation Authority.", "Certificate of Airworthiness and in Certificate of Registration.", "Maintenance Log."]
+    },
+    {
+      "id": 15937,
+      "section": "070-01",
+      "text": "Which one of the following documents contains the limitations, instructions and information necessary to the flight crew members for the safe operation of the aircraft?",
+      "options": ["flight manual.", "Journey Log", "Technical Log", "Operational Manual"]
+    },
+    {
+      "id": 15938,
+      "section": "070-01",
+      "text": "Operator may be ……………. engaged in or offering to engage in an aircraft operation.",
+      "options": ["a person, organization or enterprise", "a person or enterprise", "an enterprise", "an organization or enterprise"]
+    },
+    {
+      "id": 15939,
+      "section": "070-01",
+      "text": "The owner of an aeroplane shall ensure that the following records are kept for:\nI - the total time in service of the aeroplane and all life limited components\nII - the current status of compliance with all applicable mandatory continuing airworthiness information\nIII - appropriate details of modifications and repairs\nIV - the time in service since the last overhaul of the aeroplane or its components subject to a mandatory overhaul life",
+      "options": ["I, II, III and IV", "I, III and IV", "I, II and IV", "I, II and III"]
+    },
+    {
+      "id": 15940,
+      "section": "070-01",
+      "text": "An operator shall use Air Traffic Services:",
+      "options": ["Always whenever available", "Only if required by the AOC", "At his/her discretion", "Need not use if the weather is VFR"]
+    },
+    {
+      "id": 15941,
+      "section": "070-01",
+      "text": "Who is responsible for ensuring that all passengers are briefed before take-off?",
+      "options": ["The Pilot in Command", "The Dispatcher", "The State of the Operator", "The Maintenance Manager"]
+    },
+    {
+      "id": 15942,
+      "section": "070-01",
+      "text": "An aircraft entering another contracting state's airspace and proposing to land must:",
+      "options": ["Be registered, airworthy and carry all the relative documents required including the C of A", "Ensure it carries an original copy of the flight plan only", "Carry the C of A and the International lnterception Table of Signals", "Confirm to the C of A of the airspace of the state into which it is flying"]
+    },
+    {
+      "id": 15943,
+      "section": "070-01",
+      "text": "What is the common name of those operations in which an aircraft is used for specialized services such as agriculture, construction, photography, surveying, observation and patrol, search and rescue, aerial advertisement, etc.?",
+      "options": ["Aerial work", "Charter", "Schedule", "Private"]
+    },
+    {
+      "id": 15944,
+      "section": "070-01",
+      "text": "Which of the following documents is not required to be carried in an aircraft of an ICAO member state?",
+      "options": ["Driver Licences", "Flight crew licences", "Certificate of Airworthiness", "Certificate of Registration"]
+    },
+    {
+      "id": 15945,
+      "section": "070-01",
+      "text": "Which of the following documents is not required to be carried in an aircraft of an ICAO member state?",
+      "options": ["Flight crew driving license", "Flight crew licences", "Certificate of Airworthiness", "Certificate of Registration"]
+    },
+    {
+      "id": 15946,
+      "section": "070-01",
+      "text": "An operator must ensure that, for the duration of each flight, be kept on the ground a copy of the:",
+      "options": ["operation flight plan", "flight route sheet", "ATC flight plan", "flight plan processing"]
+    },
+    {
+      "id": 15947,
+      "section": "070-01",
+      "text": "The PIC is required by the authority to present the aircraft documents. He…",
+      "options": ["shall do so within a reasonable period of time.", "can refuse to present them", "shall do so if authorised by the operator.", "can request a delay of 48 hours."]
+    },
+    {
+      "id": 15948,
+      "section": "070-01",
+      "text": "A flight shall not be commenced until the pilot-in-command is satisfied that:\nI - any necessary maintenance has been performed.\nII - any load carried is properly distributed and safely secured.\nIII - the aeroplane operating limitations will not be exceeded.",
+      "options": ["I, II and III", "I and III", "II and III", "I and II"]
+    },
+    {
+      "id": 15949,
+      "section": "070-01",
+      "text": "Flight crew members on the flight deck shall keep their safety belt fastened:",
+      "options": ["while at their station.", "only during take off and landing and whenever necessary by the commander in the interest of safety.", "only during take off and landing.", "from take off to landing."]
+    },
+    {
+      "id": 15950,
+      "section": "070-01",
+      "text": "Who checks, before flight, that the aircraft's weight is such that flight can be safely made, and that any transported cargo is properly distributed and secured? (Annex 6, Part I)",
+      "options": ["Pilot in command", "The company's cargo technicians.", "The mechanic on board, or in his absence the co-pilot.", "The operator."]
+    },
+    {
+      "id": 15951,
+      "section": "070-01",
+      "text": "A pilot in command of a flight during which an aircraft enters the sovereign airspace of a foreign state with the intentions of landing.",
+      "options": ["Must have ensured that all necessary and relevant documentations is carried on board the aircraft, including the Certificated of Airworthiness, that the aircraft is in an airworthy condition and that it is correctly registered", "Must be satisfied that the aircraft’s Certificated of Airworthiness is current, that he holds a type rating for the aircraft, and that he has passed an Air Law examination set by the foreign state", "Must be satisfied that the aircraft’s Certificated of Airworthiness is current and that the holds a type rating for the aircraft", "Must ensure before departure that his pilot’s licence has been validated by the foreign state"]
+    },
+    {
+      "id": 15952,
+      "section": "070-01",
+      "text": "The person responsible for planning flight and ensuring that the weather is suitable is;",
+      "options": ["The pilot in command", "The duty instructor", "The Operations Manager", "The CFI"]
+    },
+    {
+      "id": 15953,
+      "section": "070-01",
+      "text": "A pilot in command of a flight during which an aircraft enters the sovereign airspace of a foreign state with the intentions of landing must have ensured that all necessary and relevant documentations is carried on board the aircraft, including;\nI - The Certificate of Registration\nII - The Certificate of Airworthiness\nIII - The Crew Licenses\nIV - The Maintenance Records",
+      "options": ["I, II and III", "I, II and IV", "I, III and IV", "I, II, III and IV"]
+    },
+    {
+      "id": 15954,
+      "section": "070-01",
+      "text": "The final authority as to the disposition of the aircraft has the",
+      "options": ["Pilot-in-command.", "Operator.", "ATC controller whenever the aircraft is flying in controlled airspace", "aircraft owner."]
+    },
+    {
+      "id": 15955,
+      "section": "070-01",
+      "text": "Following an act of unlawful interference on board an aircraft, the pilot-in-command should submit a report to;",
+      "options": ["both the local authority and the Authority of the State of the operator", "the Authority of the State of the operator only", "the local authority only", "the Authority of the State within which the aircraft is operating at the time of the unlawful interference"]
+    },
+    {
+      "id": 15957,
+      "section": "070-01",
+      "text": "The pilot of an aircraft taking-off from an airfield where the altimeter setting is not readily available, shall set the aircraft altimeter to:",
+      "options": ["The elevation of the airfield.", "The altimeter setting of the nearest controlled airport.", "The altitude zero.", "1013.2 hPa."]
+    },
+    {
+      "id": 15958,
+      "section": "070-01",
+      "text": "A flight operations officer (or flight dispatcher) when on duty, is responsible for:",
+      "options": ["assisting the pilot in command in flight preparation, and provide required information", "passenger assistance during disembarking", "compiling the operational flight plan", "loading the aeroplane"]
+    },
+    {
+      "id": 15959,
+      "section": "070-01",
+      "text": "The pilot-in-command shall ensure that breathing oxygen is available to …………………. in sufficient quantities for all flights at such altitudes where a lack of oxygen might result in impairment of the faculties of crew members or harmfully affect passengers.",
+      "options": ["crew members and passengers", "cabin crew members and passengers", "passengers", "crew members"]
+    },
+    {
+      "id": 15960,
+      "section": "070-01",
+      "text": "For VFR flight ; what is the minimum horizontal visibility below 10.000 ft?",
+      "options": ["5 km", "300 m", "1500 m", "8 km"]
+    },
+    {
+      "id": 15961,
+      "section": "070-01",
+      "text": "During a night flight, a pilot, seeing an aircraft coming from front left on approximate opposite parallel track, will first see the;",
+      "options": ["red steady light", "green and white flashing light", "white steady light", "green steady light"]
+    },
+    {
+      "id": 15962,
+      "section": "070-01",
+      "text": "All aircraft on the aircraft movement area of an aerodrome with engines running are display lights to indicate this. Which one of the following is used for this purpose?",
+      "options": ["Red anti-collision light", "Tail light.", "Navigation lights.", "Landing light."]
+    },
+    {
+      "id": 15963,
+      "section": "070-01",
+      "text": "Airplanes must be equipped with the following lights:",
+      "options": ["Right wing tip: green light, left wing tip: red light, tail: white light.", "Left wing tip: white light, right wing tip: white light, tail: orange light.", "Left wing tip: white light, right wing tip: white light, tail: red light.", "Left wing tip: green light, right wing tip: red light, tail: white light."]
+    },
+    {
+      "id": 15964,
+      "section": "070-01",
+      "text": "In the course of a flight during daylight hours, a pilot notices that the aircraft's anti-collision light has failed. What course of action should he take?",
+      "options": ["Continue with the flight, as long as it can be completed in daylight, and get the light repaired at the earliest opportunity.", "Return to his base airfield and declare the aircraft unserviceable until the light has been repaired.", "Land as soon as practically possible at the nearest suitable airfield.", "Land immediately at the nearest aerodrome."]
+    },
+    {
+      "id": 15965,
+      "section": "070-01",
+      "text": "When must the anti-collision beacon on an aircraft be operating (if installed)?",
+      "options": ["Must be on all the time the engine of an aircraft is running.", "Must be switched on shortly before takeoff and switched off when the aircraft vacates the runway.", "All the time the aircraft is flying.", "Must be switched on after engine start-up and switched off before engine shut-down."]
+    },
+    {
+      "id": 15966,
+      "section": "070-01",
+      "text": "The coverage angle of the red navigation / position light is:",
+      "options": ["110°", "70°", "140°", "220°"]
+    },
+    {
+      "id": 15967,
+      "section": "070-01",
+      "flagged": true,
+      "text": "During a night flight, an observer located in the cockpit, seeing an aircraft coming from right sight, will first see the :",
+      "options": ["red steady light", "white steady light", "green steady light", "green flashing light"]
+    },
+    {
+      "id": 15968,
+      "section": "070-01",
+      "text": "The regulatory green navigation light is located on the starboard wing tip, with a coverage angle of :",
+      "options": ["110°.", "220°.", "70°.", "140°."]
+    },
+    {
+      "id": 15969,
+      "section": "070-01",
+      "text": "A flight shall not be commenced unless the aeroplane carries sufficient fuel. The amount of fuel to be carried must permit, when the flight is conducted in accordance with the visual flight rules by day, flight to the aerodrome of intended landing, and after that, for at least ……. minutes at normal cruising altitude.",
+      "options": ["30", "90", "45", "60"]
+    },
+    {
+      "id": 15970,
+      "section": "070-01",
+      "text": "A flight shall not be commenced unless the aeroplane carries sufficient fuel. The amount of fuel to be carried must permit, when the flight is conducted in accordance with the visual flight rules by night, flight to the aerodrome of intended landing and thereafter for at least ……. minutes at normal cruising altitude.",
+      "options": ["45", "90", "60", "30"]
+    },
+    {
+      "id": 15971,
+      "section": "070-01",
+      "text": "Aeroplanes when operated as VFR flights shall be equipped with a means of measuring and displaying:\nI - magnetic heading\nII - the time in hours, minutes and seconds\nIII - pressure altitude\nIV - indicated airspeed\nV - aircraft attitude",
+      "options": ["I, II, III and IV", "I, II, III, IV and V", "I, II, IV and V", "I, II and III"]
+    },
+    {
+      "id": 15972,
+      "section": "070-01",
+      "text": "The master minimum equipment list (MMEL) is established by:",
+      "options": ["the manufacturer of the aircraft, and accepted by the authority", "the operator of the aircraft, and accepted by the manufacturer", "the manufacturer of the aircraft, but need not to be accepted by the authority", "the operator of the aircraft, and accepted by the authority"]
+    },
+    {
+      "id": 15973,
+      "section": "070-01",
+      "text": "In which manual is the Minimum Equipment List (MEL) included?",
+      "options": ["The Operations Manual.", "In the Operations Officer's documents.", "In the Maintenance Documents.", "The Aeroplane Flight Manual."]
+    },
+    {
+      "id": 15974,
+      "section": "070-01",
+      "text": "It's the pilot's responsibility to ensure that the aircraft is properly equipped for the planned flight. If there is any doubt the pilot should consult:",
+      "options": ["Minimum Equipment List.", "Certificate of Maintenance Review.", "Certificate of Airworthiness.", "Pilot's Operating Handbook."]
+    },
+    {
+      "id": 15975,
+      "section": "070-01",
+      "text": "The M.E.L. (Minimum Equipment List) is drawn up by :",
+      "options": ["the operator", "the aircraft state of registry", "the aircraft manufacturer's list", "the manufacturer"]
+    },
+    {
+      "id": 15976,
+      "section": "070-01",
+      "text": "The M.M.E.L. (Master Minimum Equipment List) is drawn up by :",
+      "options": ["the manufacturer.", "the aircraft state of registry", "the aircraft manufacturer's list", "the operator."]
+    },
+    {
+      "id": 15978,
+      "section": "070-01",
+      "text": "According to JAR-OPS, a life jacket is mandatory for each person on board a land aeroplane, when flying over water at a distance from the shore of more than:",
+      "options": ["50 NM", "400 NM", "100 NM", "200 NM"]
+    },
+    {
+      "id": 15979,
+      "section": "070-01",
+      "text": "On any flight the minimum safety equipment that must be carried is:",
+      "options": ["first aid kit, spare electrical fuses and a portabla fire extinguisher", "first aid kit, smoke hoods and a fire extinguisher", "first aid kit, life jackets for all on board and a fire extinguisher", "first aid kit, fire axe, portabla oxygen for all on board and a fire extinguisher"]
+    },
+    {
+      "id": 15980,
+      "section": "070-01",
+      "text": "For an aeroplane equipped with any radio communication equipment, this equipment shall provide for communication on the aeronautical emergency frequency …………….",
+      "options": ["121.5 MHz.", "121.5 kHz.", "212.5 MHz.", "125 MHz."]
+    },
+    {
+      "id": 15981,
+      "section": "070-01",
+      "text": "An aeroplane shall be equipped with:\nI - first-aid kits\nII - portable fire extinguishers\nIII - a seat for each person",
+      "options": ["I, II and III", "I and III", "II and III", "I and II"]
+    },
+    {
+      "id": 15982,
+      "section": "070-01",
+      "text": "You intend to operate a public transport aeroplane (land aeroplane) with 60 persons on board. The track will overfly water at 80 nautical miles from the shore. The minimum number of approved life jackets to be on board is;",
+      "options": ["60", "None if equipped with life rafts", "0", "66"]
+    },
+    {
+      "id": 15983,
+      "section": "070-02",
+      "text": "Which equipment broadcasts distinctive signals on designated frequencies when it has been manually or automatically activated (by impact) for determining the location?",
+      "options": ["Emergency Locator Transmitter", "Mode C Transponder", "Cockpit Voice Recorder", "Flight Data Recorder"]
+    },
+    {
+      "id": 15984,
+      "section": "070-02",
+      "text": "A situation wherein uncertainty exists as to the safety of an aircraft and its occupants is :",
+      "options": ["Uncertainty phase", "Emergency phase", "Alert phase", "Distress phase"]
+    },
+    {
+      "id": 15985,
+      "section": "070-02",
+      "text": "If an emergency situation which endangers the safety or security of the aeroplane or persons necessitates the taking of action which involves a violation of local regulations or procedures, the pilot-in-command;",
+      "options": ["shall take all precautions but notify the appropriate local authority without delay.", "shall take all precautions which does not involve a violation of local regulations or procedures", "shall take all precautions without notification to any authority", "shall never take any precaution which involves a violation of local regulations or procedures"]
+    },
+    {
+      "id": 15986,
+      "section": "070-02",
+      "text": "As defined for search and rescue purposes, the word ‘distress’ means specifically that:",
+      "options": ["An aircraft and its occupants are threatened by grave and imminent danger.", "There is apprehension concerning the safety of an aircraft and its occupants.", "An aircraft is subject to any level of emergency.", "An aircraft has lost contact with ATC and is late arriving at its destination."]
+    },
+    {
+      "id": 15987,
+      "section": "070-02",
+      "text": "Which of the following is a Search & Rescue Alerting phases?",
+      "options": ["Uncertainty phase, Alert phase, Distress phase", "Distress phase, Urgency phase, Alert phase", "Alert phase, Distress phase, Urgency phase", "Urgency phase, Uncertainty phase, Alert phase"]
+    },
+    {
+      "id": 15988,
+      "section": "070-02",
+      "text": "Which of the following is not a Search & Rescue Alerting phase?",
+      "options": ["Urgency phase.", "Distress phase.", "Uncertainty phase.", "Alert Phase."]
+    },
+    {
+      "id": 15989,
+      "section": "070-02",
+      "text": "Which of the followings is a situation wherein apprehension exists as to the safety of an aircraft or marine vessel, and of the persons on board.",
+      "options": ["Alert Phase", "Uncertainty Phase", "Emergency Phase", "Distress Phase"]
+    },
+    {
+      "id": 15990,
+      "section": "070-02",
+      "text": "Which of the followings is a situation wherein there is a reasonable certainty that a vessel or other craft, including an aircraft or a person, is threatened by grave and imminent danger and requires immediate assistance.",
+      "options": ["Distress Phase", "Uncertainty Phase", "Emergency Phase", "Alert Phase"]
+    },
+    {
+      "id": 15991,
+      "section": "070-02",
+      "text": "Which of the followings is a situation wherein doubt exists as to the safety of an aircraft or a marine vessel, and of the persons on board.",
+      "options": ["Uncertainty Phase", "Emergency Phase", "Distress Phase", "Alert Phase"]
+    },
+    {
+      "id": 15992,
+      "section": "070-02",
+      "text": "Whenever a distress transmission is intercepted by a pilot-in-command of an aircraft, the pilot shall:\nI - acknowledge the distress transmission\nII - record the position of the craft in distress if given\nIII - if possible take a bearing on the transmission",
+      "options": ["I, II and III", "I and III", "II and III", "I and II"]
+    },
+    {
+      "id": 15993,
+      "section": "070-03",
+      "text": "If a component becomes detached from an aircraft in flight, Nobody injuring on the ground, and not affecting the continuation of the aircraft’s flight, how would ICAO define this occurrence ?",
+      "options": ["An aircraft incident", "A fortuitous occurrence", "An occurrence to be reported", "An aircraft accident"]
+    },
+    {
+      "id": 15994,
+      "section": "070-03",
+      "text": "At the scene of an aircraft accident, a survivor has made a ground signal showing a large cross with angles of 90° between the arms of the cross. What does this mean?",
+      "options": ["Require medical assistance.", "This is our position.", "Require assistance.", "All survivors are uninjured."]
+    },
+    {
+      "id": 15996,
+      "section": "070-03",
+      "text": "The objective of the investigation of an accident or incident shall be the:",
+      "options": ["prevention of accidents or incidents", "prevention of accidents or incidents and to help the manufacturers in design", "prevention of accidents or incidents and to help the judges", "prevention of accidents or incidents and apportion blame or liability"]
+    },
+    {
+      "id": 15997,
+      "section": "070-03",
+      "text": "If an aircraft has an accident, involving injury to persons or damage to the aircraft, who is responsible for reporting the accident to the appropriate authority?",
+      "options": ["The pilot in command", "The police", "The ATC supervisor", "The ATC watch officer"]
+    },
+    {
+      "id": 15998,
+      "section": "070-03",
+      "text": "If a component becomes detached from an aircraft in flight, seriously injuring someone on the ground, but not affecting the continuation of the aircraft’s flight, how would ICAO define this occurrence ?",
+      "options": ["An aircraft accident", "A fortuitous occurrence", "An occurrence to be reported", "An aircraft incident"]
+    },
+    {
+      "id": 15999,
+      "section": "070-04",
+      "text": "Which of the following is correct with reference to which aircraft required a noise certificate and which are exempt?",
+      "options": ["All aeroplanes except certain STOL aircraft require a noise certificate.", "Training aircraft are exempt.", "All aircraft which can take off from hard dry runway is less than 610 metres are exempt.", "Non-public transport aircraft are exempt."]
+    },
+    {
+      "id": 16000,
+      "section": "070-04",
+      "text": "The noise abatement procedures specified by the operator should be;",
+      "options": ["for an aeroplane type, the same for all aerodromes.", "for all aeroplane types, the same for a specific aerodrome.", "different according to aerodromes and aeroplane types.", "for all aeroplane types, the same for all aerodromes."]
+    },
+    {
+      "id": 16001,
+      "section": "070-04",
+      "text": "Noise attenuation shall not be the determining factor in the designation of a runway, under the following circumstances;\nI - when cross wind component, including gust, exceeds 15 knots.\nII - when the tail wind component, including gust, exceeds 5 knots.\nIII - when the runway is not clear or dry.",
+      "options": ["I, II and III", "I and III", "I and II", "II and III"]
+    },
+    {
+      "id": 16002,
+      "section": "070-04",
+      "text": "Noise attenuation shall not be the determining factor in the designation of a runway, under the following circumstances :\n1. when cross wind component, including gust, exceeds 15 knots.\n2. when the tail wind component, including gust, exceeds 5 knots.\n3. when the runway is not clear or dry.\nThe combination regrouping all the correct statements is :",
+      "options": ["1,2,3.", "1, 3", "1, 2", "2, 3"]
+    },
+    {
+      "id": 16003,
+      "section": "070-04",
+      "text": "According to ICAO noise abatement procedures during landing:",
+      "options": ["shall not prohibit the use of reverse thrust.", "apply in case of visual approaches only.", "apply in case of instrument approaches only.", "prohibit the use of reverse thrust."]
+    },
+    {
+      "id": 16004,
+      "section": "070-04",
+      "text": "Who has the responsibility for establishing operating procedures for noise abatement purposes during instrument flight in compliance with ICAO PANS OPS 8168 the:",
+      "options": ["operator", "state of the operator", "state in which the aeroplane is operating", "commander"]
+    },
+    {
+      "id": 16005,
+      "section": "070-04",
+      "text": "In VMC, a runway should not be chosen as preferential for noise abatement procedures when:",
+      "options": ["It has no ILS or visual approach slope guidance", "Cross-wind component, including gusts, is 10 kt or less", "It has a tail wind regardless its magnitude", "Tail wind component, including gusts, is less than 4 kt"]
+    },
+    {
+      "id": 16006,
+      "section": "070-04",
+      "text": "In accordance with OPS 1, the noise abatement procedures specified by the operator should be:",
+      "options": ["an aeroplane type, the same for all aerodromes.", "for all aeroplane types, the same for all aerodromes.", "different according to aerodromes and aeroplane types.", "for all aeroplane types, the same for a specific aerodrome."]
+    },
+    {
+      "id": 16007,
+      "section": "070-05",
+      "text": "During the winter an aircraft is parked overnight prior to an early morning departure. The crew notice a slight glistening ice deposit on top of the wings or blades which appears translucent. Under these conditions;",
+      "options": ["the aircraft should be sprayed with de-icing fluid of the correct type", "there is no risk of ice accretion", "the take off performance of the aircraft will not be affected", "a longer starting procedure will be necessary to warm up the aircraft"]
+    },
+    {
+      "id": 16008,
+      "section": "070-05",
+      "text": "The commander shall not commence take-off in icing conditions;",
+      "options": ["unless the external surfaces are clear of any contamination", "unless the external surfaces are free from any ice contamination greater than 5 mm.", "unless the external surfaces are still covered with anti-icing fluid and the aircraft is not to be operated in forecasted icing conditions greater than moderate icing", "even if the ice contamination does not lead to an excedence of mass and balance limits"]
+    },
+    {
+      "id": 16009,
+      "section": "070-05",
+      "text": "An operator shall not operate an aircraft in expected or actual icing conditions unless;",
+      "options": ["the aircraft is certificated and equipped to operate in icing conditions", "the flight is planned so that a change of cruising level can be initiated rapidly", "the aircraft is sprayed with de-icing fluid before flight", "the aircraft is sprayed with anti-icing fluid before flight"]
+    },
+    {
+      "id": 16010,
+      "section": "070-05",
+      "text": "When taking-off, in winter conditions, the wing contamination by ice, snow or frost will cause the following effects;\nI - an increase in the take-off distance\nII - a diminution of the take-off run\nIII - an increase in the stalling speed\nIV - a diminution of the stalling speed\nV - a diminution of the climb gradient\nThe combination regrouping all the correct statements is;",
+      "options": ["I, III and V", "II, IV and V", "I, II and III", "II, III and V"]
+    },
+    {
+      "id": 16011,
+      "section": "070-05",
+      "text": "If an aeroplane is certificated for 6 passengers, how many hand-held fire extinguishers are required to be carried in the aeroplane?",
+      "options": ["1.", "It depends upon the max take-off mass permitted.", "3.", "Nil."]
+    },
+    {
+      "id": 16013,
+      "section": "070-05",
+      "text": "A class A fire is a fire of;",
+      "options": ["solid material, generally of organic nature", "liquid or liquefiable solid.", "electrical origin", "metal or gas or chemical (special fires)"]
+    },
+    {
+      "id": 16014,
+      "section": "070-05",
+      "text": "A class B fire is a fire of;",
+      "options": ["liquid or liquefiable solid", "solid material usually of organic nature", "special fire; metal, gas, chemical product", "electrical source fire"]
+    },
+    {
+      "id": 16015,
+      "section": "070-05",
+      "text": "A fire occurs in a wheel and immediate action is required to extinguish it. The safest extinguishant to use is;",
+      "options": ["dry powder", "carbon dioxide", "water", "foam"]
+    },
+    {
+      "id": 16016,
+      "section": "070-05",
+      "text": "At least one of the following hand fire extinguishers must be conveniently located on the flight deck;",
+      "options": ["a halon fire-extinguisher or equivalent", "a powder fire-extinguisher.", "a water fire-extinguisher", "a foam fire-extinguisher"]
+    },
+    {
+      "id": 16017,
+      "section": "070-05",
+      "text": "The correct statement about extinguishing agents on board aeroplanes is;",
+      "options": ["Halon is an effective extinguishing agent for use in aeroplanes", "A powder extinguisher is suitable for extinguishing a cockpit fire", "Burning cargo in a cargo-aeroplane is usually extinguished by using carbon dioxide", "Water may only be used for minor fires"]
+    },
+    {
+      "id": 16018,
+      "section": "070-05",
+      "text": "A halon fire-extinguisher should be used on a fire of ;\n1.paper , fabric , plastic.\n2.flammable liquids.\n3.flammable gases.\n4.metals.\nThe combination regrouping all the correct statements is ;",
+      "options": ["1 , 2 , 3.", "1 , 2 , 3 , 4.", "2 , 3 , 4.", "1 , 2 , 4."]
+    },
+    {
+      "id": 16021,
+      "section": "070-05",
+      "text": "A fire occurs in a wheel and immediate action is required to extinguish it. The safest extinguishant to use is ;",
+      "options": ["dry powder.", "CO2 ( carbon dioxide ).", "water.", "foam."]
+    },
+    {
+      "id": 16022,
+      "section": "070-05",
+      "text": "H2O extinguishers are fit to fight ;",
+      "options": ["seating fabric , wood.", "metals , flammable gases , chemical products.", "flammable liquids.", "electrical equipment."]
+    },
+    {
+      "id": 16023,
+      "section": "070-05",
+      "text": "In case of an carburettor fire while on ground you ;",
+      "options": ["carry out a dry cranking.", "carry out a damp cranking.", "fight the nozzle fire with a water fire-extinguisher.", "pull the fire shut off handle"]
+    },
+    {
+      "id": 16024,
+      "section": "070-05",
+      "text": "A water fire-extinguisher can be used on a fire of:",
+      "options": ["solids (fabric, carpet,...)", "metals (sodium,...)", "liquids (ether, gasoline,...)", "gas"]
+    },
+    {
+      "id": 16025,
+      "section": "070-05",
+      "text": "A halon fire-extinguisher should be used on a fire of:\n1. paper, fabric, plastic\n2. flammable liquids\n3. flammable gases\n4. metals (sodium,...)\nThe combination regrouping all the correct statements is:",
+      "options": ["1, 2, 3", "1, 2, 3, 4", "2, 3, 4", "1, 2, 4"]
+    },
+    {
+      "id": 16026,
+      "section": "070-05",
+      "text": "Class B fire is a fire of:",
+      "options": ["liquid or liquefiable solid", "solid material usually of organic nature", "metal, gas, chemical product fire", "electrical source fire"]
+    },
+    {
+      "id": 16027,
+      "section": "070-05",
+      "text": "While approaching the runway, the tower informs you about the presence of a “microburst”. You will expect to encounter ;",
+      "options": ["windshears (vertical and horizontal)", "convection motion of air mass.", "supercooled water.", "wake turbulence ."]
+    },
+    {
+      "id": 16028,
+      "section": "070-05",
+      "text": "Which parameter will change first , when penetrating an horizontal windshear ?",
+      "options": ["Indicated airspeed.(IAS)", "Vertical speed.", "Pitch angle.", "Groundspeed.(GS)"]
+    },
+    {
+      "id": 16029,
+      "section": "070-05",
+      "text": "One of the main characteristics of windshear is that it ;",
+      "options": ["can occur at any altitude in both the vertical and horizontal planes.", "occurs only at a low altitude ( 2000 ft ) and never in the horizontal plane.", "can occur at any altitude and only in the horizontal plane.", "occurs only at a low altitude ( 2000 ft ) and never in the vertical plane."]
+    },
+    {
+      "id": 16030,
+      "section": "070-05",
+      "text": "An aircraft which experiences a headwind of 40 kt while making its way towards the centre of a microburst may expect , when crossing the microburst , to face a windshear of ;",
+      "options": ["80 kt.", "40 kt.", "20 kt.", "60 kt."]
+    },
+    {
+      "id": 16031,
+      "section": "070-05",
+      "text": "In case of an unexpected encounter with windshear , you will ;\n1. set the maximum take-off thrust.\n2. increase the pitch-up attitude up to the limit of stall warning\n3. retract gear and flaps , if they are extended.\n4. keep gear and flaps in current configuration\n5. try to reach the maximum lift-to-drag ratio.\nThe combination regrouping all the correct statements is ;",
+      "options": ["1 , 2 , 4", "2 , 3", "3 , 5", "1 , 3 , 5"]
+    },
+    {
+      "id": 16032,
+      "section": "070-05",
+      "text": "The wake turbulence ;",
+      "options": ["starts during rotation and stops as soon as the aeroplane’s wheel touch the ground.", "starts when the aeroplane reaches a height of 300 ft above the ground and stops when it crosses this height", "starts as soon as the aeroplane is running for take-off and stops as soon as it has come to a stop at landing.", "starts when pulling out the drag devices and stops when retracting the drag devices."]
+    },
+    {
+      "id": 16033,
+      "section": "070-05",
+      "text": "Wake turbulence category HEAVY refers to aircraft which have a maximum certificated take-off mass of ;",
+      "options": ["136.000 kg or more.", "186.000 kg or more.", "between 136.000 kg and 186.000 kg.", "146.000 kg or more."]
+    },
+    {
+      "id": 16034,
+      "section": "070-05",
+      "text": "Regarding wake turbulence , what is the ICAO minimum non-radar separation time for a LIGHT aircraft behind a MEDIUM or HEAVY aeroplane on approach to the same runway ?",
+      "options": ["3 minutes.", "5 minutes.", "4 minutes.", "2 minutes."]
+    },
+    {
+      "id": 16035,
+      "section": "070-05",
+      "text": "At a given configuration, the wake turbulence of an aeroplane is greater when the aeroplane is;",
+      "options": ["heavy at low airspeed", "heavy at high airspeed", "light at low airspeed", "light at high airspeed"]
+    },
+    {
+      "id": 16036,
+      "section": "070-05",
+      "text": "DOC 4444 ( ICAO ) establishes, that wake turbulence separation minima shall be based on a grouping of aircraft types into three categories according to the maximum certificated take-off mass. Heavy (H) Category, are all aircraft types of;",
+      "options": ["136 000 kg or more", "146 000 kg or more", "135 000 kg or more", "less than 136 000 kg but more than 126 000 kg"]
+    },
+    {
+      "id": 16037,
+      "section": "070-05",
+      "text": "For purpose of wake turbulence separation, what is the ICAO minimum separation time if a light aeroplane (7000 kg or less) is following a medium aeroplane (less than 136000 kg but more than 7000 kg) on the approach to landing?",
+      "options": ["3 minutes", "2 minutes", "5 minutes", "4 minutes"]
+    },
+    {
+      "id": 16038,
+      "section": "070-05",
+      "text": "For the purpose of wake turbulence separation, what is the minimum separation time that is permitted when a light aircraft is taking off behind a heavy aircraft from an intermediate part of the same runway?",
+      "options": ["3 minutes", "5 minutes", "4 minutes", "2 minutes"]
+    },
+    {
+      "id": 16039,
+      "section": "070-05",
+      "text": "In a light crosswind (approximately 5 kt) from the right behind an aeroplane taking off;",
+      "options": ["the right wake vortex remains aproximately on the runway", "the runway will be clear of any wake turbulence", "the left wake vortex remains approximately on the runway", "the right and left wake vortices remain approximately on the runway"]
+    },
+    {
+      "id": 16040,
+      "section": "070-05",
+      "text": "In accordance with ICAO and PANS RAC procedures, which letter should be entered into a flight plan to denote an aeroplane which has a weight of less than 136000 kg but greater than 7000 kg;",
+      "options": ["M", "L", "S", "H"]
+    },
+    {
+      "id": 16041,
+      "section": "070-05",
+      "text": "Regarding wake turbulence, what are the ICAO minimum radar separation distance and the minimum non-radar separation time for a MEDIUM aircraft behind a HEAVY aeroplane on approach to the same runway?",
+      "options": ["9.3 km (5 NM) and 2 minutes", "7.4 km (4 NM) and 2 minutes", "9.3 km (5 NM) and 3 minutes", "11.1 km (6 NM) and 3 minutes"]
+    },
+    {
+      "id": 16042,
+      "section": "070-05",
+      "text": "The greatest wake turbulence occurs when the generating aircraft is;",
+      "options": ["Large, heavy, at low speed.", "Small, light, at low speed.", "Large, heavy, at high speed.", "Small, light, at high speed."]
+    },
+    {
+      "id": 16043,
+      "section": "070-05",
+      "text": "The main cause of wake turbulence is the result of;\nI - An aerodynamic effect (wing tip vortices)\nII - The engines power setting\nIII - The position of the high lift devices (of the flaps, etc.)\nThe combination regrouping all the correct statements is;",
+      "options": ["I", "III", "II and III", "I, II and III"]
+    },
+    {
+      "id": 16044,
+      "section": "070-05",
+      "text": "The time needed for the dissipation of a turbulent wake created by a wide-body aircraft during take-off is about;",
+      "options": ["3 minutes", "1 minute", "10 minutes", "30 seconds"]
+    },
+    {
+      "id": 16045,
+      "section": "070-05",
+      "text": "The wake turbulence;",
+      "options": ["starts during rotation and stops as soon as the aeroplane’s wheel touch the ground", "starts when the aeroplane reaches a height of 300 ft above the ground and stops when it crosses this height before landing", "starts as soon as the aeroplane is running for take-off and stops as soon as it has come to a stop at landing", "starts when pulling out the drag devices and stops when retracting the drag devices"]
+    },
+    {
+      "id": 16046,
+      "section": "070-05",
+      "text": "Tip vortices which are responsible for wake turbulence appear as soon as the following is established;",
+      "options": ["lift", "spin up", "lift destruction", "drag"]
+    },
+    {
+      "id": 16047,
+      "section": "070-05",
+      "text": "To avoid wake turbulence, when departing behind a larger aircraft, the pilot should manoeuvre;",
+      "options": ["above and upwind from the larger aircraft", "above and downwind from the larger aircraft", "below and downwind from the larger aircraft", "below and upwind from the larger aircraft"]
+    },
+    {
+      "id": 16048,
+      "section": "070-05",
+      "text": "Wake turbulence should be taken into account when;",
+      "options": ["a much heavier aeroplane has landed just previously on the same runway, a light crosswind condition exist and all high-lift devices are being used", "a preceding aeroplane has performed low altitude high roll rate rolling manoeuvres over the runway", "when just before the landing a much lighter aeroplane has landed with a strong crosswind on a long runway", "during cruise the vertical separation is reduced to 1000 ft"]
+    },
+    {
+      "id": 16050,
+      "section": "070-05",
+      "text": "Before departure the commander of an aircraft must brief all passengers on the:",
+      "options": ["location of all exits and the operation of any safety equipment that is carried", "the weather en-route and at the destination", "the operation of the seat belts and life jackets", "location of all exits and the procedure to be followed in the event of ditching or forced landing"]
+    },
+    {
+      "id": 16051,
+      "section": "070-05",
+      "text": "According to SHT-OPS , a life jacket is mandatory for each person on board a land aeroplane , when flying over water at a distance from the shore of more than ;",
+      "options": ["50 NM.", "400 NM.", "100 NM.", "200 NM."]
+    },
+    {
+      "id": 16052,
+      "section": "070-05",
+      "text": "In case of a ditching , the cabin attendants should ;\n1. evacuate women and children first.\n2. have the passengers embark directly in the life rafts.\n3. prevent passenger movements which may impede the airplane’s flotation ability.\n4. ensure the complete evacuation of the airplane.\nThe combination regrouping all the correct statements is ;",
+      "options": ["2 , 3 , 4.", "1 , 4.", "2 , 3.", "1 , 2 , 3 , 4."]
+    },
+    {
+      "id": 16053,
+      "section": "070-05",
+      "text": "A runway covered with more than 3 mm thick water , is said to be ;",
+      "options": ["contaminated.", "wet.", "flooded.", "damp."]
+    },
+    {
+      "id": 16054,
+      "section": "070-05",
+      "text": "A runway is considered to be contaminated when its surface is covered more than ;",
+      "options": ["25% with compacted snow.", "10% with ice.", "20% with melted snow.", "15% with melted snow."]
+    },
+    {
+      "id": 16055,
+      "section": "070-05",
+      "text": "In the SHT-OPS , a runway is considered damp when ;",
+      "options": ["its surface is not dry , and when surface moisture does not give it a shiny appearance.", "surface moisture gives it a shiny appearance.", "it is covered with a film of water of less than 1 mm.", "it is covered with a film of water of less than 3 mm."]
+    },
+    {
+      "id": 16056,
+      "section": "070-05",
+      "text": "One of the primary factors causing dynamic hydroplaning is ;",
+      "options": ["the depth of the standing water on the runway.", "the aircraft’s weight.", "the strength of the headwind.", "the strength of the crosswind."]
+    },
+    {
+      "id": 16057,
+      "section": "070-05",
+      "text": "A braking action of 0.25 and below reported on a SNOWTAM is ;",
+      "options": ["poor.", "good.", "unreliable.", "medium."]
+    },
+    {
+      "id": 16058,
+      "section": "070-05",
+      "text": "A runway is considered wet when;\nI - it is covered with a quantity of water or loose or slushy snow less than or equal to the equivalent of 3 mm of water\nII - the amount of surface moisture is sufficient to modify its colour but does not give it a shiny appearance\nIII - the amount of surface moisture is sufficient to make it reflective, but does not create large stagnant sheets of water\nIV - it bears stagnant sheets of water\nThe combination regrouping all the correct statements is;",
+      "options": ["I and III", "I, II and III", "IV", "I and II"]
+    },
+    {
+      "id": 16059,
+      "section": "070-05",
+      "text": "A runway is referred to as contaminated when more than 25% of the required runway surface is covered with the one of the following elements;\nI - a water film sufficiently thick to give a shiny appearance to the runway\nII - a water film or loose or slushy snow equivalent to more than 3 mm of water\nIII - compacted snow (a solid mass which may not be compacted further)\nIV - ice, including wet ice\nV - moist grass\nThe combination regrouping all the correct statements is;",
+      "options": ["II, III and IV", "I, II, III and IV", "I, III, IV and V", "I, III and IV"]
+    },
+    {
+      "id": 16060,
+      "section": "070-05",
+      "text": "When there is a risk of hydroplaning the pilot of an aeroplane;",
+      "options": ["should make a positive landing and apply maximum reverse thrust", "must wait for landing until the risk for hydroplaning is no longer existing", "should use maximum reverse thrust, however should start to brake below the hydroplaning speed", "should use normal landing, braking and reverse technique"]
+    },
+    {
+      "id": 16159,
+      "section": "070-05",
+      "flagged": true,
+      "text": "Complete the following statement.The .....X..... wake turbulence is generated by a .....Y..... aircraft flying at .....Z..... airspeed.",
+      "options": ["greatest, heavy, slow", "least, light, high", "least, heavy, slow", "greatest, light, high"]
+    },
+    {
+      "id": 19317,
+      "section": "070-05",
+      "text": "ABCF fire extinguisher;",
+      "options": ["is quite safe to use in an enclosed cockpit if the cockpit is subsequently ventilated.", "gives off highly toxic fumes and should never be used in an enclosed cockpit.", "is quite safe to use in an enclosed cockpit.", "is only suitable for wood or fabric fires and is, therefore, of no use in a cockpit."]
+    },
+    {
+      "id": 19318,
+      "section": "070-05",
+      "text": "Aquaplaning speed;",
+      "options": ["can be calculated, in knots, by multiplying the square root of the tyre pressure in PSI by nine.", "Must be measured in miles per hour.", "increases as the depth of water on the ground increases.", "increases as the depth of tread on the tyres reduces."]
+    }
+  ]
+}

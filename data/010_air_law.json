@@ -1,0 +1,1079 @@
+{
+  "subject_code": "010",
+  "subject_name": "Air Law",
+  "source": "ATPL TV - PPL Turkey (English) Exam Report HAVA HUKUKU (177 soru)",
+  "answer_convention": "Şıklar kaynaktaki sırayla kaydedildi; ilk şık (ord=1, label A) doğru cevaptır.",
+  "sections": {
+    "010-01": "International Law: Conventions, Agreements, Organizations",
+    "010-02": "Aircraft Nationality and Registration Marks",
+    "010-03": "Rules of The Air",
+    "010-04": "Personnel Licensing",
+    "010-05": "Aerodromes",
+    "010-06": "Air Traffic Services and Management",
+    "010-07": "Aviation Safety and Security"
+  },
+  "questions": [
+    {
+      "id": 14227,
+      "section": "010-01",
+      "text": "According to the Chicago Convention which of the following documents, amongst others, are required to be carried in the aircraft on an international flight?",
+      "options": ["Crew licences, journey log book and, if applicable, the cargo manifest and a detailed declaration of the cargo", "Certificate of Airworthiness (C of A), Certificate of Registration (C of R) and crew passports", "Crew licences and log books, journey log book and, if applicable, Radio Station Licence", "Passports for all crew and passengers, Certificate of Airworthiness (C of A), Certificate of Registration (C of R)"]
+    },
+    {
+      "id": 14228,
+      "section": "010-01",
+      "text": "An airplane is planning a flight that will require a technical landing in a neighboring state. Which freedom of the air will be exercised?",
+      "options": ["2nd freedom", "4th freedom", "3rd freedom", "1st freedom"]
+    },
+    {
+      "id": 14229,
+      "section": "010-01",
+      "text": "Can a state search a visiting aircraft from another contracting state without permission?",
+      "options": ["Yes", "Only if it is reasonably suspected that the aircraft is carrying inadmissible passengers", "Only if a crime is reasonably suspected", "No"]
+    },
+    {
+      "id": 14230,
+      "section": "010-01",
+      "text": "The aircraft commander, when he has reasonable grounds to believe that a person has commited or is about to commit, on board the aircraft, an offense against penal law",
+      "options": ["may deliver such person to the competent authorities", "may require the assistance of passengers to restrain such person", "may request such person to disembark", "may not require or authorise the assistance of other crew members"]
+    },
+    {
+      "id": 14231,
+      "section": "010-01",
+      "text": "The Chicago Convention recognises that:",
+      "options": ["Every Contracting State has complete and exclusive sovereignty over the airspace above its territory", "Every Contracting State has complete and exclusive sovereignty over the airspace above its territorial waters", "Every Contracting State has complete but not exclusive sovereignty over the airspace above its territory", "Every State has sovereignty over airspace above its territory up to FL660"]
+    },
+    {
+      "id": 14232,
+      "section": "010-01",
+      "text": "The convention signed by the states and moved by a desire to endure adequate compensation for persons who suffer damage caused on the surface by foreign aircraft is :",
+      "options": ["the Rome Convention", "the Paris Convention", "the Warsaw Convention", "the Tokyo Convention"]
+    },
+    {
+      "id": 14233,
+      "section": "010-01",
+      "text": "What is the name of the Convention which is commonly known as “The Chicago Convention” ?",
+      "options": ["The Convention on International Civil Aviation", "The Convention on International Civil Transportation", "The ICAO Convention of Civil Aviation", "The Convention of Civil Commercial Aviation"]
+    },
+    {
+      "id": 14234,
+      "section": "010-01",
+      "text": "What organisation will take over the responsibilities and role of the JAA?",
+      "options": ["EASA", "EU", "ECAC", "IATA"]
+    },
+    {
+      "id": 14235,
+      "section": "010-01",
+      "text": "Where would a pilot find details of differences between ICAO Standards and Recommended Practices and National Regulations of a state?",
+      "options": ["Aeronautical Information Publication (AIP) of that state.", "General Aviation Safety Sense Publications.", "IATA Airport Handling Manual", "Aeronautical Information Circulars (AIC) of that state."]
+    },
+    {
+      "id": 14236,
+      "section": "010-01",
+      "text": "Which air rights are covered by the freedom of flying over the territory without landing of another Member State?",
+      "options": ["1th freedom", "4th freedom", "3th freedom", "2th freedom"]
+    },
+    {
+      "id": 14237,
+      "section": "010-01",
+      "text": "Which body is responsible for ensuring that an aircraft operating in a state's sovereign airspace complies with the rules and regulations which prevail in that airspace?",
+      "options": ["The state in whose sovereign airspace the aircraft is operating.", "The state which issued the licence held by the pilot of the aircraft.", "The state in which the aircraft is registered.", "The state which issued the current Certificate of Airworthiness for the aircraft."]
+    },
+    {
+      "id": 14238,
+      "section": "010-01",
+      "text": "Which of the following Annexes to the Chicago convention contains international standards and recommended practices for air traffic services (ATS)?",
+      "options": ["Annex 11", "Annex 6", "Annex 10", "Annex 14"]
+    },
+    {
+      "id": 14239,
+      "section": "010-01",
+      "text": "Which of the following is obligating for members of ICAO ?",
+      "options": ["ICAO must be informed about differences from the standards in any of the Annexes to the convention", "ICAO must be informed about changes in the national regulations", "ICAO shall approve the pricing of tickets on international airline connections", "ICAO must be informed about new flight crew licenses and any suspended validity of such licenses"]
+    },
+    {
+      "id": 14240,
+      "section": "010-01",
+      "text": "Which states can join EASA as full members?",
+      "options": ["All European Union States.", "All ICAO Contracting States.", "All JAA States.", "Selected European States."]
+    },
+    {
+      "id": 14241,
+      "section": "010-02",
+      "text": "The C of R (Registration) must be:",
+      "options": ["Carried in the aircraft at all times and must be in the original form issued", "Held in safe-keeping at the aerodrome of departure", "Signed by the Pilot-in-Command", "Carried in the aircraft at all times and may be a copy of the original"]
+    },
+    {
+      "id": 14242,
+      "section": "010-02",
+      "text": "The Certificate of Registration must be:",
+      "options": ["Carried in the aircraft at all times and must be in the original form issued", "Held in safe-keeping at the aerodrome of departure", "Signed by the Pilot-in-Command", "Carried in the aircraft at all times and may be a copy of the original"]
+    },
+    {
+      "id": 14243,
+      "section": "010-02",
+      "text": "What do nationality and registration marks consist of?",
+      "options": ["Numbers or letters or a combination.", "Letters only.", "It must be a combination of numbers and letters.", "Numbers only."]
+    },
+    {
+      "id": 14244,
+      "section": "010-02",
+      "text": "What ICAO Annex covers the Airworthiness of Aircraft?",
+      "options": ["Annex 8", "Annex 14", "Annex 12", "Annex 9"]
+    },
+    {
+      "id": 14245,
+      "section": "010-02",
+      "text": "Where is the validity of a C of A specified?",
+      "options": ["In the C of A itself", "In the Certificate of Registration (C of R)", "In the Aircraft Flight Manual", "In the national AlP"]
+    },
+    {
+      "id": 14246,
+      "section": "010-02",
+      "text": "Which of the following can not be used as registration markings?",
+      "options": ["Emergency signals in Morse Code.", "All 3-letter repetitive markings like LLL, SSS, YYY.", "3 letter combinations used as code of signals (prescribed by ITU).", "4 letter Q-codes."]
+    },
+    {
+      "id": 14247,
+      "section": "010-02",
+      "text": "Which of the following nationality and registration markings would be permitted?",
+      "options": ["G-YLLL.", "AS2PAN.", "A81TTT.", "N-YQNH."]
+    },
+    {
+      "id": 14248,
+      "section": "010-02",
+      "text": "Which State is responsible for issuing the registration mark of an aircraft?",
+      "options": ["The State of Registration", "The State of the Operator", "The State of Design", "The State of Manufacture"]
+    },
+    {
+      "id": 14249,
+      "section": "010-02",
+      "text": "Who is responsible for the issue of a Certificate of Airworthiness?",
+      "options": ["The authority of the state of registration", "The operator", "ICAO", "The JAA"]
+    },
+    {
+      "id": 14250,
+      "section": "010-03",
+      "text": "You are flying a Turkey registered aircraft over Germany. Whose Rules of the Air must you obey?",
+      "options": ["Germany's", "JAA's", "Turkey’s", "ICAO's"]
+    },
+    {
+      "id": 14251,
+      "section": "010-03",
+      "text": "A continuous red light directed to an aircraft in flight from an aerodrome means:",
+      "options": ["Give way to other aircraft and continue circling.", "Proceed to finals after completion of current orbit.", "Do not land, wait for permission.", "Do not land, aerodrome unavailable for landing."]
+    },
+    {
+      "id": 14252,
+      "section": "010-03",
+      "text": "A hand-held signalling lamp is to be held in Control Towers. What colours must it be capable of signalling?",
+      "options": ["White, red or green", "White, red, green or blue", "Green or red only", "White or red only"]
+    },
+    {
+      "id": 14253,
+      "section": "010-03",
+      "text": "A marshaller will ask the pilot to apply parking brakes by following signals:",
+      "options": ["Raise arm and hand, with fingers extended, horizontally in front of body, then clench fist.", "Horizontally moving his hands, fingers extended, palms toward ground", "Crossing arms extended above his head", "Arms down, palms facing inwards, moving arms from extend position inwards."]
+    },
+    {
+      "id": 14254,
+      "section": "010-03",
+      "text": "A single-engine piston and a turboprop aeroplane are approaching each other opposite at the same altitude. Which aeroplane has to change its track to avoid a collision?",
+      "options": ["Both aircraft have to alter their tracks to the right", "The turboprop aircraft has to give way to the single-engine piston aircraft", "The single-engine piston aircraft has to give way to the turboprop aircraft", "Both aircraft have to alter their tracks to the left"]
+    },
+    {
+      "id": 14256,
+      "section": "010-03",
+      "text": "An A/C marshaller with his right arm down and his left arm repeatedly moved upwards and backwards is indicating to the pilot of an aircraft to:",
+      "options": ["Open up the starboard engine/s or turn to port.", "Open up the starboard engine/s or turn to stbd.", "Proceed under guidance of another marshaller.", "Increase the RPM of the port engine."]
+    },
+    {
+      "id": 14257,
+      "section": "010-03",
+      "text": "An airborne flight plan must be submitted:",
+      "options": ["10 minutes before the intended point of entry into a CTA or an airway.", "30 minutes before the intended point of entry into a CTA or an airway.", "15 minutes before the intended point of entry into a CTA or an airway.", "60 minutes before the intended point of entry into a CTA or an airway."]
+    },
+    {
+      "id": 14258,
+      "section": "010-03",
+      "text": "An aircraft shall display, if so equipped, an anti-collision light:",
+      "options": ["On the ground when the engines are running", "While taxiing, but not when it’s being towed;", "Outside the daylight-period in flight, but not on the ground when it is being towed;", "Outside the daylight-period at engine start. During the daylight-period this is not applicable;"]
+    },
+    {
+      "id": 14260,
+      "section": "010-03",
+      "text": "Except when a clearance is obtained from an ATC unit, VFR flights shall not take off or land at an aerodrome within a CTR or enter the aerodrome traffic zone or traffic pattern when the;",
+      "options": ["ceiling is less than 1.500 ft or the ground visibility is less than 5000 m.", "ceiling is less than 2.000 ft or the ground visibility is less than 5000 m.", "ceiling is less than 1.000 ft or the ground visibility is less than 8 km.", "ceiling is less than 1.000 ft or the ground visibility is less than 5000 m."]
+    },
+    {
+      "id": 14264,
+      "section": "010-03",
+      "text": "If aero plane 'X' is converging with aero plane 'Y' from the rear and is within 70° of aero plane 'Y's extended center line, aero plane 'X' is considered to be in an overtaking position and must pass to:",
+      "options": ["The right of aero plane 'Y'.", "The furthest side of aero plane 'Y'.", "The closest side of aero plane 'Y'.", "The left of aero plane 'Y'."]
+    },
+    {
+      "id": 14266,
+      "section": "010-03",
+      "text": "If the actual or forecast conditions give the visibility and cloud base as equal to or in excess of the specified minimum weather provisions and the distance from cloud is seen also to be above specified minima, the prevailing weather conditions are referred to as:",
+      "options": ["VMC.", "VFR.", "SMWP.", "IMC."]
+    },
+    {
+      "id": 14267,
+      "section": "010-03",
+      "text": "If the visibility, distance from cloud and cloud ceiling are equal to or better than the specified minima, ICAO defines such conditions as:",
+      "options": ["VMC or Visual Meteorological Conditions.", "CAVOK or Cloud and Visibility OK.", "RVR or Runway Visual range.", "IMC or Instrument Meteorological Conditions."]
+    },
+    {
+      "id": 14268,
+      "section": "010-03",
+      "text": "If two aircraft are approaching head on:",
+      "options": ["Both aircraft should turn right regardless of aircraft type", "The larger aircraft should give way by turning right", "A powered aircraft must give way to a glider by turning right", "Both aircraft must turn left"]
+    },
+    {
+      "id": 14269,
+      "section": "010-03",
+      "text": "If you overtake another aircraft, you must overtake to the:",
+      "options": ["Right of the other aircraft in the air, but to its left on the ground.", "Right of the other aircraft, both in the air and on the ground.", "Left of the other aircraft, both in the air and on the ground.", "Left of the other aircraft in the air, but to its right on the ground."]
+    },
+    {
+      "id": 14270,
+      "section": "010-03",
+      "text": "If, during a daytime flight an aircraft commander noticed that the aircraft's anti-collision light had failed, the correct course of action would be to:",
+      "options": ["Continue with daytime operations provided the light is repaired at the earliest opportunity.", "Have the light repaired prior to completion of the next day's 'Check A'.", "Complete the flight, at which time the aircraft must not be flown again until the light is repaired.", "Land as soon as possible and have the light repaired."]
+    },
+    {
+      "id": 14272,
+      "section": "010-03",
+      "text": "Interception\nIf radio contact is established during interception but communication in a common language is not possible, attempts shall be made to convey instructions and essential information by using standard phrases and pronunciations, transmitting each phrase twice.\nThe standard phrase with the meaning \"Descend for landing\" for use by INTERCEPTING aircraft is:",
+      "options": ["DESCEND DEE-SEND", "YOU LAND YOU-LAAND", "DESCEND FOR LAND DEE-SEND FOR LAAND", "LET DOWN LET-DAUN"]
+    },
+    {
+      "id": 14273,
+      "section": "010-03",
+      "text": "No aircraft is allowed to fly over a congested area below 1000ft above the highest fixed obstacle within 600 meters of the aircraft, except:",
+      "options": ["When taking off or landing.", "When orbiting to try and establish position.", "When practicing a forced landing under the direction of a qualified flying instructor.", "During a low level navigation exercise."]
+    },
+    {
+      "id": 14274,
+      "section": "010-03",
+      "text": "The aircraft which has the right of way should maintain:",
+      "options": ["Heading and speed.", "Heading, height and speed.", "Height and speed.", "Heading and height."]
+    },
+    {
+      "id": 14275,
+      "section": "010-03",
+      "text": "The highest priority for landing has:",
+      "options": ["an aircraft that is emergency landing.", "an Air Ambulance carrying a very sick person needing immediate medical attention,", "a military aircraft.", "an aircraft on a diplomatic flight (Head of state),"]
+    },
+    {
+      "id": 14276,
+      "section": "010-03",
+      "text": "The PIC of an aircraft during the course of a night flight notices that a navigation light has failed. She/he should:",
+      "options": ["Land as soon as is practicably possible unless given permission to continue to the planned destination by an appropriate Air Traffic Control Unit.", "Continue to the planned destination, enter the defect in the technical log which must be repaired before the next flight.", "Establish that an all-round anti-collision light is still functional and if so, select the navigation lights to 'off' and continue to the planned destination.", "Transmit an Urgency Message on the RTF frequency in use and continue with the plan flight to the first point of landing."]
+    },
+    {
+      "id": 14277,
+      "section": "010-03",
+      "text": "Two aircraft are closing on a constant relative bearing almost head on, both aircraft should avoid collision by:",
+      "options": ["Turning right.", "Turning in the directing that will best facilitate collision avoidance.", "Turning either left or right.", "Turning left."]
+    },
+    {
+      "id": 14278,
+      "section": "010-03",
+      "text": "VFR Flights shall NOT take of or land at an aerodrome within a Control Zone (CTR), or enter the Aerodrome Traffic Zone (ATZ) or traffic pattern:",
+      "options": ["When the ceiling is less than 450 m (1500 feet) or when the ground visibility is less than 5000 m.", "When the ceiling is less than 450 m (1500 feet) or when the ground visibility is less than 8 km.", "When the ceiling is less than 300 m (1000 feet) or when the ground visibility is less than 8 km.", "When the ceiling is less than 300 m (1000 feet) or when the ground visibility is less than 5000 m."]
+    },
+    {
+      "id": 14279,
+      "section": "010-03",
+      "text": "What action should a pilot take if he suffers radio communications failure during a VFR flight in VMC?",
+      "options": ["Continue to fly in VMC, land at the nearest suitable aerodrome and report his arrival to his destination airfield.", "Carry out the radio failure procedure in the RAF Flight Information Handbook and await the arrival of a Shepherd aircraft.", "Fly to the nearest aerodrome, orbit on the dead side of the circuit and await a steady green from the control tower.", "Continue to his destination, transmitting blind and attempting to avoid IMC."]
+    },
+    {
+      "id": 14280,
+      "section": "010-03",
+      "text": "What are meteorological conditions of VFR flight?",
+      "options": ["ceiling is at or above 1.500 ft and the ground visibility is not less than 5 km.", "ceiling is less than 1.500 ft or the ground visibility is more than 5 km", "ceiling is more than 1.500 ft or the ground visibility is less than 3 km.", "when the; ceiling is less than 2.000 ft or the ground visibility is more than 5 km."]
+    },
+    {
+      "id": 14281,
+      "section": "010-03",
+      "text": "What does ICAO Annex 2 concern itself with?",
+      "options": ["Rules of the Air", "Aerodromes", "Facilitation", "Personnel Licensing"]
+    },
+    {
+      "id": 14282,
+      "section": "010-03",
+      "text": "What is the basic presumption about VFR flight?",
+      "options": ["That the flight will be flown in Visual Meteorological Conditions", "That the flight will not take place above FL 180", "That the flight will only take place in Class F or G airspace", "That the pilot holds the correct rating to allow the aeroplane to be flown in VFR"]
+    },
+    {
+      "id": 14283,
+      "section": "010-03",
+      "text": "What is the meaning of a flashing red light signal directed from an aerodrome ATSU towards an aircraft either in the air or on the ground?",
+      "options": ["Do not land, the aerodrome is unavailable for landing. / Move clear of the Landing Area.", "Proceed to finals upon completion of the current orbit. / Line up after traffic on finals has landed.", "Give way to other aircraft and continue circling. / Stop.", "Do not land, orbit and await permission to land. / Return to your starting point."]
+    },
+    {
+      "id": 14284,
+      "section": "010-03",
+      "text": "What is the meaning of a flashing red light signal directed from an aerodrome ATSU towards an aircraft in the air?",
+      "options": ["Aerodrome unsafe, do not land", "Cleared for take-off", "Cleared to land", "Give way to other aircraft and continue circling."]
+    },
+    {
+      "id": 14285,
+      "section": "010-03",
+      "text": "What is the meaning of a steady green light from ATC to an aircraft in the air?",
+      "options": ["Clear to land.", "You have priority to land.", "Land immediately.", "Return to this airfield and await landing clearance."]
+    },
+    {
+      "id": 14286,
+      "section": "010-03",
+      "text": "What is the meaning of flashing green light signal directed from an aerodrome ATSU towards an aircraft in the air?",
+      "options": ["Return for landing.", "Cleared to land", "Aerodrome unsafe,do not land", "Give way to other aircraft and continue circling."]
+    },
+    {
+      "id": 14287,
+      "section": "010-03",
+      "text": "What is the meaning of flashing red light signal directed from an aerodrome ATSU towards an aircraft on the ground?",
+      "options": ["Taxi clear of landing area in use", "Cleared to taxi", "Stop", "Return starting point on the aerodrome"]
+    },
+    {
+      "id": 14288,
+      "section": "010-03",
+      "text": "What is the meaning of steady red light signal directed from an aerodrome ATSU towards an aircraft in the air?",
+      "options": ["Give way to other aircraft and continue circling.", "Do not land, the aerodrome is unavailable for landing", "Cleared to land", "Cleared for take-off"]
+    },
+    {
+      "id": 14289,
+      "section": "010-03",
+      "text": "When are navigation lights required to be shown?",
+      "options": ["From sunset to sunrise or when specified by the Authority", "At night", "Whenever the Pilot-ln-Command thinks it is sensible to switch them on", "When moving on the manoeuvring area of an aerodrome"]
+    },
+    {
+      "id": 14290,
+      "section": "010-03",
+      "text": "When two or more aircraft are on final approach, without overriding instruction from an ATCU or in an emergency, the aircraft having the right of way is:",
+      "options": ["The one that is at the lower altitude.", "The one that is at the greater altitude.", "The one that is closest to the runway threshold, regardless of altitude.", "The one that has the greatest rate of descent."]
+    },
+    {
+      "id": 14292,
+      "section": "010-03",
+      "text": "Which aircraft are permitted to fly at night displaying only a single red light ?",
+      "options": ["a glider or free balloon", "a microlight or airship", "a helicopter or free balloon", "a glider, free balloon or airship"]
+    },
+    {
+      "id": 14293,
+      "section": "010-03",
+      "text": "Which of the aircraft listed has always the right-of-way over all other participants in air traffic?",
+      "options": ["An aircraft in distress.", "An aircraft in the final approach for landing.", "An aeroplane towing a glider.", "A balloon."]
+    },
+    {
+      "id": 14295,
+      "section": "010-03",
+      "text": "Which of the following flight levels should be suitable for an aircraft flying VFR in accordance with the ICAO Semi-Circular Rule and maintaining a magnetic track of 146 degrees?",
+      "options": ["FL 75", "FL 85", "FL 50", "FL 295"]
+    },
+    {
+      "id": 14296,
+      "section": "010-03",
+      "text": "Which rules of the air govern the entry and departure of international air traffic into and out of a foreign state?",
+      "options": ["The foreign state's", "IATA's", "International Rules and Regulations", "ICAO's"]
+    },
+    {
+      "id": 14298,
+      "section": "010-03",
+      "text": "You see a red and green light of another aircraft straight ahead of you. What must you do?",
+      "options": ["lmmediately turn right", "lmmediately climb", "lmmediately descend", "lmmediately turn left"]
+    },
+    {
+      "id": 14299,
+      "section": "010-03",
+      "text": "Your take-off is delayed for an uncontrolled flight (VFR). At what point must you resubmit your Flight Plan?",
+      "options": ["60 minutes in excess of EOBT", "90 minutes in excess of EOBT", "45 minutes in excess of EOBT", "30 minutes in excess of Estimated Off-Blocks Time (EOBT)"]
+    },
+    {
+      "id": 14300,
+      "section": "010-04",
+      "text": "An EASA pilot license holder must not act as pilot in command of a single pilot aero plane unless she/he is in possession of a valid;",
+      "options": ["Medical Certificate together with a valid class or type rating appropriate to the aero plane to be flown.", "Valid EASA type rating.", "Valid IFR type rating.", "Valid VFR type rating."]
+    },
+    {
+      "id": 14301,
+      "section": "010-04",
+      "text": "A JAA pilot license (A) holder must not act as pilot in command of a single pilot aero plane unless she/he is in possession of a valid:",
+      "options": ["Medical Certificate together with a valid class or type rating appropriate to the aero plane to be flown.", "Valid JAA FCL type rating.", "Valid JAA OPS group rating.", "Valid VFR type rating."]
+    },
+    {
+      "id": 14302,
+      "section": "010-04",
+      "text": "A license holder having been advised that invasive medical surgery has become essential:",
+      "options": ["Should seek the advice of the aviation medical authority as expeditiously as possible.", "Should seek the advice of her/ his general practitioner as expeditiously as possible.", "Should advise the aviation medical authority only if the treatment involves a general anesthetic.", "Should undertake such treatment without reference to the aviation medical authority as such action is voluntary."]
+    },
+    {
+      "id": 14303,
+      "section": "010-04",
+      "text": "A PPL holder may:",
+      "options": ["Not operate as either commander or co-pilot on a revenue earning flight.", "Operate as any crew member for remuneration on a private flight.", "Operate as commander for remuneration on a private flight.", "Operate as co-pilot on a revenue earning flight."]
+    },
+    {
+      "id": 14304,
+      "section": "010-04",
+      "text": "According to JAR-FCL 3, Medical certificates classes are",
+      "options": ["1, 2", "class 1 only", "1, 2, 3, 4", "1, 2, 3"]
+    },
+    {
+      "id": 14305,
+      "section": "010-04",
+      "text": "According to JAR-FCL, single pilot single-engine class ratings are valid for",
+      "options": ["two years", "five years after licence issue", "two years up to age 40 years then one year thereafter", "one year"]
+    },
+    {
+      "id": 14306,
+      "section": "010-04",
+      "text": "An applicant for a Private Pilot Licence must be at least:",
+      "options": ["17 years old.", "18 years old.", "16 years old.", "15 years old."]
+    },
+    {
+      "id": 14307,
+      "section": "010-04",
+      "text": "How long are single pilot single engine class ratings valid?",
+      "options": ["2 years", "3 years", "6 months", "1 year"]
+    },
+    {
+      "id": 14308,
+      "section": "010-04",
+      "text": "How long would you have to spend in a clinic or hospital before you would have to inform the authorities?",
+      "options": ["More than 12 hours.", "12 days or more.", "Not less than 20 days.", "24 hrs or more."]
+    },
+    {
+      "id": 14309,
+      "section": "010-04",
+      "text": "In order to transfer a JAR-FCL pilot's licence from the State of Licence Issue to another JAA member state the licence holder must:",
+      "options": ["Be normally resident in the new State (for at least 185 days per year) or have taken up full-time employment within that State", "Must have become a citizen of the new State", "Reside in the new State for a minimum of 30 days annually.", "Have resided in the new State for at least 30 consecutive days."]
+    },
+    {
+      "id": 14310,
+      "section": "010-04",
+      "text": "The holder of a JAA License must hold a current Medical Certificate in order to exercise the privileges of that license. The prescribed Medical Certificate must be issued in accordance with:",
+      "options": ["JAR FCL- Part 3.", "JAR OPS - Part 2.", "JAR OPS - Part 1.", "JAR FCL - Part 1."]
+    },
+    {
+      "id": 14311,
+      "section": "010-04",
+      "text": "The holder of a PPL (A) who wishes to carry passengers must have made a minimum of 3 take-offs and 3 landings within the preceeding:",
+      "options": ["90 days", "60 days", "31 days", "29 days"]
+    },
+    {
+      "id": 14312,
+      "section": "010-04",
+      "text": "The minimum number of flying hours required for the issue of a JAR FCL Private Pilot License (Aero plane) is:",
+      "options": ["45.", "50.", "35.", "40."]
+    },
+    {
+      "id": 14313,
+      "section": "010-04",
+      "text": "The minimum age at which a student pilot may undertake her/his first solo flight is:",
+      "options": ["16 years.", "19 years.", "18 years.", "17 years."]
+    },
+    {
+      "id": 14314,
+      "section": "010-04",
+      "text": "The minimum number of dual instructional hours to be completed by a candidate for a JAR-FCL PPL (A) is:",
+      "options": ["25 hours", "30 hours", "10 hours", "45 hours"]
+    },
+    {
+      "id": 14315,
+      "section": "010-04",
+      "text": "The minimum number of flying hours required for the issue of a EASA FCL PPL(A) is:",
+      "options": ["45", "50", "35", "40"]
+    },
+    {
+      "id": 14316,
+      "section": "010-04",
+      "text": "The period of validity of a JAR-FCL PPL (A) is:",
+      "options": ["5 years", "10 years", "life time", "3 years"]
+    },
+    {
+      "id": 14317,
+      "section": "010-04",
+      "text": "What are the minimum number of dual instruction hours required to be flown by a JAA PPL candidate?",
+      "options": ["25 hours.", "22 hours.", "30 hours.", "20 hours."]
+    },
+    {
+      "id": 14318,
+      "section": "010-04",
+      "text": "When entering into another country's airspace, the licence of the Pilot-in-Command must have been approved by the authority of:",
+      "options": ["The state of aircraft registration", "Any contracting ICAO state", "Any JAA member state", "The State of Manufacturer"]
+    },
+    {
+      "id": 14320,
+      "section": "010-04",
+      "text": "Which instructions are related to the pilot Licensing in Turkey?",
+      "options": ["SHT-FCL, SHY-1", "SHT-6A, SHY-1", "SHT-1, SHY-3", "SHT-1, SHY-2"]
+    },
+    {
+      "id": 14321,
+      "section": "010-05",
+      "text": "A taxiway marking comprised of a pair of parallel yellow lines together with a pair of parallel broken yellow lines painted at 90° across a taxiway delineate:",
+      "options": ["A holding position at the end of a taxiway and runway entry point beyond which no part of an aircraft may project without prior permission from ATC.", "The exit point of an apron to a taxiway.", "The entry point of a pre-departure run up area.", "The intersection of two taxiways."]
+    },
+    {
+      "id": 14322,
+      "section": "010-05",
+      "text": "Aerodrome signs should be in the following configuration :",
+      "options": ["information signs; yellow or black background with black or yellow inscriptions.", "information signs; orange background with black inscriptions.", "mandatory instruction signs ; red background with black inscriptions.", "mandatory instruction signs; black background with red inscriptions."]
+    },
+    {
+      "id": 14323,
+      "section": "010-05",
+      "text": "All fixed aerodrome signs that are mandatory shall:",
+      "options": ["Be comprised of a white inscription on a red background.", "Be comprised of a red inscription on a white background.", "Be comprised of a yellow inscription on a black background.", "Be comprised of a red inscription on a black background."]
+    },
+    {
+      "id": 14324,
+      "section": "010-05",
+      "text": "An emergency vehicle responding to an emergency will display what colour flashing light?",
+      "options": ["Blue", "Yellow", "Green", "White"]
+    },
+    {
+      "id": 14325,
+      "section": "010-05",
+      "text": "Civil aerodrome identification beacons normally comprise:",
+      "options": ["A green beacon flashing a two-letter Morse group.", "A blue beacon flashing a two-letter Morse group.", "A red beacon flashing a two-letter Morse group.", "A white beacon flashing a two-letter Morse group."]
+    },
+    {
+      "id": 14326,
+      "section": "010-05",
+      "text": "How is a closed runway indicated?",
+      "options": ["White cross", "The word \"CLOSED\" in white", "With the use of barriers", "Yellow cross"]
+    },
+    {
+      "id": 14327,
+      "section": "010-05",
+      "text": "ICAO specifies that the fixed unidirectional runway threshold lights should be colored:",
+      "options": ["Green.", "Alternate green and red.", "White.", "Red."]
+    },
+    {
+      "id": 14328,
+      "section": "010-05",
+      "text": "ICAO specify that the element of a paved taxiway surface that should be marked is:",
+      "options": ["Centre line.", "Centre line, sides, entry and exit points.", "Centre line and sides.", "Sides."]
+    },
+    {
+      "id": 14329,
+      "section": "010-05",
+      "text": "If the edge lights are ……., centerline lights are ……….. and markings are ……….. you are definitely on a …………..",
+      "options": ["Blue, green, yellow, taxiway.", "White, white, yellow, runway.", "White, red, white, runway.", "White, white, white, taxiway."]
+    },
+    {
+      "id": 14330,
+      "section": "010-05",
+      "text": "In the signals area of an aerodrome, a red square with a single yellow diagonal stripe means:",
+      "options": ["Take special care when landing because of the poor state of the manoeuvring area.", "Helicopters are operating", "Gliders are operating.", "Do not land."]
+    },
+    {
+      "id": 14331,
+      "section": "010-05",
+      "text": "In the signals area of an aerodrome, a white dumb-bell means:",
+      "options": ["Land and taxi on hard surfaces only.", "Do not land.", "Land on hard surfaces only.", "Landing direction is parallel with the shaft towards the cross-arm."]
+    },
+    {
+      "id": 14332,
+      "section": "010-05",
+      "text": "Runway approach lights are:",
+      "options": ["White and can be adjusted for brightness", "Red and cannot be adjusted", "Red and can be adjusted", "White and cannot be adjusted for brightness"]
+    },
+    {
+      "id": 14333,
+      "section": "010-05",
+      "text": "Runway edge lights are:",
+      "options": ["White", "Red", "Blue", "Green"]
+    },
+    {
+      "id": 14334,
+      "section": "010-05",
+      "text": "Runway threshold lights shall be:",
+      "options": ["Fixed unidirectional lights showing green in the direction of approach to the runway.", "Fixed lights green colours.", "Fixed unidirectional lights showing white in the direction of approach to the runway.", "Fixed lights showing green or white colours."]
+    },
+    {
+      "id": 14335,
+      "section": "010-05",
+      "text": "Taxiway center line lights other than an exit taxiway shall be:",
+      "options": ["Fixed lights showing green.", "Fixed lights showing white.", "Fixed lights showing yellow.", "Fixed lights showing blue."]
+    },
+    {
+      "id": 14336,
+      "section": "010-05",
+      "text": "Taxiway edge lights shall be:",
+      "options": ["Fixed showing blue.", "Flashing showing blue.", "Fixed showing yellow.", "Fixed showing green."]
+    },
+    {
+      "id": 14337,
+      "section": "010-05",
+      "text": "The aerodrome category for rescue and fire fighting is based on:",
+      "options": ["The over-all length of the longest aeroplane normally using the aerodrome and its maximum fuselage width.", "The over-all length of the longest aeroplane normally using the aerodrome and its maximum fuselage weight.", "The longest aeroplane maximum width only", "The over-all length of the longest aeroplane."]
+    },
+    {
+      "id": 14338,
+      "section": "010-05",
+      "text": "The runway edge lights shall be :",
+      "options": ["white", "red", "green", "blue"]
+    },
+    {
+      "id": 14339,
+      "section": "010-05",
+      "text": "What colour are paved taxiway markings?",
+      "options": ["Yellow.", "White.", "Green.", "Red."]
+    },
+    {
+      "id": 14340,
+      "section": "010-05",
+      "text": "What colour are taxiway centreline lights?",
+      "options": ["Green", "Blue", "Red", "Yellow"]
+    },
+    {
+      "id": 14341,
+      "section": "010-05",
+      "text": "What colour are taxiway edge lights?",
+      "options": ["Blue", "White", "Green", "Red"]
+    },
+    {
+      "id": 14342,
+      "section": "010-05",
+      "text": "What colour are the markings on runways?",
+      "options": ["White", "Yellow or white", "Green", "Yellow"]
+    },
+    {
+      "id": 14343,
+      "section": "010-05",
+      "text": "What colours indicate destination signs?",
+      "options": ["Black lettering on a yellow background", "White lettering on a red background", "Red lettering on a white background", "Yellow lettering on a black background"]
+    },
+    {
+      "id": 14344,
+      "section": "010-05",
+      "text": "What colours indicate location signs?",
+      "options": ["Yellow lettering on a black background", "White lettering on a red background", "Red lettering on a white background", "Black lettering on a yellow background"]
+    },
+    {
+      "id": 14345,
+      "section": "010-05",
+      "text": "What does Annex 14 on international civil aviation contain?",
+      "options": ["Aerodromes", "Security", "Facilitation", "none of all"]
+    },
+    {
+      "id": 14346,
+      "section": "010-05",
+      "text": "What is the colour of the markings on taxiways?",
+      "options": ["Yellow", "White", "Yellow or white", "Green"]
+    },
+    {
+      "id": 14347,
+      "section": "010-05",
+      "text": "When located within an aerodrome signals square, the signal used to indicate that owing to the bad state of the maneuvering area, or for any other reason, special precautions must be observed in approaching to land or in landing is:",
+      "options": ["A horizontal red square with one yellow diagonal.", "A horizontal yellow square with two red diagonals.", "A horizontal yellow square with one red diagonal.", "A horizontal red square with two yellow diagonals."]
+    },
+    {
+      "id": 14348,
+      "section": "010-05",
+      "text": "When taxiing on a surface with white markings, you are rolling on a:",
+      "options": ["Runway", "Parking area", "Taxiway", "Movement area"]
+    },
+    {
+      "id": 14349,
+      "section": "010-05",
+      "text": "Which of the following Annexes to the Chicago convention contains minimum specifications for the design of aerodromes?",
+      "options": ["Annex 14", "Annex 6", "Annex 10", "Annex 11"]
+    },
+    {
+      "id": 14350,
+      "section": "010-05",
+      "text": "Which of the following correctly describes the runway end lights?",
+      "options": ["Fixed; uni-directional; red.", "Fixed; omni-directional; green.", "Fixed; uni-directional; green.", "Fixed; omni-directional; red."]
+    },
+    {
+      "id": 14351,
+      "section": "010-05",
+      "text": "Which sign indicate a runway unfit for the movement of aircraft ?",
+      "options": ["white ‘’X’’", "White “Y”", "yellow “Y”", "yellow ‘’X’’"]
+    },
+    {
+      "id": 14352,
+      "section": "010-05",
+      "text": "Which sign indicate a taxiway unfit for the movement of aircraft ?",
+      "options": ["yellow ‘’X’’", "White “Y”", "yellow “Y”", "white ‘’X’’"]
+    },
+    {
+      "id": 14353,
+      "section": "010-05",
+      "text": "While taxiing you notice the sign shown in the annex. It is a/an _____ sign and it appears with _____.",
+      "options": ["Direction – Black inscription on yellow background.", "Information – Yellow inscription on black background.", "Mandatory – White inscription on red background.", "Location – Black inscription on yellow background."]
+    },
+    {
+      "id": 14354,
+      "section": "010-06",
+      "text": "A Control Zone shall extend laterally to at least:",
+      "options": ["5 nautical miles from the center of the aerodrome or aerodromes concerned in the direction from which approaches may be made.", "20 miles from the center of the aerodrome or aerodromes concerned in the direction from which approaches may be made.", "15 miles from the center of the aerodrome or aerodromes concerned in the direction from which approaches may be made.", "10 miles from the center of the aerodrome or aerodromes concerned in the direction from which approaches may be made."]
+    },
+    {
+      "id": 14355,
+      "section": "010-06",
+      "text": "A controlled airspace extending upwards from a specified height above the earth is the;",
+      "options": ["Control area.", "flight information region", "Control zone.", "Traffic circuit."]
+    },
+    {
+      "id": 14356,
+      "section": "010-06",
+      "text": "A light aircraft is taking off behind a Heavy or Medium category aircraft. What period of separation is required?",
+      "options": ["2 minutes.", "5 minutes.", "3 minutes.", "4 minutes."]
+    },
+    {
+      "id": 14357,
+      "section": "010-06",
+      "text": "A report from an aircraft in flight prepared under requirements for position, and operational and/or meteorological reporting is ___.",
+      "options": ["A PIREP.", "A position report.", "A NOTAM.", "A SIGMET."]
+    },
+    {
+      "id": 14358,
+      "section": "010-06",
+      "text": "A service provided by an Air Traffic Control Unit for all controlled flights arriving at or departing from an aerodrome is called;",
+      "options": ["An Approach Control Service", "An Alerting Service", "A Flight Information Service", "An Area Control Service"]
+    },
+    {
+      "id": 14359,
+      "section": "010-06",
+      "text": "A special air report should be made to an air traffic service:",
+      "options": ["After encountering and becoming clear of any severe weather phenomena such as icing, wind shear and turbulence, mountain wave or other phenomena that was not forecast.", "After encountering and becoming clear of any moderate weather phenomena such as icing, wind shear and turbulence.", "Only if the forecast visibility changes to the extent that an aircraft commander must change her/ his operating conditions to IMC.", "If the forecast weather deviates from the pre-flight forecast."]
+    },
+    {
+      "id": 14360,
+      "section": "010-06",
+      "text": "Air traffic control service is conducted by which services?",
+      "options": ["TWR (aerodrome control service) APP (approach control service) ACC (area control service)", "APP (approach control service) ACC (area control service) FIS (flight information service)", "ALR (alerting service) SAR (search and rescue service) TWR (aerodrome control service)", "FIS (flight information service) AIS (aeronautical information service) AFS (aeronautical fixed telecommunication service)"]
+    },
+    {
+      "id": 14361,
+      "section": "010-06",
+      "text": "An airspace where flight information and alerting services are given shall be designated as:",
+      "options": ["Flight information regions (FIR).", "Controlled airspace.", "Advisory routes and class F airspace.", "Uncontrolled airspace."]
+    },
+    {
+      "id": 14362,
+      "section": "010-06",
+      "text": "Flight Information Service (FIS) provides:",
+      "options": ["Advice and information useful for the safe and efficient conduct of flights.", "Updated information regarding aerodrome runway status, weather and en-route frequencies within the FIR.", "To all aircraft within controlled airspace such information relevant to the safe conduct of all flights.", "Safe separation for participating aircraft."]
+    },
+    {
+      "id": 14363,
+      "section": "010-06",
+      "text": "ICAO recommends that a minimum of.............. shall be applied between a light or medium aircraft taking off behind a heavy aircraft or a light aircraft taking off behind a medium aircraft when the aircraft are using the same runway if the projected flight path of the second aircraft will cross the projected flight path of the first aircraft at the same altitude or less than 300m (1000ft) below. Select the time that correctly completes this statement.",
+      "options": ["two minutes.", "four minutes.", "three minutes.", "one minute."]
+    },
+    {
+      "id": 14366,
+      "section": "010-06",
+      "text": "In which chapter of the AIP can you find a list with “location indicators”?",
+      "options": ["GEN", "AD", "ENR", "AGA"]
+    },
+    {
+      "id": 14367,
+      "section": "010-06",
+      "text": "In which of the following circumstances is wake turbulence separation applied?",
+      "options": ["Whenever the following aircraft is at the same height as, or less than 1000 feet below the leading aircraft", "Whenever the following aircraft is at the same height as, or less than 500 feet below the leading aircraft", "Whenever the following aircraft is at the same height as, or less than 1000 feet above the leading aircraft", "When operating below 700 feet, on finals"]
+    },
+    {
+      "id": 14368,
+      "section": "010-06",
+      "text": "Terminal Control Areas may be defined as:",
+      "options": ["Airspace at the confluence of airways and other routes adjacent to one or more major aerodromes.", "Airspace for specific use of departing traffic.", "Airspace for specific use of arriving traffic", "Airspace at the confluence of airways not available to IFR traffic."]
+    },
+    {
+      "id": 14369,
+      "section": "010-06",
+      "text": "The air traffic control service provided for all controlled arriving and departing flights is:",
+      "options": ["An Approach Control Service.", "Delivery Service", "An Area Control Service.", "Precision Approach Radar (PAR)."]
+    },
+    {
+      "id": 14370,
+      "section": "010-06",
+      "text": "The controlled airspace, extending from the surface to the specified altitude, is the;",
+      "options": ["Control zone.", "Flight information region.", "Control area.", "Terminal control area."]
+    },
+    {
+      "id": 14371,
+      "section": "010-06",
+      "text": "The ICAO definition of radar vectoring is:",
+      "options": ["Provision of nautical guidance to aircraft in the form of specific headings, based on the use of radar.", "Provision of headings and altitudes based on the use of radar.", "Collision and adverse meteorological avoidance derived from specified advisory headings based on the use of radar.", "The directional control of aircraft for the purpose of nautical navigation and collision avoidance."]
+    },
+    {
+      "id": 14372,
+      "section": "010-06",
+      "text": "The information on holding, approach and departure procedures, are found in the following part of the AIP:",
+      "options": ["ENR", "GEN", "MAP", "AD"]
+    },
+    {
+      "id": 14373,
+      "section": "010-06",
+      "text": "The Minimum Sector Altitude (MSA), which must be established around a navigation aids, is in general valid within a sector of:",
+      "options": ["25 NM.", "15 NM.", "10 NM.", "30 NM."]
+    },
+    {
+      "id": 14374,
+      "section": "010-06",
+      "text": "The Minimum Sector Altitude (MSA), which must be established around:",
+      "options": ["navigation aids", "airport reference point (ARP)", "tower", "runway"]
+    },
+    {
+      "id": 14375,
+      "section": "010-06",
+      "text": "The term 'Air Traffic' is defined as:",
+      "options": ["All aircraft in flight or operating on the maneuvering area of an aerodrome.", "Any aircraft maneuvering under its own power.", "Airborne aircraft and those occupying an active runway.", "Airborne aircraft."]
+    },
+    {
+      "id": 14376,
+      "section": "010-06",
+      "text": "The transition layer is defined as:",
+      "options": ["The layer between the transition altitude and the transition level.", "The layer between the transition altitude and the planned operating flight level.", "The layer between 3000ft altitude and the transition altitude.", "The layer between 7000ft altitude and the transition altitude."]
+    },
+    {
+      "id": 14377,
+      "section": "010-06",
+      "text": "The transition altitude of an aerodrome should not be below:",
+      "options": ["3000 ft", "1000 ft", "2500 ft", "1500 ft"]
+    },
+    {
+      "id": 14378,
+      "section": "010-06",
+      "text": "The units providing Air Traffic Services are:",
+      "options": ["Area Control Centre - Flight Information Centre - Approach Control Office - Aerodrome Control Tower and Air Traffic Services reporting office.", "Area Control Centre - Advisory Centre - Flight Information Centre - Approach Control Office and Tower.", "Advisory Centre - Area Control Centre - Approach Control Office and Aerodrome Control Tower.", "Area Control Centre - Flight Information Region - Approach Control Office and Tower."]
+    },
+    {
+      "id": 14379,
+      "section": "010-06",
+      "text": "The vertical extent of a Control Zone is:",
+      "options": ["From the surface up to a specified upper limit.", "From the surface to an altitude of 2000ft.", "From 1500ft AGL to the base of the TMA.", "From the surface up to 2000ft AGL."]
+    },
+    {
+      "id": 14380,
+      "section": "010-06",
+      "text": "The vertical position of an aircraft at or above the transition level will be reported :",
+      "options": ["as flight level.", "According to pilot's choice.", "as altitude.", "as height."]
+    },
+    {
+      "id": 14381,
+      "section": "010-06",
+      "text": "The vertical position of an aircraft at or below the transition altitude will be reported:",
+      "options": ["as altitude.", "as height.", "according pilot's choice.", "as flight level."]
+    },
+    {
+      "id": 14382,
+      "section": "010-06",
+      "text": "What altimeter sub-scale setting should be used when flying underneath a Terminal Control Area (TMA)?",
+      "options": ["The QNH of an aerodrome situated beneath the TMA or CTA", "The QFE of an aerodrome situated beneath the TMA or CTA.", "Either the Regional QNH or the QNH of an aerodrome situated beneath the TMA, whichever is the lower.", "The Regional QNH."]
+    },
+    {
+      "id": 14383,
+      "section": "010-06",
+      "text": "What are the functions of radar in air traffic management?",
+      "options": ["identification, vectoring, seperation", "identification, vectoring, radar contact", "identification, vectoring", "vectoring, seperation"]
+    },
+    {
+      "id": 14384,
+      "section": "010-06",
+      "text": "What are the names of the three parts of an AlP?",
+      "options": ["GEN, ENR and AD", "ENR, AD and AGA", "ENR, AGA and GEN", "AGA, AD and GEN"]
+    },
+    {
+      "id": 14385,
+      "section": "010-06",
+      "text": "What defines a Control Zone?",
+      "options": ["A portion of airspace between ground level and a specified altitude or flight level where an ATC service is provided to IFR and some VFR traffic.", "An area around one or more aerodromes where a common approach control is applied.", "A zone of defined radius centred upon the longest runway of an aerodrome extending up to 2000 ft.", "A danger, prohibited or restricted area."]
+    },
+    {
+      "id": 14386,
+      "section": "010-06",
+      "text": "What does ICAO Annex 11 concern itself with?",
+      "options": ["Air Traffic Services", "Rules of the Air", "Personnel Licensing", "Aerodromes"]
+    },
+    {
+      "id": 14388,
+      "section": "010-06",
+      "text": "What is one of the primary functions of an Air Traffic Clearance?",
+      "options": ["To ensure separation of aircraft", "To acknowledge that ATC is now responsible for the flight", "To acknowledge that the information of the flight details have been logged by ATC", "To agree to allow a flight to proceed"]
+    },
+    {
+      "id": 14389,
+      "section": "010-06",
+      "text": "What is the definition of the term \"Controlled Airspace\"?",
+      "options": ["An airspace within which air traffic control services are provided.", "Airspace immediately above an airport with more than one runway.", "Airspace around an airport.", "Airspace of defined dimensions within which all aircrafts are controlled."]
+    },
+    {
+      "id": 14390,
+      "section": "010-06",
+      "text": "What is the ICAO code of Ankara Flight Information Region (FIR) ?",
+      "options": ["LTAA", "TCAA", "LTBB", "LTBA"]
+    },
+    {
+      "id": 14391,
+      "section": "010-06",
+      "text": "What is the ICAO code of İstanbul Flight Information Region (FIR) ?",
+      "options": ["LTBB", "TCAA", "LTAA", "LTBA"]
+    },
+    {
+      "id": 14392,
+      "section": "010-06",
+      "text": "What is the lowest level of a CTA permitted by international agreement?",
+      "options": ["Not lower than 700 feet above the surface of the ground or water", "Not lower than 500 feet above the surface of the ground or water", "Not lower than 1500 feet above the surface of the ground or water", "Not lower than 1 000 feet above the surface of the ground or water"]
+    },
+    {
+      "id": 14393,
+      "section": "010-06",
+      "text": "What is the Maximum Take-Off Mass of a medium category aircraft in terms of its Wake Turbulence Category?",
+      "options": ["Below 136 000 kgs and above 7000 kgs", "Below 136 000 kgs and above 8000 kgs", "Below 130 000 kgs and above 7000 kgs", "Between 136 000 kgs and 7000 kgs inclusive"]
+    },
+    {
+      "id": 14394,
+      "section": "010-06",
+      "text": "What is the meaning of an area labeled \"LT D 21\"?",
+      "options": ["This area is the Turkish dangerous area no. 21", "In this area airspace \"D\" no. 21 has been established", "A no-fly area was set up from ground up to FL 210", "A low-level flying area was set up till 210 ft AGL"]
+    },
+    {
+      "id": 14395,
+      "section": "010-06",
+      "text": "What is the minimum wake turbulence separation between a light aircraft taking off behind a heavy aircraft from the same point on the runway?",
+      "options": ["2 minutes", "2 nautical miles", "5 nautical miles", "5 minutes"]
+    },
+    {
+      "id": 14396,
+      "section": "010-06",
+      "text": "What is the shortest distance in a sequence for landing between a 'Heavy' aircraft preceding a 'Light' aircraft",
+      "options": ["6 NM", "10 km", "2 km", "3 NM"]
+    },
+    {
+      "id": 14398,
+      "section": "010-06",
+      "text": "What may be the lowest point of the CTA according to ICAO regulations?",
+      "options": ["From a specified height above ground or water being not less than 700 feet", "There is no such regulation", "At least 1000 feet amsl", "From any specified height above the ground or water"]
+    },
+    {
+      "id": 14399,
+      "section": "010-06",
+      "text": "What word is used to describe the vertical position of an aircraft measured above mean sea level, when QNH is set on the altimeter subscale?",
+      "options": ["Altitude", "Flight level", "Height", "Elevation"]
+    },
+    {
+      "id": 14401,
+      "section": "010-06",
+      "text": "When the transponder appears to be unserviceable prior to departure and restorage is impossible, than :",
+      "options": ["departure to the nearest suitable airport where repair can be affected is allowed", "you are not allowed to commence the flight", "the flight can only continue in the most direct manner;", "you must indicate the failure in the flight plan, after which the ATC will endeavour to provide for continuation of the flight;"]
+    },
+    {
+      "id": 14402,
+      "section": "010-06",
+      "text": "Which of below correctly completes the following statement? A Flight Information Service and Alerting Service is provided in airspace designated as:",
+      "options": ["Flight Information Regions", "TMAs", "CTAs", "Advisory Routes"]
+    },
+    {
+      "id": 14403,
+      "section": "010-07",
+      "text": "Alerting service is provided.",
+      "options": ["for all aircraft known to ATC.", "only for aircraft with a MTOM of 20000 kg and more.", "only for aircraft flying according to IFR.", "only for aircraft flying with a flight plan."]
+    },
+    {
+      "id": 14405,
+      "section": "010-07",
+      "text": "An aircraft has been declared to land and fails to do so within 5 minutes of the estimated time of landing, and communications have not been reestablished. What phase of the Alerting Service should be declared?",
+      "options": ["Alert Phase", "Distress Phase", "Uncertainty Phase", "Emergency Phase"]
+    },
+    {
+      "id": 14406,
+      "section": "010-07",
+      "text": "If a situation wherein apprehension exists as to the safety of an aircraft and its occupants (alert phase); responsibility for alerting the necessary search and rescue units lies with:",
+      "options": ["The air traffic unit who received the distress message albeit 121.5MHz.", "The pilot in distress.", "Any responsible person.", "The Rescue Co-ordination Centre."]
+    },
+    {
+      "id": 14407,
+      "section": "010-07",
+      "text": "In the context of Search and Rescue, the term “Distress phase” means:",
+      "options": ["An aircraft and its occupants are threatened by grave and imminent danger and of requiring immediate assistance.", "A flight requires the assistance of the emergency services.", "There is apprehension concerning the safety of an aero plane and its occupants.", "A 'Pan Pan' call has been transmitted."]
+    },
+    {
+      "id": 14408,
+      "section": "010-07",
+      "text": "No communication has been received from an aircraft within 30 minutes after the time a communication should have been received. What phase of the Alerting Service must be declared?",
+      "options": ["Uncertainty Phase", "Distress Phase", "Alert Phase", "Emergency Phase"]
+    },
+    {
+      "id": 14410,
+      "section": "010-07",
+      "text": "The definition of Alerting Service is a:",
+      "options": ["Service provided to notify appropriate organizations regarding aircraft in need of search and rescue aid, and assist such organizations as required.", "A land based search and rescue co-ordination unit.", "Branch of the air traffic service under the jurisdiction of the Ministry of Defense providing a communication network between all agencies both civil and military providing search and rescue facilities.", "Unit of the air traffic service specifically for the co-ordination of search and rescue."]
+    },
+    {
+      "id": 14411,
+      "section": "010-07",
+      "text": "The sole objective of the investigation of an accident or incident shall be the ;",
+      "options": ["Prevention of accidents or incidents", "prevention of accidents or incidents and provide the manufacturer with investigation data for the improvement of the design.", "prevention of accidents or incidents and to provide legal evidence for subsequent court cases.", "prevention of accidents or incidents and establish the liability."]
+    },
+    {
+      "id": 14412,
+      "section": "010-07",
+      "text": "What ground sign do the survivors construct to indicate that they require assistance?",
+      "options": ["V", "Y", "N", "X"]
+    },
+    {
+      "id": 14413,
+      "section": "010-07",
+      "text": "What ground sign do the survivors construct to indicate that they require medical assistance?",
+      "options": ["X", "i", "y", "N"]
+    },
+    {
+      "id": 14414,
+      "section": "010-07",
+      "text": "What ICAO Annex covers the Security?",
+      "options": ["Annex 17", "Annex 2", "Annex 14", "Annex 11"]
+    },
+    {
+      "id": 14415,
+      "section": "010-07",
+      "text": "What is the international Aeronautical VHF Distress Frequency?",
+      "options": ["121.50 MHz", "406.00 MHz", "243.00 MHz", "123.45 MHz"]
+    },
+    {
+      "id": 14416,
+      "section": "010-07",
+      "text": "What SSR squawk should be set in an emergency?",
+      "options": ["7700", "7600", "7000", "7777"]
+    },
+    {
+      "id": 14417,
+      "section": "010-07",
+      "text": "When an aircraft is experiencing difficulties, triggering of the alert phase is the responsibility of:",
+      "options": ["air traffic control and flight information centers.", "search and rescue coordination centres.", "control centres only.", "air traffic coordination centres."]
+    },
+    {
+      "id": 14418,
+      "section": "010-07",
+      "text": "Which organisation is responsible for the coordination of Search and Rescue efforts within a State?",
+      "options": ["Rescue Coordination Centre", "Approach Control Centre", "Air Traffic Control Centre", "Flight Information Centre"]
+    },
+    {
+      "id": 14419,
+      "section": "010-07",
+      "text": "Which SSR Code should be selected to indicate radio failure?",
+      "options": ["7600", "7000", "7500", "7700"]
+    },
+    {
+      "id": 14420,
+      "section": "010-07",
+      "text": "Who is responsible, under Annex 13 of the Chicago convention for the initation of an accident investigation ?",
+      "options": ["The government of the state in which the accident took place.", "Operators of the same aircraft type.", "The aircraft manufacturer.", "The law enforcement authorities of the state in which the aircraft is registered."]
+    },
+    {
+      "id": 19918,
+      "section": "010-01",
+      "text": "Under which of the following circumstances can an ICAO aircraft make flights into the airspace of another contracting state without permission?",
+      "options": ["If it is a non-scheduled flight.", "If it is not carrying any passengers.", "Never.", "If it is a scheduled flight."]
+    }
+  ]
+}

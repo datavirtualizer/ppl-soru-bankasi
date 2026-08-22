@@ -1,0 +1,1353 @@
+{
+  "_aciklama": "Elle doğrulanmış tekrar grupları. Her grupta ilk ID kanonik; diğerleri dup_of ile ona bağlanır. Metin benzerliği ≥%60 olan tüm çiftler incelendi; cevabı FARKLI olanlar (sınav tuzakları) bilerek dışarıda bırakıldı.",
+  "gruplar": [
+    {
+      "ids": [
+        16014,
+        16026
+      ],
+      "not": "Class B fire — birebir aynı"
+    },
+    {
+      "ids": [
+        16015,
+        16021
+      ],
+      "not": "Tekerlek yangını / dry powder — birebir aynı"
+    },
+    {
+      "ids": [
+        16018,
+        16025
+      ],
+      "not": "Halon 1-2-3 — yalnızca noktalama farkı"
+    },
+    {
+      "ids": [
+        16032,
+        16045
+      ],
+      "not": "Wake turbulence başlangıç/bitiş — birebir aynı"
+    },
+    {
+      "ids": [
+        15978,
+        16051
+      ],
+      "not": "Can yeleği 50 NM — biri JAR-OPS biri SHT-OPS, içerik aynı"
+    },
+    {
+      "ids": [
+        16000,
+        16006
+      ],
+      "not": "Gürültü azaltma prosedürü — aynı cevap"
+    },
+    {
+      "ids": [
+        15944,
+        15945
+      ],
+      "not": "Taşınması gerekmeyen belge — 'Driver Licences' / 'Flight crew driving license'"
+    },
+    {
+      "ids": [
+        16001,
+        16002
+      ],
+      "not": "Gürültü belirleyici değil — cevap 'I, II and III' / '1,2,3.'"
+    },
+    {
+      "ids": [
+        15931,
+        15933,
+        15934
+      ],
+      "not": "Tahliye prosedürleri Operations Manual — üç kez sorulmuş"
+    },
+    {
+      "ids": [
+        14241,
+        14242
+      ],
+      "not": "C of R taşınması — birebir aynı"
+    },
+    {
+      "ids": [
+        14300,
+        14301
+      ],
+      "not": "EASA / JAA tek pilot PIC şartı — aynı cevap"
+    },
+    {
+      "ids": [
+        27141,
+        50131
+      ],
+      "not": "ATSEP görevi — biri ATPL TV biri ders notu quizi"
+    },
+    {
+      "ids": [
+        16317,
+        16347,
+        16389
+      ],
+      "not": "090: yer/manevra sahası çağrı adı GROUND — üç kez"
+    },
+    {
+      "ids": [
+        16332,
+        16343,
+        16344,
+        16404
+      ],
+      "not": "090: STANDBY = wait and I will call you — dört kez"
+    },
+    {
+      "ids": [
+        16340,
+        16418,
+        16423
+      ],
+      "not": "090: Readability 5 = perfectly readable — üç kez"
+    },
+    {
+      "ids": [
+        16350,
+        16428,
+        16447,
+        16448
+      ],
+      "not": "090: Position report sırası — dört kez"
+    },
+    {
+      "ids": [
+        16346,
+        16354
+      ],
+      "not": "090: hangi mesajlar read back edilir → All"
+    },
+    {
+      "ids": [
+        16362,
+        16439
+      ],
+      "not": "090: Squawk Charlie = ALT"
+    },
+    {
+      "ids": [
+        16376,
+        16377
+      ],
+      "not": "090: Read back tanımı — birebir aynı"
+    },
+    {
+      "ids": [
+        16393,
+        16396
+      ],
+      "not": "090: tekrar isteme → SAY AGAIN"
+    },
+    {
+      "ids": [
+        16400,
+        16401
+      ],
+      "not": "090: read back listesi — birebir aynı"
+    },
+    {
+      "ids": [
+        16421,
+        16427
+      ],
+      "not": "090: kalkışa hazır → Ready for departure"
+    },
+    {
+      "ids": [
+        16492,
+        16493,
+        16482
+      ],
+      "not": "090: acil mesajda pozisyon bildirimi — üç kez"
+    },
+    {
+      "ids": [
+        16312,
+        16313
+      ],
+      "not": "090: çağrı adı kısaltma şartı"
+    },
+    {
+      "ids": [
+        16488,
+        16489
+      ],
+      "not": "090: Distress call içeriği"
+    },
+    {
+      "ids": [
+        16342,
+        16438,
+        16451
+      ],
+      "not": "090: SQUAWK IDENT = special position identification"
+    },
+    {
+      "ids": [
+        16357,
+        16390
+      ],
+      "not": "090: GO AROUND = missed approach"
+    },
+    {
+      "ids": [
+        16330,
+        16392,
+        16407
+      ],
+      "not": "090: hata düzeltme → CORRECTION"
+    },
+    {
+      "ids": [
+        16358,
+        25449
+      ],
+      "not": "090: CORRECT = that's right"
+    },
+    {
+      "ids": [
+        16455,
+        16458
+      ],
+      "not": "090: FINAL çağrısı 4 NM"
+    },
+    {
+      "ids": [
+        16440,
+        16450
+      ],
+      "not": "090: confirm/verify your level → Mode C doğruluğu"
+    },
+    {
+      "ids": [
+        16459,
+        16463
+      ],
+      "not": "090: ORBIT left/right = 360° dönüş, aynı bilgi"
+    },
+    {
+      "ids": [
+        16333,
+        16359,
+        16378
+      ],
+      "not": "090: WILCO = understood, will comply — üç kez"
+    },
+    {
+      "ids": [
+        16352,
+        16485
+      ],
+      "not": "090: MAYDAY ilk yayını → o an kullanılan frekans"
+    },
+    {
+      "ids": [
+        16329,
+        16477
+      ],
+      "not": "090: ALL STATIONS → istenmedikçe cevap verilmez"
+    },
+    {
+      "ids": [
+        14492,
+        14493,
+        14494
+      ],
+      "not": "020: tyre creep → hizalama işaretleri — üç kez"
+    },
+    {
+      "ids": [
+        14724,
+        14725,
+        14728
+      ],
+      "not": "020: VSI çalışma prensibi — üç kez"
+    },
+    {
+      "ids": [
+        14731,
+        14742,
+        15807
+      ],
+      "not": "020: IAS→CAS = alet + pozisyon hatası — üç kez"
+    },
+    {
+      "ids": [
+        14528,
+        14539
+      ],
+      "not": "020: sağlam yağ soğutucu by-pass valfi → sıcaklıkla çalışır"
+    },
+    {
+      "ids": [
+        14568,
+        25447
+      ],
+      "not": "020: dry sump dezavantajı → ağırlık"
+    },
+    {
+      "ids": [
+        14574,
+        14575
+      ],
+      "not": "020: karbüratör buzlanması → descent power (sadece sıcaklık farklı)"
+    },
+    {
+      "ids": [
+        14516,
+        14517
+      ],
+      "not": "020: krank mili doğrusalı dairesele çevirir"
+    },
+    {
+      "ids": [
+        14530,
+        14541
+      ],
+      "not": "020: aşırı yağ basıncı → basınç tahliye valfi"
+    },
+    {
+      "ids": [
+        14567,
+        14569
+      ],
+      "not": "020: Avgas 100LL rengi → mavi"
+    },
+    {
+      "ids": [
+        14579,
+        14582
+      ],
+      "not": "020: kalkışta karbüratör ısıtması kullanılmaz"
+    },
+    {
+      "ids": [
+        14466,
+        14467
+      ],
+      "not": "020: uçuş kumanda kilidi → yerde rüzgâr hasarını önler"
+    },
+    {
+      "ids": [
+        14580,
+        14587
+      ],
+      "not": "020: venturi statik basıncı şamandıra odasından düşük"
+    },
+    {
+      "ids": [
+        14571,
+        14586
+      ],
+      "not": "020: venturide basınç düşer, hız artar"
+    },
+    {
+      "ids": [
+        14703,
+        14704
+      ],
+      "not": "020: kokpit içi alternatif statik kaynak → daha düşük"
+    },
+    {
+      "ids": [
+        14432,
+        14439
+      ],
+      "not": "020: monocoque tanımı — açıklık ve iç yapı yok"
+    },
+    {
+      "ids": [
+        14716,
+        14718
+      ],
+      "not": "020: altimetre kapsülünde vakum, dışında statik"
+    },
+    {
+      "ids": [
+        14720,
+        14721
+      ],
+      "not": "020: soğuk havada altimetre fazla gösterir"
+    },
+    {
+      "ids": [
+        14775,
+        14783
+      ],
+      "not": "020: DI ne zaman pusulayla hizalanır"
+    },
+    {
+      "ids": [
+        14659,
+        14660
+      ],
+      "not": "020: irtifa artınca karışım zenginleşir"
+    },
+    {
+      "ids": [
+        14972,
+        14973
+      ],
+      "not": "Yatay uçuşta maksimum hız — birebir aynı"
+    },
+    {
+      "ids": [
+        14915,
+        14916
+      ],
+      "not": "Yüksek kütle → VR ve V2 ikisi de artar — aynı soru iki yazım"
+    },
+    {
+      "ids": [
+        14938,
+        14955
+      ],
+      "not": "Absolute ceiling tanımı — aynı kavram"
+    },
+    {
+      "ids": [
+        14946,
+        14947
+      ],
+      "not": "Yükseklikle Vx/Vy → ikisi de azalır (biri piston der)"
+    },
+    {
+      "ids": [
+        14841,
+        14842
+      ],
+      "not": "Basic empty mass / empty mass → DOM'un bileşeni"
+    },
+    {
+      "ids": [
+        14808,
+        14809
+      ],
+      "not": "Max all-up mass üstünde uçmak → yapısal hasar"
+    },
+    {
+      "ids": [
+        14810,
+        14811
+      ],
+      "not": "Kütle artışı → stall hızı artar"
+    },
+    {
+      "ids": [
+        14824,
+        14825
+      ],
+      "not": "Stall hızı en yüksek: max kütle + ön CG"
+    },
+    {
+      "ids": [
+        14827,
+        14828
+      ],
+      "not": "Ön limitte CG → menzil azalır (şıklar birebir aynı)"
+    },
+    {
+      "ids": [
+        14879,
+        14880
+      ],
+      "not": "CG konumu = toplam moment / toplam kütle"
+    },
+    {
+      "ids": [
+        14909,
+        14914
+      ],
+      "not": "TORA tanımı — aynı"
+    },
+    {
+      "ids": [
+        14951,
+        14962
+      ],
+      "not": "Flap açık → tırmanma açısı küçülür"
+    },
+    {
+      "ids": [
+        14961,
+        14968
+      ],
+      "not": "En kısa sürede irtifa → Vy"
+    },
+    {
+      "ids": [
+        14901,
+        14920
+      ],
+      "not": "Yanlış/eksik flap → kalkış mesafesi artar"
+    },
+    {
+      "ids": [
+        14981,
+        14985
+      ],
+      "not": "Maksimum süzülme menzili → düşük hücum açısı"
+    },
+    {
+      "ids": [
+        14291,
+        15027,
+        15031
+      ],
+      "not": "Uçuş planı cruising speed → TAS (üç kez soruluyor)"
+    },
+    {
+      "ids": [
+        15246,
+        15247
+      ],
+      "not": "Mental Overload — birebir aynı"
+    },
+    {
+      "ids": [
+        15263,
+        15264
+      ],
+      "not": "Liderlik becerisi olmayan → aggressive assertiveness"
+    },
+    {
+      "ids": [
+        15099,
+        15106,
+        15107
+      ],
+      "not": "Yetersiz oksijen durumu → Hypoxia"
+    },
+    {
+      "ids": [
+        15048,
+        15281
+      ],
+      "not": "Stres/korku → adrenalin → nabız artar"
+    },
+    {
+      "ids": [
+        15091,
+        15092,
+        15100
+      ],
+      "not": "Basınç düşünce O2 kısmi basıncı düşer"
+    },
+    {
+      "ids": [
+        15051,
+        15065
+      ],
+      "not": "Henry yasası → dekompresyon hastalığı"
+    },
+    {
+      "ids": [
+        15057,
+        15061,
+        15064,
+        15067,
+        15069
+      ],
+      "not": "Dolaşım sistemi — beş farklı yazımla aynı soru"
+    },
+    {
+      "ids": [
+        15056,
+        15059
+      ],
+      "not": "Alyuvar görevi → oksijen taşımak"
+    },
+    {
+      "ids": [
+        15070,
+        15147,
+        15155
+      ],
+      "not": "Otonom sinir sistemi → solunum/sindirim/kalp"
+    },
+    {
+      "ids": [
+        15072,
+        15076
+      ],
+      "not": "10.000 ft eşiği — takviye oksijen"
+    },
+    {
+      "ids": [
+        15075,
+        15112
+      ],
+      "not": "Uçuştan önce tüplü dalış → DCS riski"
+    },
+    {
+      "ids": [
+        15095,
+        15104,
+        15122
+      ],
+      "not": "Bends/DCS → azot kabarcıkları"
+    },
+    {
+      "ids": [
+        15080,
+        15136
+      ],
+      "not": "Yükseklikte O2 azlığı → atmosfer basıncı düşük"
+    },
+    {
+      "ids": [
+        15053,
+        15110
+      ],
+      "not": "O2 oranı irtifayla değişmez (%21)"
+    },
+    {
+      "ids": [
+        15071,
+        15111
+      ],
+      "not": "35.000 ft TUC → 30-60 saniye"
+    },
+    {
+      "ids": [
+        15083,
+        15137
+      ],
+      "not": "Alçakta bayılan yolcu → hiperventilasyon"
+    },
+    {
+      "ids": [
+        15050,
+        15088
+      ],
+      "not": "Hemoglobinin CO'ya ilgisi ~210 kat"
+    },
+    {
+      "ids": [
+        15138,
+        15141
+      ],
+      "not": "Pozitif G → önce grey-out"
+    },
+    {
+      "ids": [
+        15139,
+        15150
+      ],
+      "not": "Gastroenterit → uçuşa elverişsiz"
+    },
+    {
+      "ids": [
+        15142,
+        15158
+      ],
+      "not": "Ani iş göremezlik → mide-bağırsak"
+    },
+    {
+      "ids": [
+        15143,
+        15145
+      ],
+      "not": "Hareket tutması → görsel-vestibüler uyumsuzluk"
+    },
+    {
+      "ids": [
+        15165,
+        15203
+      ],
+      "not": "Renk görme → koniler"
+    },
+    {
+      "ids": [
+        15182,
+        15192
+      ],
+      "not": "Çevresel görme + düşük ışık → çubuklar"
+    },
+    {
+      "ids": [
+        15188,
+        15194
+      ],
+      "not": "En keskin görme → fovea"
+    },
+    {
+      "ids": [
+        15190,
+        15210
+      ],
+      "not": "Görsel referans yokken → aletlere güven"
+    },
+    {
+      "ids": [
+        15206,
+        15207
+      ],
+      "not": "İvmelenme → burun yukarı / tırmanış illüzyonu"
+    },
+    {
+      "ids": [
+        15212,
+        15217
+      ],
+      "not": "Ses şiddeti → desibel"
+    },
+    {
+      "ids": [
+        15225,
+        15229
+      ],
+      "not": "İletim tipi sağırlık → kemikçikler/kulak zarı"
+    },
+    {
+      "ids": [
+        15209,
+        15228
+      ],
+      "not": "Gürültü hasarı → koklea"
+    },
+    {
+      "ids": [
+        15216,
+        15231
+      ],
+      "not": "Östaki borusu → kulak zarının iki yanını eşitler"
+    },
+    {
+      "ids": [
+        15218,
+        15222,
+        15223
+      ],
+      "not": "Vestibüler aparat → açısal + doğrusal ivme"
+    },
+    {
+      "ids": [
+        15219,
+        15238
+      ],
+      "not": "Otolitler → doğrusal ivme"
+    },
+    {
+      "ids": [
+        15227,
+        15235
+      ],
+      "not": "Dönüşte baş hareketi → Coriolis illüzyonu"
+    },
+    {
+      "ids": [
+        15571,
+        20939
+      ],
+      "not": "Şekildeki cephe → occluded front (aynı şekil, aynı soru)"
+    },
+    {
+      "ids": [
+        15401,
+        19915
+      ],
+      "not": "ÇORLU QFE 980 → QNH; 19915 aynı soruya 1003 diyor, doğrusu 1002"
+    },
+    {
+      "ids": [
+        15521,
+        15522
+      ],
+      "not": "En türbülanslı bulut → CB"
+    },
+    {
+      "ids": [
+        15363,
+        15364
+      ],
+      "not": "Yoğunluk tanımı → birim hacimdeki kütle"
+    },
+    {
+      "ids": [
+        15317,
+        15318
+      ],
+      "not": "ISA en düşük sıcaklık → -56,5 °C"
+    },
+    {
+      "ids": [
+        15368,
+        15370
+      ],
+      "not": "Yüzeyde yoğunluk en düşük: alçak basınç + yüksek sıcaklık"
+    },
+    {
+      "ids": [
+        15357,
+        15358
+      ],
+      "not": "Basınç irtifayla azalan bir oranda düşer"
+    },
+    {
+      "ids": [
+        15039,
+        15844
+      ],
+      "not": "1500 ft / QNH 1023 → FL75 için 6300 ft tırmanış"
+    },
+    {
+      "ids": [
+        15462,
+        15464
+      ],
+      "not": "Havanın tutabileceği nem miktarı → sıcaklığa bağlı"
+    },
+    {
+      "ids": [
+        15359,
+        15360,
+        15361
+      ],
+      "not": "Eş basınç çizgisi → izobar (üç yazım)"
+    },
+    {
+      "ids": [
+        15294,
+        15295,
+        15296
+      ],
+      "not": "Hava olaylarının olduğu katman → troposfer"
+    },
+    {
+      "ids": [
+        15308,
+        15309
+      ],
+      "not": "Ekvatordan kutba: tropopoz alçalır, sıcaklığı artar"
+    },
+    {
+      "ids": [
+        15327,
+        15328
+      ],
+      "not": "Atmosferi ısıtan → yerden geri yayılan ışınım"
+    },
+    {
+      "ids": [
+        15344,
+        15345
+      ],
+      "not": "İnversiyon → irtifayla sıcaklık artışı"
+    },
+    {
+      "ids": [
+        15347,
+        15348
+      ],
+      "not": "İnversiyon → kararlı hava katmanı"
+    },
+    {
+      "ids": [
+        15355,
+        15356
+      ],
+      "not": "Basınç düşüşü soğuk havada daha hızlı"
+    },
+    {
+      "ids": [
+        15371,
+        15372
+      ],
+      "not": "Nemli hava kuru havadan hafiftir"
+    },
+    {
+      "ids": [
+        15374,
+        15375
+      ],
+      "not": "Kalkış performansı → soğuk kuru hava"
+    },
+    {
+      "ids": [
+        15390,
+        15391
+      ],
+      "not": "QNH tanımı → standart atmosferle MSL'e indirgenmiş QFE"
+    },
+    {
+      "ids": [
+        15422,
+        15423
+      ],
+      "not": "Rüzgârın nedeni → yatay basınç farkı"
+    },
+    {
+      "ids": [
+        15425,
+        15427
+      ],
+      "not": "Sık izobar → büyük basınç gradyanı, kuvvetli rüzgâr"
+    },
+    {
+      "ids": [
+        15465,
+        15467
+      ],
+      "not": "Yükselen hava genleştiği için soğur"
+    },
+    {
+      "ids": [
+        15482,
+        15486
+      ],
+      "not": "Buharlaşma → sudan su buharına"
+    },
+    {
+      "ids": [
+        15512,
+        15513
+      ],
+      "not": "Alçaktan yükseğe uzanan bulut → CB"
+    },
+    {
+      "ids": [
+        15510,
+        15511
+      ],
+      "not": "En az iki seviyeye uzanan bulut → NS"
+    },
+    {
+      "ids": [
+        15539,
+        15540
+      ],
+      "not": "+TSRA → CB"
+    },
+    {
+      "ids": [
+        15541,
+        15542,
+        15543,
+        15544
+      ],
+      "not": "Dolu (GR/SHGR) → CB (dört yazım)"
+    },
+    {
+      "ids": [
+        15548,
+        15549
+      ],
+      "not": "Sis bildirimi → görüş 1000 m altı"
+    },
+    {
+      "ids": [
+        15559,
+        15560
+      ],
+      "not": "Ci-Cs-As-Ns dizisi → sıcak cephe"
+    },
+    {
+      "ids": [
+        15601,
+        15603
+      ],
+      "not": "Dağ dalgasında en şiddetli türbülans → roll cloud"
+    },
+    {
+      "ids": [
+        15614,
+        15615,
+        15616
+      ],
+      "not": "METAR gust → ortalamadan 10 kt fazla"
+    },
+    {
+      "ids": [
+        15622,
+        15623
+      ],
+      "not": "BKN → 5-7 okta"
+    },
+    {
+      "ids": [
+        15627,
+        15628
+      ],
+      "not": "TREND → gözlemden sonra 2 saat geçerli"
+    },
+    {
+      "ids": [
+        15629,
+        15650
+      ],
+      "not": "NOSIG → önemli değişiklik beklenmiyor"
+    },
+    {
+      "ids": [
+        15675,
+        15676
+      ],
+      "not": "Ekvator dışındaki paraleller → rhumb line"
+    },
+    {
+      "ids": [
+        15782,
+        15783
+      ],
+      "not": "Gündüz süresi → güneşin deklinasyonu + gözlemcinin enlemi"
+    },
+    {
+      "ids": [
+        15753,
+        15754
+      ],
+      "not": "16 dk / 20 kt kuyruk → dönüş 24 dk"
+    },
+    {
+      "ids": [
+        15761,
+        15762
+      ],
+      "not": "36 dk 157 NM, 60 kt kuyruk → 193 NM"
+    },
+    {
+      "ids": [
+        15716,
+        15717,
+        15720
+      ],
+      "not": "Variation → gerçek kuzey ile manyetik kuzey arası açı"
+    },
+    {
+      "ids": [
+        15673,
+        15693
+      ],
+      "not": "En kısa mesafe → büyük daire"
+    },
+    {
+      "ids": [
+        15684,
+        15760
+      ],
+      "not": "Meridyende 1 dakikalık yay → 1 NM"
+    },
+    {
+      "ids": [
+        15721,
+        15729,
+        15736
+      ],
+      "not": "Gerçek kuzey → gözlemcinin meridyeni boyunca kutba"
+    },
+    {
+      "ids": [
+        15743,
+        15744
+      ],
+      "not": "Agonik çizgi → variation sıfır"
+    },
+    {
+      "ids": [
+        15745,
+        15749
+      ],
+      "not": "İzogonal → eşit variation"
+    },
+    {
+      "ids": [
+        15747,
+        15748
+      ],
+      "not": "Manyetik kutup hareketi → variation değeri artar ya da azalır"
+    },
+    {
+      "ids": [
+        15901,
+        15902
+      ],
+      "not": "DME → eğik mesafe (slant range)"
+    },
+    {
+      "ids": [
+        16102,
+        16103,
+        16104,
+        16105
+      ],
+      "not": "Hücum açısı tanımı → veter çizgisi ile bağıl rüzgâr (dört yazım)"
+    },
+    {
+      "ids": [
+        16142,
+        16143
+      ],
+      "not": "Pozitif kamburlu profil negatif AoA'da (~-4°) taşımaya başlar"
+    },
+    {
+      "ids": [
+        16247,
+        16248
+      ],
+      "not": "Yatma bozulmasında dihedral yalpayı düzeltir"
+    },
+    {
+      "ids": [
+        16275,
+        16276
+      ],
+      "not": "Anti-balance tab → kumanda yükünü artırır, aşırı sapmayı önler"
+    },
+    {
+      "ids": [
+        16201,
+        16202,
+        16203
+      ],
+      "not": "Dönüşte stall hızı → yük faktörünün kareköküyle artar"
+    },
+    {
+      "ids": [
+        16079,
+        16080,
+        16081
+      ],
+      "not": "İrtifayla yoğunluk düşer çünkü basınç düşer"
+    },
+    {
+      "ids": [
+        16124,
+        16125
+      ],
+      "not": "Kanat üstünde hava akımı daha hızlıdır"
+    },
+    {
+      "ids": [
+        16254,
+        16255
+      ],
+      "not": "Normal (dikey) eksen etrafındaki hareket → yaw"
+    },
+    {
+      "ids": [
+        16095,
+        16096,
+        16097
+      ],
+      "not": "Hız artınca dinamik basınç artar, statik basınç düşer (venturi/düşük hız)"
+    },
+    {
+      "ids": [
+        16243,
+        16244
+      ],
+      "not": "Yön kararlılığı → dikey stabilizatör / fin"
+    },
+    {
+      "ids": [
+        16237,
+        16238
+      ],
+      "not": "Boyuna kararlılık → yatay stabilizatör"
+    },
+    {
+      "ids": [
+        16267,
+        16268,
+        16269,
+        16270
+      ],
+      "not": "Diferansiyel aileron → adverse yaw'ı önler (dört yazım)"
+    },
+    {
+      "ids": [
+        16230,
+        16231
+      ],
+      "not": "Bozulmadan sonra kendiliğinden eski hâline dönme → pozitif kararlılık"
+    },
+    {
+      "ids": [
+        16245,
+        16246
+      ],
+      "not": "Dihedral → yanal (lateral) kararlılık"
+    },
+    {
+      "ids": [
+        16240,
+        16241
+      ],
+      "not": "CG ön limitte → çok yüksek elevator/çubuk kuvveti"
+    },
+    {
+      "ids": [
+        16112,
+        16113
+      ],
+      "not": "Aspect ratio → açıklık / ortalama veter"
+    },
+    {
+      "ids": [
+        16147,
+        16148
+      ],
+      "not": "Hız iki katına çıkınca parazit direnç 4 kat artar"
+    },
+    {
+      "ids": [
+        16150,
+        16151
+      ],
+      "not": "İndüklenmiş direncin ana kaynağı → kanat ucu"
+    },
+    {
+      "ids": [
+        16163,
+        16164
+      ],
+      "not": "Toplam direnç minimum → parazit direnç = indüklenmiş direnç"
+    },
+    {
+      "ids": [
+        16161,
+        16166
+      ],
+      "not": "Hız artınca indüklenmiş direnç azalır, parazit direnç artar"
+    },
+    {
+      "ids": [
+        16135,
+        16136
+      ],
+      "not": "Aerodinamik kuvvetlerin etkidiği tek nokta → basınç merkezi"
+    },
+    {
+      "ids": [
+        16137,
+        16138
+      ],
+      "not": "AoA artarken CP kritik açıya kadar öne kayar"
+    },
+    {
+      "ids": [
+        16140,
+        16141
+      ],
+      "not": "CLmax → stall açısında / hemen öncesinde"
+    },
+    {
+      "ids": [
+        16170,
+        16171
+      ],
+      "not": "Kanat kritik hücum açısında stall olur"
+    },
+    {
+      "ids": [
+        16173,
+        16174,
+        16175
+      ],
+      "not": "Stall (kritik) açısı ağırlıktan bağımsız, sabittir"
+    },
+    {
+      "ids": [
+        16178,
+        16179
+      ],
+      "not": "Aşırı hücum açısı → taşıma kaybı"
+    },
+    {
+      "ids": [
+        16196,
+        16197,
+        16198
+      ],
+      "not": "Ağırlık/kanat yükü artınca stall hızı artar"
+    },
+    {
+      "ids": [
+        16211,
+        16212
+      ],
+      "not": "Flap inince stall açısı küçülür, CLmax artar"
+    },
+    {
+      "ids": [
+        16219,
+        16220
+      ],
+      "not": "Flap açılınca AoA azaltılmalı"
+    },
+    {
+      "ids": [
+        16225,
+        16227
+      ],
+      "not": "Slat → kritik hücum açısını büyütür"
+    },
+    {
+      "ids": [
+        16272,
+        16284
+      ],
+      "not": "Flutter → kumanda yüzeyinin kütle dengelemesiyle önlenir"
+    },
+    {
+      "ids": [
+        16290,
+        16291
+      ],
+      "not": "Denge → taşıma = ağırlık, itki = direnç"
+    },
+    {
+      "ids": [
+        16293,
+        16294
+      ],
+      "not": "CP CG'nin arkasında → kuyruk aşağı kuvvet üretir"
+    },
+    {
+      "ids": [
+        16308,
+        16309
+      ],
+      "not": "Yük faktörü → yatış (roll) açısına bağlı"
+    },
+    {
+      "ids": [
+        16082,
+        16083
+      ],
+      "not": "Bernoulli → toplam basınç = dinamik + statik"
+    },
+    {
+      "ids": [
+        16086,
+        16087
+      ],
+      "not": "Statik/hava basıncı her yönde etki eder"
+    },
+    {
+      "ids": [
+        16088,
+        16089
+      ],
+      "not": "Dinamik basınç = ½ρV²"
+    },
+    {
+      "ids": [
+        16127,
+        16128
+      ],
+      "not": "Taşıma → üstte alçak, altta yüksek basınç"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+{% block title %}İstatistik — ATPL Soru Bankası{% endblock %}
+{% block body %}
+<div class="wrap">
+  <h1 class="page">İstatistik</h1>
+  <p class="sub">Tüm turların birleştirilmiş sonucu. Her cevap kalıcı olarak kaydedilir.</p>
+
+  <div class="tiles">
+    <div class="tile"><span class="lbl">Genel başarı</span>
+      <span class="v acc">{% if summary.pct is not none %}%{{ summary.pct }}{% else %}—{% endif %}</span>
+      <span class="foot">{{ summary.n }} cevap</span></div>
+    <div class="tile"><span class="lbl">Doğru</span>
+      <span class="v ok">{{ summary.ok }}</span><span class="foot">soru</span></div>
+    <div class="tile"><span class="lbl">Yanlış defteri</span>
+      <span class="v {% if wrong_n %}bad{% endif %}">{{ wrong_n }}</span>
+      <span class="foot">tekrar bekliyor</span></div>
+    <div class="tile"><span class="lbl">Tamamlanan tur</span>
+      <span class="v">{{ summary.runs }}</span><span class="foot">{{ summary.streak }} gün seri</span></div>
+  </div>
+
+  <div class="card">
+    <div class="hd"><h2>Son 30 gün</h2><div class="sp"></div>
+      <span class="lbl">günlük cevap sayısı</span></div>
+    <div class="bd">
+      {% set mx = (daily | map(attribute='n') | max) or 1 %}
+      <div class="spark">
+        {% for d in daily %}
+          <div class="d {% if not d.n %}zero{% endif %}"
+               title="{{ d.d }} · {{ d.n }} cevap{% if d.pct is not none %} · %{{ d.pct }}{% endif %}">
+            {% if d.n %}<i style="height:{{ [(d.n * 100 // (mx or 1)), 6] | max }}%"></i>{% endif %}
+          </div>
+        {% endfor %}
+      </div>
+      <div class="pmeta" style="margin:8px 0 0">
+        <span class="lbl">{{ daily[0].d }}</span>
+        <span class="lbl">bugün</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="hd"><h2>Ders bazında</h2></div>
+    <div class="scroll"><table class="tbl">
+      <thead><tr>
+        <th>Ders</th><th class="n">Cevap</th><th class="n">Başarı</th>
+        <th style="width:26%">Grafik</th><th class="n">Kapsam</th>
+      </tr></thead>
+      <tbody>
+      {% for s in per_subject %}
+        <tr>
+          <td><b>{{ s.code }}</b> · {{ s.name }}</td>
+          <td class="n">{{ s.n }}</td>
+          <td class="n">{% if s.pct is not none %}%{{ s.pct }}{% else %}—{% endif %}</td>
+          <td><div class="bar"><i class="{% if s.pct is none %}cy{% elif s.pct >= 75 %}ok{% elif s.pct < 50 %}bad{% endif %}"
+                 style="width:{{ s.pct or 0 }}%"></i></div></td>
+          <td class="n">{{ s.uniq }}/{{ s.bank_n }}</td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table></div>
+  </div>
+
+  <div class="card">
+    <div class="hd"><h2>En zayıf bölümlerin</h2><div class="sp"></div>
+      <span class="lbl">en az 4 cevap</span></div>
+    {% if weakest %}
+    <div class="scroll"><table class="tbl">
+      <thead><tr><th>Bölüm</th><th class="n">Cevap</th><th class="n">Başarı</th><th style="width:26%">Grafik</th></tr></thead>
+      <tbody>
+      {% for w in weakest %}
+        <tr>
+          <td><b>{{ w.code }}</b> · {{ w.name }}</td>
+          <td class="n">{{ w.ok }}/{{ w.n }}</td>
+          <td class="n">%{{ w.pct }}</td>
+          <td><div class="bar"><i class="{% if w.pct >= 75 %}ok{% elif w.pct < 50 %}bad{% endif %}"
+                 style="width:{{ w.pct }}%"></i></div></td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table></div>
+    {% else %}
+      <div class="bd"><div class="empty">Yeterli veri yok. Birkaç tur çöz, buraya zayıf
+        olduğun bölümler gelecek.</div></div>
+    {% endif %}
+  </div>
+
+  {% if wrong_by_subject %}
+  <div class="card">
+    <div class="hd"><h2>Yanlış defteri dağılımı</h2></div>
+    <div class="scroll"><table class="tbl">
+      <thead><tr><th>Ders</th><th class="n">Bekleyen soru</th><th></th></tr></thead>
+      <tbody>
+      {% for w in wrong_by_subject %}
+        <tr>
+          <td><b>{{ w.code }}</b> · {{ w.name }}</td>
+          <td class="n">{{ w.n }}</td>
+          <td class="n">
+            <form method="post" action="/tur" style="display:inline">
+              <input type="hidden" name="only_wrong" value="on">
+              <input type="hidden" name="hide_dups" value="on">
+              <input type="hidden" name="show_gen" value="on">
+              <input type="hidden" name="subject" value="{{ w.code }}">
+              <input type="hidden" name="count" value="{{ [w.n, 50] | min }}">
+              <button class="iconbtn" type="submit">çöz</button>
+            </form>
+          </td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table></div>
+  </div>
+  {% endif %}
+</div>
+{% endblock %}
