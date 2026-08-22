@@ -1,791 +1,924 @@
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ATPL Soru Bankası</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>ATPL Çalışma</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
 
 <style>
 :root{
-  --paper:#EDF0F4; --surface:#FFFFFF; --surface-2:#F5F8FA;
-  --ink:#131A22; --ink-2:#4C5866; --ink-3:#7C8996;
-  --rule:#D4DBE3; --rule-2:#B3BECA;
-  --accent:#C21A6B; --accent-soft:#FAE8F1; --accent-ink:#8E0F4C;
-  --cyan:#0B6E7F;
-  --ok:#15764F; --ok-soft:#E3F3EC; --bad:#B32318; --bad-soft:#FBEAE8;
-  --shadow:0 1px 2px rgba(19,26,34,.05), 0 10px 28px -14px rgba(19,26,34,.22);
-  --f-display:'Archivo', system-ui, -apple-system, sans-serif;
-  --f-body:'Source Serif 4', Georgia, 'Times New Roman', serif;
-  --f-mono:'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  --paper:#F2F4F7; --surface:#FFFFFF; --surface-2:#F6F8FA; --surface-3:#E9EEF3;
+  --ink:#10151C; --ink-2:#4A5563; --ink-3:#7B8794;
+  --rule:#D6DDE5; --rule-2:#B4BFCB;
+  --accent:#C21A6B; --accent-soft:#FBE7F0; --accent-ink:#8E0F4C; --on-accent:#FFFFFF;
+  --cyan:#0B6E7F; --cyan-soft:#E1F1F4;
+  --due:#A8620A; --due-soft:#FBF0DE;
+  --ok:#15764F; --ok-soft:#E2F3EB; --bad:#B32318; --bad-soft:#FBE9E7;
+  --shadow:0 1px 2px rgba(16,21,28,.05), 0 12px 32px -18px rgba(16,21,28,.30);
+  --f-ui:'Archivo', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --f-read:'Source Serif 4', Georgia, 'Times New Roman', serif;
+  --f-num:'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  --r:4px;
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
-    --paper:#090D12; --surface:#121A22; --surface-2:#18212A;
-    --ink:#E4EAF1; --ink-2:#9BA8B6; --ink-3:#6D7A88;
-    --rule:#25313D; --rule-2:#384754;
-    --accent:#FF5CA8; --accent-soft:#2C1424; --accent-ink:#FF8DC3;
-    --cyan:#4FBACE;
-    --ok:#3FD98F; --ok-soft:#0F2820; --bad:#FF6F61; --bad-soft:#2C1512;
-    --shadow:0 1px 2px rgba(0,0,0,.5), 0 10px 28px -14px rgba(0,0,0,.7);
+    --paper:#080B10; --surface:#111721; --surface-2:#171F2A; --surface-3:#1F2937;
+    --ink:#E6ECF3; --ink-2:#9AA7B5; --ink-3:#6B7785;
+    --rule:#232E3B; --rule-2:#374553;
+    --accent:#FF5CA8; --accent-soft:#2B1322; --accent-ink:#FF8FC4; --on-accent:#11060C;
+    --cyan:#4FBACE; --cyan-soft:#0D2930;
+    --due:#E9AE5A; --due-soft:#2A2013;
+    --ok:#3FD98F; --ok-soft:#0E2720; --bad:#FF6F61; --bad-soft:#2B1411;
+    --shadow:0 1px 2px rgba(0,0,0,.5), 0 12px 32px -18px rgba(0,0,0,.8);
   }
 }
 :root[data-theme="dark"]{
-  --paper:#090D12; --surface:#121A22; --surface-2:#18212A;
-  --ink:#E4EAF1; --ink-2:#9BA8B6; --ink-3:#6D7A88;
-  --rule:#25313D; --rule-2:#384754;
-  --accent:#FF5CA8; --accent-soft:#2C1424; --accent-ink:#FF8DC3;
-  --cyan:#4FBACE;
-  --ok:#3FD98F; --ok-soft:#0F2820; --bad:#FF6F61; --bad-soft:#2C1512;
-  --shadow:0 1px 2px rgba(0,0,0,.5), 0 10px 28px -14px rgba(0,0,0,.7);
+  --paper:#080B10; --surface:#111721; --surface-2:#171F2A; --surface-3:#1F2937;
+  --ink:#E6ECF3; --ink-2:#9AA7B5; --ink-3:#6B7785;
+  --rule:#232E3B; --rule-2:#374553;
+  --accent:#FF5CA8; --accent-soft:#2B1322; --accent-ink:#FF8FC4; --on-accent:#11060C;
+  --cyan:#4FBACE; --cyan-soft:#0D2930;
+  --due:#E9AE5A; --due-soft:#2A2013;
+  --ok:#3FD98F; --ok-soft:#0E2720; --bad:#FF6F61; --bad-soft:#2B1411;
+  --shadow:0 1px 2px rgba(0,0,0,.5), 0 12px 32px -18px rgba(0,0,0,.8);
 }
 
 *{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
 body{
   margin:0; background:var(--paper); color:var(--ink);
-  font-family:var(--f-display); font-size:16px; line-height:1.5;
-  -webkit-font-smoothing:antialiased;
+  font-family:var(--f-ui); font-size:16px; line-height:1.5;
+  -webkit-font-smoothing:antialiased; overscroll-behavior-y:none;
 }
-button{font:inherit; color:inherit; cursor:pointer}
-:focus-visible{outline:2px solid var(--accent); outline-offset:2px; border-radius:2px}
+button,input,select{font:inherit; color:inherit}
+button{cursor:pointer; background:none; border:none}
+:focus-visible{outline:2px solid var(--accent); outline-offset:2px; border-radius:3px}
+@media (prefers-reduced-motion: reduce){ *{transition:none !important; animation:none !important} }
 
-.lbl{
-  font-family:var(--f-mono); font-size:10px; font-weight:500;
-  letter-spacing:.14em; text-transform:uppercase; color:var(--ink-3);
-}
-.num{font-family:var(--f-mono); font-variant-numeric:tabular-nums}
+.lbl{font-family:var(--f-num); font-size:10px; font-weight:500;
+  letter-spacing:.13em; text-transform:uppercase; color:var(--ink-3)}
+.num{font-family:var(--f-num); font-variant-numeric:tabular-nums}
 
-/* ── Şerit başlık ── */
-.topbar{
-  display:flex; align-items:center; gap:14px; flex-wrap:nowrap;
-  padding:14px 22px; background:var(--surface);
-  border-bottom:1px solid var(--rule);
+/* ── Üst şerit ── */
+.bar{
+  position:sticky; top:0; z-index:30; display:flex; align-items:center; gap:8px;
+  padding:9px 12px; background:var(--surface); border-bottom:1px solid var(--rule);
+  padding-top:calc(9px + env(safe-area-inset-top));
 }
-.brand{display:flex; align-items:baseline; gap:10px}
-.brand h1{
-  margin:0; font-size:17px; font-weight:700; letter-spacing:-.01em;
-}
-.brand .tick{
-  width:26px; height:1px; background:var(--accent); align-self:center;
-}
-.topbar .spacer{flex:1}
-.miniscore{display:none; align-items:baseline; gap:8px; font-family:var(--f-mono); font-size:12.5px;
-  font-variant-numeric:tabular-nums; white-space:nowrap}
-.miniscore .o{color:var(--ok); font-weight:600}
-.miniscore .b{color:var(--bad); font-weight:600}
-@media (max-width:880px){ .miniscore{display:flex} }
-@media (max-width:520px){ #totalLbl{display:none} }
-.themebtn{
-  background:none; border:1px solid var(--rule); border-radius:2px;
-  padding:5px 10px; font-family:var(--f-mono); font-size:11px;
-  letter-spacing:.08em; text-transform:uppercase; color:var(--ink-2);
-}
-.themebtn:hover{border-color:var(--rule-2); color:var(--ink)}
+.bar .logo{display:flex; align-items:center; gap:8px; font-weight:700; font-size:14.5px;
+  letter-spacing:-.01em; white-space:nowrap}
+.bar .logo svg{width:18px; height:18px; flex:none}
+.bar .sp{flex:1}
+.tbtn{border:1px solid var(--rule); border-radius:var(--r); padding:6px 10px;
+  font-family:var(--f-num); font-size:10.5px; letter-spacing:.07em;
+  text-transform:uppercase; color:var(--ink-2); white-space:nowrap}
+.tbtn:hover{border-color:var(--rule-2); color:var(--ink)}
+.tbtn.on{background:var(--accent-soft); border-color:var(--accent); color:var(--accent-ink)}
 
-/* ── Yerleşim ── */
-.wrap{
-  display:grid; grid-template-columns:266px minmax(0,1fr);
-  gap:0; min-height:calc(100vh - 52px);
-}
-@media (max-width:880px){
-  .wrap{display:flex; flex-direction:column}
-  .main{order:1} .rail{order:2}
-}
+.page{max-width:760px; margin:0 auto; padding:18px 14px 80px}
+@media (min-width:720px){ .page{padding:26px 20px 90px} }
 
-/* ── Sol panel ── */
-.rail{
-  background:var(--surface); border-right:1px solid var(--rule);
-  padding:20px; display:flex; flex-direction:column; gap:22px;
+h1{margin:0 0 4px; font-size:23px; font-weight:700; letter-spacing:-.022em; text-wrap:balance}
+.sub{margin:0 0 20px; color:var(--ink-2); font-size:14px}
+
+/* ── Deste kartları ── */
+.decks{display:grid; grid-template-columns:1fr 1fr; gap:9px; margin-bottom:12px}
+@media (min-width:620px){ .decks{grid-template-columns:repeat(4,1fr)} }
+.deck{
+  display:flex; flex-direction:column; gap:3px; text-align:left;
+  background:var(--surface); border:1px solid var(--rule); border-radius:var(--r);
+  padding:13px 13px 12px; transition:border-color .12s, transform .08s;
 }
-@media (max-width:880px){
-  .rail{border-right:none; border-bottom:1px solid var(--rule)}
+.deck:hover:not(:disabled){border-color:var(--rule-2)}
+.deck:active:not(:disabled){transform:scale(.985)}
+.deck:disabled{opacity:.42; cursor:not-allowed}
+.deck.on{border-color:var(--accent); background:var(--accent-soft)}
+.deck .v{font-family:var(--f-num); font-size:25px; font-weight:500; line-height:1.05;
+  font-variant-numeric:tabular-nums; letter-spacing:-.02em}
+.deck .t{font-size:12.5px; font-weight:600}
+.deck .d{font-size:11px; color:var(--ink-3); line-height:1.35}
+.deck.due .v{color:var(--due)} .deck.wrong .v{color:var(--bad)}
+.deck.new .v{color:var(--cyan)} .deck.star .v{color:var(--accent)}
+.deck.on .d, .deck.on .t{color:var(--accent-ink)}
+
+.gobar{display:flex; gap:9px; margin:14px 0 22px}
+.go{
+  flex:1; background:var(--accent); color:var(--on-accent); border-radius:var(--r);
+  padding:15px 20px; font-size:16px; font-weight:600; text-align:center;
 }
-.grp{display:flex; flex-direction:column; gap:9px}
-.chips{display:flex; flex-direction:column; gap:5px}
-.chips .chip{justify-content:space-between; width:100%}
-.chip .nm{overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
-.toggles{display:flex; flex-direction:column; gap:5px}
-.tg{
-  display:flex; align-items:center; gap:9px; width:100%; text-align:left;
-  background:var(--surface-2); border:1px solid var(--rule); border-radius:2px;
-  padding:7px 10px; font-size:12.5px; font-weight:500; color:var(--ink-3);
+.go:hover{filter:brightness(1.07)}
+.go:disabled{opacity:.4; cursor:not-allowed; filter:none}
+.go2{flex:none; background:var(--surface); border:1px solid var(--rule); border-radius:var(--r);
+  padding:15px 16px; font-size:14px; font-weight:500; color:var(--ink-2)}
+.go2:hover{border-color:var(--rule-2); color:var(--ink)}
+
+/* ── Filtre bloğu ── */
+.box{background:var(--surface); border:1px solid var(--rule); border-radius:var(--r);
+  margin-bottom:12px; overflow:hidden}
+.box > summary{
+  list-style:none; cursor:pointer; padding:12px 14px; display:flex; align-items:center;
+  gap:10px; background:var(--surface-2); border-bottom:1px solid transparent;
+  font-size:13.5px; font-weight:600;
 }
-.tg:hover{border-color:var(--rule-2)}
-.tg .box{
-  flex:none; width:14px; height:14px; border:1px solid var(--rule-2); border-radius:2px;
-  display:grid; place-items:center; font-family:var(--f-mono); font-size:10px; line-height:1;
-}
-.tg[aria-pressed="true"]{color:var(--ink); border-color:var(--accent)}
-.tg[aria-pressed="true"] .box{background:var(--accent); border-color:var(--accent); color:#fff}
-.tg .n{margin-left:auto; font-family:var(--f-mono); font-size:10.5px; color:var(--ink-3)}
+.box > summary::-webkit-details-marker{display:none}
+.box[open] > summary{border-bottom-color:var(--rule)}
+.box > summary .chev{margin-left:auto; color:var(--ink-3); font-family:var(--f-num); font-size:11px}
+.box[open] > summary .chev{transform:rotate(90deg)}
+.box .in{padding:14px}
+.grp{margin-bottom:16px}
+.grp:last-child{margin-bottom:0}
+.grp > .lbl{display:block; margin-bottom:8px}
+
+.chips{display:flex; flex-wrap:wrap; gap:6px}
 .chip{
-  background:var(--surface-2); border:1px solid var(--rule); border-radius:2px;
-  padding:6px 10px; font-size:12.5px; font-weight:500; color:var(--ink-2);
-  display:flex; align-items:center; gap:7px;
+  border:1px solid var(--rule); border-radius:99px; padding:6px 12px;
+  font-size:12.5px; font-weight:500; color:var(--ink-2); background:var(--surface-2);
+  display:inline-flex; align-items:center; gap:6px; white-space:nowrap;
 }
 .chip:hover{border-color:var(--rule-2); color:var(--ink)}
-.chip[aria-pressed="true"]{
-  background:var(--accent-soft); border-color:var(--accent); color:var(--accent-ink);
-}
-.chip b{font-family:var(--f-mono); font-size:10.5px; font-weight:500; opacity:.7}
+.chip.on{background:var(--accent); border-color:var(--accent); color:var(--on-accent)}
+.chip b{font-family:var(--f-num); font-size:10px; font-weight:500; opacity:.65}
+.chip.on b{opacity:.85}
 
-select, input[type="search"]{
-  width:100%; padding:8px 10px; font:inherit; font-size:13px;
-  background:var(--surface-2); color:var(--ink);
-  border:1px solid var(--rule); border-radius:2px;
-}
-select:hover, input[type="search"]:hover{border-color:var(--rule-2)}
+.switch{display:flex; align-items:center; gap:10px; padding:9px 11px; width:100%;
+  background:var(--surface-2); border:1px solid var(--rule); border-radius:var(--r);
+  text-align:left; font-size:13px; font-weight:500; color:var(--ink-2); margin-bottom:6px}
+.switch:hover{border-color:var(--rule-2)}
+.switch .knob{flex:none; width:32px; height:18px; border-radius:99px; background:var(--rule-2);
+  position:relative; transition:background .15s}
+.switch .knob::after{content:''; position:absolute; top:2px; left:2px; width:14px; height:14px;
+  border-radius:50%; background:var(--surface); transition:transform .15s}
+.switch.on{color:var(--ink); border-color:var(--accent)}
+.switch.on .knob{background:var(--accent)}
+.switch.on .knob::after{transform:translateX(14px)}
+.switch .n{margin-left:auto; font-family:var(--f-num); font-size:10.5px; color:var(--ink-3)}
 
-.seg{display:flex; border:1px solid var(--rule); border-radius:2px; overflow:hidden}
-.seg button{
-  flex:1; background:var(--surface-2); border:none; padding:7px 6px;
-  font-size:12px; font-weight:500; color:var(--ink-2);
+input[type=search], select{
+  width:100%; padding:10px 12px; font-size:14.5px; background:var(--surface-2);
+  color:var(--ink); border:1px solid var(--rule); border-radius:var(--r);
 }
+textarea#bak{
+  width:100%; height:64px; resize:vertical; padding:9px 11px;
+  font-family:var(--f-num); font-size:11px; line-height:1.45;
+  background:var(--surface-2); color:var(--ink-2);
+  border:1px solid var(--rule); border-radius:var(--r);
+}
+input[type=search]:focus, select:focus, textarea#bak:focus{border-color:var(--accent);
+  outline:none; box-shadow:0 0 0 3px var(--accent-soft)}
+.seg{display:flex; border:1px solid var(--rule); border-radius:var(--r); overflow:hidden}
+.seg button{flex:1; background:var(--surface-2); padding:9px 6px; font-size:12.5px;
+  font-weight:500; color:var(--ink-2)}
 .seg button + button{border-left:1px solid var(--rule)}
-.seg button[aria-pressed="true"]{background:var(--accent); color:#fff}
-:root[data-theme="dark"] .seg button[aria-pressed="true"],
-:root:not([data-theme="light"]) .seg button[aria-pressed="true"]{color:#12070D}
-@media (prefers-color-scheme: light){
-  :root:not([data-theme="dark"]) .seg button[aria-pressed="true"]{color:#fff}
-}
+.seg button.on{background:var(--accent); color:var(--on-accent)}
 
-/* ── Gösterge ── */
-.gauge{
-  border:1px solid var(--rule); border-radius:2px; overflow:hidden;
-  background:var(--surface-2);
-}
-.gauge .row{display:grid; grid-template-columns:1fr 1fr; }
-.gauge .cell{padding:11px 12px; border-bottom:1px solid var(--rule)}
-.gauge .cell + .cell{border-left:1px solid var(--rule)}
-.gauge .row:last-child .cell{border-bottom:none}
-.gauge .v{font-family:var(--f-mono); font-size:21px; font-weight:500; line-height:1.1; font-variant-numeric:tabular-nums}
-.gauge .v.ok{color:var(--ok)} .gauge .v.bad{color:var(--bad)}
-.gauge .wide{grid-column:1 / -1; border-left:none}
+.scopeline{font-size:12.5px; color:var(--ink-2); margin-top:2px}
+.scopeline b{font-family:var(--f-num); color:var(--ink); font-weight:500}
 
-.railbtns{display:flex; flex-direction:column; gap:7px}
-.abtn{
-  background:var(--surface-2); border:1px solid var(--rule); border-radius:2px;
-  padding:8px 11px; font-size:12.5px; font-weight:500; color:var(--ink-2);
-  text-align:left; display:flex; justify-content:space-between; align-items:center; gap:8px;
-}
-.abtn:hover:not(:disabled){border-color:var(--accent); color:var(--accent-ink)}
-.abtn:disabled{opacity:.4; cursor:not-allowed}
-.abtn span.num{font-size:11px; color:var(--ink-3)}
+/* ── Soru ── */
+.prog{height:3px; background:var(--rule); border-radius:2px; overflow:hidden; margin-bottom:8px}
+.prog i{display:block; height:100%; background:var(--accent); width:0; transition:width .25s ease}
+.meta{display:flex; justify-content:space-between; align-items:baseline; gap:10px; margin-bottom:12px}
 
-.bookline{
-  font-size:11.5px; line-height:1.45; color:var(--ink-3);
-  border-left:2px solid var(--accent); padding:2px 0 2px 9px;
-}
-.hint{font-size:11.5px; line-height:1.5; color:var(--ink-3)}
-.hint kbd{
-  font-family:var(--f-mono); font-size:10.5px; background:var(--surface-2);
-  border:1px solid var(--rule); border-radius:2px; padding:1px 5px; color:var(--ink-2);
-}
+.card{background:var(--surface); border:1px solid var(--rule); border-radius:var(--r);
+  box-shadow:var(--shadow); overflow:hidden}
+.head{display:flex; align-items:center; gap:7px; flex-wrap:wrap; padding:9px 13px;
+  background:var(--surface-2); border-bottom:1px solid var(--rule)}
+.head .who{font-size:11.5px; font-weight:500; color:var(--ink-2); min-width:0;
+  overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.head .sp{flex:1}
+.tag{font-family:var(--f-num); font-size:9px; letter-spacing:.1em; text-transform:uppercase;
+  border:1px solid currentColor; border-radius:2px; padding:2px 5px; white-space:nowrap}
+.tag.fig{color:var(--ink-2)} .tag.gen{color:var(--cyan)}
+.tag.flag{color:var(--accent-ink); background:var(--accent-soft)}
+.tag.box{color:var(--due); background:var(--due-soft)}
+.starbtn{font-size:15px; line-height:1; padding:2px 4px; color:var(--ink-3)}
+.starbtn.on{color:var(--accent)}
 
-/* ── Ana alan ── */
-.main{padding:26px 22px 60px; display:flex; flex-direction:column; align-items:center}
-.col{width:100%; max-width:720px; display:flex; flex-direction:column; gap:18px}
-
-.progress{display:flex; flex-direction:column; gap:7px}
-.ptrack{height:3px; background:var(--rule); border-radius:2px; overflow:hidden}
-.pfill{height:100%; background:var(--accent); width:0; transition:width .25s ease}
-.pmeta{display:flex; justify-content:space-between; align-items:baseline; gap:12px}
-
-.card{
-  background:var(--surface); border:1px solid var(--rule); border-radius:3px;
-  box-shadow:var(--shadow); overflow:hidden;
-}
-.cardhead{
-  display:flex; align-items:center; gap:8px 10px; flex-wrap:wrap;
-  padding:10px 18px; border-bottom:1px solid var(--rule); background:var(--surface-2);
-}
-.cardhead .nm{font-size:12px; font-weight:500; color:var(--ink-2); letter-spacing:0; text-transform:none;
-  font-family:var(--f-display)}
-.cardhead .right{margin-left:auto; display:flex; align-items:center; gap:8px}
-.fig{
-  font-family:var(--f-mono); font-size:9.5px; letter-spacing:.1em; text-transform:uppercase;
-  color:var(--ink-2); background:var(--surface); border:1px solid var(--rule-2);
-  border-radius:2px; padding:2px 6px;
-}
-.gen{
-  font-family:var(--f-mono); font-size:9.5px; letter-spacing:.1em; text-transform:uppercase;
-  color:var(--cyan); background:var(--surface); border:1px solid var(--cyan);
-  border-radius:2px; padding:2px 6px;
-}
-.cardhead .sep{width:1px; height:11px; background:var(--rule-2)}
-.flag{
-  font-family:var(--f-mono); font-size:9.5px; letter-spacing:.1em; text-transform:uppercase;
-  color:var(--accent-ink); background:var(--accent-soft);
-  border:1px solid var(--accent); border-radius:2px; padding:2px 6px;
-}
-.qtext{
-  font-family:var(--f-body); font-size:19px; line-height:1.5; padding:22px 18px 6px;
-  white-space:pre-wrap; text-wrap:pretty;
-}
-.opts{display:flex; flex-direction:column; padding:12px 12px 14px; gap:6px}
-.opt{
-  display:flex; gap:12px; align-items:flex-start; text-align:left;
-  background:var(--surface); border:1px solid var(--rule); border-radius:2px;
-  padding:11px 13px; font-family:var(--f-body); font-size:15.5px; line-height:1.45;
-  position:relative; transition:border-color .12s, background .12s;
-}
+.qt{font-family:var(--f-read); font-size:18px; line-height:1.5; padding:19px 15px 6px;
+  white-space:pre-wrap; text-wrap:pretty}
+@media (min-width:720px){ .qt{font-size:19.5px} }
+.opts{display:flex; flex-direction:column; gap:7px; padding:11px}
+.opt{display:flex; gap:11px; align-items:flex-start; text-align:left; width:100%;
+  background:var(--surface); border:1px solid var(--rule); border-radius:var(--r);
+  padding:12px 12px; font-family:var(--f-read); font-size:16px; line-height:1.45;
+  min-height:50px; transition:border-color .1s, background .1s}
 .opt:hover:not(:disabled){border-color:var(--rule-2); background:var(--surface-2)}
 .opt:disabled{cursor:default}
-.opt .key{
-  flex:none; width:22px; height:22px; margin-top:1px;
-  display:grid; place-items:center; border:1px solid var(--rule-2); border-radius:2px;
-  font-family:var(--f-mono); font-size:11px; font-weight:500; color:var(--ink-2);
-}
-.opt.pick{border-color:var(--accent)}
-.opt.pick .key{background:var(--accent); border-color:var(--accent); color:#fff}
+.opt .k{flex:none; width:23px; height:23px; margin-top:1px; display:grid; place-items:center;
+  border:1px solid var(--rule-2); border-radius:3px; font-family:var(--f-num);
+  font-size:11px; font-weight:500; color:var(--ink-2)}
+.opt .m{margin-left:auto; padding-left:8px; font-family:var(--f-num); font-size:9.5px;
+  letter-spacing:.08em; align-self:center}
 .opt.right{border-color:var(--ok); background:var(--ok-soft)}
-.opt.right .key{background:var(--ok); border-color:var(--ok); color:var(--surface)}
+.opt.right .k{background:var(--ok); border-color:var(--ok); color:var(--surface)}
+.opt.right .m{color:var(--ok)}
 .opt.wrong{border-color:var(--bad); background:var(--bad-soft)}
-.opt.wrong .key{background:var(--bad); border-color:var(--bad); color:var(--surface)}
-.opt .mark{margin-left:auto; padding-left:10px; font-family:var(--f-mono); font-size:11px; letter-spacing:.08em}
-.opt.right .mark{color:var(--ok)} .opt.wrong .mark{color:var(--bad)}
+.opt.wrong .k{background:var(--bad); border-color:var(--bad); color:var(--surface)}
+.opt.wrong .m{color:var(--bad)}
+.opt.sel{border-color:var(--accent)}
+.opt.sel .k{background:var(--accent); border-color:var(--accent); color:var(--on-accent)}
 
-.verdict{
-  display:flex; align-items:center; gap:12px; flex-wrap:wrap;
-  padding:12px 18px; border-top:1px solid var(--rule); background:var(--surface-2);
-}
-.verdict .tag{
-  font-family:var(--f-mono); font-size:11px; letter-spacing:.1em; text-transform:uppercase;
-  padding:3px 8px; border-radius:2px;
-}
-.verdict.ok .tag{background:var(--ok); color:var(--surface)}
-.verdict.bad .tag{background:var(--bad); color:var(--surface)}
-.verdict .txt{font-size:13px; color:var(--ink-2)}
-.verdict .txt b{font-family:var(--f-body); font-size:14.5px; font-weight:600}
-.verdict .sub{display:block; margin-top:3px; font-family:var(--f-mono); font-size:10.5px;
-  letter-spacing:.06em; text-transform:uppercase; color:var(--ink-3)}
+.verdict{display:flex; gap:10px; align-items:flex-start; padding:12px 15px;
+  border-top:1px solid var(--rule); background:var(--surface-2)}
+.verdict .p{font-family:var(--f-num); font-size:10px; letter-spacing:.1em;
+  text-transform:uppercase; padding:3px 7px; border-radius:2px; flex:none}
+.verdict.ok .p{background:var(--ok); color:var(--surface)}
+.verdict.bad .p{background:var(--bad); color:var(--surface)}
+.verdict .x{font-size:13px; color:var(--ink-2); min-width:0}
+.verdict .x b{font-family:var(--f-read); font-size:15px; font-weight:600; color:var(--ink)}
+.verdict .x s{display:block; margin-top:3px; font-family:var(--f-num); font-size:9.5px;
+  letter-spacing:.06em; text-transform:uppercase; color:var(--ink-3); text-decoration:none}
 
-.nav{display:flex; gap:10px; align-items:center; flex-wrap:wrap}
-.pri{
-  background:var(--accent); border:1px solid var(--accent); color:#fff;
-  border-radius:2px; padding:10px 20px; font-size:14px; font-weight:600;
+.acts{display:flex; gap:8px; margin-top:13px}
+.acts .go{flex:1}
+@media (max-width:719px){
+  .acts{position:sticky; bottom:0; margin:13px -14px 0; padding:10px 14px;
+    background:var(--surface); border-top:1px solid var(--rule);
+    padding-bottom:calc(10px + env(safe-area-inset-bottom))}
 }
-:root[data-theme="dark"] .pri{color:#12070D}
-@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .pri{color:#12070D} }
-.pri:hover{filter:brightness(1.08)}
-.pri:disabled{opacity:.45; cursor:not-allowed; filter:none}
-.sec{
-  background:var(--surface); border:1px solid var(--rule); border-radius:2px;
-  padding:10px 16px; font-size:13.5px; font-weight:500; color:var(--ink-2);
-}
-.sec:hover:not(:disabled){border-color:var(--rule-2); color:var(--ink)}
-.sec:disabled{opacity:.4; cursor:not-allowed}
 
-/* ── Sonuç ── */
-.result{background:var(--surface); border:1px solid var(--rule); border-radius:3px; box-shadow:var(--shadow)}
-.rhead{padding:26px 22px; border-bottom:1px solid var(--rule); text-align:center}
-.score{font-family:var(--f-mono); font-size:52px; font-weight:500; line-height:1; font-variant-numeric:tabular-nums}
-.rlist{max-height:50vh; overflow-y:auto}
-.ritem{padding:13px 18px; border-bottom:1px solid var(--rule); display:flex; gap:12px; align-items:flex-start}
-.ritem:last-child{border-bottom:none}
-.rdot{flex:none; width:6px; height:6px; border-radius:50%; margin-top:8px}
+/* ── Özet ── */
+.score{font-family:var(--f-num); font-size:54px; font-weight:500; line-height:1;
+  font-variant-numeric:tabular-nums; letter-spacing:-.035em}
+.rrow{display:flex; gap:10px; align-items:flex-start; padding:12px 15px;
+  border-bottom:1px solid var(--rule)}
+.rrow:last-child{border-bottom:none}
+.rdot{flex:none; width:7px; height:7px; border-radius:50%; margin-top:7px}
 .rdot.ok{background:var(--ok)} .rdot.bad{background:var(--bad)}
-.ritem .q{font-family:var(--f-body); font-size:14.5px; line-height:1.45}
-.ritem .a{font-size:12.5px; color:var(--ink-2); margin-top:3px}
-.ritem .a b{color:var(--ok); font-weight:600}
-.ritem .a i{color:var(--bad); font-style:normal}
+.rrow .q{font-family:var(--f-read); font-size:14px; line-height:1.45}
+.rrow .a{font-size:12px; color:var(--ink-2); margin-top:3px}
+.rrow .a b{color:var(--ok); font-weight:600} .rrow .a i{color:var(--bad); font-style:normal}
 
-.empty{
-  padding:60px 20px; text-align:center; color:var(--ink-3);
-  border:1px dashed var(--rule); border-radius:3px; background:var(--surface);
+/* ── Panel (istatistik) ── */
+.sheet{position:fixed; inset:0; z-index:50; display:none}
+.sheet.on{display:block}
+.sheet .veil{position:absolute; inset:0; background:rgba(8,11,16,.55)}
+.sheet .body{
+  position:absolute; inset:auto 0 0 0; max-height:88vh; overflow-y:auto;
+  background:var(--paper); border-top:1px solid var(--rule);
+  border-radius:10px 10px 0 0; padding:16px 14px calc(24px + env(safe-area-inset-bottom));
+  animation:up .18s ease;
 }
-@media (prefers-reduced-motion: reduce){ *{transition:none !important} }
-@media (max-width:520px){
-  .qtext{font-size:17.5px} .opt{font-size:15px} .main{padding:18px 14px 50px}
-  .topbar{padding:12px 14px} .rail{padding:16px 14px}
+@keyframes up{from{transform:translateY(14px); opacity:.6}to{transform:none; opacity:1}}
+@media (min-width:720px){
+  .sheet .body{inset:0 0 0 auto; width:440px; max-height:none; border-radius:0;
+    border-left:1px solid var(--rule); border-top:none; padding:20px 18px}
+  @keyframes up{from{transform:translateX(14px); opacity:.6}to{transform:none; opacity:1}}
 }
+.sheet h2{margin:0 0 14px; font-size:17px; font-weight:700; letter-spacing:-.02em}
+
+.stat4{display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:14px}
+.stat4 .s{background:var(--surface); border:1px solid var(--rule); border-radius:var(--r);
+  padding:11px 12px}
+.stat4 .s .v{font-family:var(--f-num); font-size:22px; font-weight:500; line-height:1.1;
+  font-variant-numeric:tabular-nums}
+.stat4 .s .v.ok{color:var(--ok)} .stat4 .s .v.bad{color:var(--bad)}
+.stat4 .s .v.due{color:var(--due)}
+
+.tbl{width:100%; border-collapse:collapse; font-size:12.5px}
+.tbl th{text-align:left; font-family:var(--f-num); font-size:9.5px; letter-spacing:.11em;
+  text-transform:uppercase; color:var(--ink-3); font-weight:500; padding:0 8px 7px;
+  border-bottom:1px solid var(--rule)}
+.tbl td{padding:8px; border-bottom:1px solid var(--rule)}
+.tbl tr:last-child td{border-bottom:none}
+.tbl td.n{font-family:var(--f-num); font-variant-numeric:tabular-nums; text-align:right;
+  white-space:nowrap}
+.bar2{height:5px; background:var(--surface-3); border-radius:99px; overflow:hidden; min-width:48px}
+.bar2 i{display:block; height:100%; background:var(--accent); border-radius:99px}
+.bar2 i.ok{background:var(--ok)} .bar2 i.bad{background:var(--bad)}
+
+.heat{display:grid; grid-template-columns:repeat(15,1fr); gap:3px; margin-bottom:6px}
+.heat i{aspect-ratio:1; border-radius:2px; background:var(--surface-3)}
+.heat i.l1{background:var(--accent-soft)} .heat i.l2{background:color-mix(in srgb, var(--accent) 45%, var(--surface-3))}
+.heat i.l3{background:color-mix(in srgb, var(--accent) 70%, var(--surface-3))}
+.heat i.l4{background:var(--accent)}
+
+.empty{padding:38px 16px; text-align:center; color:var(--ink-3);
+  border:1px dashed var(--rule); border-radius:var(--r); background:var(--surface)}
+.hint{font-size:11.5px; line-height:1.55; color:var(--ink-3); margin-top:14px}
+kbd{font-family:var(--f-num); font-size:10px; background:var(--surface-2);
+  border:1px solid var(--rule); border-radius:3px; padding:1px 5px; color:var(--ink-2)}
+.hidden{display:none !important}
 </style>
 
-<div class="topbar">
-  <div class="brand">
-    <h1>ATPL Soru Bankası</h1>
-    <div class="tick"></div>
-    <span class="lbl" id="totalLbl"></span>
-  </div>
-  <div class="spacer"></div>
-  <div class="miniscore"><span class="o" id="mOk">0</span><span style="color:var(--ink-3)">/</span><span class="b" id="mBad">0</span></div>
-  <button class="themebtn" id="themeBtn" type="button">Tema</button>
+<div class="bar">
+  <span class="logo">
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M2 14.5 22 6l-3.5 8.5L22 23 2 14.5Z" fill="var(--accent)"/>
+    </svg>ATPL Çalışma
+  </span>
+  <span class="sp"></span>
+  <button class="tbtn" id="bStats" type="button">Durum</button>
+  <button class="tbtn" id="bTheme" type="button">Tema</button>
 </div>
 
-<div class="wrap">
-  <aside class="rail">
-    <div class="grp">
-      <div class="lbl">Ders</div>
-      <div class="chips" id="subjChips"></div>
-    </div>
+<div class="page" id="view"></div>
 
-    <div class="grp">
-      <div class="lbl">Bölüm</div>
-      <select id="secSel"></select>
-    </div>
-
-    <div class="grp">
-      <div class="lbl">Kapsam</div>
-      <div class="toggles">
-        <button class="tg" id="tgDup" type="button" aria-pressed="true">
-          <span class="box">✓</span><span>Tekrarları gizle</span><span class="n" id="nDup"></span></button>
-        <button class="tg" id="tgGen" type="button" aria-pressed="true">
-          <span class="box">✓</span><span>Üretilmiş sorular</span><span class="n" id="nGen"></span></button>
-      </div>
-    </div>
-
-    <div class="grp">
-      <div class="lbl">Ara</div>
-      <input type="search" id="search" placeholder="kelime veya soru ID">
-    </div>
-
-    <div class="grp">
-      <div class="lbl">Mod</div>
-      <div class="seg" id="modeSeg">
-        <button type="button" data-mode="study" aria-pressed="true">Çalışma</button>
-        <button type="button" data-mode="exam" aria-pressed="false">Sınav</button>
-      </div>
-      <div class="seg" id="orderSeg">
-        <button type="button" data-order="shuffle" aria-pressed="true">Karışık</button>
-        <button type="button" data-order="seq" aria-pressed="false">Sıralı</button>
-      </div>
-    </div>
-
-    <div class="grp">
-      <div class="lbl">Durum</div>
-      <div class="gauge">
-        <div class="row">
-          <div class="cell"><div class="lbl">Doğru</div><div class="v ok num" id="gOk">0</div></div>
-          <div class="cell"><div class="lbl">Yanlış</div><div class="v bad num" id="gBad">0</div></div>
-        </div>
-        <div class="row">
-          <div class="cell wide"><div class="lbl">Başarı</div><div class="v num" id="gPct">—</div></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="grp">
-      <div class="lbl">Yanlış defteri</div>
-      <div class="bookline" id="bookLine"></div>
-      <div class="railbtns">
-        <button class="abtn" id="bookBtn" type="button">Defteri çöz <span class="num" id="bookN">0</span></button>
-        <button class="abtn" id="bookClr" type="button">Defteri temizle</button>
-      </div>
-    </div>
-
-    <div class="railbtns">
-      <button class="abtn" id="againBtn" type="button">Bu turun yanlışları <span class="num" id="againN">0</span></button>
-      <button class="abtn" id="resetBtn" type="button">Yeni tur (karıştır)</button>
-    </div>
-
-    <div class="hint">
-      <b>Çalışma modunda</b> doğru cevapta soru kendiliğinden geçer; yanlışta doğru cevap ekranda kalır
-      ve soru yanlış defterine yazılır.<br><br>
-      Sorular da şıklar da her turda karıştırılır — veritabanında doğru cevap hep A şıkkıdır, burada değildir.<br><br>
-      <b style="color:var(--cyan)">Üretilmiş</b> etiketli sorular ders notlarından türetildi, gerçek sınav sorusu değil.<br><br>
-      <kbd>1</kbd>–<kbd>5</kbd> şık seç · <kbd>Enter</kbd> devam
-    </div>
-  </aside>
-
-  <main class="main">
-    <div class="col" id="col"></div>
-  </main>
+<div class="sheet" id="sheet">
+  <div class="veil" id="veil"></div>
+  <div class="body" id="sheetBody"></div>
 </div>
 
 <script id="qdata" type="application/json">__DATA__</script>
 <script>
 (function(){
 "use strict";
+
+// ─────────────────────────────────────────────────────────────────────
+// Veri
+// ─────────────────────────────────────────────────────────────────────
 const DB = JSON.parse(document.getElementById('qdata').textContent);
 const SUBJ = DB.s, QS = DB.q;
+// soru dizisi: [0]=id [1]=dersIdx [2]=bölümIdx [3]=metin [4]=şıklar
+//              [5]=tartışmalı [6]=tekrar [7]=üretilmiş [8]=şekilGerekli
+const BY_ID = new Map(QS.map(q => [q[0], q]));
 const KEYS = ['A','B','C','D','E'];
+const DAY = 864e5;
 
-// ── kalıcı tema tercihi (sandbox'ta erişilemezse sessizce atla) ──
-const store = {
-  get(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } },
-  set(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
-};
+// Aralıklı tekrar kutuları — doğru bildikçe soru ileriye atılır
+const BOX_MS = [10*6e4, 1*DAY, 3*DAY, 7*DAY, 16*DAY, 35*DAY];
+const LEECH = 4;          // bu kadar yanlıştan sonra "takıldığın soru"
+const MASTER = 2;         // yanlış defterinden çıkmak için üst üste doğru
 
-const state = {
-  subj: store.get('atpl.subj') || 'all',
-  sec: 'all',
-  q: '',
-  hideDups: true,
-  showGen: true,
-  mode: 'study',
-  order: 'shuffle',
-  salt: Math.floor(Math.random()*1e6),
-  list: [], i: 0,
-  answers: new Map(),   // qid -> {pick, correct}
-  onlyWrong: null,      // bu turda yanlış yapılanlar
-  bookMode: false       // kalıcı yanlış defteri turu
-};
-
-// ── Yanlış defteri: tarayıcıda kalır, oturumlar arasında taşınır ──
-// { qid: kaç kez yanlış } — doğru cevaplanınca sayaç düşer, sıfırlanınca silinir.
-let book = {};
-try{ book = JSON.parse(store.get('atpl.wrong') || '{}') || {}; }catch(e){ book = {}; }
-function saveBook(){ store.set('atpl.wrong', JSON.stringify(book)); }
-function bookIds(){ return Object.keys(book).map(Number); }
-function bookMiss(id){ book[id] = (book[id] || 0) + 1; saveBook(); }
-function bookHit(id){ if (book[id]){ book[id]--; if (book[id] <= 0) delete book[id]; saveBook(); } }
-
-const savedTheme = store.get('atpl.theme');
-if (savedTheme) document.documentElement.setAttribute('data-theme', savedTheme);
-
-// ── tohumlu karıştırma: aynı oturumda sıra sabit kalır ──
-function rand(seed){
-  let t = (seed + 0x6D2B79F5) >>> 0;
-  return function(){
-    t = Math.imul(t ^ (t >>> 15), t | 1);
-    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
-    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
-  };
+// ─────────────────────────────────────────────────────────────────────
+// Kalıcı durum — tarayıcıda saklanır, dosyaya aktarılabilir
+// ─────────────────────────────────────────────────────────────────────
+const KEY = 'atpl.v2';
+const blank = () => ({ v:2, c:{}, star:[], day:{}, pref:{} });
+let S = blank();
+try{
+  const raw = localStorage.getItem(KEY);
+  if (raw){ const p = JSON.parse(raw); if (p && p.v === 2) S = Object.assign(blank(), p); }
+}catch(e){}
+let saveT;
+function save(){
+  clearTimeout(saveT);
+  saveT = setTimeout(() => { try{ localStorage.setItem(KEY, JSON.stringify(S)); }catch(e){} }, 250);
 }
-function shuffled(arr, seed){
-  const a = arr.slice(), r = rand(seed);
-  for (let i = a.length - 1; i > 0; i--){
-    const j = Math.floor(r() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
+// kart: [kutu, vadeMs, görülme, yanlış, üstÜsteDoğru]
+const card = id => S.c[id];
+const stars = () => new Set(S.star);
+const today = () => new Date().toISOString().slice(0,10);
+
+function grade(id, ok){
+  let k = S.c[id] || [0, 0, 0, 0, 0];
+  k[2]++;
+  if (ok){
+    k[4]++;
+    k[0] = Math.min(k[0] + 1, BOX_MS.length - 1);
+  } else {
+    k[3]++; k[4] = 0; k[0] = 0;
   }
-  return a;
+  k[1] = Date.now() + BOX_MS[k[0]];
+  S.c[id] = k;
+  const d = S.day[today()] || [0,0];
+  d[0]++; if (ok) d[1]++;
+  S.day[today()] = d;
+  save();
 }
 
-// ── soru havuzu ──
+// ─────────────────────────────────────────────────────────────────────
+// Filtreler
+// ─────────────────────────────────────────────────────────────────────
+const F = Object.assign({
+  deck:'all', subj:[], sec:[], q:'',
+  hideDup:true, gen:true, hideFig:true, hideFlag:false,
+  count:20, mode:'study', order:'smart'
+}, S.pref || {});
+function savePref(){ S.pref = F; save(); }
+
+const DECKS = [
+  { k:'due',   cls:'due',   t:'Tekrar zamanı', d:'Vadesi gelen sorular' },
+  { k:'wrong', cls:'wrong', t:'Yanlışlarım',   d:'Henüz oturmayanlar' },
+  { k:'new',   cls:'new',   t:'Hiç görmedim',  d:'İlk kez çıkacak' },
+  { k:'star',  cls:'star',  t:'Yıldızladıklarım', d:'Sonra bakılacaklar' },
+];
+
+// Deste dışındaki tüm süzgeçler — deste sayıları da bunun üstünden hesaplanır
 function inScope(q){
-  if (state.hideDups && q[6]) return false;
-  if (!state.showGen && q[7]) return false;
+  if (F.hideDup && q[6]) return false;
+  if (!F.gen && q[7]) return false;
+  if (F.hideFig && q[8]) return false;
+  if (F.hideFlag && q[5]) return false;
+  if (F.subj.length && !F.subj.includes(SUBJ[q[1]].c)) return false;
+  if (F.sec.length && !F.sec.includes(SUBJ[q[1]].sec[q[2]][0])) return false;
+  if (F.q){
+    const n = F.q.toLocaleLowerCase('tr');
+    if (!(q[0] + ' ' + q[3] + ' ' + q[4].join(' ')).toLocaleLowerCase('tr').includes(n)) return false;
+  }
   return true;
 }
 
-function pool(){
-  if (state.bookMode){
-    const ids = new Set(bookIds());
-    return shuffled(QS.filter(q => ids.has(q[0])), state.salt);
+function inDeck(q, deck){
+  const k = card(q[0]), now = Date.now();
+  switch (deck){
+    case 'due':   return !!k && k[1] <= now;
+    case 'wrong': return !!k && k[3] > 0 && k[4] < MASTER;
+    case 'new':   return !k;
+    case 'star':  return stars().has(q[0]);
+    case 'leech': return !!k && k[3] >= LEECH;
+    default:      return true;
   }
-  let out = QS.filter(q => {
-    if (!inScope(q)) return false;
-    if (state.subj !== 'all' && SUBJ[q[1]].c !== state.subj) return false;
-    if (state.sec !== 'all' && SUBJ[q[1]].sec[q[2]][0] !== state.sec) return false;
-    if (state.q){
-      const needle = state.q.toLocaleLowerCase('tr');
-      const hay = (q[0] + ' ' + q[3] + ' ' + q[4].join(' ')).toLocaleLowerCase('tr');
-      if (!hay.includes(needle)) return false;
+}
+
+const scoped = () => QS.filter(inScope);
+function deckCount(deck){ return scoped().filter(q => inDeck(q, deck)).length; }
+
+function buildQueue(){
+  let pool = scoped().filter(q => inDeck(q, F.deck));
+  if (F.order === 'smart'){
+    // Önce vadesi en çok geçmişler, sonra hiç görülmemişler, sonra rastgele
+    pool = pool.map(q => {
+      const k = card(q[0]);
+      const over = k ? (Date.now() - k[1]) : -1;
+      return { q, key: k ? -over : 1e15 + Math.random() };
+    }).sort((a,b) => a.key - b.key).map(x => x.q);
+  } else {
+    for (let i = pool.length - 1; i > 0; i--){
+      const j = Math.floor(Math.random() * (i + 1));
+      [pool[i], pool[j]] = [pool[j], pool[i]];
     }
-    return true;
-  });
-  if (state.onlyWrong) out = out.filter(q => state.onlyWrong.includes(q[0]));
-  return state.order === 'shuffle' ? shuffled(out, state.salt) : out;
+  }
+  return pool.slice(0, F.count);
 }
 
-function rebuild(keepScore){
-  state.list = pool();
-  state.i = 0;
-  if (!keepScore) state.answers.clear();
-  render();
+// Şıklar her gösterimde karıştırılır (bankada doğru cevap hep ilk sıradadır)
+function shuffleOpts(q){
+  const idx = q[4].map((_, i) => i);
+  for (let i = idx.length - 1; i > 0; i--){
+    const j = Math.floor(Math.random() * (i + 1));
+    [idx[i], idx[j]] = [idx[j], idx[i]];
+  }
+  return idx;
 }
 
-// ── seçenek sırası: doğru cevap veride hep 0. indekstir ──
-function optionOrder(q){
-  return shuffled(q[4].map((_, i) => i), q[0] * 7919 + state.salt);
-}
+// ─────────────────────────────────────────────────────────────────────
+// Oturum
+// ─────────────────────────────────────────────────────────────────────
+let R = null;   // { list, i, order, picked, log, t0 }
+let advT = null;
 
 const el = id => document.getElementById(id);
-const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const plural = n => n.toLocaleString('tr-TR');
 
-// ── sol panel ──
-function buildRail(){
-  const chips = el('subjChips');
-  const scoped = QS.filter(inScope);
-  const all = ['<button class="chip" type="button" data-s="all" aria-pressed="' +
-    (state.subj === 'all') + '"><span class="nm">Tüm dersler</span><b>' + scoped.length + '</b></button>'];
-  SUBJ.forEach(s => {
-    const n = scoped.filter(q => SUBJ[q[1]].c === s.c).length;
-    all.push('<button class="chip" type="button" data-s="' + s.c + '" aria-pressed="' +
-      (state.subj === s.c) + '"><span class="nm">' + esc(s.c) + ' · ' + esc(s.n) +
-      '</span><b>' + n + '</b></button>');
-  });
-  chips.innerHTML = all.join('');
-  chips.querySelectorAll('.chip').forEach(b => b.onclick = () => {
-    state.subj = b.dataset.s; state.sec = 'all'; state.onlyWrong = null; state.bookMode = false;
-    store.set('atpl.subj', state.subj);
-    buildRail(); rebuild(false);
+function start(){
+  const list = buildQueue();
+  if (!list.length) return;
+  R = { list, i:0, order:null, picked:null, log:[], t0:Date.now() };
+  nextQ();
+}
+function nextQ(){
+  clearTimeout(advT);
+  if (!R || R.i >= R.list.length) return done();
+  R.order = shuffleOpts(R.list[R.i]);
+  R.picked = null;
+  draw();
+  window.scrollTo({ top:0, behavior:'smooth' });
+}
+function pick(pos){
+  if (!R || R.picked !== null) return;
+  const q = R.list[R.i], oi = R.order[pos], ok = oi === 0;
+  R.picked = pos;
+  grade(q[0], ok);
+  R.log.push({ id:q[0], ok, pick:oi });
+  draw();
+  clearTimeout(advT);
+  if (F.mode === 'exam') advT = setTimeout(step, 150);
+  else if (ok) advT = setTimeout(step, 580);
+}
+function step(){ clearTimeout(advT); if (R){ R.i++; nextQ(); } }
+
+// ─────────────────────────────────────────────────────────────────────
+// Görünümler
+// ─────────────────────────────────────────────────────────────────────
+function render(){ R ? draw() : home(); }
+
+function home(){
+  const total = scoped().length;
+  const counts = {}; DECKS.forEach(d => counts[d.k] = deckCount(d.k));
+  const leech = deckCount('leech');
+  const ready = F.deck === 'all' ? total : counts[F.deck] || 0;
+
+  el('view').innerHTML =
+    '<h1>Ne çalışalım?</h1>' +
+    '<p class="sub">Kapsamda <b class="num">' + plural(total) + '</b> soru var. ' +
+      'Bir deste seç ya da aşağıdan kendin daralt.</p>' +
+
+    '<div class="decks">' + DECKS.map(d =>
+      '<button class="deck ' + d.cls + (F.deck === d.k ? ' on' : '') + '" data-deck="' + d.k + '"' +
+        (counts[d.k] ? '' : ' disabled') + ' type="button">' +
+        '<span class="v">' + counts[d.k] + '</span>' +
+        '<span class="t">' + d.t + '</span><span class="d">' + d.d + '</span></button>').join('') +
+    '</div>' +
+
+    '<div class="gobar">' +
+      '<button class="go" id="go" type="button"' + (ready ? '' : ' disabled') + '>' +
+        (ready ? 'Başla · ' + Math.min(ready, F.count) + ' soru' : 'Bu kapsamda soru yok') +
+      '</button>' +
+      '<button class="go2" id="goAll" type="button"' + (F.deck === 'all' ? ' disabled' : '') + '>Tümü</button>' +
+    '</div>' +
+
+    '<details class="box" id="fbox"' + (F.subj.length || F.q ? ' open' : '') + '>' +
+      '<summary>Filtreler<span class="chev">›</span></summary><div class="in">' +
+        '<div class="grp"><span class="lbl">Ders</span><div class="chips" id="cSubj"></div></div>' +
+        (F.subj.length === 1 ? '<div class="grp"><span class="lbl">Bölüm</span>' +
+           '<div class="chips" id="cSec"></div></div>' : '') +
+        '<div class="grp"><span class="lbl">Ara</span>' +
+          '<input type="search" id="q" placeholder="kelime ya da soru ID" value="' + esc(F.q) + '"></div>' +
+        '<div class="grp"><span class="lbl">Kapsam</span><div id="sw"></div></div>' +
+        '<div class="grp"><span class="lbl">Soru sayısı</span>' +
+          '<div class="seg" id="cnt">' + [10,20,30,50,100].map(n =>
+            '<button type="button" data-n="' + n + '" class="' + (F.count === n ? 'on' : '') + '">' + n + '</button>').join('') +
+          '</div></div>' +
+        '<div class="grp"><span class="lbl">Mod</span>' +
+          '<div class="seg" id="mode">' +
+            '<button type="button" data-m="study" class="' + (F.mode === 'study' ? 'on' : '') + '">Çalışma</button>' +
+            '<button type="button" data-m="exam" class="' + (F.mode === 'exam' ? 'on' : '') + '">Sınav</button>' +
+          '</div>' +
+          '<div class="scopeline" style="margin-top:7px">' +
+            (F.mode === 'study'
+              ? 'Doğruda soru kendiliğinden geçer, yanlışta doğru cevap gösterilir.'
+              : 'Geri bildirim yok; sonuç sonda toplu gelir.') + '</div></div>' +
+        '<div class="grp"><span class="lbl">Sıra</span>' +
+          '<div class="seg" id="ord">' +
+            '<button type="button" data-o="smart" class="' + (F.order === 'smart' ? 'on' : '') + '">Akıllı</button>' +
+            '<button type="button" data-o="rand" class="' + (F.order === 'rand' ? 'on' : '') + '">Rastgele</button>' +
+          '</div>' +
+          '<div class="scopeline" style="margin-top:7px">' +
+            (F.order === 'smart'
+              ? 'Vadesi en çok geçenler önce, hiç görülmemişler sonra.'
+              : 'Tamamen karışık.') + '</div></div>' +
+      '</div></details>' +
+
+    (leech ? '<button class="box" id="leechBtn" type="button" style="width:100%; text-align:left; ' +
+      'padding:12px 14px; font-size:13px; color:var(--ink-2); border-left:2px solid var(--bad)">' +
+      '<b class="num" style="color:var(--bad)">' + leech + '</b> soruda takılıyorsun — ' +
+      'bunlara ayrı çalış ›</button>' : '') +
+
+    '<div class="hint"><kbd>1</kbd>–<kbd>5</kbd> şık seç · <kbd>Enter</kbd> devam · ' +
+      '<kbd>S</kbd> yıldızla<br>İlerleme bu tarayıcıda saklanır. ' +
+      'Başka cihaza taşımak için Durum → Yedek.</div>';
+
+  // ders çipleri
+  const cs = el('cSubj');
+  cs.innerHTML = '<button class="chip' + (F.subj.length ? '' : ' on') + '" data-s="" type="button">Hepsi</button>' +
+    SUBJ.map(s => {
+      const n = QS.filter(q => SUBJ[q[1]].c === s.c && (!F.hideDup || !q[6]) &&
+        (F.gen || !q[7]) && (!F.hideFig || !q[8])).length;
+      return '<button class="chip' + (F.subj.includes(s.c) ? ' on' : '') + '" data-s="' + s.c + '" type="button">' +
+        s.c + '<b>' + n + '</b></button>';
+    }).join('');
+  cs.querySelectorAll('.chip').forEach(b => b.onclick = () => {
+    const c = b.dataset.s;
+    if (!c) F.subj = [];
+    else F.subj = F.subj.includes(c) ? F.subj.filter(x => x !== c) : F.subj.concat(c);
+    F.sec = []; savePref(); home();
   });
 
-  const sel = el('secSel');
-  const opts = ['<option value="all">Tüm bölümler</option>'];
-  SUBJ.filter(s => state.subj === 'all' || s.c === state.subj).forEach(s => {
-    s.sec.forEach(sc => {
-      const n = scoped.filter(q => SUBJ[q[1]].c === s.c && SUBJ[q[1]].sec[q[2]][0] === sc[0]).length;
-      opts.push('<option value="' + esc(sc[0]) + '"' + (state.sec === sc[0] ? ' selected' : '') +
-        '>' + esc(sc[0]) + ' — ' + esc(sc[1]) + ' (' + n + ')</option>');
+  // bölüm çipleri (tek ders seçiliyken)
+  if (F.subj.length === 1){
+    const s = SUBJ.find(x => x.c === F.subj[0]);
+    el('cSec').innerHTML = '<button class="chip' + (F.sec.length ? '' : ' on') + '" data-c="" type="button">Hepsi</button>' +
+      s.sec.map((sc, i) => {
+        const n = QS.filter(q => q[1] === SUBJ.indexOf(s) && q[2] === i &&
+          (!F.hideDup || !q[6]) && (F.gen || !q[7]) && (!F.hideFig || !q[8])).length;
+        return n ? '<button class="chip' + (F.sec.includes(sc[0]) ? ' on' : '') + '" data-c="' + sc[0] +
+          '" type="button" title="' + esc(sc[1]) + '">' + esc(sc[1].slice(0, 26)) + '<b>' + n + '</b></button>' : '';
+      }).join('');
+    el('cSec').querySelectorAll('.chip').forEach(b => b.onclick = () => {
+      const c = b.dataset.c;
+      if (!c) F.sec = [];
+      else F.sec = F.sec.includes(c) ? F.sec.filter(x => x !== c) : F.sec.concat(c);
+      savePref(); home();
     });
-  });
-  sel.innerHTML = opts.join('');
-  el('totalLbl').textContent = scoped.length + ' soru · ' + SUBJ.length + ' ders';
-  el('nDup').textContent = QS.filter(q => q[6]).length;
-  el('nGen').textContent = QS.filter(q => q[7]).length;
-}
-
-function updateGauge(){
-  let ok = 0, bad = 0;
-  state.answers.forEach(a => a.correct ? ok++ : bad++);
-  el('gOk').textContent = ok;
-  el('gBad').textContent = bad;
-  const tot = ok + bad;
-  el('gPct').textContent = tot ? '%' + Math.round(ok / tot * 100) : '—';
-  el('mOk').textContent = ok; el('mBad').textContent = bad;
-  const wrong = [...state.answers].filter(([, a]) => !a.correct).map(([id]) => id);
-  el('againN').textContent = wrong.length;
-  el('againBtn').disabled = wrong.length === 0;
-  el('resetBtn').disabled = tot === 0 && !state.onlyWrong && !state.bookMode;
-  const bn = bookIds().length;
-  el('bookN').textContent = bn;
-  el('bookBtn').disabled = bn === 0;
-  el('bookClr').disabled = bn === 0;
-  el('bookLine').textContent = bn
-    ? bn + ' soru bekliyor. Doğru cevaplayınca defterden düşer.'
-    : 'Boş. Yanlış yaptığın sorular buraya birikir.';
-}
-
-// ── görünüm ──
-function render(){
-  updateGauge();
-  const col = el('col');
-
-  if (!state.list.length){
-    col.innerHTML = '<div class="empty">Bu filtreyle soru yok.<br>Ders, bölüm veya arama terimini değiştir.</div>';
-    return;
   }
-  if (state.i >= state.list.length){ renderResult(); return; }
 
-  const q = state.list[state.i];
-  const s = SUBJ[q[1]], sec = s.sec[q[2]];
-  const ans = state.answers.get(q[0]);
-  const shown = state.mode === 'study' && ans;
-  const order = optionOrder(q);
+  // anahtarlar
+  const SW = [
+    ['hideDup', 'Tekrar eden soruları gizle', QS.filter(q => q[6]).length, false],
+    ['hideFig', 'Şekil gerekenleri gizle', QS.filter(q => q[8]).length, false],
+    ['gen',     'Ders notundan üretilmişler', QS.filter(q => q[7]).length, true],
+    ['hideFlag','Tartışmalıları gizle', QS.filter(q => q[5]).length, false],
+  ];
+  el('sw').innerHTML = SW.map(([k, t, n]) =>
+    '<button class="switch' + (F[k] ? ' on' : '') + '" data-k="' + k + '" type="button">' +
+    '<span class="knob"></span><span>' + t + '</span><span class="n">' + n + '</span></button>').join('');
+  el('sw').querySelectorAll('.switch').forEach(b => b.onclick = () => {
+    F[b.dataset.k] = !F[b.dataset.k]; savePref(); home();
+  });
 
-  const head =
-    '<span class="lbl">' + esc(s.c) + '</span>' +
-    '<span class="nm">' + esc(sec[1]) + '</span>' +
-    '<span class="right">' +
-      (q[8] ? '<span class="fig" title="Soru bir şekle/diyagrama atıf yapıyor; görsel bankada yok">şekil gerekli</span>' : '') +
-      (q[7] ? '<span class="gen" title="Ders notundan üretilmiş — gerçek sınav sorusu değil">üretilmiş</span>' : '') +
-      (q[5] ? '<span class="flag" title="Kaynakta &quot;Attention!&quot; işaretli — cevabı tartışmalı">tartışmalı</span>' : '') +
-      '<span class="lbl num">ID ' + q[0] + '</span>' +
-    '</span>';
+  el('view').querySelectorAll('.deck').forEach(b => b.onclick = () => {
+    F.deck = F.deck === b.dataset.deck ? 'all' : b.dataset.deck; savePref(); home();
+  });
+  el('go').onclick = start;
+  el('goAll').onclick = () => { F.deck = 'all'; savePref(); home(); };
+  const lb = el('leechBtn'); if (lb) lb.onclick = () => { F.deck = 'leech'; savePref(); start(); };
+  el('cnt').querySelectorAll('button').forEach(b => b.onclick = () => { F.count = +b.dataset.n; savePref(); home(); });
+  el('mode').querySelectorAll('button').forEach(b => b.onclick = () => { F.mode = b.dataset.m; savePref(); home(); });
+  el('ord').querySelectorAll('button').forEach(b => b.onclick = () => { F.order = b.dataset.o; savePref(); home(); });
+  let t; el('q').oninput = e => {
+    clearTimeout(t);
+    t = setTimeout(() => { F.q = e.target.value.trim(); savePref();
+      const p = el('q').selectionStart; home(); el('q').focus(); el('q').setSelectionRange(p, p); }, 250);
+  };
+}
 
-  const opts = order.map((oi, pos) => {
-    const isCorrect = oi === 0;
-    const picked = ans && ans.pick === oi;
+function draw(){
+  const q = R.list[R.i], s = SUBJ[q[1]], sec = s.sec[q[2]];
+  const shown = R.picked !== null && F.mode === 'study';
+  const k = card(q[0]);
+  const st = stars();
+
+  const opts = R.order.map((oi, pos) => {
     let cls = 'opt', mark = '';
     if (shown){
-      if (isCorrect){ cls += ' right'; mark = 'DOĞRU'; }
-      else if (picked){ cls += ' wrong'; mark = 'SEÇTİN'; }
-    } else if (picked){ cls += ' pick'; }
-    return '<button class="' + cls + '" type="button" data-oi="' + oi + '"' +
-      (shown ? ' disabled' : '') + '>' +
-      '<span class="key">' + KEYS[pos] + '</span>' +
-      '<span>' + esc(q[4][oi]) + '</span>' +
-      (mark ? '<span class="mark">' + mark + '</span>' : '') +
-      '</button>';
+      if (oi === 0){ cls += ' right'; mark = 'DOĞRU'; }
+      else if (pos === R.picked){ cls += ' wrong'; mark = 'SEÇTİN'; }
+    } else if (pos === R.picked){ cls += ' sel'; }
+    return '<button class="' + cls + '" data-p="' + pos + '"' + (R.picked !== null ? ' disabled' : '') +
+      ' type="button"><span class="k">' + KEYS[pos] + '</span><span>' + esc(q[4][oi]) + '</span>' +
+      (mark ? '<span class="m">' + mark + '</span>' : '') + '</button>';
   }).join('');
 
-  const verdict = shown
-    ? '<div class="verdict ' + (ans.correct ? 'ok' : 'bad') + '">' +
-      '<span class="tag">' + (ans.correct ? 'Doğru' : 'Yanlış') + '</span>' +
-      '<span class="txt">' + (ans.correct
-        ? 'Sonraki soruya geçiliyor…'
-        : 'Doğru cevap: <b>' + esc(q[4][0]) + '</b>' +
-          '<span class="sub">Yanlış defterine yazıldı · ' + (book[q[0]] || 1) + '. kez</span>') +
-      '</span></div>'
-    : '';
-
-  const last = state.i === state.list.length - 1;
-  col.innerHTML =
-    '<div class="progress">' +
-      '<div class="ptrack"><div class="pfill" style="width:' +
-        ((state.i) / state.list.length * 100) + '%"></div></div>' +
-      '<div class="pmeta"><span class="lbl">Soru <span class="num">' + (state.i + 1) +
-        '</span> / <span class="num">' + state.list.length + '</span></span>' +
-        (state.bookMode ? '<span class="lbl" style="color:var(--accent-ink)">Yanlış defteri</span>'
-          : state.onlyWrong ? '<span class="lbl" style="color:var(--accent-ink)">Yanlış tekrarı</span>' : '') +
-      '</div></div>' +
-    '<div class="card"><div class="cardhead">' + head + '</div>' +
-      '<div class="qtext">' + esc(q[3]) + '</div>' +
-      '<div class="opts">' + opts + '</div>' + verdict + '</div>' +
-    '<div class="nav">' +
-      '<button class="pri" id="nextBtn" type="button"' + (ans ? '' : ' disabled') + '>' +
-        (last ? 'Bitir ve sonucu gör'
-              : (shown && !ans.correct ? 'Anladım, devam' : 'Sonraki soru')) + '</button>' +
-      '<button class="sec" id="prevBtn" type="button"' + (state.i === 0 ? ' disabled' : '') + '>Önceki</button>' +
-      '<button class="sec" id="skipBtn" type="button">Atla</button>' +
-    '</div>';
-
-  col.querySelectorAll('.opt').forEach(b => b.onclick = () => pick(q, +b.dataset.oi));
-  el('nextBtn').onclick = () => go(1);
-  el('prevBtn').onclick = () => go(-1);
-  el('skipBtn').onclick = () => go(1, true);
-}
-
-let advTimer = null;
-function pick(q, oi){
-  if (state.mode === 'study' && state.answers.has(q[0])) return;
-  const correct = oi === 0;
-  state.answers.set(q[0], { pick: oi, correct: correct });
-  if (correct) bookHit(q[0]); else bookMiss(q[0]);
-  render();
-  clearTimeout(advTimer);
-  if (state.mode === 'exam') advTimer = setTimeout(() => go(1), 140);
-  else if (correct) advTimer = setTimeout(() => go(1), 620);
-}
-
-function go(step, force){
-  clearTimeout(advTimer);
-  const n = state.i + step;
-  if (n < 0) return;
-  if (!force && step > 0 && !state.answers.has(state.list[state.i][0]) && state.mode !== 'exam') return;
-  state.i = n;
-  render();
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-
-function renderResult(){
-  const answered = state.list.filter(q => state.answers.has(q[0]));
-  const ok = answered.filter(q => state.answers.get(q[0]).correct).length;
-  const pct = answered.length ? Math.round(ok / answered.length * 100) : 0;
-  const items = answered.map(q => {
-    const a = state.answers.get(q[0]);
-    return '<div class="ritem"><span class="rdot ' + (a.correct ? 'ok' : 'bad') + '"></span><div>' +
-      '<div class="q">' + esc(q[3]) + '</div>' +
-      '<div class="a">' + (a.correct
-        ? '<b>' + esc(q[4][0]) + '</b>'
-        : '<i>Senin: ' + esc(q[4][a.pick]) + '</i> · <b>Doğru: ' + esc(q[4][0]) + '</b>') +
-      '</div></div></div>';
-  }).join('');
-
-  el('col').innerHTML =
-    '<div class="result"><div class="rhead">' +
-      '<div class="lbl">Tur sonucu</div>' +
-      '<div class="score" style="color:' + (pct >= 75 ? 'var(--ok)' : pct >= 50 ? 'var(--ink)' : 'var(--bad)') + '">%' + pct + '</div>' +
-      '<div class="lbl" style="margin-top:6px"><span class="num">' + ok + '</span> / <span class="num">' +
-        answered.length + '</span> doğru</div>' +
-    '</div><div class="rlist">' + (items || '<div class="ritem"><div class="q">Hiç soru cevaplanmadı.</div></div>') + '</div></div>' +
-    '<div class="nav">' +
-      '<button class="pri" id="rAgain" type="button">Yanlışları tekrar et</button>' +
-      '<button class="sec" id="rBook" type="button">Yanlış defteri (' + bookIds().length + ')</button>' +
-      '<button class="sec" id="rNew" type="button">Yeni tur (karıştır)</button>' +
-    '</div>';
-
-  const wrong = answered.filter(q => !state.answers.get(q[0]).correct).map(q => q[0]);
-  el('rAgain').disabled = wrong.length === 0;
-  el('rAgain').onclick = () => retryWrong();
-  el('rBook').disabled = bookIds().length === 0;
-  el('rBook').onclick = () => startBook();
-  el('rNew').onclick = () => {
-    state.onlyWrong = null; state.bookMode = false;
-    state.salt = Math.floor(Math.random()*1e6); rebuild(false);
-  };
-}
-
-function startBook(){
-  if (!bookIds().length) return;
-  state.bookMode = true; state.onlyWrong = null;
-  state.salt = Math.floor(Math.random()*1e6);
-  rebuild(false);
-}
-
-function retryWrong(){
-  const wrong = [...state.answers].filter(([, a]) => !a.correct).map(([id]) => id);
-  if (!wrong.length) return;
-  state.onlyWrong = wrong;
-  wrong.forEach(id => state.answers.delete(id));
-  state.salt = Math.floor(Math.random()*1e6);
-  rebuild(true);
-}
-
-// ── olaylar ──
-el('secSel').onchange = e => {
-  state.sec = e.target.value; state.onlyWrong = null; state.bookMode = false; rebuild(false);
-};
-let tmr;
-el('search').oninput = e => {
-  clearTimeout(tmr);
-  tmr = setTimeout(() => {
-    state.q = e.target.value.trim(); state.onlyWrong = null; state.bookMode = false; rebuild(false);
-  }, 200);
-};
-document.querySelectorAll('#modeSeg button').forEach(b => b.onclick = () => {
-  state.mode = b.dataset.mode;
-  document.querySelectorAll('#modeSeg button').forEach(x =>
-    x.setAttribute('aria-pressed', x.dataset.mode === state.mode));
-  render();
-});
-document.querySelectorAll('#orderSeg button').forEach(b => b.onclick = () => {
-  state.order = b.dataset.order;
-  document.querySelectorAll('#orderSeg button').forEach(x =>
-    x.setAttribute('aria-pressed', x.dataset.order === state.order));
-  rebuild(true);
-});
-function toggleScope(id, key, invert){
-  el(id).onclick = () => {
-    state[key] = !state[key];
-    el(id).setAttribute('aria-pressed', String(invert ? !state[key] : state[key]));
-    state.onlyWrong = null; state.bookMode = false;
-    buildRail(); rebuild(false);
-  };
-}
-toggleScope('tgDup', 'hideDups', false);
-toggleScope('tgGen', 'showGen', false);
-
-el('againBtn').onclick = () => retryWrong();
-el('resetBtn').onclick = () => {
-  state.onlyWrong = null; state.bookMode = false;
-  state.salt = Math.floor(Math.random()*1e6); rebuild(false);
-};
-el('bookBtn').onclick = () => startBook();
-
-// İki adımlı silme — tek yanlış tıkla defter uçmasın
-let clrArm = false, clrTmr;
-el('bookClr').onclick = () => {
-  if (!bookIds().length) return;
-  if (!clrArm){
-    clrArm = true;
-    el('bookClr').textContent = 'Emin misin? Tekrar bas';
-    clrTmr = setTimeout(() => {
-      clrArm = false; el('bookClr').textContent = 'Defteri temizle';
-    }, 4000);
-    return;
+  let verdict = '';
+  if (shown){
+    const ok = R.order[R.picked] === 0;
+    const nk = card(q[0]);
+    verdict = ok
+      ? '<div class="verdict ok"><span class="p">Doğru</span><span class="x">' +
+        'Sonraki soru geliyor…<s>' + whenAgain(nk) + '</s></span></div>'
+      : '<div class="verdict bad"><span class="p">Yanlış</span><span class="x">' +
+        'Doğru cevap: <b>' + esc(q[4][0]) + '</b>' +
+        '<s>Yanlış defterine yazıldı · 10 dakika sonra tekrar</s></span></div>';
   }
-  clearTimeout(clrTmr); clrArm = false;
-  el('bookClr').textContent = 'Defteri temizle';
-  book = {}; saveBook();
-  state.bookMode = false;
-  rebuild(false);
-};
-el('themeBtn').onclick = () => {
+
+  const last = R.i === R.list.length - 1;
+  el('view').innerHTML =
+    '<div class="prog"><i style="width:' + (R.i / R.list.length * 100) + '%"></i></div>' +
+    '<div class="meta"><span class="lbl">Soru <span class="num">' + (R.i + 1) + '</span> / ' +
+      '<span class="num">' + R.list.length + '</span></span>' +
+      '<span class="lbl">' + deckName() + '</span></div>' +
+    '<div class="card">' +
+      '<div class="head"><span class="lbl">' + esc(s.c) + '</span>' +
+        '<span class="who">' + esc(sec[1]) + '</span><span class="sp"></span>' +
+        (k && k[0] > 0 ? '<span class="tag box">kutu ' + k[0] + '</span>' : '') +
+        (q[8] ? '<span class="tag fig">şekil gerekli</span>' : '') +
+        (q[7] ? '<span class="tag gen">üretilmiş</span>' : '') +
+        (q[5] ? '<span class="tag flag">tartışmalı</span>' : '') +
+        '<button class="starbtn' + (st.has(q[0]) ? ' on' : '') + '" id="star" type="button" ' +
+          'title="Yıldızla (S)">' + (st.has(q[0]) ? '★' : '☆') + '</button>' +
+        '<span class="lbl num">' + q[0] + '</span></div>' +
+      '<div class="qt">' + esc(q[3]) + '</div>' +
+      '<div class="opts">' + opts + '</div>' + verdict +
+    '</div>' +
+    '<div class="acts">' +
+      '<button class="go" id="next" type="button"' + (R.picked === null ? ' disabled' : '') + '>' +
+        (last ? 'Bitir' : (shown && R.order[R.picked] !== 0 ? 'Anladım, devam' : 'Sonraki')) + '</button>' +
+      (R.picked === null ? '<button class="go2" id="skip" type="button">Atla</button>' : '') +
+      '<button class="go2" id="quit" type="button">Çık</button>' +
+    '</div>';
+
+  el('view').querySelectorAll('.opt').forEach(b => b.onclick = () => pick(+b.dataset.p));
+  el('next').onclick = step;
+  const sk = el('skip'); if (sk) sk.onclick = step;
+  el('quit').onclick = done;
+  el('star').onclick = () => {
+    const i = S.star.indexOf(q[0]);
+    i < 0 ? S.star.push(q[0]) : S.star.splice(i, 1);
+    save(); draw();
+  };
+}
+
+function whenAgain(k){
+  if (!k) return '';
+  const d = k[1] - Date.now();
+  if (d < 60*6e4) return 'Tekrar: ' + Math.round(d/6e4) + ' dakika sonra';
+  if (d < DAY) return 'Tekrar: ' + Math.round(d/36e5) + ' saat sonra';
+  return 'Tekrar: ' + Math.round(d/DAY) + ' gün sonra';
+}
+function deckName(){
+  const d = DECKS.find(x => x.k === F.deck);
+  if (d) return d.t;
+  if (F.deck === 'leech') return 'Takıldıklarım';
+  return F.subj.length ? F.subj.join(', ') : 'Tüm dersler';
+}
+
+function done(){
+  clearTimeout(advT);
+  const log = R ? R.log : [];
+  const ok = log.filter(x => x.ok).length;
+  const pct = log.length ? Math.round(ok / log.length * 100) : 0;
+  const mins = R ? Math.max(1, Math.round((Date.now() - R.t0) / 6e4)) : 0;
+  R = null;
+
+  if (!log.length){ home(); return; }
+  el('view').innerHTML =
+    '<div class="card"><div style="padding:24px 16px; text-align:center">' +
+      '<div class="lbl">Tur bitti · ' + mins + ' dakika</div>' +
+      '<div class="score" style="color:' + (pct >= 75 ? 'var(--ok)' : pct >= 50 ? 'var(--ink)' : 'var(--bad)') + '">%' + pct + '</div>' +
+      '<div class="lbl" style="margin-top:5px"><span class="num">' + ok + '</span> / <span class="num">' +
+        log.length + '</span> doğru</div></div>' +
+      log.map(x => {
+        const q = BY_ID.get(x.id);
+        return '<div class="rrow"><span class="rdot ' + (x.ok ? 'ok' : 'bad') + '"></span><div style="min-width:0">' +
+          '<div class="q">' + esc(q[3]) + '</div><div class="a">' +
+          (x.ok ? '<b>' + esc(q[4][0]) + '</b>'
+                : '<i>Senin: ' + esc(q[4][x.pick]) + '</i> · <b>Doğru: ' + esc(q[4][0]) + '</b>') +
+          '</div></div></div>';
+      }).join('') +
+    '</div>' +
+    '<div class="acts">' +
+      '<button class="go" id="again" type="button">Devam et</button>' +
+      '<button class="go2" id="back" type="button">Panele dön</button>' +
+    '</div>';
+  el('again').onclick = start;
+  el('back').onclick = home;
+}
+
+// ─────────────────────────────────────────────────────────────────────
+// Durum paneli
+// ─────────────────────────────────────────────────────────────────────
+function openSheet(){
+  const ids = Object.keys(S.c);
+  let seen = 0, wrong = 0, tot = 0;
+  ids.forEach(id => { const k = S.c[id]; tot += k[2]; wrong += k[3]; seen++; });
+  const okN = tot - wrong;
+  const pct = tot ? Math.round(okN / tot * 100) : null;
+  const dueN = deckCount('due'), wrongN = deckCount('wrong'), leech = deckCount('leech');
+
+  // ders bazında
+  const per = SUBJ.map((s, si) => {
+    const qs = QS.filter(q => q[1] === si && (!F.hideDup || !q[6]));
+    let n = 0, o = 0, u = 0;
+    qs.forEach(q => { const k = S.c[q[0]]; if (k){ u++; n += k[2]; o += k[2] - k[3]; } });
+    return { c:s.c, name:s.n, bank:qs.length, uniq:u, n, ok:o,
+             pct: n ? Math.round(o / n * 100) : null };
+  });
+
+  // son 45 gün
+  const days = [];
+  for (let i = 44; i >= 0; i--){
+    const d = new Date(Date.now() - i * DAY).toISOString().slice(0,10);
+    days.push([d, (S.day[d] || [0,0])[0]]);
+  }
+  const mx = Math.max(1, ...days.map(d => d[1]));
+  const lvl = n => n === 0 ? '' : n < mx*.25 ? 'l1' : n < mx*.5 ? 'l2' : n < mx*.8 ? 'l3' : 'l4';
+  let streak = 0;
+  for (let i = days.length - 1; i >= 0; i--){ if (days[i][1]) streak++; else if (i !== days.length-1) break; }
+
+  el('sheetBody').innerHTML =
+    '<h2>Durum</h2>' +
+    '<div class="stat4">' +
+      '<div class="s"><span class="lbl">Başarı</span><div class="v">' + (pct === null ? '—' : '%' + pct) + '</div></div>' +
+      '<div class="s"><span class="lbl">Tekrar zamanı</span><div class="v due">' + dueN + '</div></div>' +
+      '<div class="s"><span class="lbl">Yanlış defteri</span><div class="v bad">' + wrongN + '</div></div>' +
+      '<div class="s"><span class="lbl">Seri</span><div class="v">' + streak + ' gün</div></div>' +
+    '</div>' +
+
+    '<div class="lbl" style="margin-bottom:7px">Son 45 gün</div>' +
+    '<div class="heat">' + days.map(d =>
+      '<i class="' + lvl(d[1]) + '" title="' + d[0] + ' · ' + d[1] + ' soru"></i>').join('') + '</div>' +
+    '<div class="scopeline" style="margin-bottom:16px">Gördüğün soru: <b>' + seen + '</b> / ' +
+      plural(QS.filter(q => !q[6]).length) + '</div>' +
+
+    '<div class="lbl" style="margin-bottom:7px">Ders bazında</div>' +
+    '<table class="tbl"><thead><tr><th>Ders</th><th class="n">Başarı</th>' +
+      '<th style="width:30%"></th><th class="n">Kapsam</th></tr></thead><tbody>' +
+      per.map(p => '<tr><td><b>' + p.c + '</b></td>' +
+        '<td class="n">' + (p.pct === null ? '—' : '%' + p.pct) + '</td>' +
+        '<td><div class="bar2"><i class="' + (p.pct === null ? '' : p.pct >= 75 ? 'ok' : p.pct < 50 ? 'bad' : '') +
+          '" style="width:' + (p.pct || 0) + '%"></i></div></td>' +
+        '<td class="n">' + p.uniq + '/' + p.bank + '</td></tr>').join('') +
+    '</tbody></table>' +
+
+    (leech ? '<div class="lbl" style="margin:16px 0 7px">Takıldıkların</div>' +
+      '<div class="scopeline"><b>' + leech + '</b> soruyu ' + LEECH + ' kez ya da daha çok yanlış yaptın. ' +
+      '<button class="tbtn" id="goLeech" type="button" style="margin-left:4px">Bunlara çalış</button></div>' : '') +
+
+    '<div class="lbl" style="margin:18px 0 7px">Yedek</div>' +
+    '<div class="scopeline" style="margin-bottom:8px">İlerleme bu tarayıcıda saklanır. ' +
+      'Başka cihaza taşımak için aşağıdaki metni kopyala, orada aynı kutuya yapıştırıp ' +
+      '<b>Yükle</b>ye bas.</div>' +
+    '<textarea id="bak" spellcheck="false" placeholder="Yedek metni buraya yapıştır…"></textarea>' +
+    '<div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:8px">' +
+      '<button class="tbtn" id="copy" type="button">Kopyala</button>' +
+      '<button class="tbtn" id="load" type="button">Yükle</button>' +
+      (window.self === window.top ? '<button class="tbtn" id="dl" type="button">Dosya indir</button>' +
+        '<button class="tbtn" id="imp" type="button">Dosya seç</button>' : '') +
+      '<button class="tbtn" id="wipe" type="button" style="color:var(--bad); border-color:var(--bad)">Sıfırla</button>' +
+    '</div>' +
+    '<div class="scopeline" id="bakMsg" style="margin-top:7px"></div>' +
+    '<input type="file" id="impFile" accept="application/json" class="hidden">';
+
+  el('sheet').classList.add('on');
+  const gl = el('goLeech');
+  if (gl) gl.onclick = () => { closeSheet(); F.deck = 'leech'; savePref(); start(); };
+  const bak = el('bak');
+  bak.value = JSON.stringify(S);
+  const msg = m => { el('bakMsg').textContent = m;
+    setTimeout(() => { const b = el('bakMsg'); if (b) b.textContent = ''; }, 3500); };
+
+  el('copy').onclick = async () => {
+    bak.select(); bak.setSelectionRange(0, 999999);
+    let done = false;
+    try{ await navigator.clipboard.writeText(bak.value); done = true; }
+    catch(e){ try{ done = document.execCommand('copy'); }catch(e2){} }
+    msg(done ? 'Kopyalandı. Diğer cihazda bu kutuya yapıştır.'
+             : 'Kopyalanamadı — metni elle seçip kopyala.');
+  };
+  el('load').onclick = () => {
+    const r = mergeProgress(bak.value);
+    if (r === true){ closeSheet(); home(); }
+    else msg(r);
+  };
+  if (el('dl')){
+    el('dl').onclick = exportProgress;
+    el('imp').onclick = () => el('impFile').click();
+  }
+  el('impFile').onchange = importProgress;
+  let armed = false;
+  el('wipe').onclick = () => {
+    if (!armed){ armed = true; el('wipe').textContent = 'Emin misin? Tekrar bas';
+      setTimeout(() => { armed = false; const w = el('wipe'); if (w) w.textContent = 'Sıfırla'; }, 4000);
+      return; }
+    S = blank(); save(); closeSheet(); home();
+  };
+}
+function closeSheet(){ el('sheet').classList.remove('on'); }
+
+function exportProgress(){
+  const blob = new Blob([JSON.stringify(S)], { type:'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'atpl-ilerleme-' + today() + '.json';
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+}
+/** Yedek metnini mevcut ilerlemeyle birleştirir.
+ *  Her soruda daha çok görülmüş kayıt kazanır — iki cihazda da çalıştıysan
+ *  ikisinin de emeği korunur. Başarılıysa true, değilse hata metni döner. */
+function mergeProgress(text){
+  let p;
+  try{ p = JSON.parse(text); }catch(e){ return 'Metin bozuk — tamamını kopyaladığından emin ol.'; }
+  if (!p || p.v !== 2 || typeof p.c !== 'object') return 'Bu bir ATPL Çalışma yedeği değil.';
+  let n = 0;
+  Object.keys(p.c).forEach(id => {
+    const a = S.c[id], b = p.c[id];
+    if (Array.isArray(b) && b.length === 5 && (!a || b[2] > a[2])){ S.c[id] = b; n++; }
+  });
+  S.star = Array.from(new Set(S.star.concat(p.star || [])));
+  Object.keys(p.day || {}).forEach(d => {
+    const a = S.day[d] || [0,0], b = p.day[d];
+    if (Array.isArray(b)) S.day[d] = [Math.max(a[0], b[0]), Math.max(a[1], b[1])];
+  });
+  save();
+  return true;
+}
+
+function importProgress(e){
+  const f = e.target.files && e.target.files[0];
+  if (!f) return;
+  const r = new FileReader();
+  r.onload = () => {
+    const res = mergeProgress(r.result);
+    if (res === true){ closeSheet(); home(); }
+    else { const b = el('bakMsg'); if (b) b.textContent = res; }
+  };
+  r.readAsText(f);
+  e.target.value = '';
+}
+
+// ─────────────────────────────────────────────────────────────────────
+// Olaylar
+// ─────────────────────────────────────────────────────────────────────
+const savedTheme = (() => { try{ return localStorage.getItem('atpl.theme'); }catch(e){ return null; } })();
+if (savedTheme) document.documentElement.setAttribute('data-theme', savedTheme);
+el('bTheme').onclick = () => {
   const cur = document.documentElement.getAttribute('data-theme');
-  const dark = cur ? cur === 'dark'
-    : window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const dark = cur ? cur === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
   const next = dark ? 'light' : 'dark';
   document.documentElement.setAttribute('data-theme', next);
-  store.set('atpl.theme', next);
+  try{ localStorage.setItem('atpl.theme', next); }catch(e){}
 };
+el('bStats').onclick = openSheet;
+el('veil').onclick = closeSheet;
 
 document.addEventListener('keydown', e => {
   if (e.target.matches('input, select, textarea')) return;
-  const q = state.list[state.i];
-  if (!q) return;
+  if (e.key === 'Escape'){ closeSheet(); return; }
+  if (!R) return;
   if (e.key >= '1' && e.key <= '5'){
-    const pos = +e.key - 1, order = optionOrder(q);
-    if (pos < order.length && !(state.mode === 'study' && state.answers.has(q[0]))){
-      pick(q, order[pos]); e.preventDefault();
-    }
+    const p = +e.key - 1;
+    if (p < R.order.length && R.picked === null){ pick(p); e.preventDefault(); }
   } else if (e.key === 'Enter' || e.key === 'ArrowRight'){
-    if (state.answers.has(q[0]) || state.mode === 'exam'){ go(1); e.preventDefault(); }
-  } else if (e.key === 'ArrowLeft'){ go(-1); e.preventDefault(); }
+    if (R.picked !== null){ step(); e.preventDefault(); }
+  } else if (e.key === 's' || e.key === 'S'){
+    const b = el('star'); if (b){ b.click(); e.preventDefault(); }
+  }
 });
 
-buildRail();
-rebuild(false);
+home();
 })();
 </script>

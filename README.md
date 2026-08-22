@@ -198,39 +198,52 @@ tur açılabilir.
 **Doğru cevap istemciye gönderilmez** — şıklar sunucuda karıştırılır, tarayıcı yalnızca
 görünen sırayı bilir.
 
-## Tek dosyalık web uygulaması (artifact)
+## Çalışma uygulaması (tek dosya)
 
-
-`web/atpl-soru-bankasi.html` — 2.514 sorunun tamamını içeren tek dosyalık çalışma
-uygulaması (veri HTML'e gömülü, dış bağımlılık yok). Artifact olarak yayımlandı:
+`web/atpl-soru-bankasi.html` — 2.514 sorunun tamamını içeren tek dosyalık uygulama.
+Dış bağımlılığı yok (yalnızca Google Fonts), sunucu istemez. Artifact olarak yayımlandı:
 https://claude.ai/code/artifact/5b35bb1b-5314-4199-a8a9-8f07589837ed
 
-Ders/bölüm filtresi (bölüm adlarıyla), arama, çalışma ve sınav modu, açık/koyu tema,
-klavye kısayolları (1–5 şık, Enter devam).
+Dosyayı herhangi bir statik sunucuya koyarak da paylaşabilirsin — GitHub Pages, Netlify,
+kendi sunucun; hatta çift tıklayıp dosyadan da açılır.
 
-**Çalışma modu akışı:** doğru cevapta soru ~0,6 sn sonra kendiliğinden geçer; yanlışta
-doğru cevap ekranda kalır, "Anladım, devam" ile ilerlenir.
+### Aralıklı tekrar
 
-**Yanlış defteri:** yanlış cevaplanan her soru `localStorage`'daki `atpl.wrong` kaydına
-`{soru_id: kaç kez yanlış}` olarak yazılır ve tarayıcı kapansa da durur. "Defteri çöz"
-sadece o soruları, ders/bölüm filtrelerini yok sayarak sorar. Doğru cevaplanınca sayaç
-düşer, sıfırlanınca soru defterden silinir. "Defteri temizle" iki adımlıdır (yanlışlıkla
-silinmesin diye ilk basış onay ister).
+Her soru bir kutuda tutulur. Doğru bildikçe ileriye atılır, yanlışta başa döner:
 
-**Kapsam anahtarları:** "Tekrarları gizle" (varsayılan açık) ve "Üretilmiş sorular"
-(varsayılan açık).
+| Kutu | 0 | 1 | 2 | 3 | 4 | 5 |
+|---|---|---|---|---|---|---|
+| Tekrar | 10 dk | 1 gün | 3 gün | 7 gün | 16 gün | 35 gün |
 
-**Sorular da şıklar da her turda karıştırılır** — veritabanında doğru cevap hep A
-şıkkıdır, uygulamada her soruda farklı harfe düşer.
+Bir soruyu **4 kez ya da daha çok** yanlış yaparsan "takıldıkların" listesine düşer ve
+ayrı çalışılabilir.
+
+### Desteler
+
+Ana ekranda canlı sayılarla dört deste: **tekrar zamanı gelenler**, **yanlışlarım**
+(henüz üst üste 2 doğru yapılmamışlar), **hiç görmediklerim**, **yıldızladıklarım**.
+
+### Filtreler
+
+Ders (çoklu seçim), bölüm (tek ders seçiliyken), metin/ID araması, soru sayısı, mod
+(çalışma / sınav), sıra (akıllı / rastgele) ve dört kapsam anahtarı: tekrarları gizle,
+şekil gerekenleri gizle, üretilmişleri kat, tartışmalıları gizle. Sayılar seçime göre
+anında güncellenir.
+
+### Yedek
+
+İlerleme `localStorage`'da durur. Durum panelindeki kutudan metni kopyalayıp başka
+cihazda aynı kutuya yapıştırarak taşırsın; birleştirme yapılır, iki cihazın emeği de
+korunur. Statik sunucudan açtığında ayrıca dosya indirme/seçme düğmeleri de çıkar
+(artifact kum havuzunda indirme engelli olduğu için orada gizlenir).
+
+**Sorular ve şıklar her turda karıştırılır** — veritabanında doğru cevap hep A şıkkıdır.
 
 Veri değişince yeniden üret:
 
 ```bash
 python3 scripts/build_web.py
 ```
-
-Sonra aynı dosya yolunu Artifact'e tekrar yayımla — link değişmez.
-
 
 ## Tekrar eden sorular
 

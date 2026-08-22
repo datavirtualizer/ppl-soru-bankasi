@@ -22,7 +22,8 @@ scripts/find_duplicates.py  benzer soru tarayıcı
 atpl.db              üretilmiş soru bankası — elle düzenleme, JSON'u düzelt
 server/              FastAPI çalışma sitesi (misafir öncelikli, giriş isteğe bağlı)
 server/app.db        kullanıcı verisi — .gitignore'da, YEDEKLENMESİ GEREKEN TEK DOSYA
-web/                 tek dosyalık artifact sürümü
+web/template.html    çalışma uygulamasının kaynağı (build_web.py veriyi gömer)
+web/atpl-soru-bankasi.html  üretilmiş tek dosya — elle düzenleme, template'i düzelt
 notes/               ders notları ve cheat sheet'ler
 ```
 
@@ -43,7 +44,19 @@ en değerli tuzakları (ör. 15613 METAR'da true north / 15666 ATIS'te magnetic 
 Yeni ders eklerken hem metin benzerliğini hem de "cevabı aynı ama metni farklı"
 çiftleri tara; karar insana ait.
 
-## Sunucu
+## Çalışma uygulaması (`web/`)
+
+Asıl kullanılan sürüm bu: tek dosya, sunucusuz, `localStorage` tabanlı. Aralıklı tekrar
+kutuları `BOX_MS`, takılma eşiği `LEECH`, yanlış defterinden çıkış `MASTER` sabitleriyle
+ayarlanır. Kaynak `web/template.html`; `__DATA__` yer tutucusuna `build_web.py` veriyi
+gömer. Değişiklikten sonra `python3 scripts/build_web.py` çalıştır.
+
+Yedekleme metin kopyala/yapıştır üzerinden yapılır — artifact kum havuzunda dosya
+indirme engelli. Dosya düğmeleri yalnızca `window.self === window.top` iken gösterilir.
+
+## Sunucu (isteğe bağlı)
+
+Çok cihazlı senkron isteyene FastAPI sürümü duruyor; günlük kullanım için gerekli değil.
 
 ```bash
 ./run.sh                                   # http://127.0.0.1:8778
