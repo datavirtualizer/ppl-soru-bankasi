@@ -105,6 +105,18 @@ Değişiklikten sonra testleri çalıştır. Kritik davranışlar:
   (`db.MASTER_STREAK`).
 - Kullanıcılar birbirinin turunu göremez; her sorgu `user_id` ile kısıtlıdır.
 
+## Yayın ve kimlik
+
+Depo `datavirtualizer/ppl-soru-bankasi` altında herkese açık; site
+https://datavirtualizer.github.io/ppl-soru-bankasi/ adresinde Pages ile yayında
+(`main` → `/docs`). Güncelleme: `./deploy.sh "mesaj"`.
+
+**Commit kimliği bilerek nötrdür:** `PPL Soru Bankası
+<noreply@ppl-soru-bankasi.invalid>`. `.invalid` ayrılmış bir TLD olduğu için commit'ler
+hiçbir GitHub hesabına bağlanmaz. Depo yerel `git config` ile bu kimliği kullanır —
+global kimliğe düşürme, kişisel ad/eposta depoya girmesin. Örnek metinlerde de kişi adı
+kullanma.
+
 ## Dil
 
 Arayüz, kod yorumları ve commit mesajları Türkçe. Soru metinleri kaynaktaki dilinde

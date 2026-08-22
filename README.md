@@ -294,17 +294,25 @@ Durum panelindeki kutudan metni kopyala, öbür cihazda aynı kutuya yapıştır
 Birleştirme yapılır, iki cihazın emeği korunur. Statik sunucudan açtığında ayrıca dosya
 indir/seç düğmeleri çıkar.
 
-## Yayımlama
+## Yayın
 
-`scripts/build_web.py` iki dosya üretir:
+**Canlı site: https://datavirtualizer.github.io/ppl-soru-bankasi/**
 
-- `web/atpl-soru-bankasi.html` — Artifact'e yayımlanan sürüm
-- `docs/index.html` — **GitHub Pages** için aynı dosya
+GitHub Pages, `main` dalının `/docs` klasöründen yayımlar. `scripts/build_web.py` aynı
+dosyayı iki yere yazar:
 
-GitHub Pages açmak için: depoyu GitHub'a gönder → Settings → Pages → Source: *Deploy from
-a branch* → Branch: `main`, klasör: `/docs`. Birkaç dakika içinde
-`https://<kullanıcı>.github.io/<depo>/` adresinde yayında olur. Netlify, Vercel ya da
-herhangi bir statik sunucu da olur; tek dosya yeterlidir.
+- `web/atpl-soru-bankasi.html` — yerel kullanım / Artifact
+- `docs/index.html` — Pages'in yayımladığı dosya
+
+Güncelleme tek komut:
+
+```bash
+./deploy.sh "değişiklik açıklaması"
+```
+
+Bankayı yeniden üretir, siteyi derler, commit'leyip gönderir. Pages ~1 dakikada tazelenir.
+
+Tek dosya olduğu için Netlify, Vercel ya da herhangi bir statik sunucu da çalışır.
 
 ## Soru üretimi (hazırlık)
 
