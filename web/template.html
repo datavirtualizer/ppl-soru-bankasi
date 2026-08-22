@@ -74,10 +74,15 @@ button{cursor:pointer; background:none; border:none}
   text-transform:uppercase; color:var(--ink-2); white-space:nowrap}
 .tbtn:hover{border-color:var(--rule-2); color:var(--ink)}
 .tbtn.on{background:var(--accent-soft); border-color:var(--accent); color:var(--accent-ink)}
-#bWho{font-family:var(--f-ui); font-size:12px; font-weight:600; letter-spacing:0;
-  text-transform:none; color:var(--ink-2); max-width:9rem; overflow:hidden;
-  text-overflow:ellipsis; white-space:nowrap}
-@media (max-width:560px){ #bWho{display:none} }
+.ava{flex:none; width:21px; height:21px; border-radius:50%; display:inline-grid;
+  place-items:center; background:hsl(var(--h) 46% 38%); color:#fff;
+  font-family:var(--f-ui); font-size:9px; font-weight:700; letter-spacing:.02em;
+  line-height:1; text-transform:uppercase}
+#bWho{display:inline-flex; align-items:center; gap:7px; padding:4px 9px 4px 5px;
+  font-family:var(--f-ui); font-size:12.5px; font-weight:600; letter-spacing:0;
+  text-transform:none; color:var(--ink-2)}
+#bWho .nm{max-width:8.5rem; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+@media (max-width:560px){ #bWho .nm{display:none} #bWho{padding:4px 5px} }
 
 .page{max-width:760px; margin:0 auto; padding:18px 14px 80px}
 @media (min-width:720px){ .page{padding:26px 20px 90px} }
@@ -89,10 +94,13 @@ h1{margin:0 0 4px; font-size:23px; font-weight:700; letter-spacing:-.022em; text
   border:1px solid var(--rule); border-radius:var(--r); padding:11px 13px;
   margin-bottom:16px; transition:border-color .12s}
 .topstat:hover{border-color:var(--rule-2)}
-.topstat .tsline{display:flex; align-items:baseline; gap:10px; margin-bottom:8px}
+.topstat .tsline{display:flex; align-items:center; gap:9px; margin-bottom:9px}
+.topstat .tsline .ava{width:26px; height:26px; font-size:10.5px}
+.topstat .chev{flex:none; color:var(--ink-3); font-family:var(--f-num); font-size:13px}
 .topstat .who{font-size:13.5px; font-weight:600; letter-spacing:-.01em; min-width:0;
   overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
 .topstat .tsline .lbl{margin-left:auto; flex:none}
+.topstat:hover .chev{color:var(--accent)}
 .topstat .tsbar{height:4px; background:var(--surface-3); border-radius:99px;
   overflow:hidden; margin-bottom:8px}
 .topstat .tsbar i{display:block; height:100%; background:var(--cyan); border-radius:99px;
@@ -283,6 +291,19 @@ input:focus, select:focus, textarea:focus{border-color:var(--accent); outline:no
 /* ── Özet ── */
 .score{font-family:var(--f-num); font-size:54px; font-weight:500; line-height:1;
   font-variant-numeric:tabular-nums; letter-spacing:-.035em}
+.rhead{padding:11px 15px 8px; border-bottom:1px solid var(--rule); background:var(--surface-2)}
+.rfold{display:flex; width:100%; align-items:center; gap:10px; padding:12px 15px;
+  background:var(--surface-2); border-top:1px solid var(--rule);
+  border-bottom:1px solid var(--rule); text-align:left}
+.rfold:hover{background:var(--surface-3)}
+.rfold .chev{margin-left:auto; color:var(--ink-3); font-family:var(--f-num); font-size:13px;
+  transition:transform .15s}
+.rfold.open .chev{transform:rotate(90deg)}
+.decklbl{margin-bottom:6px}
+.tip{background:var(--surface-2); border:1px solid var(--rule); border-left:2px solid var(--due);
+  border-radius:var(--r); padding:10px 12px; font-size:12.5px; color:var(--ink-2);
+  margin-bottom:10px}
+.tip b{color:var(--ink); font-weight:600}
 .rrow{display:flex; gap:10px; align-items:flex-start; padding:12px 15px;
   border-bottom:1px solid var(--rule)}
 .rrow:last-child{border-bottom:none}
@@ -411,6 +432,20 @@ const LEECH = 4, MASTER = 2;
 const el = id => document.getElementById(id);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const nf = n => n.toLocaleString('tr-TR');
+/** Profil simgesi: addan türeyen baş harfler + sabit renk. */
+function initials(name){
+  const w = String(name).trim().split(/\s+/).filter(Boolean);
+  const a = (w[0] || '?')[0];
+  const b = w.length > 1 ? w[w.length - 1][0] : '';
+  return (a + b).toLocaleUpperCase('tr');
+}
+function hueOf(name){
+  let h = 0;
+  for (const ch of String(name)) h = (h * 31 + ch.codePointAt(0)) % 360;
+  return h;
+}
+const avatar = name => '<span class="ava" style="--h:' + hueOf(name) + '" aria-hidden="true">' +
+  esc(initials(name)) + '</span>';
 const today = () => new Date().toISOString().slice(0,10);
 const ls = { get(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } },
              set(k,v){ try{ localStorage.setItem(k,v); }catch(e){} },
@@ -707,8 +742,8 @@ function home(){
   const cov = G.total ? Math.round(G.seen / G.total * 100) : 0;
   const strip =
     '<button class="topstat" id="topStat" type="button" title="Ayrıntılı durum">' +
-      '<div class="tsline"><span class="who">' + esc(ME) + '</span>' +
-        '<span class="lbl">tüm PPL bankası</span></div>' +
+      '<div class="tsline">' + avatar(ME) + '<span class="who">' + esc(ME) + '</span>' +
+        '<span class="lbl">tüm PPL bankası</span><span class="chev">›</span></div>' +
       '<div class="tsbar"><i style="width:' + cov + '%"></i></div>' +
       '<div class="tsnums">' +
         '<span><b class="num">' + nf(G.seen) + '</b> / ' + nf(G.total) + ' soru görüldü</span>' +
@@ -726,6 +761,8 @@ function home(){
     '<p class="sub">Modül modül ilerle. Bir modülü bitirince yenisine geçersin.</p>' +
     modCard +
 
+    '<div class="decklbl"><span class="lbl">' +
+      (m ? esc(m.code) + ' modülünde' : 'Seçili kapsamda') + '</span></div>' +
     '<div class="decks">' + DECKS.map(d =>
       '<button class="deck ' + d.cls + (F.deck === d.k ? ' on' : '') + '" data-deck="' + d.k + '"' +
       (counts[d.k] ? '' : ' disabled') + ' type="button"><span class="v">' + counts[d.k] + '</span>' +
@@ -736,8 +773,12 @@ function home(){
       '<button class="go" id="go" type="button"' + (ready ? '' : ' disabled') + '>' +
         (ready ? 'Başla · ' + (F.count ? Math.min(ready, F.count) : nf(ready)) + ' soru'
                : (m && m.left === 0 ? 'Bu modül bitti' : 'Bu kapsamda soru yok')) + '</button>' +
-      '<button class="go2" id="goAll" type="button"' + (F.deck === 'all' ? ' disabled' : '') + '>Tümü</button>' +
+      '<button class="go2" id="goAll" type="button"' + (F.deck === 'all' ? ' disabled' : '') +
+        ' title="Deste süzgecini kaldır, modüldeki tüm sorular gelsin">Tüm sorular</button>' +
     '</div>' +
+    (!ready && !(m && m.left === 0)
+      ? '<div class="tip">Bu deste bu kapsamda boş. <b>Tüm sorular</b>a bas ya da ' +
+        'Konular\'dan başka modül seç.</div>' : '') +
     (m && m.left === 0 && openModules().length
       ? '<button class="nextmod" id="mNext" type="button">Sıradaki modüle geç ›</button>' : '') +
     ((otherDue + otherWrong)
@@ -944,7 +985,7 @@ function draw(){
       '<button class="go" id="next" type="button"' + (R.picked === null ? ' disabled' : '') + '>' +
         (last ? 'Bitir' : (shown && R.order[R.picked] !== 0 ? 'Anladım, devam' : 'Sonraki')) + '</button>' +
       (R.picked === null ? '<button class="go2" id="skip" type="button">Atla</button>' : '') +
-      '<button class="go2" id="quit" type="button">Çık</button></div>';
+      '<button class="go2" id="quit" type="button">Turu bitir</button></div>';
 
   el('view').querySelectorAll('.opt').forEach(b => b.onclick = () => pick(+b.dataset.p));
   el('next').onclick = next;
@@ -994,20 +1035,43 @@ function done(){
         '</span> / <span class="num">' + first.length + '</span> doğru</div>' +
       (rounds > 1 ? '<div class="note" style="margin-top:8px">Yanlış yaptıkların tekrar soruldu, ' +
         'hepsini bilene kadar devam edildi.</div>' : '') + '</div>' +
-    seen.map(id => {
-      const q = BY_ID.get(id);
-      const tries = log.filter(x => x.id === id);
-      const good = tries[tries.length - 1].ok;
-      const firstOk = tries[0].ok;
-      return '<div class="rrow"><span class="rdot ' + (firstOk ? 'ok' : 'bad') + '"></span>' +
-        '<div style="min-width:0"><div class="q">' + esc(q[3]) + '</div><div class="a">' +
-        (firstOk ? '<b>' + esc(q[4][0]) + '</b>'
-                 : '<i>İlk seçimin: ' + esc(q[4][tries[0].pick]) + '</i> · <b>Doğru: ' +
-                   esc(q[4][0]) + '</b>' + (tries.length > 1 && good ? ' · sonra bildin' : '')) +
-        '</div></div></div>';
-    }).join('') + '</div>' +
+    (() => {
+      const row = id => {
+        const q = BY_ID.get(id);
+        const tries = log.filter(x => x.id === id);
+        const firstOk = tries[0].ok;
+        const fixed = tries.length > 1 && tries[tries.length - 1].ok;
+        return '<div class="rrow"><span class="rdot ' + (firstOk ? 'ok' : 'bad') + '"></span>' +
+          '<div style="min-width:0"><div class="q">' + esc(q[3]) + '</div><div class="a">' +
+          (firstOk ? '<b>' + esc(q[4][0]) + '</b>'
+                   : '<i>İlk seçimin: ' + esc(q[4][tries[0].pick]) + '</i> · <b>Doğru: ' +
+                     esc(q[4][0]) + '</b>' + (fixed ? ' · sonra bildin' : '')) +
+          '</div></div></div>';
+      };
+      const bad = seen.filter(id => !log.filter(x => x.id === id)[0].ok);
+      const good = seen.filter(id => log.filter(x => x.id === id)[0].ok);
+      // Yanlışlar önce ve açık; doğrular katlı — uzun turlarda ekran şişmesin
+      return (bad.length
+          ? '<div class="rhead"><span class="lbl">İlk denemede yanlış · ' + bad.length + '</span></div>' +
+            bad.map(row).join('')
+          : '') +
+        (good.length
+          ? '<button class="rfold" id="foldOk" type="button" aria-expanded="false">' +
+              '<span class="lbl">İlk denemede doğru · ' + good.length + '</span>' +
+              '<span class="chev">›</span></button>' +
+            '<div id="okList" class="hidden">' + good.map(row).join('') + '</div>'
+          : '');
+    })() + '</div>' +
     '<div class="acts"><button class="go" id="again" type="button">Devam et</button>' +
       '<button class="go2" id="back" type="button">Ana ekran</button></div>';
+  const fo = el('foldOk');
+  if (fo) fo.onclick = () => {
+    const list = el('okList');
+    const open = !list.classList.contains('hidden');
+    list.classList.toggle('hidden', open);
+    fo.setAttribute('aria-expanded', String(!open));
+    fo.classList.toggle('open', !open);
+  };
   el('again').onclick = start;
   el('back').onclick = home;
 }
@@ -1274,7 +1338,10 @@ el('bTheme').onclick = () => {
 };
 el('bWho').onclick = openStats;
 el('bStats').onclick = openStats;
-function paintWho(){ el('bWho').textContent = ME; }
+function paintWho(){
+  el('bWho').innerHTML = avatar(ME) + '<span class="nm">' + esc(ME) + '</span>';
+  el('bWho').title = ME + ' — profil ve durum';
+}
 el('bNotes').onclick = () => openNotes();
 el('veil').onclick = closeSheet;
 
